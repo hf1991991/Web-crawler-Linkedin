@@ -164,6 +164,9 @@ class LinkedinSpider(InitSpider):
                         if text == None:
                             text = '---'
                         links_sheet['%s%i' % (column, line)] = text
+                else:
+                    true = True
+                    # Implementar mensagem de conta não existe
                 self.workbook.save(self.workbook_filename)
                 return
             line += 1
@@ -181,7 +184,10 @@ class LinkedinSpider(InitSpider):
                 'session_key': self.user_name,
                 'session_password': self.passwd,
             },
-            callback = self.check_login_response
+            callback = self.check_login_response,
+            meta={
+                'proxy': None
+            }
         )
 
     def set_error_message_on_users_sheet(self, error_text):
@@ -194,6 +200,12 @@ class LinkedinSpider(InitSpider):
         users_sheet['F%i' % self.user_line_on_excel] = error_text
         self.workbook.save(self.workbook_filename)
 
+    def response_is_ban(self, request, response):
+        return b'Let&#39;s do a quick security check' in response.body
+
+    def exception_is_ban(self, request, exception):
+        return None
+
     def check_login_response(self, response):
         error_text = None
 
@@ -202,8 +214,8 @@ class LinkedinSpider(InitSpider):
             error_text = 'Conta bloqueada pelo Linkedin por muitas tentativas. Troque esta conta por outra, ou remova esta linha do Excel.'
             print("Login falhou. Conta bloqueada pelo Linkedin por muitas tentativas.\nTente criar uma nova conta.\n")
         elif "Let&#39;s do a quick security check" in str(response.body):
-            error_text = 'É necessário realizar uma verificação de segurança. Entre em %s e faça login com essa conta para resolver um captcha.' % self.login_page
-            print("Login falhou. É necessário realizar uma verificação de segurança\nAcesse o browser para resolver um captcha.\n")
+            # error_text = 'É necessário realizar uma verificação de segurança. Entre em %s e faça login com essa conta para resolver um captcha.' % self.login_page
+            print("Login falhou. É necessário realizar uma verificação de segurança\nO programa deve mudar de proxy agora.\n")
         elif "Email or phone" in str(response.body):
             error_text = 'A conta ou a senha parecem estar erradas. Verifique se o usuário e senha estão corretos.'
             print("Login falhou. A conta ou a senha estão erradas.\nVerifique se o usuário e senha estão corretos.\n")
@@ -217,18 +229,21 @@ class LinkedinSpider(InitSpider):
         else:
             return self.init_request()
 
-    # def start_requests(self):
-    #     self._postinit_reqs = self.start_splash_requests()
-    #     return iterate_spider_output(self.init_request())
+    def start_requests(self):
+        self._postinit_reqs = self.start_requests_without_proxy_change()
+        return iterate_spider_output(self.init_request())
 
-    # def start_splash_requests(self):
-    #     print('START_SPLASH_REQUESTS')
-    #     for url in self.start_urls:
-    #         print(url)
-    #         yield SplashRequest(
-    #             url=url, 
-    #             callback=self.parse
-    #         )
+    def start_requests_without_proxy_change(self):
+        # print('START_SPLASH_REQUESTS')
+        for url in self.start_urls:
+            # O seguinte código faz com que todos os Requests depois do login não mudem de proxy:
+            yield Request(
+                url=url, 
+                callback=self.parse,
+                meta={
+                    'proxy': None
+                }
+            )
 
     def get_user_data_string(self, response):
         user_data_string = '{&quot;birthDateOn' + str(response.body).split(',{&quot;birthDateOn')[-1]
@@ -276,9 +291,9 @@ class LinkedinSpider(InitSpider):
                         'about': user_data['summary'],
                     }
 
-                    self.log('\nParsing corretamente realizado em %s\n' % response.url)
+                    print('\nParsing corretamente realizado em %s\n' % response.url)
                 else:
-                    self.log('\nErro no parsing de %s\n' % response.url)
+                    print('\nErro no parsing de %s\n' % response.url)
 
         self.write_on_workbook(response.url, user_dict)
 

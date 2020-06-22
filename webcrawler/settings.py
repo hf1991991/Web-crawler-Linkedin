@@ -88,13 +88,24 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-SPLASH_URL = 'http://localhost:8050'
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy_splash.SplashCookiesMiddleware': 723,
-    'scrapy_splash.SplashMiddleware': 725,
-    'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+    'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
+    'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
 }
-SPIDER_MIDDLEWARES = {
-    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}
-DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
+
+# Para obter mais proxies, entre em:
+# https://gimmeproxy.com/api/getProxy?country=US
+ROTATING_PROXY_LIST = [
+    'http://192.241.135.86:8080',
+    'http://155.138.132.52:8080',
+    'http://149.28.34.108:8080',
+    'http://104.129.41.47:5836',
+    'http://165.22.211.212:3128',
+    'socks4://50.197.38.230:36478',
+    'http://20.43.156.27:80',
+    'http://167.99.102.249:8080',
+    'http://165.22.211.212:3128',
+    'http://52.179.18.244:8080',
+    'http://20.43.156.27:80',
+    'http://159.65.171.69:80',
+]
