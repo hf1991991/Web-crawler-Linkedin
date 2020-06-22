@@ -11,6 +11,11 @@ from openpyxl.styles import Font, Color, Side, Alignment, Border
 from openpyxl.utils import get_column_letter
 
 import json
+  
+warnprint = lambda x: print("\033[97m {}\033[00m".format("🟡 %s" % x)) 
+checkprint = lambda x: print("\033[97m {}\033[00m".format("✅ %s" % x)) 
+errorprint = lambda x: print("\033[97m {}\033[00m".format("❌ %s" % x)) 
+whiteprint = lambda x: print("\033[97m {}\033[00m".format(x)) 
 
 CELL_SIDE = Side(
     border_style="thin",
@@ -24,11 +29,26 @@ CELL_BORDER = Border(
     left=CELL_SIDE,
 )
 
-CELL_ALIGNMENT = Alignment(
+LEFT_CELL_ALIGNMENT = Alignment(
     vertical="center",
     horizontal="left",
     wrap_text=True
 )
+
+CENTER_CELL_ALIGNMENT = Alignment(
+    vertical="center",
+    horizontal="center",
+    wrap_text=True
+)
+
+NORMAL_FONT_CELL = Font()
+
+BIG_FONT_CELL = Font(
+    size=18
+)
+
+LINKS_TABLE_STARTING_LINE = 10
+USERS_TABLE_STARTING_LINE = 3
 
 class LinkedinSpider(InitSpider):
     name = "linkedin"
@@ -36,6 +56,8 @@ class LinkedinSpider(InitSpider):
 
     workbook_filename = 'Links.xlsx'
     workbook = None
+
+    only_crawl_new_links = None
 
     user_name = None
     passwd = None
@@ -54,10 +76,10 @@ class LinkedinSpider(InitSpider):
         self.fix_users_sheet_data()
         # A partir dos dados do excel, associa valores às variaveis de login, assim como à dos links:
         if self.get_login_data_from_workbook() is not None: return
-        self.get_links_from_workbook()
+        if self.get_links_from_workbook() is not None: return
         # Aplica estilo no excel:
-        self.apply_style_to_workbook_sheet(sheet=self.workbook['Links'], starting_line=3, columns="BCDEFGH")
-        self.apply_style_to_workbook_sheet(sheet=self.workbook['Usuários'], starting_line=3, columns="BCDEF")
+        self.apply_links_sheet_style()
+        self.apply_users_sheet_style()
         # Lê os valores de conversão unicode:
         self.read_unicode_conversion()
         # Realiza o login:
@@ -65,7 +87,7 @@ class LinkedinSpider(InitSpider):
 
     def fix_users_sheet_data(self):
         users_sheet = self.workbook['Usuários']
-        line = 3
+        line = USERS_TABLE_STARTING_LINE
         while users_sheet['B%i' % line].value is not None or users_sheet['C%i' % line].value:
             if users_sheet['D%i' % line].value is None:
                 users_sheet['D%i' % line] = 0
@@ -78,7 +100,7 @@ class LinkedinSpider(InitSpider):
 
 
     def get_login_data_from_workbook(self):
-        # print('GET_LOGIN_DATA_FROM_WORKBOOK')
+        # whiteprint('GET_LOGIN_DATA_FROM_WORKBOOK')
 
         def has_been_tested(item):
             return item['does_it_work'] == 'Sim'
@@ -88,7 +110,7 @@ class LinkedinSpider(InitSpider):
         
         users_sheet = self.workbook['Usuários']
         possible_users = []
-        line = 3
+        line = USERS_TABLE_STARTING_LINE
 
         while True:
             login = {
@@ -105,7 +127,8 @@ class LinkedinSpider(InitSpider):
             line += 1
 
         if len(possible_users) == 0:
-            print('\nNão há mais usuários válidos para serem utilizados.\nEntre na tabela do Excel para adicionar um usuário, ou arrumar algum que tenha gerado um erro.\n')
+            print()
+            errorprint('Não há mais usuários válidos para serem utilizados.\nEntre na tabela do Excel para adicionar um usuário, ou arrumar algum que tenha gerado um erro.\n')
             self.workbook.save(self.workbook_filename)
             return 'Não há mais usuários válidos para serem utilizados'
         
@@ -121,30 +144,58 @@ class LinkedinSpider(InitSpider):
         return None
 
     def get_links_from_workbook(self):
-        # print('GET_LINKS_FROM_WORKBOOK')
+        # whiteprint('GET_LINKS_FROM_WORKBOOK')
         links_sheet = self.workbook['Links']
-        line = 3
+
+        self.only_crawl_new_links = links_sheet['D5'].value == 'Sim'
+
+        line = LINKS_TABLE_STARTING_LINE
         link = links_sheet['C%i' % line].value
         while link is not None:
-            self.start_urls.append(link)
+            if self.only_crawl_new_links:
+                is_a_cell_empty = False
+                for column in "DEFGH":
+                    if links_sheet['%s%i' % (column, line)].value == None:
+                        is_a_cell_empty = True
+                if is_a_cell_empty and (links_sheet['B%i' % line].value == 'Sim'):
+                    self.start_urls.append(link)
+            else:
+                if links_sheet['B%i' % line].value == 'Sim':
+                    self.start_urls.append(link)
             line += 1
             link = links_sheet['C%i' % line].value
+        if len(self.start_urls) == 0:
+            print()
+            checkprint('Todos os links do Excel já passaram pelo scraping!\nCaso queira recarregá-los, desative a configuração de "Apenas obter dados dos links cujos campos da linha estão vazios" e salve o arquivo\n')
+            return 'Sem links para scraping'
+        else:
+            return None
+        # whiteprint("start urls:\n")
+        # whiteprint(self.start_urls)
 
-    def apply_style_to_workbook_sheet(self, sheet, starting_line, columns):
-        # print('APPLY_STYLE_TO_WORKBOOK')
+    def apply_links_sheet_style(self):        
+        self.apply_style_to_workbook_sheet(sheet=self.workbook['Links'], verification_column='C', starting_line=LINKS_TABLE_STARTING_LINE, columns="BCDEFGH")
+        self.apply_style_to_workbook_sheet(sheet=self.workbook['Links'], alignment=CENTER_CELL_ALIGNMENT, font=BIG_FONT_CELL, verification_column='C', starting_line=LINKS_TABLE_STARTING_LINE, columns="B")
+
+    def apply_users_sheet_style(self):        
+        self.apply_style_to_workbook_sheet(sheet=self.workbook['Usuários'], verification_column='B', starting_line=USERS_TABLE_STARTING_LINE, columns="BCDEF")
+
+    def apply_style_to_workbook_sheet(self, sheet, verification_column, starting_line, columns, alignment=LEFT_CELL_ALIGNMENT, border=CELL_BORDER, font=NORMAL_FONT_CELL):
+        # whiteprint('APPLY_STYLE_TO_WORKBOOK')
         line = starting_line
-        link = sheet['C%i' % line].value
+        link = sheet['%s%i' % (verification_column, line)].value
         while link is not None:
             for column in columns:
                 cell = sheet['%s%i' % (column, line)]
-                cell.alignment = CELL_ALIGNMENT
-                cell.border = CELL_BORDER
+                cell.alignment = alignment
+                cell.border = border
+                cell.font = font
             line += 1
-            link = sheet['C%i' % line].value
+            link = sheet['%s%i' % (verification_column, line)].value
         self.workbook.save(self.workbook_filename)
 
     def write_on_workbook(self, url, user_dict):
-        # print('WRITE_ON_WORKBOOK')
+        # whiteprint('WRITE_ON_WORKBOOK')
         links_sheet = self.workbook['Links']
         column_association = {
             'D': 'first_name',
@@ -153,25 +204,25 @@ class LinkedinSpider(InitSpider):
             'G': 'location',
             'H': 'about',
         }
-        line = 3
+        line = LINKS_TABLE_STARTING_LINE
         link = links_sheet['C%i' % line].value
         while link is not None:
             if link == url:
-                links_sheet['B%i' % line] = line - 5
                 if user_dict is not None:
+                    links_sheet['B%i' % line] = 'Sim'
                     for column in column_association:
                         text = user_dict[column_association[column]]
                         if text == None:
                             text = '---'
                         links_sheet['%s%i' % (column, line)] = text
                 else:
-                    true = True
+                    links_sheet['B%i' % line] = 'Não'
                     # Implementar mensagem de conta não existe
                 self.workbook.save(self.workbook_filename)
                 return
             line += 1
             link = links_sheet['C%i' % line].value
-        print('ERRO em write_on_workbook: %s não foi encontrado' % url)
+        whiteprint('write_on_workbook: foram obtidos os dados de %s, mas o link não foi encontrado na tabela.' % url)
 
     def read_unicode_conversion(self):
         with open('unicode_conversion.json', 'r') as f:
@@ -208,23 +259,43 @@ class LinkedinSpider(InitSpider):
 
     def check_login_response(self, response):
         error_text = None
+        change_proxy = False
 
-        print("\nLogin utilizado:\n - Email: %s\n - Senha: %s\n" % (self.user_name, self.passwd))
+        loginerrorprint = lambda x: warnprint('Login falhou. %s\nPara mais detalhes, entre na aba "Usuários" do Excel.\n' % x)
+
+        # save_to_file(
+        #     "login.html",
+        #     response.body
+        # )
+
+        whiteprint("\nLogin utilizado:\n - Email: %s\n - Senha: %s\n" % (self.user_name, self.passwd))
         if "Your account has been restricted" in str(response.body):
             error_text = 'Conta bloqueada pelo Linkedin por muitas tentativas. Troque esta conta por outra, ou remova esta linha do Excel.'
-            print("Login falhou. Conta bloqueada pelo Linkedin por muitas tentativas.\nTente criar uma nova conta.\n")
+            loginerrorprint("Conta bloqueada pelo Linkedin por muitas tentativas.\nTente criar uma nova conta.")
         elif "Let&#39;s do a quick security check" in str(response.body):
-            # error_text = 'É necessário realizar uma verificação de segurança. Entre em %s e faça login com essa conta para resolver um captcha.' % self.login_page
-            print("Login falhou. É necessário realizar uma verificação de segurança\nO programa deve mudar de proxy agora.\n")
+            change_proxy = True
+            # error_text = 'Conta pede uma verificação se é um robô. Troque esta conta por outra, ou remova esta linha do Excel.'
+            loginerrorprint("Conta pede uma verificação de se é um robô\nPor favor espere o programa mudar de proxy. Isto pode demorar até um minuto.")
+        elif "The login attempt seems suspicious." in str(response.body):
+            change_proxy = True
+            # error_text = 'Conta pede uma verificação se é um robô. Troque esta conta por outra, ou remova esta linha do Excel.'
+            loginerrorprint("Conta pede que seja copiado o texto do email\nPor favor espere o programa mudar de proxy. Isto pode demorar até um minuto.")
         elif "Email or phone" in str(response.body):
             error_text = 'A conta ou a senha parecem estar erradas. Verifique se o usuário e senha estão corretos.'
-            print("Login falhou. A conta ou a senha estão erradas.\nVerifique se o usuário e senha estão corretos.\n")
+            loginerrorprint("A conta ou a senha estão erradas.\nVerifique se o usuário e senha estão corretos.")
+        elif "We’re unable to reach you" in str(response.body):
+            error_text = 'O Linkedin pediu uma verificação de email. Faça login com esta conta no browser e aperte "Skip".'
+            loginerrorprint("O Linkedin pediu uma verificação de email.")
+        elif '<meta name="isGuest" content="false" />' in str(response.body):
+            checkprint("Login realizado. Vamos começar o crawling!\n")
         else:
-            print("\nLogin realizado. Vamos começar o crawling!\n")
+            change_proxy = True
+            loginerrorprint("Erro desconhecido.\nMudando as configurações de proxy para verificar se o erro não se repete.")
+
 
         self.set_error_message_on_users_sheet(error_text)
 
-        if error_text == None:
+        if (error_text == None) and (not change_proxy):
             return self.initialized() 
         else:
             return self.init_request()
@@ -234,7 +305,7 @@ class LinkedinSpider(InitSpider):
         return iterate_spider_output(self.init_request())
 
     def start_requests_without_proxy_change(self):
-        # print('START_SPLASH_REQUESTS')
+        # whiteprint('START_SPLASH_REQUESTS')
         for url in self.start_urls:
             # O seguinte código faz com que todos os Requests depois do login não mudem de proxy:
             yield Request(
@@ -253,9 +324,9 @@ class LinkedinSpider(InitSpider):
             end += 1
             partial = user_data_string[:end]
             # if partial.endswith('{') or partial.endswith('}'):
-            #     print(partial.count('{'), partial.count('}'))
+            #     whiteprint(partial.count('{'), partial.count('}'))
         if partial.count('{') != partial.count('}'):
-            print('ERRO em get_user_data_string: não foi possivel obter dados do usuário em %s' % response.url)
+            whiteprint('ERRO em get_user_data_string: não foi possivel obter dados do usuário em %s' % response.url)
             return None
         return partial
 
@@ -271,7 +342,7 @@ class LinkedinSpider(InitSpider):
 
         # Se página não tiver a seguinte string, a conta não existe:
         if '{&quot;birthDateOn' not in str(response.body):
-            print('\nConta não existe em %s\n' % response.url)
+            whiteprint('\nConta não existe em %s\n' % response.url)
         else:
             filename = 'profile-%s.json' % response.url.split("/")[4]
 
@@ -290,10 +361,11 @@ class LinkedinSpider(InitSpider):
                         'location': user_data['locationName'],
                         'about': user_data['summary'],
                     }
-
-                    print('\nParsing corretamente realizado em %s\n' % response.url)
+                    print()
+                    checkprint('Parsing corretamente realizado em %s\n' % response.url)
                 else:
-                    print('\nErro no parsing de %s\n' % response.url)
+                    print()
+                    errorprint('Erro no parsing de %s\n' % response.url)
 
         self.write_on_workbook(response.url, user_dict)
 
@@ -307,7 +379,8 @@ def parse_text_to_json(text, replacements, filename):
         # )
         return json.loads(text)
     except Exception:
-        print('\nERRO em parse_text_to_json.\n')
+        print()
+        errorprint('parse_text_to_json: não foi possível transformar o texto em um JSON.\n')
         return None
 
 def convert_unicode(text, replacements):
@@ -318,11 +391,12 @@ def convert_unicode(text, replacements):
                 for element in replacements[unicode_char][type]:
                     text = text.replace(str(element), str(unicode_char))
     except Exception:
-        print('\nERRO em convert_unicode.\n')
+        print()
+        errorprint('convert_unicode: não foi possível converter os caracteres unicode.\n')
     return text
 
 def save_to_file(filename, element):
     element = str(element).replace("'", '"').replace('"s ', "'s ").replace('True', 'true').replace('False', 'false').replace('None', 'null')
     with open(filename, 'wb') as f:
         f.write(str.encode(str(element)))
-    print('\nSaved file %s\n' % filename)
+    whiteprint('\n💽 Texto salvo como %s\n' % filename)
