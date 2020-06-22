@@ -5,8 +5,11 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-from random import choice
 from scrapy import signals
+
+# Código não utilizado:
+
+from random import choice
 from scrapy.exceptions import NotConfigured
 
 
@@ -41,6 +44,7 @@ class RotateUserAgentMiddleware(object):
 
         print("\nREDEFINED USER-AGENT: %s\n" % request.headers['user-agent'])
 
+# Fim do Código não utilizado.
 
 class WebcrawlerSpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
