@@ -25,9 +25,9 @@ colorama.init()
 
 if SYSTEM_IS_WINDOWS:
     whiteprint = lambda x: cprint(x, 'magenta')
-    warnprint = lambda x: cprint(x, 'yellow')
+    warnprint = lambda x: cprint('Aviso: %s' % x, 'yellow')
     checkprint = lambda x: cprint(x, 'green')
-    errorprint = lambda x: cprint(x, 'red')
+    errorprint = lambda x: cprint('Erro: %s' % x, 'red')
 else:
     whiteprint = lambda x: cprint(x, 'white')
     warnprint = lambda x: whiteprint("🟡 %s" % x)
@@ -69,7 +69,7 @@ USERS_TABLE_STARTING_LINE = 3
 
 class LinkedinSpider(InitSpider):
     name = "linkedin"
-    allowed_domains = ["linkedin.com"]
+    handle_httpstatus_list = [999]
 
     workbook_filename = 'Links.xlsx'
     workbook = None
@@ -95,9 +95,13 @@ class LinkedinSpider(InitSpider):
         self.read_excel()
         # Arruma dados da tabela de usuários do excel:
         self.fix_users_sheet_data()
+        # Arruma os links que não começam com www:
+        self.fix_links_without_www()
         # A partir dos dados do excel, associa valores às variaveis de login, assim como à dos links:
         if self.get_login_data_from_workbook() is not None: return
         if self.get_links_from_workbook() is not None: return
+        # Verifica se há e remove links duplicados:
+        self.check_for_duplicate_links()
         # Aplica estilo no excel:
         self.apply_links_sheet_style()
         self.apply_users_sheet_style()
@@ -126,6 +130,26 @@ class LinkedinSpider(InitSpider):
             line += 1
         self.workbook.save(self.workbook_filename)
 
+    def fix_links_without_www(self):
+        links_sheet = self.workbook['Links']
+        line = LINKS_TABLE_STARTING_LINE
+        link = links_sheet['C%i' % line].value
+        while link is not None:
+            if ('www.linkedin' not in link) and ('linkedin' in link):
+                novo_link = 'https://www.linkedin' + link.split('linkedin')[1]
+                print()
+                warnprint('O seguinte link não contém "www.linkedin.com": %s\nModificando-o para: %s' % (link, novo_link))
+                links_sheet['C%i' % line] = novo_link
+            line += 1
+            link = links_sheet['C%i' % line].value
+        self.workbook.save(self.workbook_filename)
+
+    def check_for_duplicate_links(self):
+        for link in self.start_urls:
+            while self.start_urls.count(link) > 1:
+                self.start_urls.remove(link)
+                print()
+                warnprint('Há uma cópia de link: %s' % link)
 
     def get_login_data_from_workbook(self):
         # whiteprint('GET_LOGIN_DATA_FROM_WORKBOOK')
@@ -204,18 +228,20 @@ class LinkedinSpider(InitSpider):
         line = LINKS_TABLE_STARTING_LINE
         link = links_sheet['C%i' % line].value
         while link is not None:
+            link_data_state = None if links_sheet['B%i' % line].value is None else links_sheet['B%i' % line].value.replace(' (Cópia)', '')
             if self.only_crawl_new_links:
                 is_a_cell_empty = False
                 for column in "BDEFGH":
                     if links_sheet['%s%i' % (column, line)].value == None:
                         is_a_cell_empty = True
-                if is_a_cell_empty and ((links_sheet['B%i' % line].value != 'Não é uma pessoa') or self.crawl_not_a_person):
+                if is_a_cell_empty and ((link_data_state != 'Não é uma pessoa') or self.crawl_not_a_person):
                     self.start_urls.append(link)
             else:
-                if (links_sheet['B%i' % line].value != 'Não é uma pessoa') or self.crawl_not_a_person:
+                if (link_data_state != 'Não é uma pessoa') or self.crawl_not_a_person:
                     self.start_urls.append(link)
             line += 1
             link = links_sheet['C%i' % line].value
+
         if len(self.start_urls) == 0:
             print()
             checkprint('Todos os links do Excel já passaram pelo scraping!\nCaso queira recarregá-los, desative a configuração de "Apenas obter dados dos links cujos campos da linha estão vazios" e salve o arquivo\n')
@@ -249,6 +275,7 @@ class LinkedinSpider(InitSpider):
     def write_on_workbook(self, url, user_dict, page_exists):
         # whiteprint('WRITE_ON_WORKBOOK')
         links_sheet = self.workbook['Links']
+
         column_association = {
             'D': 'first_name',
             'E': 'last_name',
@@ -256,8 +283,12 @@ class LinkedinSpider(InitSpider):
             'G': 'location',
             'H': 'about',
         }
+
         line = LINKS_TABLE_STARTING_LINE
         link = links_sheet['C%i' % line].value
+
+        link_count = 0
+
         while link is not None:
             if link == url:
                 if user_dict is not None:
@@ -271,11 +302,16 @@ class LinkedinSpider(InitSpider):
                     links_sheet['B%i' % line] = 'Não é uma pessoa'
                 else:
                     links_sheet['B%i' % line] = 'Não'
-                self.workbook.save(self.workbook_filename)
-                return
+                link_count += 1
+                if link_count > 1:
+                    links_sheet['B%i' % line] = links_sheet['B%i' % line].value + ' (Cópia)'
             line += 1
             link = links_sheet['C%i' % line].value
-        whiteprint('write_on_workbook: foram obtidos os dados de %s, mas o link não foi encontrado na tabela.' % url)
+
+        self.workbook.save(self.workbook_filename)
+
+        if link_count == 0:
+            whiteprint('write_on_workbook: foram obtidos os dados de %s, mas o link não foi encontrado na tabela.' % url)
 
     def login(self, response):
         return Http.FormRequest.from_response(
@@ -309,28 +345,28 @@ class LinkedinSpider(InitSpider):
             
         self.workbook.save(self.workbook_filename)
 
-    def response_is_ban(self, request, response):
-        ban = False
+    # def response_is_ban(self, request, response):
+    #     ban = False
 
-        if "Your account has been restricted" in str(response.body):
-            ban = False
-        elif "Let&#39;s do a quick security check" in str(response.body):
-            ban = True
-        elif "The login attempt seems suspicious." in str(response.body):
-            ban = True
-        elif "that&#39;s not the right password" in str(response.body):
-            ban = True
-        elif "We’re unable to reach you" in str(response.body):
-            ban = True
-        elif '<meta name="isGuest" content="false" />' in str(response.body):
-            ban = False
-        else:
-            ban = True
+    #     if "Your account has been restricted" in str(response.body):
+    #         ban = False
+    #     elif "Let&#39;s do a quick security check" in str(response.body):
+    #         ban = True
+    #     elif "The login attempt seems suspicious." in str(response.body):
+    #         ban = True
+    #     elif "that&#39;s not the right password" in str(response.body):
+    #         ban = True
+    #     elif "We’re unable to reach you" in str(response.body):
+    #         ban = True
+    #     elif '<meta name="isGuest" content="false" />' in str(response.body):
+    #         ban = False
+    #     else:
+    #         ban = True
 
-        return ban
+    #     return ban
 
-    def exception_is_ban(self, request, exception):
-        return None
+    # def exception_is_ban(self, request, exception):
+    #     return None
 
     def check_login_response(self, response):
         logged_in = False
@@ -425,7 +461,7 @@ class LinkedinSpider(InitSpider):
         print()
 
         # Se página não tiver a seguinte string, ela provavelmente foi carregada errada:
-        if 'www.linkedin.com/in/' not in str(response.url):
+        if 'linkedin.com/in/' not in str(response.url):
             errorprint('%sEste não é um link de um perfil: %s\n' % (counter, response.url))
 
         # Se página não tiver a seguinte string, ela provavelmente 
