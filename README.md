@@ -2,9 +2,9 @@
 
 Autor: Henrique Falconer
 
-## Instalação de módulos
+## Instalação de módulos para Python
 
-Para instalar os módulos necessários, siga os passos dos seguintes links:
+Para rodar o programa em Python, siga os passos dos seguintes links:
 
 - https://docs.scrapy.org/en/latest/intro/install.html
 - https://openpyxl.readthedocs.io/en/stable/#installation
