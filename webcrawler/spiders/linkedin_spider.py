@@ -10,24 +10,24 @@ from openpyxl.styles import colors
 from openpyxl.styles import Font, Color, Side, Alignment, Border
 from openpyxl.utils import get_column_letter
 
+import colorama
+from termcolor import cprint
+
 import os
 
 import json
-
-import colorama
-from termcolor import cprint
 
 SYSTEM_IS_WINDOWS = os.name != 'posix'
 
 colorama.init()
 
-if not SYSTEM_IS_WINDOWS:
-    whiteprint = lambda x: cprint(x, 'white')
+whiteprint = lambda x: cprint(x, 'white')
+
+if SYSTEM_IS_WINDOWS:
     warnprint = lambda x: cprint(x, 'yellow')
     checkprint = lambda x: cprint(x, 'green')
     errorprint = lambda x: cprint(x, 'red')
 else:
-    whiteprint = lambda x: cprint(x, 'white')
     warnprint = lambda x: whiteprint("🟡 %s" % x)
     checkprint = lambda x: whiteprint("✅ %s" % x)
     errorprint = lambda x: whiteprint("❌ %s" % x)
