@@ -89,6 +89,9 @@ class LinkedinSpider(InitSpider):
     request_retries = {}
 
     login_page = 'https://www.linkedin.com/uas/login'
+
+    def __init__(self, excel_file):
+        self.workbook_filename = excel_file
         
     def init_request(self):
         # Obtém os dados do excel:
