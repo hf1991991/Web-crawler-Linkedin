@@ -15,11 +15,11 @@ Para rodar o programa em Python, siga os passos dos seguintes links:
 
 Primeiro, instale o seguinte módulo. Ele é uma versão GUI do pyinstaller.
 
-´´´pip install auto-py-to-exe´´´
+```pip install auto-py-to-exe```
 
 Após a instalação, execute o seguinte código no terminal. Isso deve fazer com que seja aberta uma nova janela.
 
-´´´auto-py-to-exe´´´
+```auto-py-to-exe```
 
 Com isso, selecione o arquivo .py que você queira transformar em um executável, assim como todos os arquivos secundários do seu programa.
 
