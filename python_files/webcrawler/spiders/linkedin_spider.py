@@ -410,10 +410,8 @@ class LinkedinSpider(InitSpider):
             logged_in = True
             checkprint("Login realizado. Vamos começar o crawling!\n")
         else:
-            login_works = False
-            reusable_login = False
-            error_text = 'Erro desconhecido.'
-            loginerrorprint("Erro desconhecido.\n")
+            logged_in = True
+            warnprint("Possível erro desconhecido. Continuando login mesmo assim.\n")
 
         self.set_error_message_on_users_sheet(error_text, login_works, reusable_login)
 
