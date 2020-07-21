@@ -406,12 +406,12 @@ class LinkedinSpider(InitSpider):
             login_works = False
             error_text = 'O Linkedin pediu uma verificação de email. Faça login com esta conta no browser e aperte "Skip".'
             loginerrorprint('O Linkedin pediu uma verificação de email.')
-        elif '<meta name="isGuest" content="false" />' in str(response.body):
-            logged_in = True
-            checkprint("Login realizado. Vamos começar o crawling!\n")
+        # elif '<meta name="isGuest" content="false" />' in str(response.body):
+        #     logged_in = True
+        #     checkprint("Login realizado. Vamos começar o crawling!\n")
         else:
             logged_in = True
-            warnprint("Possível erro desconhecido. Continuando login mesmo assim.\n")
+            checkprint("Login realizado. Vamos começar o crawling!\n")
 
         self.set_error_message_on_users_sheet(error_text, login_works, reusable_login)
 
