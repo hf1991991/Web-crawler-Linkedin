@@ -436,6 +436,32 @@ class LinkedinSpider(InitSpider):
                 }
             )
 
+    def get_big_json_included_array(self, response):
+        body = str(response.body.decode('utf8'))
+
+        birthIndex = body.rindex(',{&quot;birthDateOn')
+        start = body[:birthIndex].rindex('<code ')
+        end = body[start:].index('</code>') + start
+
+        while (not body[start:end].startswith('{')) and start < end:
+            start += 1
+
+        while (not body[start:end].endswith('}')) and start < end:
+            end -= 1
+        
+        if start >= end:
+            whiteprint('ERRO em get_big_json_included_array: não foi possivel obter dados do usuário em %s' % response.url)
+            return None
+
+        return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')["included"]
+
+    def get_object_by_type(self, included_array, type):
+        array = []
+        for obj in included_array:
+            if obj['$type'] == type:
+                array.append(obj)
+        return array
+
     def get_user_data_string(self, response):
         body = response.body.decode('utf8')
         user_data_string = '{&quot;birthDateOn' + str(body).split(',{&quot;birthDateOn')[-1]
@@ -485,24 +511,29 @@ class LinkedinSpider(InitSpider):
         else:
             page_exists = True
 
-            filename = 'profile-%s.json' % response.url.split("/")[4]
+            # save_to_file(
+            #     response.url.split('/')[4] + '.html',
+            #     response.body
+            # )
 
-            user_data_string = self.get_user_data_string(response)
+            included_array = self.get_big_json_included_array(response)
 
-            if user_data_string != None:
-                user_data = parse_text_to_json(user_data_string, unicode_dict, filename)
+            if included_array != None:
 
-                if user_data is not None:
-                    user_dict = {
-                        'first_name': user_data['firstName'],
-                        'last_name': user_data['lastName'],
-                        'occupation': user_data['headline'],
-                        'location': user_data['locationName'],
-                        'about': user_data['summary'],
-                    }
-                    checkprint('%sParsing corretamente realizado em %s\n' % (counter, response.url))
-                else:
-                    errorprint('%sErro no parsing de %s\n' % (counter, response.url))
+                user_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.identity.profile.Profile')[0]
+
+                user_dict = {
+                    'first_name': user_data['firstName'],
+                    'last_name': user_data['lastName'],
+                    'occupation': user_data['headline'],
+                    'location': user_data['locationName'],
+                    'about': user_data['summary'],
+                }
+
+                checkprint('%sParsing corretamente realizado em %s\n' % (counter, response.url))
+
+            else:
+                errorprint('%sErro no parsing de %s\n' % (counter, response.url))
 
         self.write_on_workbook(response.url, user_dict, page_exists)
 
