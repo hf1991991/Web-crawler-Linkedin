@@ -301,6 +301,10 @@ class LinkedinSpider(InitSpider):
                         if text == None:
                             text = '---'
                         links_sheet['%s%i' % (column, line)] = text
+                    column = 'I'
+                    for event in user_dict['timeline']:
+                        links_sheet['%s%i' % (column, line)] = self.format_timeline_event(event)
+                        column = get_next_column(column)
                 elif not page_exists:
                     links_sheet['B%i' % line] = 'Não é uma pessoa'
                 else:
@@ -453,6 +457,11 @@ class LinkedinSpider(InitSpider):
             whiteprint('ERRO em get_big_json_included_array: não foi possivel obter dados do usuário em %s' % response.url)
             return None
 
+        save_to_file(
+            response.url.split('/')[4] + '.html',
+            convert_unicode(body[start:end], unicode_dict)
+        )
+
         return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')["included"]
 
     def get_object_by_type(self, included_array, type):
@@ -462,20 +471,72 @@ class LinkedinSpider(InitSpider):
                 array.append(obj)
         return array
 
-    def get_user_data_string(self, response):
-        body = response.body.decode('utf8')
-        user_data_string = '{&quot;birthDateOn' + str(body).split(',{&quot;birthDateOn')[-1]
-        end = 1
-        partial = user_data_string[:end]
-        while (partial.count('{') != partial.count('}')) and (partial.count('{') < 200) and (len(user_data_string) > end):
-            end += 1
-            partial = user_data_string[:end]
-            # if partial.endswith('{') or partial.endswith('}'):
-            #     whiteprint(partial.count('{'), partial.count('}'))
-        if partial.count('{') != partial.count('}'):
-            whiteprint('ERRO em get_user_data_string: não foi possivel obter dados do usuário em %s' % response.url)
-            return None
-        return partial
+    def convert_date_range(self, date_range):
+        if date_range is None:
+            return ''
+
+        def convert_date(date):
+            meses = {
+                1: 'jan.',
+                2: 'fev.',
+                3: 'mar.',
+                4: 'abr.',
+                5: 'mai.',
+                6: 'jun.',
+                7: 'jul.',
+                8: 'ago.',
+                9: 'set.',
+                10: 'out.',
+                11: 'nov.',
+                12: 'dez.',
+            }
+            return '%s de %i' % (meses[date['month']], date['year']) if 'month' in date else str(date['year'])
+
+        return '(%s - %s) ' % (convert_date(date_range['start']), convert_date(date_range['end']) if 'end' in date_range else 'o momento')
+
+    def format_timeline_event(self, event):
+
+        def get_text(event):
+            text = ''
+
+            if event['type'] == 'com.linkedin.voyager.dash.identity.profile.Education':
+                if (not event['degree_name'] is None) and (not event['field_of_study'] is None):
+                    text = "Estudou em '%s', obtendo o título de '%s' em '%s'." % (event['school_name'], event['degree_name'], event['field_of_study'])
+                elif (event['degree_name'] is None) and (not event['field_of_study'] is None):
+                    text = "Estudou '%s' em '%s'." % (event['field_of_study'], event['school_name'])
+                else:
+                    text = "Estudou em '%s'." % event['school_name']
+
+            elif event['type'] == 'com.linkedin.voyager.dash.identity.profile.Position':
+                if (not event['title'] is None):
+                    text = "Trabalhou em '%s' como '%s'." % (event['company_name'], event['title'])
+                else:
+                    text = "Trabalhou em '%s'." % event['company_name']
+
+            elif event['type'] == 'com.linkedin.voyager.dash.identity.profile.VolunteerExperience':
+                if (not event['role'] is None):
+                    text = "Trabalhou como voluntário(a) em '%s' como '%s'." % (event['company_name'], event['role'])
+                else:
+                    text = "Trabalhou como voluntário(a) em '%s'." % event['company_name']
+
+            return text
+
+        return '%s%s' % (self.convert_date_range(event['date_range']), get_text(event))
+
+    # def get_user_data_string(self, response):
+    #     body = response.body.decode('utf8')
+    #     user_data_string = '{&quot;birthDateOn' + str(body).split(',{&quot;birthDateOn')[-1]
+    #     end = 1
+    #     partial = user_data_string[:end]
+    #     while (partial.count('{') != partial.count('}')) and (partial.count('{') < 200) and (len(user_data_string) > end):
+    #         end += 1
+    #         partial = user_data_string[:end]
+    #         # if partial.endswith('{') or partial.endswith('}'):
+    #         #     whiteprint(partial.count('{'), partial.count('}'))
+    #     if partial.count('{') != partial.count('}'):
+    #         whiteprint('ERRO em get_user_data_string: não foi possivel obter dados do usuário em %s' % response.url)
+    #         return None
+    #     return partial
 
     def parse(self, response):
         user_dict = None
@@ -521,14 +582,52 @@ class LinkedinSpider(InitSpider):
             if included_array != None:
 
                 user_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.identity.profile.Profile')[0]
+                education_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.identity.profile.Education')
+                positions_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.identity.profile.Position')
+                volunteer_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.identity.profile.VolunteerExperience')
+                skills_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.identity.profile.Skill')
+                honors_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.identity.profile.Honor')
+                projects_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.identity.profile.Project')
+                industries_data = self.get_object_by_type(included_array, 'com.linkedin.voyager.dash.common.Industry')
 
                 user_dict = {
-                    'first_name': user_data['firstName'],
-                    'last_name': user_data['lastName'],
-                    'occupation': user_data['headline'],
-                    'location': user_data['locationName'],
-                    'about': user_data['summary'],
+                    'first_name': user_data['firstName'] if 'firstName' in user_data else None,
+                    'last_name': user_data['lastName'] if 'lastName' in user_data else None,
+                    'occupation': user_data['headline'] if 'headline' in user_data else None,
+                    'location': user_data['locationName'] if 'locationName' in user_data else None,
+                    'about': user_data['summary'] if 'summary' in user_data else None,
+                    'timeline': []
                 }
+
+                for experience in education_data:
+                    user_dict['timeline'].append({
+                        'school_name': experience['schoolName'] if 'schoolName' in experience else None,
+                        'field_of_study': experience['fieldOfStudy'] if 'fieldOfStudy' in experience else None,
+                        'degree_name': experience['degreeName'] if 'degreeName' in experience else None,
+                        'date_range': experience['dateRange'] if 'dateRange' in experience else None,
+                        'type': 'com.linkedin.voyager.dash.identity.profile.Education'
+                    })
+
+                for experience in positions_data:
+                    user_dict['timeline'].append({
+                        'company_name': experience['companyName'] if 'companyName' in experience else None,
+                        'title': experience['title'] if 'title' in experience else None,
+                        'description': experience['description'] if 'description' in experience else None,
+                        'date_range': experience['dateRange'] if 'dateRange' in experience else None,
+                        'type': 'com.linkedin.voyager.dash.identity.profile.Position'
+                    })
+
+                for experience in volunteer_data:
+                    user_dict['timeline'].append({
+                        'company_name': experience['companyName'] if 'companyName' in experience else None,
+                        'role': experience['role'] if 'role' in experience else None,
+                        'description': experience['description'] if 'description' in experience else None,
+                        'cause': experience['cause'] if 'cause' in experience else None,
+                        'date_range': experience['dateRange'] if 'dateRange' in experience else None,
+                        'type': 'com.linkedin.voyager.dash.identity.profile.VolunteerExperience'
+                    })
+
+                user_dict['timeline'].sort(key=cmp_to_key(date_range_compare))
 
                 checkprint('%sParsing corretamente realizado em %s\n' % (counter, response.url))
 
@@ -566,3 +665,42 @@ def save_to_file(filename, element):
     with open(filename, 'wb') as f:
         f.write(str.encode(str(element)))
     whiteprint('\n💽 Texto salvo como %s\n' % filename)
+
+def date_range_compare(a, b):
+    if a['date_range'] is None:
+        return -1
+    elif b['date_range'] is None:
+        return 1
+    elif a['date_range']['start']['year'] < b['date_range']['start']['year']:
+        return -1
+    elif a['date_range']['start']['year'] > b['date_range']['start']['year']:
+        return 1
+    elif (not 'month' in a['date_range']['start']) or (not 'month' in b['date_range']['start']):
+        return -1
+    elif a['date_range']['start']['month'] < b['date_range']['start']['month']:
+        return -1
+    else:
+        return 1
+
+def cmp_to_key(mycmp):
+    'Convert a cmp= function into a key= function'
+    class K:
+        def __init__(self, obj, *args):
+            self.obj = obj
+        def __lt__(self, other):
+            return mycmp(self.obj, other.obj) < 0
+        def __gt__(self, other):
+            return mycmp(self.obj, other.obj) > 0
+        def __eq__(self, other):
+            return mycmp(self.obj, other.obj) == 0
+        def __le__(self, other):
+            return mycmp(self.obj, other.obj) <= 0
+        def __ge__(self, other):
+            return mycmp(self.obj, other.obj) >= 0
+        def __ne__(self, other):
+            return mycmp(self.obj, other.obj) != 0
+    return K
+
+def get_next_column(column):
+    if len(column) == 0: return 'A'
+    return (column[:-1] + chr(ord(column[-1]) + 1) if column[-1] != 'Z' else '%sA' % get_next_column(column[:-1]))
