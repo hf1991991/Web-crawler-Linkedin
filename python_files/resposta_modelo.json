@@ -1,0 +1,107 @@
+{
+    "empresas" : [
+        {
+            "nome": "string", // Ex.: "Centro de Análise de Dados LTDA"
+            "funcionarios": [
+                {
+                    "nome": "string",
+                    "sobrenome": "string",
+                    "cargo_atual": "string",
+                    "localizacao_atual": "string",
+                    "sobre": "string", // Ex.: "Sou um Analista de Dados"
+                    "seguidores": "int",
+                    "conexoes": "int",
+                    "habilidades": [
+                        "string" // Ex.: "Analisar dados"
+                    ],
+                    "linguas": [
+                        "string" // Ex.: "Português"
+                    ],
+                    "cursos_feitos": [
+                        "string" // Ex.: "Curso de Ciência de Dados"
+                    ],
+                    "premios": [
+                        {
+                            "nome": "string", // Ex.: "Melhor Analista de Dados de 2020"
+                            "instituicao": "string", // Ex.: "Instituição Internacional de Ciência de Dados"
+                            "descricao": "string", // Ex.: "Ganhei esse prêmio por conta do meu projeto de análise de dados"
+                            "data": {
+                                "mes": "int", // Se for null, o mês não foi especificado
+                                "ano": "int"
+                            }, // Se for null, a data não foi especificada
+                        }
+                    ],
+                    "estudos": [
+                        {
+                            "instituicao": "string", // Ex.: "Faculdade de Ciência de Dados"
+                            "formacao": "string", // Ex.: "Ciência de Dados"
+                            "tilulo_obtido": "string", // Ex.: "Bacharelado"
+                            "descricao": "string", // Ex.: "Aqui eu estudei Ciência de Dados"
+                            "periodo": { 
+                                "inicio": {
+                                    "mes": "int", // Se for null, o mês não foi especificado
+                                    "ano": "int"
+                                },
+                                "fim": {
+                                    "mes": "int", // Se for null, o mês não foi especificado
+                                    "ano": "int"
+                                }, // Se for null, o período se extende até o momento presente
+                            }, // Se for null, o período não foi especificado
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "string", // Ex.: "Empresa de Ciência dos Dados"
+                            "cargo": "string", // Ex.: "Analista de Dados"
+                            "descricao": "string", // Ex.: "Aqui eu analisei dados"
+                            "periodo": {
+                                "inicio": {
+                                    "mes": "int",
+                                    "ano": "int"
+                                },
+                                "fim": {
+                                    "mes": "int",
+                                    "ano": "int"
+                                }
+                            }
+                        }
+                    ],
+                    "voluntariado": [
+                        {
+                            "instituicao": "string", // Ex.: "Voluntários de Ciência dos Dados"
+                            "papel": "string", // Ex.: "Analista de Dados sobre Voluntários"
+                            "causa": "string", // Ex.: "Ajuda aos necessitados"
+                            "descricao": "string", // Ex.: "Aqui eu analisei dados como voluntário"
+                            "periodo": {
+                                "inicio": {
+                                    "mes": "int",
+                                    "ano": "int"
+                                },
+                                "fim": {
+                                    "mes": "int",
+                                    "ano": "int"
+                                }
+                            }
+                        }
+                    ],
+                    "projetos": [
+                        {
+                            "titulo": "string", // Ex.: "Projeto de Ciência dos Dados"
+                            "descricao": "string", // Ex.: "Aqui eu analisei dados"
+                            "periodo": {
+                                "inicio": {
+                                    "mes": "int",
+                                    "ano": "int"
+                                },
+                                "fim": {
+                                    "mes": "int",
+                                    "ano": "int"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

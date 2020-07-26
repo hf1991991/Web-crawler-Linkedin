@@ -64,7 +64,7 @@ BIG_FONT_CELL = Font(
     size=18
 )
 
-LINKS_TABLE_STARTING_LINE = 10
+LINKS_TABLE_STARTING_LINE = 5
 USERS_TABLE_STARTING_LINE = 3
 
 
@@ -76,25 +76,20 @@ class LinkedinSpider(InitSpider):
     workbook = None
 
     only_crawl_new_links = None
-    crawl_not_a_person = None
+    crawl_not_a_company = None
 
     user_name = None
-    password = None
+    passwd = None
     user_line_on_excel = None
     possible_users = []
+    users_whole_cycles = 0
 
-    start_urls = []
-    parsed_urls = []
+    company_urls = []
+    profiles_urls = []
+    parsed_profiles = []
+    parsed_companies = []
 
     request_retries = {}
-
-    company_parsed_data = {
-        'nome': None,
-        'funcionarios': [],
-    }
-    parsed_data = {
-        'empresas': []
-    }
 
     login_page = 'https://www.linkedin.com/uas/login'
 
@@ -102,10 +97,6 @@ class LinkedinSpider(InitSpider):
         self.workbook_filename = excel_file
 
     def init_request(self):
-        # save_to_file(
-        #     'following_json.json',
-        #     convert_unicode(convert_txt, unicode_dict)
-        # )
         # Obtém os dados do excel:
         self.read_excel()
         # Arruma dados da tabela de usuários do excel:
@@ -149,7 +140,7 @@ class LinkedinSpider(InitSpider):
         self.workbook.save(self.workbook_filename)
 
     def fix_links_without_www(self):
-        links_sheet = self.workbook['Links']
+        links_sheet = self.workbook['Empresas']
         line = LINKS_TABLE_STARTING_LINE
         link = links_sheet['C%i' % line].value
         while link is not None:
@@ -164,9 +155,9 @@ class LinkedinSpider(InitSpider):
         self.workbook.save(self.workbook_filename)
 
     def check_for_duplicate_links(self):
-        for link in self.start_urls:
-            while self.start_urls.count(link) > 1:
-                self.start_urls.remove(link)
+        for link in self.company_urls:
+            while self.company_urls.count(link) > 1:
+                self.company_urls.remove(link)
                 print()
                 warnprint('Há uma cópia de link: %s' % link)
 
@@ -216,19 +207,27 @@ class LinkedinSpider(InitSpider):
         users_sheet = self.workbook['Usuários']
 
         if len(self.possible_users) == 0:
+            self.users_whole_cycles += 1
             print()
-            errorprint('Todos os usuários válidos já foram testados.\nEntre na tabela do Excel para adicionar um usuário, ou arrumar algum que tenha gerado um erro.\n')
+            if self.users_whole_cycles > 3:
+                errorprint(
+                    'Todos os usuários válidos já foram testados 3 vezes.\nEntre na tabela do Excel para adicionar um usuário, ou arrumar algum que tenha gerado um erro.\n')
+                return 'Não há mais usuários válidos para serem utilizados'
+            else:
+                warnprint('Não foi possível realizar login com nenhuma das contas funcionais.\nIniciando tentativa %i de 3.' % (
+                    self.users_whole_cycles + 1))
+                if self.get_login_data_from_workbook() is not None:
+                    return 'Error'
             self.workbook.save(self.workbook_filename)
-            return 'Não há mais usuários válidos para serem utilizados'
 
         new_user = self.possible_users.pop(0)
 
         self.user_name = new_user['email']
-        self.password = new_user['password']
+        self.passwd = new_user['password']
         self.user_line_on_excel = new_user['line']
 
         whiteprint("\nLogin em uso:\n - Email: %s\n - Senha: %s\n" %
-                   (self.user_name, self.password))
+                   (self.user_name, self.passwd))
 
         users_sheet['D%i' %
                     self.user_line_on_excel] = new_user['times_used'] + 1
@@ -238,10 +237,10 @@ class LinkedinSpider(InitSpider):
 
     def get_links_from_workbook(self):
         # whiteprint('GET_LINKS_FROM_WORKBOOK')
-        links_sheet = self.workbook['Links']
+        links_sheet = self.workbook['Empresas']
 
-        self.only_crawl_new_links = links_sheet['D5'].value == 'Sim'
-        self.crawl_not_a_person = links_sheet['D6'].value == 'Sim'
+        self.only_crawl_new_links = links_sheet['H5'].value == 'Sim'
+        self.crawl_not_a_company = links_sheet['H6'].value == 'Sim'
 
         line = LINKS_TABLE_STARTING_LINE
         link = links_sheet['C%i' % line].value
@@ -250,31 +249,41 @@ class LinkedinSpider(InitSpider):
                 ' (Cópia)', '')
             if self.only_crawl_new_links:
                 is_a_cell_empty = False
-                for column in "BDEFGH":
+                for column in "BDE":
                     if links_sheet['%s%i' % (column, line)].value == None:
                         is_a_cell_empty = True
-                if is_a_cell_empty and ((link_data_state != 'Não é uma pessoa') or self.crawl_not_a_person):
-                    self.start_urls.append(link)
+                if is_a_cell_empty and ((link_data_state != 'Não é uma empresa') or self.crawl_not_a_company):
+                    self.company_urls.append(link)
             else:
-                if (link_data_state != 'Não é uma pessoa') or self.crawl_not_a_person:
-                    self.start_urls.append(link)
+                if (link_data_state != 'Não é uma empresa') or self.crawl_not_a_company:
+                    self.company_urls.append(link)
             line += 1
             link = links_sheet['C%i' % line].value
 
-        if len(self.start_urls) == 0:
+        if len(self.company_urls) == 0:
             print()
             checkprint('Todos os links do Excel já passaram pelo scraping!\nCaso queira recarregá-los, desative a configuração de "Apenas obter dados dos links cujos campos da linha estão vazios" e salve o arquivo\n')
             return 'Sem links para scraping'
         else:
             return None
         # whiteprint("start urls:\n")
-        # whiteprint(self.start_urls)
+        # whiteprint(self.company_urls)
 
     def apply_links_sheet_style(self):
         self.apply_style_to_workbook_sheet(
-            sheet=self.workbook['Links'], verification_column='C', starting_line=LINKS_TABLE_STARTING_LINE, columns="BCDEFGH")
-        self.apply_style_to_workbook_sheet(sheet=self.workbook['Links'], alignment=CENTER_CELL_ALIGNMENT,
-                                           font=BIG_FONT_CELL, verification_column='C', starting_line=LINKS_TABLE_STARTING_LINE, columns="B")
+            sheet=self.workbook['Empresas'], 
+            verification_column='C', 
+            starting_line=LINKS_TABLE_STARTING_LINE, 
+            columns="BCDE"
+        )
+        self.apply_style_to_workbook_sheet(
+            sheet=self.workbook['Empresas'], 
+            alignment=CENTER_CELL_ALIGNMENT,
+            font=BIG_FONT_CELL, 
+            verification_column='C', 
+            starting_line=LINKS_TABLE_STARTING_LINE, 
+            columns="B"
+        )
 
     def apply_users_sheet_style(self):
         self.apply_style_to_workbook_sheet(
@@ -296,7 +305,7 @@ class LinkedinSpider(InitSpider):
 
     def write_on_workbook(self, url, user_dict, page_exists):
         # whiteprint('WRITE_ON_WORKBOOK')
-        links_sheet = self.workbook['Links']
+        links_sheet = self.workbook['Empresas']
 
         column_association = {
             'D': 'first_name',
@@ -320,8 +329,13 @@ class LinkedinSpider(InitSpider):
                         if text == None:
                             text = '---'
                         links_sheet['%s%i' % (column, line)] = text
+                    # column = 'I'
+                    # for event in user_dict['timeline']:
+                    #     links_sheet['%s%i' % (
+                    #         column, line)] = self.format_timeline_event(event)
+                    #     column = get_next_column(column)
                 elif not page_exists:
-                    links_sheet['B%i' % line] = 'Não é uma pessoa'
+                    links_sheet['B%i' % line] = 'Não é uma empresa'
                 else:
                     links_sheet['B%i' % line] = 'Não'
                 link_count += 1
@@ -342,7 +356,7 @@ class LinkedinSpider(InitSpider):
             response,
             formdata={
                 'session_key': self.user_name,
-                'session_password': self.password,
+                'session_password': self.passwd,
             },
             callback=self.check_login_response,
             meta={
@@ -452,15 +466,69 @@ class LinkedinSpider(InitSpider):
 
     def start_requests_without_proxy_change(self):
         # whiteprint('START_SPLASH_REQUESTS')
-        for url in self.start_urls:
+        for url in self.company_urls:
             # O seguinte código faz com que todos os Requests depois do login não mudem de proxy:
             yield Request(
                 url=url,
-                callback=self.parse,
+                callback=self.parse_company,
                 meta={
                     'proxy': None
                 }
             )
+
+    def get_big_json_included_array(self, response):
+        body = str(response.body.decode('utf8'))
+
+        birthIndex = body.rindex(',{&quot;birthDateOn')
+        start = body[:birthIndex].rindex('<code ')
+        end = body[start:].index('</code>') + start
+
+        while (not body[start:end].startswith('{')) and start < end:
+            start += 1
+
+        while (not body[start:end].endswith('}')) and start < end:
+            end -= 1
+
+        if start >= end:
+            whiteprint(
+                'ERRO em get_big_json_included_array: não foi possivel obter dados do usuário em %s' % response.url)
+            return None
+
+        save_to_file(
+            response.url.split('/')[4] + '.html',
+            convert_unicode(body[start:end], unicode_dict)
+        )
+
+        return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')["included"]
+
+    def get_company_employees_included_array(self, response):
+        body = str(response.body.decode('utf8'))
+
+        birthIndex = body.rindex('&quot;navigationUrl&quot;:')
+        start = body[:birthIndex].rindex('<code ')
+        end = body[start:].index('</code>') + start
+
+        while (not body[start:end].startswith('{')) and start < end:
+            start += 1
+
+        while (not body[start:end].endswith('}')) and start < end:
+            end -= 1
+
+        if start >= end:
+            whiteprint(
+                'ERRO em get_company_employees_included_array: não foi possivel obter dados dos funcionarios em %s' % response.url)
+            return None
+
+        # save_to_file(
+        #     response.url.split('/')[4] + '.html',
+        #     convert_unicode(body[start:end], unicode_dict)
+        # )
+
+        return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')["included"]
+
+    def get_company_empolyees_urls(self, included_array):
+        employees_urls = []
+        return employees_urls
 
     def get_big_json_included_array(self, response):
         body = str(response.body.decode('utf8'))
@@ -487,31 +555,6 @@ class LinkedinSpider(InitSpider):
 
         return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')["included"]
 
-    def get_following_json_dictionary(self, response):
-        body = str(response.body.decode('utf8'))
-
-        birthIndex = body.rindex('&quot;followersCount&quot;:')
-        start = body[:birthIndex].rindex('<code ')
-        end = body[start:].index('</code>') + start
-
-        while (not body[start:end].startswith('{')) and start < end:
-            start += 1
-
-        while (not body[start:end].endswith('}')) and start < end:
-            end -= 1
-
-        if start >= end:
-            whiteprint(
-                'ERRO em get_following_json_dictionary: não foi possivel obter dados do usuário em %s' % response.url)
-            return None
-
-        # save_to_file(
-        #     response.url.split('/')[4] + '.html',
-        #     convert_unicode(body[start:end], unicode_dict)
-        # )
-
-        return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')
-
     def get_object_by_type(self, included_array, obj_type):
         array = []
         for obj in included_array:
@@ -519,31 +562,17 @@ class LinkedinSpider(InitSpider):
                 array.append(obj)
         return array
 
-    def convert_date(self, date):
-        return {
-                'mes': date['month'] if 'month' in date else None,
-                'ano': date['year'] if 'year' in date else None
-            } if date is not None else None,
+    def parse_company(self, response):
+        employees_list = self.get_company_empolyees_urls(response)
+        # return Request(url=response.url, callback=self.parse, dont_filter=True)
 
-    def convert_date_range(self, date_range):
-        return {
-            'inicio': self.convert_date((date_range['start']) if ('start' in date_range) else None),
-            'fim': self.convert_date((date_range['end']) if ('end' in date_range) else None)
-        } if date_range is not None else None
-
-    def format_conections(self, connections):
-        return {
-            'numero_exato': connections if connections != 500 else None,
-            'minimo': connections if connections == 500 else None
-        }
-
-    def parse(self, response):
+    def parse_profile(self, response):
         user_dict = None
         page_exists = False
 
-        self.parsed_urls.append(response.url)
+        self.parsed_profiles.append(response.url)
 
-        counter = '(%i/%i) ' % (len(self.parsed_urls), len(self.start_urls))
+        counter = '(%i/%i) ' % (len(self.parsed_profiles), len(self.company_urls))
 
         print()
 
@@ -561,21 +590,18 @@ class LinkedinSpider(InitSpider):
             self.request_retries[str(response.url)] = retries + 1
 
             if retries < 1:
-                self.start_urls.append(response.url)
+                self.company_urls.append(response.url)
                 warnprint('%sErro no parsing de %s\nAdicionando novamente à fila de links...\n' % (
                     counter, response.url))
                 return Request(url=response.url, callback=self.parse, dont_filter=True)
             else:
                 errorprint('%sEste provavelmente não é um link de um perfil: %s' % (
                     counter, response.url))
-                if not self.crawl_not_a_person:
+                if not self.crawl_not_a_company:
                     whiteprint(
-                        'Caso seja, volte para o Excel e habilite a configuração "Tentar obter dados de páginas que foram marcadas como \'Não é uma pessoa\'\n')
+                        'Caso seja, volte para o Excel e habilite a configuração "Tentar obter dados de páginas que foram marcadas como \'Não é uma empresa\'\n')
 
         else:
-
-            # try:
-
             page_exists = True
 
             # save_to_file(
@@ -585,121 +611,81 @@ class LinkedinSpider(InitSpider):
 
             included_array = self.get_big_json_included_array(response)
 
-            if included_array is None:
-                raise Exception('Erro com included_array')
+            if included_array != None:
 
-            following_json = self.get_following_json_dictionary(response)
+                user_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.Profile')[0]
+                education_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.Education')
+                positions_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.Position')
+                volunteer_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.VolunteerExperience')
+                skills_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.Skill')
+                honors_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.Honor')
+                projects_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.Project')
+                # industries_data = self.get_object_by_type(
+                #     included_array, 'com.linkedin.voyager.dash.common.Industry')
+                courses_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.Course')
+                languages_data = self.get_object_by_type(
+                    included_array, 'com.linkedin.voyager.dash.identity.profile.Language')
 
-            if following_json is None:
-                raise Exception('Erro com following_json')
+                # Itens que não estão em big_json:
+                # com.linkedin.voyager.common.FollowingInfo
 
-            user_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.Profile')[0]
-            education_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.Education')
-            positions_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.Position')
-            volunteer_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.VolunteerExperience')
-            skills_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.Skill')
-            honors_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.Honor')
-            projects_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.Project')
-            courses_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.Course')
-            languages_data = self.get_object_by_type(
-                included_array, 'com.linkedin.voyager.dash.identity.profile.Language')
+                user_dict = {
+                    'first_name': user_data['firstName'] if 'firstName' in user_data else None,
+                    'last_name': user_data['lastName'] if 'lastName' in user_data else None,
+                    'occupation': user_data['headline'] if 'headline' in user_data else None,
+                    'location': user_data['locationName'] if 'locationName' in user_data else None,
+                    'about': user_data['summary'] if 'summary' in user_data else None,
+                    'timeline': []
+                }
 
-            # Itens que não estão em big_json:
-            # com.linkedin.voyager.common.FollowingInfo
+                for experience in education_data:
+                    user_dict['timeline'].append({
+                        'school_name': experience['schoolName'] if 'schoolName' in experience else None,
+                        'field_of_study': experience['fieldOfStudy'] if 'fieldOfStudy' in experience else None,
+                        'degree_name': experience['degreeName'] if 'degreeName' in experience else None,
+                        'date_range': experience['dateRange'] if 'dateRange' in experience else None,
+                        'type': 'com.linkedin.voyager.dash.identity.profile.Education'
+                    })
 
-            user_dict = {
-                'nome': user_data['firstName'] if 'firstName' in user_data else None,
-                'sobrenome': user_data['lastName'] if 'lastName' in user_data else None,
-                'cargo_atual': user_data['headline'] if 'headline' in user_data else None,
-                'localizacao_atual': user_data['locationName'] if 'locationName' in user_data else None,
-                'sobre': user_data['summary'] if 'summary' in user_data else None,
-                'seguidores': following_json['data']['followersCount'],
-                'conexoes': self.format_conections(following_json['data']['connectionsCount']),
-                'habilidades': [skill['name'] for skill in skills_data],
-                'linguas': [language['name'] for language in languages_data],
-                'cursos_feitos': [course['name'] for course in courses_data],
-                'premios': [
-                    {
-                        'nome': honor['title'] if 'title' in honor else None,
-                        'instituicao': honor['issuer'] if 'issuer' in honor else None,
-                        'descricao': honor['description'] if 'description' in honor else None,
-                        'data': self.convert_date(
-                            honor['issuedOn'] if 'issuedOn' in honor else None,
-                        )
-                    } for honor in honors_data
-                ],
-                'estudos': [
-                    {
-                        'instituicao': experience['schoolName'] if 'schoolName' in experience else None,
-                        'formacao': experience['fieldOfStudy'] if 'fieldOfStudy' in experience else None,
-                        'tilulo_obtido': experience['degreeName'] if 'degreeName' in experience else None,
-                        'descricao': experience['description'] if 'description' in experience else None,
-                        'periodo': self.convert_date_range(
-                            experience['dateRange'] if 'dateRange' in experience else None
-                        ),
-                    } for experience in education_data
-                ],
-                'experiencia_profissional': [
-                    {
-                        'instituicao': experience['companyName'] if 'companyName' in experience else None,
-                        'cargo': experience['title'] if 'title' in experience else None,
-                        'descricao': experience['description'] if 'description' in experience else None,
-                        'periodo': self.convert_date_range(
-                            experience['dateRange'] if 'dateRange' in experience else None
-                        ),
-                    } for experience in positions_data
-                ],
-                'voluntariado': [
-                    {
-                        'instituicao': experience['companyName'] if 'companyName' in experience else None,
-                        'papel': experience['role'] if 'role' in experience else None,
-                        'causa': experience['cause'] if 'cause' in experience else None,
-                        'descricao': experience['description'] if 'description' in experience else None,
-                        'periodo': self.convert_date_range(
-                            experience['dateRange'] if 'dateRange' in experience else None
-                        ),
-                    } for experience in volunteer_data
-                ],
-                'projetos': [
-                    {
-                        'titulo': project['title'],
-                        'url': project['url'],
-                        'descricao': project['description'],
-                        'periodo': self.convert_date_range(
-                            project['dateRange']
-                        )
-                    } for project in projects_data
-                ],
-                'dados_obtidos': True
-            }
+                for experience in positions_data:
+                    user_dict['timeline'].append({
+                        'company_name': experience['companyName'] if 'companyName' in experience else None,
+                        'title': experience['title'] if 'title' in experience else None,
+                        'description': experience['description'] if 'description' in experience else None,
+                        'date_range': experience['dateRange'] if 'dateRange' in experience else None,
+                        'type': 'com.linkedin.voyager.dash.identity.profile.Position'
+                    })
 
-            checkprint('%sParsing corretamente realizado em %s\n' %
-                    (counter, response.url))
+                for experience in volunteer_data:
+                    user_dict['timeline'].append({
+                        'company_name': experience['companyName'] if 'companyName' in experience else None,
+                        'role': experience['role'] if 'role' in experience else None,
+                        'description': experience['description'] if 'description' in experience else None,
+                        'cause': experience['cause'] if 'cause' in experience else None,
+                        'date_range': experience['dateRange'] if 'dateRange' in experience else None,
+                        'type': 'com.linkedin.voyager.dash.identity.profile.VolunteerExperience'
+                    })
 
-            # except Exception:
+                user_dict['timeline'].sort(key=cmp_to_key(date_range_compare))
 
-                # user_dict = {
-                #     'dados_obtidos': False
-                # }
+                checkprint('%sParsing corretamente realizado em %s\n' %
+                           (counter, response.url))
 
-                # errorprint('%sErro no parsing de %s\n' % (counter, response.url))
+            else:
+                errorprint('%sErro no parsing de %s\n' %
+                           (counter, response.url))
 
-        # print(user_dict)
+        print(user_dict)
 
-        self.company_parsed_data['funcionarios'].append(user_dict)
-
-        save_to_file(
-            'company_parsed_data.json',
-            json.dumps(self.company_parsed_data),
-        )
+        # self.write_on_workbook(response.url, user_dict, page_exists)
 
 
 def parse_text_to_json(text, replacements, filename):
@@ -736,35 +722,50 @@ def save_to_file(filename, element):
     whiteprint('\n💽 Texto salvo como %s\n' % filename)
 
 
-# def cmp_to_key(mycmp):
-#     'Convert a cmp= function into a key= function'
-#     class K:
-#         def __init__(self, obj, *args):
-#             self.obj = obj
+def date_range_compare(a, b):
+    if a['date_range'] is None:
+        return -1
+    elif b['date_range'] is None:
+        return 1
+    elif a['date_range']['start']['year'] < b['date_range']['start']['year']:
+        return -1
+    elif a['date_range']['start']['year'] > b['date_range']['start']['year']:
+        return 1
+    elif (not 'month' in a['date_range']['start']) or (not 'month' in b['date_range']['start']):
+        return -1
+    elif a['date_range']['start']['month'] < b['date_range']['start']['month']:
+        return -1
+    else:
+        return 1
 
-#         def __lt__(self, other):
-#             return mycmp(self.obj, other.obj) < 0
 
-#         def __gt__(self, other):
-#             return mycmp(self.obj, other.obj) > 0
+def cmp_to_key(mycmp):
+    'Convert a cmp= function into a key= function'
+    class K:
+        def __init__(self, obj, *args):
+            self.obj = obj
 
-#         def __eq__(self, other):
-#             return mycmp(self.obj, other.obj) == 0
+        def __lt__(self, other):
+            return mycmp(self.obj, other.obj) < 0
 
-#         def __le__(self, other):
-#             return mycmp(self.obj, other.obj) <= 0
+        def __gt__(self, other):
+            return mycmp(self.obj, other.obj) > 0
 
-#         def __ge__(self, other):
-#             return mycmp(self.obj, other.obj) >= 0
+        def __eq__(self, other):
+            return mycmp(self.obj, other.obj) == 0
 
-#         def __ne__(self, other):
-#             return mycmp(self.obj, other.obj) != 0
-#     return K
+        def __le__(self, other):
+            return mycmp(self.obj, other.obj) <= 0
+
+        def __ge__(self, other):
+            return mycmp(self.obj, other.obj) >= 0
+
+        def __ne__(self, other):
+            return mycmp(self.obj, other.obj) != 0
+    return K
 
 
 def get_next_column(column):
     if len(column) == 0:
         return 'A'
     return (column[:-1] + chr(ord(column[-1]) + 1) if column[-1] != 'Z' else '%sA' % get_next_column(column[:-1]))
-
-convert_txt = '{&quot;data&quot;:{&quot;distance&quot;:{&quot;value&quot;:&quot;OUT_OF_NETWORK&quot;,&quot;$type&quot;:&quot;com.linkedin.voyager.common.MemberDistance&quot;},&quot;entityUrn&quot;:&quot;urn:li:fs_profileNetworkInfo:ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q&quot;,&quot;following&quot;:false,&quot;followable&quot;:true,&quot;*followingInfo&quot;:&quot;urn:li:fs_followingInfo:urn:li:member:ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q&quot;,&quot;followersCount&quot;:9941,&quot;connectionsCount&quot;:500,&quot;$type&quot;:&quot;com.linkedin.voyager.identity.profile.ProfileNetworkInfo&quot;},&quot;included&quot;:[{&quot;entityUrn&quot;:&quot;urn:li:fs_followingInfo:urn:li:member:ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q&quot;,&quot;following&quot;:false,&quot;trackingUrn&quot;:&quot;urn:li:member:92568142&quot;,&quot;followerCount&quot;:9941,&quot;followingCount&quot;:null,&quot;$type&quot;:&quot;com.linkedin.voyager.common.FollowingInfo&quot;}]}'

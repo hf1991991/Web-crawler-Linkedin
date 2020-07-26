@@ -1,0 +1,25 @@
+{
+    "data": {
+        "distance": {
+            "value": "OUT_OF_NETWORK",
+            "$type": "com.linkedin.voyager.common.MemberDistance"
+        },
+        "entityUrn": "urn:li:fs_profileNetworkInfo:ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q",
+        "following": false,
+        "followable": true,
+        "*followingInfo": "urn:li:fs_followingInfo:urn:li:member:ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q",
+        "followersCount": 9941,
+        "connectionsCount": 500,
+        "$type": "com.linkedin.voyager.identity.profile.ProfileNetworkInfo"
+    },
+    "included": [
+        {
+            "entityUrn": "urn:li:fs_followingInfo:urn:li:member:ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q",
+            "following": false,
+            "trackingUrn": "urn:li:member:92568142",
+            "followerCount": 9941,
+            "followingCount": null,
+            "$type": "com.linkedin.voyager.common.FollowingInfo"
+        }
+    ]
+}
