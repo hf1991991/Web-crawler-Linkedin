@@ -6,6 +6,6 @@
     "paths": {
         "companies_excel": "../macos_executable/Empresas.xlsx",
         "cookies": "../macos_executable/cookies.txt",
-        "employees_json": "../python_files/company_parsed_data.json"
+        "employees_json": "../macos_executable/company_parsed_data.json"
     }
 }
