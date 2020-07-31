@@ -1,0 +1,58 @@
+{
+    "data": {
+        "entityUrn": "urn:li:collectionResponse:o9GJFasgWVXRnVYFUpM7WkF25fE+VKI79BFikO9QNlY=",
+        "paging": {
+            "count": 10,
+            "start": 0,
+            "links": []
+        },
+        "*elements": [
+            "urn:li:fs_normalized_company:614213"
+        ],
+        "$type": "com.linkedin.restli.common.CollectionResponse"
+    },
+    "meta": {
+        "microSchema": {
+            "com.linkedin.voyager.deco.organization.web.WebCompanyStockQuote": {
+                "fields": {
+                    "entityUrn": "string",
+                    "stockQuotes": {
+                        "array": "string"
+                    },
+                    "stockQuotesResolutionResults": {
+                        "map": "com.linkedin.voyager.organization.WebFullCompanyStockQuote"
+                    }
+                },
+                "baseType": "com.linkedin.voyager.organization.Company"
+            },
+            "com.linkedin.voyager.organization.WebFullCompanyStockQuote": {
+                "fields": {
+                    "priceChange": "float",
+                    "stockExchange": "string",
+                    "highestPrice": "float",
+                    "lowestPrice": "float",
+                    "disclaimerUrl": "string",
+                    "timeOfLastSale": "long",
+                    "openingPrice": "float",
+                    "stockSymbol": "string",
+                    "entityUrn": "string",
+                    "currency": "string",
+                    "priceChangePercentage": "float",
+                    "providerName": "string",
+                    "lastPrice": "float"
+                },
+                "baseType": "com.linkedin.voyager.organization.CompanyStockQuote"
+            }
+        }
+    },
+    "included": [
+        {
+            "stockQuotes": [],
+            "entityUrn": "urn:li:fs_normalized_company:614213",
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.web.WebCompanyStockQuote"
+            ],
+            "$type": "com.linkedin.voyager.organization.Company"
+        }
+    ]
+}

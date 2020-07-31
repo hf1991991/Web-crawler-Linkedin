@@ -1,0 +1,723 @@
+{
+    "data": {
+        "entityUrn": "urn:li:collectionResponse:7ej0SI/IaWLN3lF7fw5jGaOMjZa4FzaVhdxY+ALA6b0=",
+        "paging": {
+            "count": 10,
+            "start": 0,
+            "links": []
+        },
+        "*elements": [
+            "urn:li:fs_normalized_company:614213"
+        ],
+        "$type": "com.linkedin.restli.common.CollectionResponse"
+    },
+    "meta": {
+        "microSchema": {
+            "version": "2",
+            "types": {
+                "com.linkedin.voyager.deco.organization.web.WebCompanyCard": {
+                    "fields": {
+                        "followingInfo": {
+                            "type": "com.linkedin.voyager.common.FollowingInfo"
+                        },
+                        "school": {
+                            "type": "string"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "paidCompany": {
+                            "type": "boolean"
+                        },
+                        "showcase": {
+                            "type": "boolean"
+                        },
+                        "logo": {
+                            "type": "com.linkedin.voyager.organization.CompanyLogoImage"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "universalName": {
+                            "type": "string"
+                        },
+                        "companyIndustries": {
+                            "type": {
+                                "array": "com.linkedin.voyager.common.Industry"
+                            }
+                        },
+                        "url": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.Company"
+                },
+                "com.linkedin.voyager.deco.organization.web.WebMemberViewerPermissions": {
+                    "fields": {
+                        "canReadOrganizationVisitorAnalytics": {
+                            "type": "boolean"
+                        },
+                        "canReadPipelineBuilderAdminPage": {
+                            "type": "boolean"
+                        },
+                        "canCreateComment": {
+                            "type": "boolean"
+                        },
+                        "canDeleteShare": {
+                            "type": "boolean"
+                        },
+                        "canCreateOrganicShare": {
+                            "type": "boolean"
+                        },
+                        "canEnableCommentsShare": {
+                            "type": "boolean"
+                        },
+                        "canDisableCommentsShare": {
+                            "type": "boolean"
+                        },
+                        "canCreateReaction": {
+                            "type": "boolean"
+                        },
+                        "canDeleteDarkShare": {
+                            "type": "boolean"
+                        },
+                        "canUntagFromMention": {
+                            "type": "boolean"
+                        },
+                        "canSeeOrganizationAdministrativePage": {
+                            "type": "boolean"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.OrganizationPermissions"
+                },
+                "com.linkedin.voyager.deco.organization.web.WebFullCompanyMain": {
+                    "fields": {
+                        "viewerPermissions": {
+                            "type": "com.linkedin.voyager.deco.organization.web.WebMemberViewerPermissions"
+                        },
+                        "videosTabVisible": {
+                            "type": "boolean"
+                        },
+                        "partnerLogo": {
+                            "type": "com.linkedin.voyager.common.MediaProcessorImage"
+                        },
+                        "staffingCompany": {
+                            "type": "boolean"
+                        },
+                        "companyIndustries": {
+                            "type": {
+                                "array": "com.linkedin.voyager.common.Industry"
+                            }
+                        },
+                        "callToAction": {
+                            "type": "com.linkedin.voyager.organization.OrganizationCallToAction"
+                        },
+                        "staffCount": {
+                            "type": "int"
+                        },
+                        "companyEmployeesSearchPageUrl": {
+                            "type": "string"
+                        },
+                        "viewerFollowingJobsUpdates": {
+                            "type": "boolean"
+                        },
+                        "adsRule": {
+                            "type": "string"
+                        },
+                        "myCompanyVisible": {
+                            "type": "boolean"
+                        },
+                        "acquirerCompany": {
+                            "type": "string"
+                        },
+                        "school": {
+                            "type": "string"
+                        },
+                        "staffCountRange": {
+                            "type": "com.linkedin.voyager.organization.shared.StaffCountRange"
+                        },
+                        "permissions": {
+                            "type": "com.linkedin.voyager.organization.CompanyPermissions"
+                        },
+                        "logo": {
+                            "type": "com.linkedin.voyager.organization.CompanyLogoImage"
+                        },
+                        "partnerLogoImage": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "claimable": {
+                            "type": "boolean"
+                        },
+                        "affiliatedCompaniesResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.WebCompanyCard"
+                            },
+                            "resolvedFrom": "affiliatedCompanies"
+                        },
+                        "specialities": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "confirmedLocations": {
+                            "type": {
+                                "array": "com.linkedin.voyager.organization.OrganizationAddress"
+                            }
+                        },
+                        "eligibleForOnlineJobPostingEntry": {
+                            "type": "boolean"
+                        },
+                        "salesNavigatorCompanyUrl": {
+                            "type": "string"
+                        },
+                        "followingInfo": {
+                            "type": "com.linkedin.voyager.common.FollowingInfo"
+                        },
+                        "affiliatedCompaniesWithEmployeesRollupResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.WebCompanyCard"
+                            },
+                            "resolvedFrom": "affiliatedCompaniesWithEmployeesRollup"
+                        },
+                        "versionTag": {
+                            "type": "string"
+                        },
+                        "viewerEmployee": {
+                            "type": "boolean"
+                        },
+                        "affiliatedCompaniesWithEmployeesRollup": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "lcpTreatment": {
+                            "type": "boolean"
+                        },
+                        "affiliatedCompaniesWithJobsRollup": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "associatedHashtagsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.WebContentTopicDataCard"
+                            },
+                            "resolvedFrom": "associatedHashtags"
+                        },
+                        "phone": {
+                            "type": "com.linkedin.common.PhoneNumber"
+                        },
+                        "articlePermalinkForTopCompanies": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "organizationLixes": {
+                            "type": {
+                                "array": "com.linkedin.voyager.common.LixTreatment"
+                            }
+                        },
+                        "tagline": {
+                            "type": "string"
+                        },
+                        "fundingData": {
+                            "type": "com.linkedin.voyager.organization.FundingData"
+                        },
+                        "overviewPhoto": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "viewerCurrentEmployee": {
+                            "type": "boolean"
+                        },
+                        "employeeExperienceSettings": {
+                            "type": "com.linkedin.voyager.organization.EmployeeExperienceSettings"
+                        },
+                        "acquirerCompanyResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.web.WebCompanyCard",
+                            "resolvedFrom": "acquirerCompany"
+                        },
+                        "multiLocaleTaglines": {
+                            "type": "com.linkedin.common.MultiLocaleString"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "partnerCompanyUrl": {
+                            "type": "string"
+                        },
+                        "rankForTopCompanies": {
+                            "type": "int"
+                        },
+                        "topCompaniesListName": {
+                            "type": "string"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "headquarter": {
+                            "type": "com.linkedin.common.Address"
+                        },
+                        "showcasePagesResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.WebCompanyCard"
+                            },
+                            "resolvedFrom": "showcasePages"
+                        },
+                        "paidCompany": {
+                            "type": "boolean"
+                        },
+                        "universalName": {
+                            "type": "string"
+                        },
+                        "viewerPendingAdministrator": {
+                            "type": "boolean"
+                        },
+                        "publishedProductsOwner": {
+                            "type": "boolean"
+                        },
+                        "companyPageUrl": {
+                            "type": "string"
+                        },
+                        "viewerConnectedToAdministrator": {
+                            "type": "boolean"
+                        },
+                        "affiliatedCompanies": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "companyType": {
+                            "type": "com.linkedin.voyager.organization.CompanyType"
+                        },
+                        "dataVersion": {
+                            "type": "long"
+                        },
+                        "foundedOn": {
+                            "type": "com.linkedin.common.Date"
+                        },
+                        "associatedHashtags": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "coverPhoto": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "groups": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "eventsTabVisible": {
+                            "type": "boolean"
+                        },
+                        "groupsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.WebGroupCard"
+                            },
+                            "resolvedFrom": "groups"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "showcasePages": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "claimableByViewer": {
+                            "type": "boolean"
+                        },
+                        "jobSearchPageUrl": {
+                            "type": "string"
+                        },
+                        "showcase": {
+                            "type": "boolean"
+                        },
+                        "autoGenerated": {
+                            "type": "boolean"
+                        },
+                        "backgroundCoverImage": {
+                            "type": "com.linkedin.voyager.identity.profile.BackgroundImage"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.Company"
+                },
+                "com.linkedin.voyager.deco.organization.web.WebContentTopicDataCard": {
+                    "fields": {
+                        "feedTopic": {
+                            "type": "com.linkedin.voyager.feed.FeedTopic"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "followAction": {
+                            "type": "com.linkedin.voyager.feed.render.FollowAction"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.feed.ContentTopicData"
+                },
+                "com.linkedin.voyager.deco.organization.web.WebGroupCard": {
+                    "fields": {
+                        "logo": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "groupName": {
+                            "type": "string"
+                        },
+                        "websiteUrl": {
+                            "type": "string"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "memberCount": {
+                            "type": "int"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.Group"
+                }
+            }
+        }
+    },
+    "included": [
+        {
+            "entityUrn": "urn:li:fs_followingInfo:urn:li:company:614213",
+            "following": false,
+            "trackingUrn": null,
+            "followerCount": 3218,
+            "followingCount": null,
+            "$type": "com.linkedin.voyager.common.FollowingInfo"
+        },
+        {
+            "localizedName": "Marketing & Advertising",
+            "entityUrn": "urn:li:fs_industry:80",
+            "$type": "com.linkedin.voyager.common.Industry"
+        },
+        {
+            "videosTabVisible": false,
+            "staffCount": 764,
+            "companyEmployeesSearchPageUrl": "https://www.linkedin.com/vsearch/p?f_CC=614213",
+            "viewerFollowingJobsUpdates": false,
+            "myCompanyVisible": true,
+            "acquirerCompany": null,
+            "permissions": {
+                "landingPageAdmin": false,
+                "admin": false,
+                "adAccountHolder": false,
+                "$type": "com.linkedin.voyager.organization.CompanyPermissions"
+            },
+            "partnerLogoImage": null,
+            "eligibleForOnlineJobPostingEntry": true,
+            "viewerEmployee": false,
+            "affiliatedCompaniesWithEmployeesRollup": [],
+            "affiliatedCompaniesWithJobsRollup": [],
+            "phone": null,
+            "articlePermalinkForTopCompanies": null,
+            "organizationLixes": [
+                {
+                    "treatment": "control",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": 1,
+                        "experimentId": 3281688,
+                        "treatmentIndex": 0,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization-janus-company",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                },
+                {
+                    "treatment": "control",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": -1,
+                        "experimentId": -1,
+                        "treatmentIndex": 0,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization-enable-help-ctas",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                },
+                {
+                    "treatment": "control",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": -1,
+                        "experimentId": -1,
+                        "treatmentIndex": 0,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization-roles-and-permissions-control",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                },
+                {
+                    "treatment": "control",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": 1,
+                        "experimentId": 3194490,
+                        "treatmentIndex": 0,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization-employee-experience",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                },
+                {
+                    "treatment": "enabled",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": 4,
+                        "experimentId": 3232609,
+                        "treatmentIndex": 1,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization-admin-suggestions-v2",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                },
+                {
+                    "treatment": "control",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": 3,
+                        "experimentId": 2990386,
+                        "treatmentIndex": 0,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization.pb-channel-unification",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                },
+                {
+                    "treatment": "control",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": -1,
+                        "experimentId": -1,
+                        "treatmentIndex": 0,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization-admin-suggestions-celebrations-v2",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                },
+                {
+                    "treatment": "control",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": -1,
+                        "experimentId": -1,
+                        "treatmentIndex": 0,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization-enable-event-notifications-on-activity-tab",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                },
+                {
+                    "treatment": "control",
+                    "trackingInfo": {
+                        "urn": "urn:li:company:614213",
+                        "segmentIndex": 1,
+                        "experimentId": 3002621,
+                        "treatmentIndex": 0,
+                        "$type": "com.linkedin.voyager.common.LixTreatmentTrackingInfo"
+                    },
+                    "testKey": "voyager.web.organization-admin-activity-tab-enhancements",
+                    "$type": "com.linkedin.voyager.common.LixTreatment"
+                }
+            ],
+            "tagline": null,
+            "overviewPhoto": null,
+            "viewerCurrentEmployee": false,
+            "multiLocaleTaglines": null,
+            "entityUrn": "urn:li:fs_normalized_company:614213",
+            "headquarter": {
+                "country": "AU",
+                "geographicArea": "New South Wales",
+                "city": "Sydney",
+                "postalCode": "2000",
+                "line1": "99 Macquarie St",
+                "$type": "com.linkedin.common.Address"
+            },
+            "universalName": "mark",
+            "publishedProductsOwner": false,
+            "companyPageUrl": "http://mark.com.au",
+            "viewerConnectedToAdministrator": false,
+            "dataVersion": -1,
+            "associatedHashtags": [],
+            "coverPhoto": null,
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.web.WebFullCompanyMain"
+            ],
+            "url": "https://www.linkedin.com/company/mark",
+            "showcasePages": [],
+            "$type": "com.linkedin.voyager.organization.Company",
+            "claimableByViewer": false,
+            "jobSearchPageUrl": "https://www.linkedin.com/jobs/search?geoId=92000000&f_C=614213",
+            "showcase": false,
+            "autoGenerated": false,
+            "viewerPermissions": {
+                "$recipeTypes": [
+                    "com.linkedin.voyager.deco.organization.web.WebMemberViewerPermissions"
+                ],
+                "$type": "com.linkedin.voyager.organization.OrganizationPermissions"
+            },
+            "partnerLogo": null,
+            "staffingCompany": false,
+            "callToAction": {
+                "callToActionType": "VIEW_WEBSITE",
+                "visible": true,
+                "callToActionMessage": {
+                    "textDirection": "USER_LOCALE",
+                    "text": "Visit website",
+                    "$type": "com.linkedin.voyager.common.TextViewModel"
+                },
+                "url": "http://mark.com.au",
+                "$type": "com.linkedin.voyager.organization.OrganizationCallToAction"
+            },
+            "adsRule": "STANDARD",
+            "staffCountRange": {
+                "start": 51,
+                "end": 200,
+                "$type": "com.linkedin.voyager.organization.shared.StaffCountRange"
+            },
+            "school": null,
+            "logo": {
+                "image": {
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1603929600&v=beta&t=Pc1pCkXZu0JfPT8BR2erb54R2fOjk2fGE37B3j_ToHE",
+                            "expiresAt": 1603929600000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1603929600&v=beta&t=nfLoBclXWp5eSMiwWPpDSJkMyIvZooyIHjPkGfqyFos",
+                            "expiresAt": 1603929600000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1603929600&v=beta&t=SNuszgEF6MFz713I6tDFG7SlpB2CKw-YPUpHVWYWDYw",
+                            "expiresAt": 1603929600000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQHu42bXf9VYKg/company-logo_",
+                    "$type": "com.linkedin.common.VectorImage"
+                },
+                "type": "SQUARE_LOGO",
+                "$type": "com.linkedin.voyager.organization.CompanyLogoImage"
+            },
+            "claimable": false,
+            "specialities": [
+                "Digital",
+                "Direct",
+                "Data",
+                "Advertising",
+                "Digital Marketing",
+                "Direct Marketing",
+                "Data Marketing",
+                "innovation",
+                "Digital Production",
+                "Software"
+            ],
+            "confirmedLocations": [
+                {
+                    "country": "AU",
+                    "geographicArea": "New South Wales",
+                    "city": "Sydney",
+                    "postalCode": "2000",
+                    "description": "Mark Sydney",
+                    "$type": "com.linkedin.voyager.organization.OrganizationAddress",
+                    "headquarter": true,
+                    "line1": "99 Macquarie St"
+                },
+                {
+                    "country": "AU",
+                    "geographicArea": "Victoria",
+                    "city": "Melbourne",
+                    "postalCode": "3000",
+                    "description": "Mark Melbourne",
+                    "$type": "com.linkedin.voyager.organization.OrganizationAddress",
+                    "headquarter": false,
+                    "line1": "Lvl 27, 140 Williams St"
+                }
+            ],
+            "salesNavigatorCompanyUrl": null,
+            "versionTag": "2460145224",
+            "*followingInfo": "urn:li:fs_followingInfo:urn:li:company:614213",
+            "*companyIndustries": [
+                "urn:li:fs_industry:80"
+            ],
+            "lcpTreatment": false,
+            "name": "Mark",
+            "fundingData": null,
+            "employeeExperienceSettings": {
+                "myCompanyVisibility": false,
+                "pymkVisibility": "NONE",
+                "myCompanyEmployeeVerificationRequired": false,
+                "highlightsVisibility": "NONE",
+                "broadcastsVisibility": "NONE",
+                "$type": "com.linkedin.voyager.organization.EmployeeExperienceSettings",
+                "trendingContentVisibility": "NONE"
+            },
+            "description": "History:\r\nMark launched in June 2007 by combining the digital and direct disciplines of M&C Saatchi.\r\n\r\nApproach:\r\nMark develops infectious, indelible ideas to mark minds and elicit measurable behaviour.\r\n\r\nServices:\r\nDigital, direct and data marketing services.\r\n\r\nClients:\r\nANZ, EMI, Ford, Heart Foundation, Homeshop, IAG, Nestle, Optus, Qantas, Qantas Frequent Flyer, Westfield, Woolworths, some start ups and not for profit organisations.\r\n\r\nOffices:\r\nSydney and Melbourne.",
+            "partnerCompanyUrl": null,
+            "rankForTopCompanies": null,
+            "topCompaniesListName": null,
+            "paidCompany": false,
+            "viewerPendingAdministrator": false,
+            "affiliatedCompanies": [],
+            "foundedOn": {
+                "year": 2007,
+                "$type": "com.linkedin.common.Date"
+            },
+            "companyType": {
+                "localizedName": "Privately Held",
+                "code": "PRIVATELY_HELD",
+                "$type": "com.linkedin.voyager.organization.CompanyType"
+            },
+            "groups": [],
+            "eventsTabVisible": false,
+            "backgroundCoverImage": null
+        }
+    ]
+}

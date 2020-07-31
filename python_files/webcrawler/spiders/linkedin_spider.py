@@ -694,6 +694,9 @@ class LinkedinSpider(InitSpider):
 
         # print(user_dict)
 
+        # for company in self.company_parsed_data:
+        #     if company['name'] == 
+
         self.company_parsed_data['funcionarios'].append(user_dict)
 
         save_to_file(

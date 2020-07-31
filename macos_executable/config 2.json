@@ -1,0 +1,11 @@
+{
+    "login": {
+        "username": "testelinkedinpj@gmail.com",
+        "password": "polijunior"
+    },
+    "paths": {
+        "companies_excel": "../macos_executable/Empresas 2.xlsx",
+        "cookies": "../macos_executable/cookies.txt",
+        "employees_json": "../macos_executable/company_parsed_data 2.json"
+    }
+}

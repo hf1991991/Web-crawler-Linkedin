@@ -1,0 +1,2553 @@
+{
+    "empresas": [
+        {
+            "url": "https://www.linkedin.com/company/liv-up/",
+            "dados_obtidos": false,
+            "company_id": "10475106",
+            "nome": "Liv Up",
+            "quantidade_funcionarios": 273,
+            "urls_de_funcionarios_obtidos": 19,
+            "funcionarios": [
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Founder & CEO @ Liv Up",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/victor-santos",
+                    "nome": "Victor",
+                    "sobrenome": "Santos",
+                    "sobre": null,
+                    "seguidores": 6913,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Structured Finance",
+                        "Business Strategy",
+                        "Project Management",
+                        "Equity Research",
+                        "Investment Banking",
+                        "English",
+                        "Microsoft Office",
+                        "Microsoft Excel"
+                    ],
+                    "linguas": [
+                        "English",
+                        "Italian",
+                        "Portuguese"
+                    ],
+                    "cursos_feitos": [],
+                    "premios": [
+                        {
+                            "nome": "Forbes 30 Under 30",
+                            "instituicao": null,
+                            "descricao": "Brazil - Business - 2017",
+                            "data": {
+                                "mes": null,
+                                "ano": 2017
+                            }
+                        }
+                    ],
+                    "estudos": [
+                        {
+                            "instituicao": "Escola Polit\u00e9cnica da Universidade de S\u00e3o Paulo",
+                            "formacao": "Engenharia de Produ\u00e7\u00e3o",
+                            "tilulo_obtido": null,
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2008
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2013
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Politecnico di Milano",
+                            "formacao": "Management Engineering",
+                            "tilulo_obtido": "Master of Science",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2011
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2013
+                                }
+                            }
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "Merrill Lynch",
+                            "cargo": "Equity Research",
+                            "descricao": "During the internship I worked for two teams, covering different sectors of the economy (Metals & Mining, Steel, Pulp & Paper, and Agribusiness & Food). \nMy main responsibilities were to answer clients\u2019 requests, to update databases and models, and to provide material for reports. Moreover, I participated in meetings with institutional investors and companies\u2019 executives, conference calls, etc...",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2011
+                                },
+                                "fim": {
+                                    "mes": 8,
+                                    "ano": 2011
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Schneider Electric",
+                            "cargo": "Internship - Planning",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2010
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2010
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Liv Up",
+                            "cargo": "Founder",
+                            "descricao": "Liv Up is a direct to consumer healthy food brand based in Brazil.\nwww.livup.com.br",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2015
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "Goldman Sachs",
+                            "cargo": "Equity Derivatives",
+                            "descricao": "I worked full time in the Structured Equity Group within the Investment Banking Division providing clients with equity-linked solutions related to monetization, acquisition and hedging strategies. In addition to the Structured Equity business I assisted the Structured Finance and DCM teams in specific opportunities.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 9,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2014
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "HSBC",
+                            "cargo": "Investment Banking",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 9,
+                                    "ano": 2014
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2015
+                                }
+                            }
+                        }
+                    ],
+                    "voluntariado": [],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "Chief Marketing Officer at Liv Up",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/stella-brant-08057940",
+                    "nome": "Stella",
+                    "sobrenome": "Brant",
+                    "sobre": "I\u2019ve been working with Marketing all my life because I love the possibility to impact people\u2019s culture and life. I've had many challenges in my international career, delivering results while leading by example with passion and commitment. Business Strategy Development connecting brands and people in an inspiring way is certainly a passion, as well as leading and developing great teams.",
+                    "seguidores": 13440,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Marketing Knowledge",
+                        "Capacity to face challenges and achieve results",
+                        "Ethics, passion and enthusiasm",
+                        "Projects Leadership, creativity to find innovative solutions",
+                        "Commitment",
+                        "Strategic planning",
+                        "Relationship building with internal and external stakeholders."
+                    ],
+                    "linguas": [
+                        "Portuguese",
+                        "Ingl\u00eas"
+                    ],
+                    "cursos_feitos": [],
+                    "premios": [],
+                    "estudos": [
+                        {
+                            "instituicao": "Universidade Federal de Minas Gerais",
+                            "formacao": null,
+                            "tilulo_obtido": "Publicidade e Propaganda",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 1990
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 1993
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Master of Business Administration (MBA)",
+                            "formacao": null,
+                            "tilulo_obtido": null,
+                            "descricao": null,
+                            "periodo": null
+                        },
+                        {
+                            "instituicao": "Master in Business Administration ",
+                            "formacao": null,
+                            "tilulo_obtido": null,
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2006
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2007
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Funda\u00e7\u00e3o Getulio Vargas",
+                            "formacao": "Marketing",
+                            "tilulo_obtido": "Post-Graduation",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 1999
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 1999
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Stanford University Graduate School of Business",
+                            "formacao": null,
+                            "tilulo_obtido": "Consumer Connections Program",
+                            "descricao": null,
+                            "periodo": null
+                        },
+                        {
+                            "instituicao": "ABI University",
+                            "formacao": null,
+                            "tilulo_obtido": "Global Advanced Creative Development Workshop - NYC",
+                            "descricao": null,
+                            "periodo": null
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Skol Communication Manager",
+                            "descricao": "Led the strategic planning and integrated communication development for the biggest beer brand in Brazil.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2005
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2005
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "L'acqua di Fiori",
+                            "cargo": "Maketing Analist and Copywriter",
+                            "descricao": "Marketing Analist and Copywriter at the house agency, defining strategy and creating national and local advertisement",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 1994
+                                },
+                                "fim": {
+                                    "mes": 2,
+                                    "ano": 1996
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Guaran\u00e1 Antarctica Trade Marketing",
+                            "descricao": "Led the brand activation on trade guaranteeing brand visibility and campaign execution in store. Design and execution of cross merchandise partnership launching promo-packs with brands like Elma Chips, Brastemp and Sadia. Also led a breaking through experience for journalists into the Guaran\u00e1\u2019s farm, at the Amazon forest, generating a lot of PR around the origin of Guaran\u00e1.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 8,
+                                    "ano": 2000
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2001
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "R&I Brazil Director",
+                            "descricao": "Leadership of over 40 projects and consistent 3-year plan delivery including new packaging, brands development and categories with P&L definition.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 9,
+                                    "ano": 2009
+                                },
+                                "fim": {
+                                    "mes": 2,
+                                    "ano": 2010
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Liv Up",
+                            "cargo": "Chief Marketing Officer",
+                            "descricao": "Liv Up is an innovative startup that with creativity, technology and an integrated chain transforms the passion for good food into real solutions for a real problem - eating in a healthier and more sustainable way. Boldly and generating a positive impact on a virtuous cycle from the family farmers to the final consumer, we are disrupting the food industry and helping the world to eat better.\nA better world is the people who do, a little each day, transforming what we can, in our lives, in the company, in people's lives.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 4,
+                                    "ano": 2020
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Sales & Trade Marketing experience",
+                            "descricao": "Led a multifunctional development of a new business unit at the regional office responsible for events execution \u2013 defining the team structure, BP, strategy definition and operations management. The project became a best practice that was later launched in several other regional offices throughout Brazil.\nMG Marketing Manager - 2000\nMG Events Coordinator - 1999\nMarketing and Sales Supervisor - 1998\nResellers Marketing support - Nov 1996 - 1997",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 11,
+                                    "ano": 1996
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2000
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Beer Category Brazil Director",
+                            "descricao": "Strategy and plan definition to develop Beer category image. Campaign development for the global and local corporate brand, in addition to the cultural project \"Aqui tem palco\", adopted by the Sao Paulo City Hall as part of the official calendar. Launch of the category image project globally, defining the scope of a new global unit, including structure definition, launch strategy and ways of working.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": 6,
+                                    "ano": 2014
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Skol Portfolio manager",
+                            "descricao": "Management of the Skol Beats, Carlsberg and Caracu with emphasis on trade marketing and the creation of regional plans according to local business opportunities to drive brand building.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2002
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2002
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Beer Category Global Leader",
+                            "descricao": "Business leader responsible for the strategy design and integrated communication plan to improve the beer category reputation. Led the development of specific tools and processes to define ways of working, execution standards, brand causes and measure results. Leads a team of 20 people spread in 9 countries achieving results 5 times greater than established KPI and winning 6 best practices in 2016",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2014
+                                },
+                                "fim": {
+                                    "mes": 10,
+                                    "ano": 2017
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "99",
+                            "cargo": "Marketing Director",
+                            "descricao": "I was responsible for the creation and development of the Marketing Department, definition of the brand positioning, its strategy and planning for business development with orientation to the short-term plan and long-term construction. As a result, 99 started to have a consistent narrative and made key partnerships that helped the results to grow exponentially and increased the relevance of the brand. Thus, we helped DiDi Chuxing, the largest e-hailing platform in the world, to challenge the leader and be a relevant brand in Brazil in a very efficient way, democratizing mobility and bringing value to the company, passengers and drivers.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 11,
+                                    "ano": 2017
+                                },
+                                "fim": {
+                                    "mes": 3,
+                                    "ano": 2020
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Premium Beer Director",
+                            "descricao": "Business management and strategies definition for premium brands, highlighting the Budweiser launch, communication and activation of Stella Artois, Bohemia and Original. Creation, launch and business management of the Bohemia Brewery interactive museum, which today sums ~100K visitors per year, disseminating beer knowledge through technology and sensorial experiences, reaching a level of consumer\u2019s satisfaction of 96%.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 9,
+                                    "ano": 2010
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2011
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Antarctica & Polar Director",
+                            "descricao": "Strategic planning, integrated communication development of Antarctica and Polar brands. Launch of the social project \"Talentos do Samba\", achieving consistent results increasing Antarctica's preference reaching a historic record. Also spearheaded the launch and management of Antarctica SubZero.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2006
+                                },
+                                "fim": {
+                                    "mes": 8,
+                                    "ano": 2009
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Anheuser-Busch InBev",
+                            "cargo": "Brahma Communication Manager",
+                            "descricao": "Responsible for leading brand marketing plans for Brahma which consisted in strategic planning, new visual identity development, integrated communication and events management over-performing preference target.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2003
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2004
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Explore Aprendizagem Criativa",
+                            "cargo": "Fundadora",
+                            "descricao": "Guilherme Alves, our Angels and I, education enthusiasts, believe that it is possible to transform the world through creative learning. Explore Creative Learning develops repertoire and socio-emotional skills through experiences in art, body and technology in a light, balanced and happy way. Thus, we seek to help parents, schools and companies to prepare better people for the world.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 6,
+                                    "ano": 2018
+                                },
+                                "fim": null
+                            }
+                        }
+                    ],
+                    "voluntariado": [
+                        {
+                            "instituicao": "Associa\u00e7\u00e3o de moradores do Alto da Boa Vista - SABABV",
+                            "papel": "Tesoureira",
+                            "causa": null,
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2014
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2017
+                                }
+                            }
+                        }
+                    ],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "co-fundador e COO da Liv Up",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/henrique-dorizzotto-castellani-70839956",
+                    "nome": "Henrique Dorizzotto",
+                    "sobrenome": "Castellani",
+                    "sobre": null,
+                    "seguidores": 1051,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Supply Chain Management",
+                        "Microsoft Office",
+                        "Ingl\u00eas",
+                        "Valuation",
+                        "Planejamento de projetos",
+                        "Industrial Engineering",
+                        "Business Strategy",
+                        "Gest\u00e3o da cadeia de fornecimento",
+                        "Business Planning",
+                        "Logistics",
+                        "Financial Modeling",
+                        "Estrat\u00e9gia empresarial",
+                        "Empreendedorismo",
+                        "English",
+                        "Planejamento empresarial",
+                        "Microsoft Word"
+                    ],
+                    "linguas": [
+                        "Portugu\u00eas",
+                        "Ingl\u00eas",
+                        "Espanhol"
+                    ],
+                    "cursos_feitos": [],
+                    "premios": [],
+                    "estudos": [
+                        {
+                            "instituicao": "Instituto Superior T\u00e9cnico",
+                            "formacao": null,
+                            "tilulo_obtido": "Industrial Engineering and Managment",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2011
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2012
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Escola Polit\u00e9cnica da Universidade de S\u00e3o Paulo",
+                            "formacao": "Industrial Engineering",
+                            "tilulo_obtido": "Engenheiro de Produ\u00e7\u00e3o",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2008
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2013
+                                }
+                            }
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "Verax Consultoria",
+                            "cargo": "Analista",
+                            "descricao": "-Respons\u00e1vel pela elabora\u00e7\u00e3o de an\u00e1lises de viabilidade econ\u00f4mica financeira de projetos de infraestrutura, com \u00eanfase em infraestrutura portu\u00e1ria\n-Modelagem de proje\u00e7\u00f5es de demanda de gran\u00e9is agr\u00edcolas (soja, milho e a\u00e7\u00facar) para terminais portu\u00e1rios no Brasil\n-Dimensionamento de terminais portu\u00e1rios para containers",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2010
+                                },
+                                "fim": {
+                                    "mes": 6,
+                                    "ano": 2015
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "CAEP - POLI/USP - Centro Acad\u00eamico da Engenharia de Produ\u00e7\u00e3o",
+                            "cargo": "Presidente",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 12,
+                                    "ano": 2010
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2011
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Liv Up",
+                            "cargo": "COO",
+                            "descricao": "Fundador da Liv Up\n - Elabora\u00e7\u00e3o do business plan da empresa\n - Processos de fundraising\n - Respons\u00e1vel pela \u00e1reas de Sourcing, Produ\u00e7\u00e3o, Log\u00edstica e Infraestrutura",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 6,
+                                    "ano": 2015
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "Centro de Estudos em Gest\u00e3o Naval - CEGN",
+                            "cargo": "Pesquisador",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2013
+                                }
+                            }
+                        }
+                    ],
+                    "voluntariado": [],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "New Business Development Manager | Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/caroline-takita-levy-03b8454"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "CFO @ Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/gabriel-pasmanik-eisencraft-94686275"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Lead of Talent Attraction & Tech Recruiter at Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/joanacesconetto"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Business Analyst Intern na Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/vitoria-rosa"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Analista de Recursos Humanos",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/talita-slaviero-b02095142"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Head of Data & Analytics at Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/luizarakaki"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Product Manager @ Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/rafaelgibelli"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Analytics Lead at Liv Up | Co-Founder @J\u00e1 Vendeu",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/danielparedesd"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Marketing Director @ Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/livia-malouf"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Partner at Kaszek Ventures",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/santiagofossatti"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Brand Manager @ Liv Up | Founder & Editor @ Bits to Brands",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/beatrizguarezi"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Communications Manager na Liv UP",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/dianamedeiros"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Head of User Acquisition at Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/bernardoruas"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "Software Engineer at Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/rodrigo-gerber"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Planning & Projects Manager",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/thiago-fernandes-dantas-vasconcellos-b16a16134"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Co-founder | Marketing&Product (Growth) at Liv Up",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/marcelocanovas"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Chef de Cria\u00e7\u00e3o na Liv Up",
+                    "dados_obtidos": false
+                }
+            ]
+        },
+        {
+            "url": "https://www.linkedin.com/company/distrito.me/",
+            "dados_obtidos": false,
+            "company_id": "9195616",
+            "nome": "Distrito",
+            "quantidade_funcionarios": 93,
+            "urls_de_funcionarios_obtidos": 20,
+            "funcionarios": [
+                {
+                    "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "CEO & Founder at SportsMatch",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/gustavo-velloso-verginelli-444323b",
+                    "nome": "Gustavo",
+                    "sobrenome": "Velloso Verginelli",
+                    "sobre": "Experi\u00eancia Profissional em Dire\u00e7\u00e3o de Planejamento, M\u00eddia e Conte\u00fado:\n \n\u2022 Cria\u00e7\u00e3o de Planejamentos Offline, Online e Integrados (Social + Promocional + M\u00eddia)\n\u2022 Cria\u00e7\u00e3o, Negocia\u00e7\u00e3o e Implementa\u00e7\u00e3o de Planejamentos de M\u00eddia\n\u2022 Administra\u00e7\u00e3o de Campanhas de Social Media (Conte\u00fado e M\u00eddia)\n\u2022 Lan\u00e7amento de Produtos e Desenvovimento de Mercado \n\u2022 Planejamento e Coordena\u00e7\u00e3o de Eventos \n\u2022 Planejamento, Aplica\u00e7\u00e3o e An\u00e1lise de Pesquisas de Mercado (qualitativas e quantitativas) \n\u2022 Atendimento e Prospec\u00e7\u00e3o de Clientes \n\u2022 Administra\u00e7\u00e3o de Budgets e Negocia\u00e7\u00e3o com Fornecedores \n\u2022 Desenvolvimento de Planejamentos de Marketing & Comunica\u00e7\u00e3o \n\u2022 Coordena\u00e7\u00e3o de Projetos de Relacionamento e CRM \n\u2022 Cria\u00e7\u00e3o de Materiais de Comunica\u00e7\u00e3o \n\u2022 Desenvolvimento de Hotsites, Sites e Portais \n\u2022 Desenvolvimento de Estrat\u00e9gias de Brand Experience",
+                    "seguidores": 2045,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Online Advertising",
+                        "Marketing Management",
+                        "CRM",
+                        "Business Strategy",
+                        "Advertising",
+                        "Marketing",
+                        "Web Analytics",
+                        "B2B",
+                        "Digital Marketing",
+                        "Integrated Marketing",
+                        "Online Marketing",
+                        "Digital Strategy",
+                        "Social Media",
+                        "Google Adwords",
+                        "Creative Strategy",
+                        "E-commerce",
+                        "SEM",
+                        "Social Media Marketing",
+                        "Email Marketing",
+                        "Strategic Planning"
+                    ],
+                    "linguas": [
+                        "English",
+                        "Spanish"
+                    ],
+                    "cursos_feitos": [],
+                    "premios": [],
+                    "estudos": [
+                        {
+                            "instituicao": "Escola Superior de Propaganda e Marketing",
+                            "formacao": "Propaganda e Marketing",
+                            "tilulo_obtido": "Bachelor's degree",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 1999
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2003
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Escola Nova Louren\u00e7o Castanho",
+                            "formacao": "Ensino M\u00e9dio Completo",
+                            "tilulo_obtido": "Ensinos B\u00e1sico, Fundamental e M\u00e9dio",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 1984
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 1998
+                                }
+                            }
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "A.Senses Agency",
+                            "cargo": "CCO & Co-Founder",
+                            "descricao": "- Planejamento e Coordena\u00e7\u00e3o de Projetos Contratados\n- Planejamento e Coordena\u00e7\u00e3o de Projetos Propriet\u00e1rios\n- Planejamento de M\u00eddia e Conte\u00fado\n- Apresenta\u00e7\u00e3o, Defesa e Condu\u00e7\u00e3o da Ag\u00eancia em Concorr\u00eancias",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 4,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2017
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "ENKMA Marketing Intelligence",
+                            "cargo": "Gerente Geral",
+                            "descricao": "- Atendimento e Prospec\u00e7\u00e3o de Clientes e Projetos \n- Planejamento, Desenvolvimento e Coordena\u00e7\u00e3o de Projetos \n- Coordena\u00e7\u00e3o de Equipe de Vendas \n- Gerenciamento de Equipe de Cria\u00e7\u00e3o e Programa\u00e7\u00e3o \n\nENKMA Marketing Intelligence - ag\u00eancia de pequeno porte que trabalhava como um departamento de comunica\u00e7\u00e3o e marketing para empresas B2B.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 10,
+                                    "ano": 2003
+                                },
+                                "fim": {
+                                    "mes": 11,
+                                    "ano": 2008
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Router",
+                            "cargo": "S\u00f3cio-Diretor",
+                            "descricao": "- Planejamento e Coordena\u00e7\u00e3o de Projetos (Offline, Online e Integrados - Social + Promocional + M\u00eddia)\n- Planejamento de M\u00eddia e Conte\u00fado\n- Apresenta\u00e7\u00e3o, Defesa e Condu\u00e7\u00e3o da Ag\u00eancia em Concorr\u00eancias \n- Gerenciamento de Equipe de Cria\u00e7\u00e3o (responsabilidade simult\u00e2nea por 1 ano)\n- Participa\u00e7\u00e3o no Desenvolvimento e na Apresenta\u00e7\u00e3o de Workshops para Clientes e Prospects",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 11,
+                                    "ano": 2008
+                                },
+                                "fim": {
+                                    "mes": 4,
+                                    "ano": 2013
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "RR Donnelley",
+                            "cargo": "Coordenador de Marketing",
+                            "descricao": "- Gerenciamento da Marca \n- Cria\u00e7\u00e3o, Desenvolvimento e Coordena\u00e7\u00e3o da Participa\u00e7\u00e3o da Empresa em Eventos do Setor \n- Gerenciamento do Relacionamento com a Ag\u00eancia Prestadora de Servi\u00e7os\n- Coordena\u00e7\u00e3o dos Projetos de Patroc\u00ednio \n- Participa\u00e7\u00e3o no Desenvolvimento do Planejamento de Marketing Am\u00e9rica Latina",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 9,
+                                    "ano": 2001
+                                },
+                                "fim": {
+                                    "mes": 9,
+                                    "ano": 2003
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "SportsMatch",
+                            "cargo": "CEO & Founder",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2013
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "SuperMatch - BIG DATA Group",
+                            "cargo": "Founder",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2017
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "Distrito.me",
+                            "cargo": "Founding Partner",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 10,
+                                    "ano": 2014
+                                },
+                                "fim": null
+                            }
+                        }
+                    ],
+                    "voluntariado": [],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": "Brazil",
+                    "cargo_atual": "Community Manager | Startups | Innovation",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/cintya-rasa-900064114",
+                    "nome": "Cintya",
+                    "sobrenome": "Rasa",
+                    "sobre": "Hi! How can I help you? :)\n\nI really would like to help everybody in many aspects of life. But as we know, it's so hard.\nSo now I've been working as Community Manager at Distrito and every day I \"falling in love\" about my job. It's because I fundamentally believe that as a community we can make the change in the world.\n\nThe connection between startups, investors and corporations are the future! And I'm here to help them being connected to learning and growing up together.\n\n\nLet's connect!\ncintya@distrito.me | (11) 96625-5177",
+                    "seguidores": 1695,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Negocia\u00e7\u00e3o",
+                        "Colabora\u00e7\u00e3o",
+                        "Diversidade",
+                        "Gest\u00e3o de conte\u00fado",
+                        "Identidade de marca corporativa",
+                        "M\u00e9tricas de m\u00eddias sociais",
+                        "Lideran\u00e7a",
+                        "Empatia",
+                        "Community Management",
+                        "Branded Content",
+                        "Fotografia digital",
+                        "Atendimento ao Cliente",
+                        "Gera\u00e7\u00e3o de relat\u00f3rios de m\u00e9tricas",
+                        "Branding online",
+                        "Planejamento de eventos",
+                        "Digital Marketing",
+                        "Estrat\u00e9gia digital"
+                    ],
+                    "linguas": [
+                        "Ingl\u00eas"
+                    ],
+                    "cursos_feitos": [
+                        "M\u00e9tricas, mensura\u00e7\u00e3o e otimiza\u00e7\u00f5es digitais",
+                        "P\u00f5e no papel - Ferramentas do Visual Thinking",
+                        "Plugcit\u00e1rios no Ar! 2015 \u2013 Palestras voltadas para o mercado publicit\u00e1rio",
+                        "Branded Content em Mutato",
+                        "Mercado publicit\u00e1rio com redatores e diretores de arte e cria\u00e7\u00e3o da Ag\u00eancia DM9",
+                        "Gest\u00e3o de crises em redes sociais (Mesa Redonda - ESPM)"
+                    ],
+                    "premios": [],
+                    "estudos": [
+                        {
+                            "instituicao": "ETEC - Escola T\u00e9cnica Estadual de S\u00e3o Paulo",
+                            "formacao": null,
+                            "tilulo_obtido": "T\u00e9cnico em Secretariado",
+                            "descricao": null,
+                            "periodo": null
+                        },
+                        {
+                            "instituicao": "PUCRS - Pontif\u00edcia Universidade Cat\u00f3lica do Rio Grande do Sul",
+                            "formacao": "Transforma\u00e7\u00e3o Digital e Futuro dos Neg\u00f3cios",
+                            "tilulo_obtido": "Master of Business Administration - MBA",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2020
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2021
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Universidade S\u00e3o Judas Tadeu",
+                            "formacao": null,
+                            "tilulo_obtido": "Bacharelado em Comunica\u00e7\u00e3o Social - Habilita\u00e7\u00e3o em Publicidade e Propaganda",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2016
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Centro Universit\u00e1rio Senac",
+                            "formacao": null,
+                            "tilulo_obtido": "Fotografia Digital",
+                            "descricao": null,
+                            "periodo": null
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "Distrito",
+                            "cargo": "Community Manager",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 8,
+                                    "ano": 2018
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "boo-box / ftpi",
+                            "cargo": "Account Manager for Spotify",
+                            "descricao": "Implementation and management of ad campaigns on Spotify. Support to agencies and ad servers to do the best optimization about campaigns performances. Analysis of results and development of reports focused on creative solutions.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 11,
+                                    "ano": 2016
+                                },
+                                "fim": {
+                                    "mes": 8,
+                                    "ano": 2018
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "4Diversity",
+                            "cargo": "Co-Founder",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 5,
+                                    "ano": 2019
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "boo-box / ftpi",
+                            "cargo": "Assistant Commercial",
+                            "descricao": "Support to the commercial team and responsible for the follow-up of campaigns on Spotify with the agencies, suggesting solutions and reporting the results.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 11,
+                                    "ano": 2016
+                                },
+                                "fim": {
+                                    "mes": 3,
+                                    "ano": 2017
+                                }
+                            }
+                        }
+                    ],
+                    "voluntariado": [
+                        {
+                            "instituicao": "S\u00e3o Paulo Tech Week",
+                            "papel": "Curadoria de Iniciativas de Diversidade",
+                            "causa": "ECONOMIC_EMPOWERMENT",
+                            "descricao": "https://saopaulotechweek.com/",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 9,
+                                    "ano": 2019
+                                },
+                                "fim": null
+                            }
+                        }
+                    ],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "Reinventing & developing new business models trought open innovation  and digital transformation\n",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/gustavo-mesquita-1166256",
+                    "nome": "Gustavo",
+                    "sobrenome": "Mesquita",
+                    "sobre": "\u2022 12 years of experience in FMCG multinationals working in marketing, business development, innovation and commercial areas. Responsible for build and lead high performance teams, develop innovation, enter in new markets and categories, portfolio management, branding, 360 campaigns, Researches, P&L management, GTM plans, AOP & Road Map development and presentations\n\u2022 8 years of experience leading Start-ups in marketing, digital performance, BI, general management, commercial and business development\n\u2022 Strong knowledge in Marketing, Digital Marketing, Media, GTM and researches\n\u2022 Very good knowledge in commercial and Trade marketing\n\u2022 Ability to lead multiple teams and projects\n\nKey competences and capabilities:\n\nStrategic thinking, assertive communication, action oriented, business acumen, creativity, motivating others, charismatic\nBusiness oriented and focus on results, learn on the fly, negotiating, agility, and priority setting\nExcellent in presentations to any level\nVibrant person, very persuasive, self confident and versatile.\nSports inthusiastic and connoisseur, Cycling and running practitioner, cooker and food enthusiastic",
+                    "seguidores": 1788,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Email Marketing",
+                        "Consumer Behaviour",
+                        "Promotions",
+                        "Trade Marketing",
+                        "Advertising",
+                        "Analysis",
+                        "Marketing Strategy",
+                        "Consumer Insights",
+                        "Consumer Behavior",
+                        "Marketing Management",
+                        "Portfolio Management",
+                        "Marketing Communications",
+                        "Integrated Marketing",
+                        "FMCG",
+                        "Customer Insight",
+                        "Creative Development",
+                        "Competitive Analysis",
+                        "Brand Development",
+                        "P&L",
+                        "Strategic Planning"
+                    ],
+                    "linguas": [
+                        "Ingl\u00eas",
+                        "Espanhol"
+                    ],
+                    "cursos_feitos": [],
+                    "premios": [
+                        {
+                            "nome": "Publisher",
+                            "instituicao": "Princ\u00edpios de Marketing - Philip Kotler & Gary Armstrong",
+                            "descricao": "Publisher: \u201cTend\u00eancias e Oportunidades no mercado de alimentos funcionais\u201d - Princ\u00edpios de Marketing - Philip Kotler & Gary Armstrong / Revista de Ci\u00eancias da Administra\u00e7\u00e3o",
+                            "data": {
+                                "mes": 12,
+                                "ano": 2008
+                            }
+                        }
+                    ],
+                    "estudos": [
+                        {
+                            "instituicao": "Escola Superior de Propaganda e Marketing",
+                            "formacao": "Administra\u00e7\u00e3o, Neg\u00f3cios e Marketing",
+                            "tilulo_obtido": "University",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 1999
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2002
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "FIA - Funda\u00e7\u00e3o Instituto de Administra\u00e7\u00e3o",
+                            "formacao": "Marketing",
+                            "tilulo_obtido": "MBA",
+                            "descricao": "Publications: \"Trends and Opportunities in the functional foods market\" - Principles of Marketing - Philip Kotler & Gary Armstrong / Journal of Administrative Sciences.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2006
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2007
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Marista",
+                            "formacao": null,
+                            "tilulo_obtido": null,
+                            "descricao": null,
+                            "periodo": null
+                        },
+                        {
+                            "instituicao": "ESPM Escola Superior de Propaganda e Marketing",
+                            "formacao": "Comunica\u00e7\u00e3o & Marketing",
+                            "tilulo_obtido": "Gradua\u00e7\u00e3o",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 1999
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2002
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Marista",
+                            "formacao": null,
+                            "tilulo_obtido": null,
+                            "descricao": null,
+                            "periodo": null
+                        },
+                        {
+                            "instituicao": "colegio Marista",
+                            "formacao": null,
+                            "tilulo_obtido": null,
+                            "descricao": null,
+                            "periodo": null
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "The Hershey Company",
+                            "cargo": "National Sales manager / Brand Manager",
+                            "descricao": "National Sales Manager \u2013 Wholesale channel\n\u2022 Responsible for running the wholesale channel\n\u2022 In charge of negotiations, commercial policies, sell in and sell out plans and manager promoters\u2019 team\n\u2022 Mains Achievements: reduced the average discounts of the channel, increase profitability and credibility of the company due to new proposals and reliable relationship,\n \nBrand Manager\n\u2022 Developed innovations for new segments such as cereal bars and food services\n\u2022 Reintroduced IO-I\u00d4 Crem and Visconti brands, modernizing and improving portfolio and profitability.\n\u2022 Led market research projects, innovations concepts, brand extensions\n\u2022 Developed marketing, communication and activation plans",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2006
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2007
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Instacarro.com",
+                            "cargo": " Marketing & commercial Director",
+                            "descricao": "\u2022 Responsible for building the Marketing, BI, Customer Service and Commercial teams\n\u2022 Implement researches to understand consumers and generate insights\n\u2022 Developed and implemented new process to improve NPS\n\u2022 Lead more than 50 people from different areas\n\u2022 Responsible for business and digital campaigns strategy & KPIs (Revenue, ROI, CAC, CPL, CPA, CPC)\n\u2022 Lead generation, media performance campaigns, Content marketing, traffic generation, digital advertising\n\u2022 Led the Communication Agency to build a new positioning, communication strategy and Media Plan\n\u2022 Mains Achievements: Improved Sales in 6X,  Gross Margin in 150%, Unit economic in 170% and  CAC in 4X, through increase radically funnel of conversion efficiency and qualified traffic and leads",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 10,
+                                    "ano": 2017
+                                },
+                                "fim": {
+                                    "mes": 2,
+                                    "ano": 2018
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "FEED Brasil - Butcher Boutique",
+                            "cargo": "General Manager",
+                            "descricao": "\u2022 Responsible for Full business operation \u2013 Cattle Creation, run financials, people, P&L and governance\n\u2022 Led all the business activations, promotions & consumer experiences (in store, workshops & events)\n\u2022 Development and launch the e-commerce platform\n\u2022 Responsible for the Emporium product mix (selection & negotiation)\n\u2022 Led Organizational restructuring efficiency and cost optimization\n\u2022 Led Agency (Ogilvy) to build a positioning & communication strategy\n\u2022 Led a bold and affective influencer campaigns that increased dramaticaly the numbers of IG followers and clients in store\n\u2022 Mains Achievements: build an engaged team committed with business results and costumer experience, made business turn around achieving break even, achieved more than R$1MM of monthly revenue, made lots of variety of partnerships in different categories to leverage the business, successful launch of ecommerce, positive profit from the restaurant running events and lunch",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 6,
+                                    "ano": 2015
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2016
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Rio 2016 - Comit\u00ea Organizador dos Jogos Ol\u00edmpicos e Paral\u00edmpicos",
+                            "cargo": "Olimpic National Comitee Assistant",
+                            "descricao": "Responsable for hostess the Bangladesh Olimpic team: President, coaches, atlhets and others.\nResponding directes to the President of the delegation, the position was responsible fot the logistic for the whole team and support all needs and necessities of the team.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2016
+                                },
+                                "fim": {
+                                    "mes": 8,
+                                    "ano": 2016
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Home by Suva - Luxury Home Goods",
+                            "cargo": "Owner Principal",
+                            "descricao": "\u2022 Build & Launch the company located in SP\n\u2022 Responsible for running the business\n\u2022 Mains Achievements: Implemented 2 own stores in SP (Shoppings Iguatemi and Cidade Jardim) and 3 stores as brand representation (Rio de Janeiro, Ribeirao Preto and Goiania), generate annual revenue of U$1MM, developed exclusive products for the brand (from Europe & Brazil - 60% of the portfolio)",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": 11,
+                                    "ano": 2014
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Whirpool",
+                            "cargo": "Marketing Manager - Air Treatment",
+                            "descricao": "\u2022 Responsible for running the Air Treatment category GTM and the complex supply chain\n\u2022 Developed activation and communication strategy for the category guaranteeing the leadership & SOM\n\u2022 Led the team to develop and implement the 2011-2012 Season: commercial and trade marketing plan, launched new products and implemented 360 plan\n\u2022 Mains Achievements: increased 40% in sales volume, leveraged distribution in 10% and visibility in points of sale, kept the leadership with 42% of SOM in the category",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2011
+                                },
+                                "fim": {
+                                    "mes": 5,
+                                    "ano": 2012
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "PROS - Criando People Relations",
+                            "cargo": "Head of Performance",
+                            "descricao": "\u2022 Responsible for business and digital campaigns strategy & KPIs (Revenue, ROI, CAC, CPL, CPA, CPC)\n\u2022 Lead generation, Inbound Marketing, Social media performance campaigns, Content marketing, traffic generation, digital advertising, development of funnel models, influencer campaigns\n\u2022 Mains Achievements: generated qualified leads, improved funnel conversion in 50%, increased sales in 100%, launched 3 info products / E-learning (Diario de um despertar - Alana Rox, FICA via ter bolo - Vovo Palmirinha, Metodo AK - Andrea Kalfman)",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 9,
+                                    "ano": 2018
+                                },
+                                "fim": {
+                                    "mes": 3,
+                                    "ano": 2019
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Casa do P\u00e3o de Queijo - Banco Patria",
+                            "cargo": "Product Manager",
+                            "descricao": "\u2022\tDeveloped new product platforms: mixed juices, desserts, hot beveragessandwiches and new flavors for the snacks line\n\u2022\tEstablished important partnerships with Nestl\u00e9 and Polenghi allowing co-Brand launching\n\u2022\tDevelop and launch  seasonal calendar, boosting sales and bringing larger flow of consumers to stores\n\u2022\tCoordinated the brand  and store modernization",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 4,
+                                    "ano": 2005
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2006
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Mondel\u0113z International",
+                            "cargo": "Sr. Marketing Manager",
+                            "descricao": "\u2022 Responsible for running Candies category - Halls, Halls XS, Vita C and Certs\n\u2022 Very successful launch of new candies platform, Halls XS, implemented a new brand positioning with strong 360 activation plan\n\u2022 Responsible for development and implementation AOP and Road Map plans, including 360 activations, media, trade marketing and commercial\n\u2022 Responsible for the KPIs of the business (Distribution, Market Share, P&L, Pricing, Cost, Branding)\n\u00b7 KPIs of the business (Distribution, Market Share, P&L, Pricing, Cost, Brand)\n\u2022 Leader of Marketing of Gums & Candies to work with McKinsey & Co. to develop the 4 years strategic plan\n \nSr. Brand Manager \u2013 Gums (kids & teens)\n\u2022 Responsible for running brands for Kid and teens: Bubbaloo, Chiclets, Fresh\u2019n\u2019up, Ping Pong\n\u2022 Same responsibilities as described above for Candies\n\u2022 Developed and implemented a strong platform of innovations for Chiclets and Bubaloo, supported with a consistent and innovative 360 plans\n\u2022 Worked with McKinsey & Co. to develop the strategic innovation plan for Candies and Gums for Mondelez\n \n\u2022 Achievements: strong implementations of Halls XS launching reaching 3X the sales volume and improving in 10pp the gross margin gaining SOM, keeping the strong leadership of 67% of the market, Strong implementations of 360 plans for the brands reaching the budget and increasing the mains KPIs: SOM, sales volume and revenue, gross margin and profit.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2008
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2010
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Distrito",
+                            "cargo": "Head of Venture Builder",
+                            "descricao": "Lead Business Hacking and digital transformation for big corporations, building new solutions and business models throught open innovation & tecnologies. \nHelping coorporations to gain efficiency & scale, develop new products & services, acces new markets & business models. innovation and agile culture.\nDesign thinking.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 8,
+                                    "ano": 2019
+                                },
+                                "fim": null
+                            }
+                        }
+                    ],
+                    "voluntariado": [
+                        {
+                            "instituicao": "Olimpic Games Rio 2016",
+                            "papel": "National Olimpic Comitee Assistant - Delegation of Bangadesh",
+                            "causa": null,
+                            "descricao": "Responsible for receiving the whole delegation (Chef de Mission, Athletes, Technicians, Directors and Ministers)\nPerform all the tasks of reception, adaptation to Brazil, logistics, follow-up of training and competitions, agenda setting and troubleshooting, all this together with the Chef de Mission\n",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 8,
+                                    "ano": 2016
+                                },
+                                "fim": {
+                                    "mes": 8,
+                                    "ano": 2016
+                                }
+                            }
+                        }
+                    ],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Partner | Head of Growth at Distrito",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/fspina"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Data Scientist | Journalist | Python Dev",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/daniel-quandt-a49985110"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Venture Builder Intern na Distrito",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/laura-sue-vicentini-78190b152"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Co-Founder na KPMG & Distrito - Leap",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/gusaraujo"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Community | Operations | Team Development | Customer Service | Sales",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/acacia-morena-9b5ab1a9"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Managing Partner @ Distrito | Angel Investor | Board Member",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/gustavo-gierun-4490948a"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Venture Capital | Data Miner - at Distrito",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/victor-harano"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Venture builder na Distrito",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/bruno-izzo-1ab6a1146"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Head of Community Distrito| Startups co-founder | Organizer of Sillicon Drinkabout SP | Startups Mentor | Teacher",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/liliannatal"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Venture Builder Intern I Distrito",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/giulianaparo"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Community Intern | Distrito",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/marco-antonio-de-senna-lamolha"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "Head of Marketing at Distrito",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/pacagnella"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Marketing Estrat\u00e9gico | Inova\u00e7\u00e3o | Planejamento Criativo | Sempre em Busca de Conhecimento",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/mauromonteiro"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Corporate Innovation Distrito / Open Innovation",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/fbcunha"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Community Manager",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/vanda-nonato-26a1a08b"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Chief Growth Officer at TruckPad (We're Hiring!)",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/marcosrmachado"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Events & Partnership Analyst",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/nathalia-souza-aa8734188"
+                }
+            ]
+        },
+        {
+            "url": "https://www.linkedin.com/company/timeneon/",
+            "dados_obtidos": false,
+            "company_id": "10430926",
+            "nome": "Neon",
+            "quantidade_funcionarios": 711,
+            "urls_de_funcionarios_obtidos": 20,
+            "funcionarios": [
+                {
+                    "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "Founder at Neon",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/pedroconrade",
+                    "nome": "Pedro",
+                    "sobrenome": "Conrade",
+                    "sobre": "I believe in a simpler world of decision making, where technology works to give a better balance for people's life. Based on that, I've been looking for manners of building the best for the people and better business models for those who wants to be an entrepreneur.  ",
+                    "seguidores": 20820,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Business Strategy",
+                        "Start-ups",
+                        "Simplifier",
+                        "Negotiation",
+                        "Team Leadership",
+                        "Entrepreneurship",
+                        "Product Development",
+                        "Strategic Planning",
+                        "Business Development"
+                    ],
+                    "linguas": [
+                        "Portugu\u00eas",
+                        "Ingl\u00eas"
+                    ],
+                    "cursos_feitos": [],
+                    "premios": [],
+                    "estudos": [
+                        {
+                            "instituicao": "Babson College",
+                            "formacao": "Empreendedorismo",
+                            "tilulo_obtido": "BABSON ENTREPRENEURSHIP PROGRAM",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2012
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Funda\u00e7\u00e3o Getulio Vargas",
+                            "formacao": "Empreendedorismo",
+                            "tilulo_obtido": "Bachelor of Business Administration (B.B.A.)",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2011
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2014
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "ISM - Frankfurt am Main",
+                            "formacao": "Business",
+                            "tilulo_obtido": "Bachelor of Business Administration (BBA)",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2013
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Col\u00e9gio Universitas",
+                            "formacao": null,
+                            "tilulo_obtido": null,
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2007
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2009
+                                }
+                            }
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "Empresa J\u00fanior FGV / The Junior Enterprise of FGV",
+                            "cargo": "Consultor Pleno",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2011
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2011
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Reurbano",
+                            "cargo": "Entrepreneur",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 9,
+                                    "ano": 2011
+                                },
+                                "fim": {
+                                    "mes": 6,
+                                    "ano": 2012
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Neon",
+                            "cargo": "Founder",
+                            "descricao": "My role is to assume that I don't know everything and work with better professionals than I, in order to build the best bank experience that anyone has ever had.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 12,
+                                    "ano": 2014
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "Sthart",
+                            "cargo": "Entrepreneur",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 3,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2013
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Perfil Moda Fitness",
+                            "cargo": "Entrepreneur",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 11,
+                                    "ano": 2008
+                                },
+                                "fim": {
+                                    "mes": 2,
+                                    "ano": 2010
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Startup House Brasil",
+                            "cargo": "Entrepreneur",
+                            "descricao": "Startup House was a company focused on business development; a group of entrepreneurs, creating and developing ideas, exploring opportunities and drawing dreams from the scratch.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2014
+                                }
+                            }
+                        }
+                    ],
+                    "voluntariado": [],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "Group Product Manager at Neon",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/gislainezaramella",
+                    "nome": "Gislaine",
+                    "sobrenome": "Zaramella",
+                    "sobre": "Experienced Entrepreneur with a demonstrated history of working in the financial services industry. Skilled in Marketing and Product Management, Business Planning, Market Research, and UX. Strong business development professional with a Post Graduation focused in Brand Management from FIA - Funda\u00e7\u00e3o Instituto de Administra\u00e7\u00e3o.",
+                    "seguidores": 1241,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Team Leadership",
+                        "Marketing Management",
+                        "Market Analysis",
+                        "Portuguese",
+                        "Spanish",
+                        "Market Research",
+                        "Business Strategy",
+                        "Project Management",
+                        "Segmentation",
+                        "Management Consulting",
+                        "Strategic Planning",
+                        "Business Analysis",
+                        "Digital Marketing",
+                        "Competitive Analysis",
+                        "Marketing Strategy",
+                        "Business Planning",
+                        "Market Planning",
+                        "Marketing Communications",
+                        "Strategy",
+                        "Marketing"
+                    ],
+                    "linguas": [
+                        "Spanish",
+                        "English"
+                    ],
+                    "cursos_feitos": [],
+                    "premios": [],
+                    "estudos": [
+                        {
+                            "instituicao": "Cursos PM3",
+                            "formacao": "Product Management",
+                            "tilulo_obtido": null,
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2018
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2019
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "FIA - Funda\u00e7\u00e3o Instituto de Administra\u00e7\u00e3o",
+                            "formacao": "Brand Management",
+                            "tilulo_obtido": "Post Graduation",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2011
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2012
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": null,
+                            "formacao": "Management, Economics, Finance and Banking",
+                            "tilulo_obtido": "Specialization",
+                            "descricao": "In-company program customized for ABN AMRO - Real Bank 2008 Trainees.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2008
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2009
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Escola Superior de Propaganda e Marketing",
+                            "formacao": "Branding",
+                            "tilulo_obtido": "Specialization",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2008
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2008
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Universidade Federal do Paran\u00e1",
+                            "formacao": "Business Administration",
+                            "tilulo_obtido": "BS",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2003
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2006
+                                }
+                            }
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "ABN AMRO Banco Real",
+                            "cargo": "Trainee",
+                            "descricao": "Selected as one of 30 trainees among 30.000+ candidates for a management program\nPerformed internships (3 months each) in different departments such as:\nBrand Positioning: developed new methodology for brand positioning\nMarketing strategy to undergraduate students: Delivered the second semester trade marketing campaign aimed to clients\u2019 acquisition\nCompany long term plan: Developed \u201cThe 2020 scenario\u201d for the banking sector, including its implications in the medium and long-term plans",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2008
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2009
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Banco Santander",
+                            "cargo": "Marketing Strategy Analyst",
+                            "descricao": "Set up, along with the Head of Customer Retention, the entire area business plan. Performed deep scenario diagnostic, completed analyzes of the customer behavior and satisfaction, established new customer retention strategy, developed and\nimplemented projects",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2013
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Neon",
+                            "cargo": "Group Product Manager",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 12,
+                                    "ano": 2019
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "AIESEC in Curitiba",
+                            "cargo": "Vice President of Corporate Relations",
+                            "descricao": "AIESEC is a global youth-led organization that promotes the development of Leadership, Social Responsibility, Cultural Awareness and Self-Driven Learning through its experiences of exchange and management of the organization.\nResponsible for the general coordination of the area.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2003
+                                },
+                                "fim": {
+                                    "mes": 9,
+                                    "ano": 2005
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Banco Santander",
+                            "cargo": "Marketing Strategy Consultant",
+                            "descricao": "Member in the team responsible for the growth strategy of the bank\u2019s new business model for high-income customers in Brazil \u2013 Santander Select.\nResponsible for the coordination of multidisciplinary teams.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 8,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": 9,
+                                    "ano": 2014
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Banco Santander",
+                            "cargo": "Sr Marketing Analyst",
+                            "descricao": "Acted as the communication focal point for more than five business divisions, being responsible for the construction and implementation of the entire strategic and tactical plans for those business units\nCoordinated advertising agencies and brand consulting in order to guarantee an aligned plan",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2010
+                                },
+                                "fim": {
+                                    "mes": 1,
+                                    "ano": 2012
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Kraft Foods",
+                            "cargo": "Marketing Intern",
+                            "descricao": "Supported the global brand Tang in launching a new product as a brand extension that happened at the same time in Brazil and Argentina. Interfaced with departments such as product and package R&D, procurement, finance planning, trade marketing, sales planning and law department.\nDelivered Nielsen, trends and competitors reports.\nClosely worked with agencies for campaign development and implementation",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 10,
+                                    "ano": 2005
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2006
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "MEI F\u00e1cil",
+                            "cargo": "Co-Founder & Head of Product Management",
+                            "descricao": "Product Management, Growth Strategy and Customer Success",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 3,
+                                    "ano": 2017
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "Treinei",
+                            "cargo": "CMO and COO",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 5,
+                                    "ano": 2015
+                                },
+                                "fim": {
+                                    "mes": 2,
+                                    "ano": 2017
+                                }
+                            }
+                        }
+                    ],
+                    "voluntariado": [
+                        {
+                            "instituicao": "AIESEC em Curitiba",
+                            "papel": "VP of Corporate Relations",
+                            "causa": "ECONOMIC_EMPOWERMENT",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 3,
+                                    "ano": 2003
+                                },
+                                "fim": {
+                                    "mes": 10,
+                                    "ano": 2005
+                                }
+                            }
+                        }
+                    ],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": null,
+                    "cargo_atual": "Dean of Graduate Studies and University Professor @ Senac University Center",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/mariana-nicolopulos",
+                    "nome": "Marvin Oliver",
+                    "sobrenome": "Schneider",
+                    "sobre": null,
+                    "seguidores": 11782,
+                    "conexoes": {
+                        "numero_exato": null,
+                        "minimo": 500
+                    },
+                    "habilidades": [
+                        "Business Strategy",
+                        "Microsoft PowerPoint",
+                        "English",
+                        "PowerPoint",
+                        "Leadership",
+                        "Estrat\u00e9gia empresarial",
+                        "Microsoft Word",
+                        "Strategic Planning",
+                        "Microsoft Office",
+                        "Gest\u00e3o de portf\u00f3lio de projetos",
+                        "Recrutamento de TI",
+                        "Intelig\u00eancia empresarial",
+                        "Scrum",
+                        "Consultoria",
+                        "Marketing Strategy",
+                        "Recrutamento",
+                        "Planejamento estrat\u00e9gico",
+                        "Gest\u00e3o de projetos",
+                        "Tecnologia da informa\u00e7\u00e3o",
+                        "Project Management"
+                    ],
+                    "linguas": [
+                        "Ingles",
+                        "Portugu\u00eas",
+                        "Grego"
+                    ],
+                    "cursos_feitos": [
+                        "Scrum para Projetos - FIAP",
+                        "Workshop Compet\u00eancias para Alta Performance Dale Carnegie",
+                        "Workshop Apresenta\u00e7\u00f5es de Alto Impacto Dale Carnegie",
+                        "Gest\u00e3o de Projetos"
+                    ],
+                    "premios": [],
+                    "estudos": [
+                        {
+                            "instituicao": "Pontif\u00edcia Universidade Cat\u00f3lica de S\u00e3o Paulo",
+                            "formacao": "Administra\u00e7\u00e3o de Empresas",
+                            "tilulo_obtido": "Especializa\u00e7\u00e3o em Administra\u00e7\u00e3o de Empresas",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2015
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2017
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Centro Universit\u00e1rio Senac",
+                            "formacao": "Hotelaria",
+                            "tilulo_obtido": "Bacharelado em Administra\u00e7\u00e3o Hoteleira",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": null,
+                                    "ano": 2010
+                                },
+                                "fim": {
+                                    "mes": null,
+                                    "ano": 2013
+                                }
+                            }
+                        }
+                    ],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "Page Personnel",
+                            "cargo": "Tech Recruiter - Information Technology Division",
+                            "descricao": "Page Personnel \u00e9 um dos maiores players mundiais em recrutamento especializado em cargos t\u00e9cnicos e de suporte a gest\u00e3o. Parte do PageGroup, grupo multinacional brit\u00e2nico presente em 36 pa\u00edses. Possu\u00edmos um pipeline de candidatos incompar\u00e1vel somado \u00e0 agilidade e qualidade de processos que s\u00f3 a pioneira em recrutamento no Brasil pode oferecer.\n\nNossos consultores s\u00e3o especialistas com experi\u00eancia nas \u00e1reas atuando de maneira estrat\u00e9gica para o neg\u00f3cio de nossos clientes e agregando nossa expertise nas disciplinas de Finance & Tax, Banking & Financial Services, Sales, Information Technology, Secretarial & Office Suport, Human Resources, Supply Chain & Procurement, Marketing, Engineering & Manufactoring, Property & Construction and Retail.\n\nPara conhecer mais, acesse: www.pagepersonnel.com.br \n\nPart of PageGroup, a leading executive search company, LSE listed, with headquarters in London. Page Personnel specializes in recruiting roles at the professional clerical and support levels. We recruit temporary, contract and permanent staff nationwide, with offices all over Brazil.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 11,
+                                    "ano": 2017
+                                },
+                                "fim": {
+                                    "mes": 4,
+                                    "ano": 2019
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Microsoft Innovation Center ",
+                            "cargo": "Product Owner",
+                            "descricao": "Atuei na gest\u00e3o e acompanhamento de projetos de TI, focado em plataformas de ensino e treinamento como jogos, websites e aplicativos m\u00f3veis como Agile Coach das equipes de desenvolvimento.\n\u2022Respons\u00e1vel pelo atendimento e relacionamento com clientes internos e externos; \n\u2022Respons\u00e1vel pelo gerenciamento de projetos do Centro de Inova\u00e7\u00e3o Microsoft \u2013 Senac S\u00e3o Paulo; \n\u2022Acompanhamento das Sprints, acompanhamento do cliclo de vida do projeto e tarefas;\n\u2022Aloca\u00e7\u00e3o e divis\u00e3o de equipes por projetos; \n\u2022Respons\u00e1vel pelos processos seletivos de colaboradores para os projetos do Centro de Inova\u00e7\u00e3o Microsoft \u2013 Senac.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 12,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": 6,
+                                    "ano": 2016
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Neon",
+                            "cargo": "IT Business Partner ",
+                            "descricao": "- Aconselhar e ajudar l\u00edderes da \u00e1rea a atingir os objetivos da companhia usando solu\u00e7\u00f5es que permeiam todas as \u00e1reas de People;\n- Acompanhar e desenvolver l\u00edderes focando em desenvolver sua performance, lideran\u00e7a e gerenciamento de conflitos; \n- Suporte ativo ao neg\u00f3cio em assuntos de People como avalia\u00e7\u00e3o de performance, aloca\u00e7\u00e3o de talentos, promo\u00e7\u00f5es e m\u00e9ritos, engajamento e cultura;\n- Parceria com o time de Talent Acquisition focando em identificar as futuras necessidades de contrata\u00e7\u00f5es das \u00e1reas, al\u00e9m de trabalhar para definir e aplicar novas estrat\u00e9gias de recrutamento para garantir a entrada dos melhores talentos no time; \n- Identificar e aplicar estrat\u00e9gias e pol\u00edticas voltadas a pessoas com o objetivo de escalar o neg\u00f3cio de forma eficiente;\n- Trabalhar em parceria com o time de Tech para acessar, criar e implementar solu\u00e7\u00f5es inovadoras para diversos desafios da \u00e1rea;\n- Suportar a \u00e1rea de People para garantir que sua agenda seja seguida e aplicada nos times de Tecnologia;\n- Construir rela\u00e7\u00f5es de confian\u00e7a e influ\u00eancia com stakeholders para atingir os objetivos do neg\u00f3cio.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2019
+                                },
+                                "fim": {
+                                    "mes": 5,
+                                    "ano": 2020
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Apple Developer Academy | Senac",
+                            "cargo": "Analista de Projetos | Apple Developer Academy Senac",
+                            "descricao": "http://developeracademy.sp.senac.br/\n\nAtuei no acompanhamento do dia a dia dos projetos de parceria do Senac S\u00e3o Paulo, focado nas parcerias de TI. \n\u2022Acompanhamento do desenvolvimento profissional e educacional das equipes do Apple Developer Academy e do Centro de Inova\u00e7\u00e3o Microsoft - Senac;\n\u2022Apoio na elabora\u00e7\u00e3o de contratos e propostas de parcerias visando: investimento, equipe, aprendizado, etc.;\n\u2022Acompanhamento em reuni\u00f5es com os parceiros para report financeiro dos projetos; \n\u2022Apoio administrativo as coordena\u00e7\u00f5es dos Centros e realiza\u00e7\u00e3o de eventos internos e externos;\n\u2022Elabora\u00e7\u00e3o e execu\u00e7\u00e3o de processos seletivos e acompanhamento na sele\u00e7\u00e3o de alunos para os projetos do Centro de Inova\u00e7\u00e3o Microsoft \u2013 Senac; \n\u2022Acompanhamento de processos e fluxos financeiros de projetos do Centro de Estudos Aplicados; \n\u2022Elabora\u00e7\u00e3o de relat\u00f3rios financeiros enviados aos parceiros.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 6,
+                                    "ano": 2016
+                                },
+                                "fim": {
+                                    "mes": 10,
+                                    "ano": 2017
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Neon",
+                            "cargo": "Senior Tech Recruiter",
+                            "descricao": null,
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 5,
+                                    "ano": 2020
+                                },
+                                "fim": null
+                            }
+                        },
+                        {
+                            "instituicao": "Neon",
+                            "cargo": "Senior Tech Recruiter ",
+                            "descricao": "A Neon \u00e9 uma fintech brasileira, fundada em 2016, que tem a miss\u00e3o de unir tecnologia e design para redesenhar e simplificar a experi\u00eancia financeira das pessoas. \n\nCom mais de 500 funcion\u00e1rios, a Neon levantou, em 2018, R$ 72 milh\u00f5es de investimentos Series A em round liderado pela Propel Ventures, Monashees e Quona, que contou tamb\u00e9m com a Yellow Ventures, Omydiar Network e Tera Capital. Sendo a conta digital o principal produto, a fintech possui uma parceria com o Banco Votorantim para cust\u00f3dia e liquida\u00e7\u00e3o de suas contas.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 4,
+                                    "ano": 2019
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2019
+                                }
+                            }
+                        },
+                        {
+                            "instituicao": "Microsoft Innovation Center",
+                            "cargo": "Estagi\u00e1ria",
+                            "descricao": "\u2022Aux\u00edlio no atendimento e relacionamento com clientes internos e externos; \n\u2022Eventos: respons\u00e1vel pela organiza\u00e7\u00e3o, acompanhamento e apresenta\u00e7\u00f5es de eventos do Centro de Inova\u00e7\u00e3o Microsoft \u2013 Senac; \n\u2022Execu\u00e7\u00e3o do processo seletivo de novos estagi\u00e1rios de T.I. para o Centro de Inova\u00e7\u00e3o.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 6,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2013
+                                }
+                            }
+                        }
+                    ],
+                    "voluntariado": [
+                        {
+                            "instituicao": "Projeto English for All",
+                            "papel": "English Language Instructor",
+                            "causa": "EDUCATION",
+                            "descricao": "https://www.projetoefall.com.br/\n",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 3,
+                                    "ano": 2019
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2019
+                                }
+                            }
+                        }
+                    ],
+                    "projetos": [
+                        {
+                            "titulo": "Game Elabora",
+                            "url": null,
+                            "descricao": "Game educativo voltado para alunos do Centro Universit\u00e1rio Senac. No jogo o aluno deve montar um evento baseado em um briefing e um or\u00e7amento. O aluno deve selecionar os m\u00f3veis, posiciona-los de forma correta, garantir adequa\u00e7\u00e3o ao or\u00e7amento e se preocupar com os aspectos da organiza\u00e7\u00e3o de um evento. Atuei no gerenciamento do projeto, acompanhamento da equipe, defini\u00e7\u00e3o de escopo, cronograma e conte\u00fado do jogo. ",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2014
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2014
+                                }
+                            }
+                        },
+                        {
+                            "titulo": "Game Empr\u00e1tica",
+                            "url": null,
+                            "descricao": "Jogo educativo voltado ao ensino de empreendedorismo a alunos de ensino superior. \nAtuei no gerenciamento do projeto, gest\u00e3o de cronograma, gest\u00e3o e acompanhamento da equipe e contato com o cliente.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2014
+                                },
+                                "fim": {
+                                    "mes": 6,
+                                    "ano": 2015
+                                }
+                            }
+                        },
+                        {
+                            "titulo": "Game HOST",
+                            "url": null,
+                            "descricao": "Game educativo voltado para alunos de Hospitalidade do Senac S\u00e3o Paulo. \nAtuei no apoio de apresenta\u00e7\u00e3o e aplica\u00e7\u00e3o do jogo em sala de aula. ",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 6,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2013
+                                }
+                            }
+                        },
+                        {
+                            "titulo": "Game Equil\u00edbrio",
+                            "url": null,
+                            "descricao": "Jogo Educacional de sustentabilidade onde o jogador deve equilibrar fatores sociais, econ\u00f4micos e sustent\u00e1veis para ganhar o jogo. \nAtuei no acompanhamento do projeto e contato com cliente.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 7,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2014
+                                }
+                            }
+                        },
+                        {
+                            "titulo": "Game Mise en Place",
+                            "url": "https://vimeo.com/160010607",
+                            "descricao": "Game educacional voltado para \u00e1rea de Gastronomia. O jogador deve atuar como consultor para implementa\u00e7\u00e3o de um restaurante e deve levar em conta: localiza\u00e7\u00e3o, precifica\u00e7\u00e3o, elabora\u00e7\u00e3o de card\u00e1pios, etc.\nAtuei no gerenciamento do projeto, acompanhamento da equipe, aloca\u00e7\u00e3o de tarefas, defini\u00e7\u00e3o de cronogramas, produ\u00e7\u00e3o de conte\u00fado e acompanhamento junto ao cliente.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2014
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2015
+                                }
+                            }
+                        },
+                        {
+                            "titulo": "Projeto Avalia\u00e7\u00e3o Institucional Senac",
+                            "url": null,
+                            "descricao": "Projeto de um sistema com o objetivo de auxiliar o setor de Avalia\u00e7\u00e3o Instucional do Centro Universit\u00e1rio Senac a divulgar pesquisas realizadas atrav\u00e9s do site \"SurveyMonkey\". \nAtuei no gerenciamento e escopo do projeto, gest\u00e3o de cronograma, gest\u00e3o e acompanhamento da equipe e contato com o cliente.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 8,
+                                    "ano": 2015
+                                },
+                                "fim": {
+                                    "mes": 1,
+                                    "ano": 2016
+                                }
+                            }
+                        },
+                        {
+                            "titulo": "Ambiente Virtual de Praticas Administrativas - AVPA",
+                            "url": null,
+                            "descricao": "Simulador de pr\u00e1ticas administrativas para alunos de curso t\u00e9cnico do Senac SP. \nAtuei no acompanhamento da equipe e acompanhamento junto ao cliente.",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 1,
+                                    "ano": 2013
+                                },
+                                "fim": {
+                                    "mes": 7,
+                                    "ano": 2014
+                                }
+                            }
+                        },
+                        {
+                            "titulo": "Change at Enz's Palace",
+                            "url": null,
+                            "descricao": "Jogo de estrat\u00e9gia desenvolvido pela Profa. Dra. Cathy A. Enz na Cornell School of Hotel Administration. \nAtuei no acompanhamento do desenvolvimento do projeto, apoio de conte\u00fado e contato com o cliente. ",
+                            "periodo": {
+                                "inicio": {
+                                    "mes": 6,
+                                    "ano": 2012
+                                },
+                                "fim": {
+                                    "mes": 12,
+                                    "ano": 2013
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Marketing Leader na Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/juliano-tenorio-scapin-4370b433"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Product Manager na Neon | McKinsey Secondment",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/rafaelvilarinhobernardes"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Conselheiro & Investidor",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/norbertogiangrande"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Pleno Talent Acquisition e Employer Branding na Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/kaiene-silva"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Product Manager at Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/brunopardo"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Partner & Head of SME | Neon; Founder & CEO | MEI F\u00e1cil",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/marceloamoraes"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Product Manager at Neon | Mei F\u00e1cil",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/fernandocanicais"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Employer Branding Manager na Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/brunaffmarques"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Produ\u00e7\u00e3o de Conte\u00fado | Community Engagement na Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/iolanda-d-86749388"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Business Analyst at Neon & Aspiring Data Scientist",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/serachung"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Brand Designer at Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/caueos"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Chief of Staff at Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/travisfoxhall"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Estagi\u00e1ria na Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/luiza-mendonca-miranda"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Head of Talent Acquisition at Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/carol-oksman-70594915"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Brand & Creative Marketing Manager at Neon",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/michelfarah14"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Analista Plena de CX na Neon | Reclame Aqui | Design Thinking.",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/marquescarol"
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Estudante de direito na Universidade Presbiteriana Mackenzie e estagi\u00e1ria na Neon Pagamentos",
+                    "dados_obtidos": false,
+                    "url": "https://www.linkedin.com/in/julia-girotto-2b0a40159"
+                }
+            ]
+        },
+        {
+            "url": "https://www.linkedin.com/company/mark/",
+            "dados_obtidos": false,
+            "company_id": "614213",
+            "nome": "Mark",
+            "quantidade_funcionarios": 764,
+            "urls_de_funcionarios_obtidos": 1,
+            "funcionarios": [
+                {
+                    "localizacao_atual": "Des Moines, Iowa Area",
+                    "cargo_atual": "Group CEO at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Nigeria",
+                    "cargo_atual": "I am currently open to investors who are looking forward to investing in properties in Lagos.",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Adamantina Area, Brazil",
+                    "cargo_atual": "Gerente l\u00edder de equipe na Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Toronto, Canada Area",
+                    "cargo_atual": "Deputy CEO at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Belo Horizonte Area, Brazil",
+                    "cargo_atual": "gerente geral na Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Brisbane, Australia",
+                    "cargo_atual": "CEO at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Hickory/Lenoir, North Carolina Area",
+                    "cargo_atual": "Manager at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Nigeria",
+                    "cargo_atual": "Chief Executive Officer at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Warsaw, Masovian District, Poland",
+                    "cargo_atual": "Szko\u0142a \u015brednia w Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Campina Grande Area, Brazil",
+                    "cargo_atual": "Diretor n\u00e3o executivo na Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Wolverhampton, United Kingdom",
+                    "cargo_atual": "Managing Director at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Croydon, United Kingdom",
+                    "cargo_atual": "Managing Director at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Colombo, Western, Sri Lanka",
+                    "cargo_atual": "General Manager at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Korea",
+                    "cargo_atual": "Mark ceo",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Mumbai Area, India",
+                    "cargo_atual": "General Manager at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Campinas, S\u00e3o Paulo, Brazil",
+                    "cargo_atual": "Marketing na Mark",
+                    "dados_obtidos": true,
+                    "url": "https://www.linkedin.com/in/leandro-marques-642930135",
+                    "nome": "Leandro",
+                    "sobrenome": "Marques",
+                    "sobre": null,
+                    "seguidores": 11,
+                    "conexoes": {
+                        "numero_exato": 11,
+                        "minimo": null
+                    },
+                    "habilidades": [],
+                    "linguas": [],
+                    "cursos_feitos": [],
+                    "premios": [],
+                    "estudos": [],
+                    "experiencia_profissional": [
+                        {
+                            "instituicao": "Mark",
+                            "cargo": "Marketing",
+                            "descricao": null,
+                            "periodo": null
+                        }
+                    ],
+                    "voluntariado": [],
+                    "projetos": []
+                },
+                {
+                    "localizacao_atual": "Peru",
+                    "cargo_atual": "Propietario de empresa en Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Gerente de projetos na Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "France",
+                    "cargo_atual": "EMEA Marketing Manager chez Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Region XI - Davao, Philippines",
+                    "cargo_atual": "Executive Assistant to CEO at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Greater Los Angeles Area",
+                    "cargo_atual": "President at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Itapira Area, Brazil",
+                    "cargo_atual": "Marketing na Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "United States",
+                    "cargo_atual": "VP at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Rwanda",
+                    "cargo_atual": "Managing Director at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Kitchener, Canada Area",
+                    "cargo_atual": "Vice President at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Amravati Area, India",
+                    "cargo_atual": "Huge Vacancies at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Rio de Janeiro Area, Brazil",
+                    "cargo_atual": "Marketing na Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Singapore",
+                    "cargo_atual": "Assistant manager at Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                    "cargo_atual": "Telemarketing na Mark",
+                    "dados_obtidos": false
+                },
+                {
+                    "localizacao_atual": "Nigeria",
+                    "cargo_atual": "Marketing Director at Mark",
+                    "dados_obtidos": false
+                }
+            ]
+        }
+    ]
+}

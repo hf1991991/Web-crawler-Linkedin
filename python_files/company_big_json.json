@@ -1,0 +1,1056 @@
+{
+    "data": {
+        "entityUrn": "urn:li:collectionResponse:zzzclGm9ftMqRa3UCoSLWwITZsVTMBqcomcq8N9OXNc=",
+        "elements": [
+            {
+                "peopleGroupingType": "JOB_FUNCTION",
+                "itemType": "PEOPLE",
+                "organizationPeopleProfileUrns": [
+                    "urn:li:fs_normalized_profile:ACoAAC1JXWABL4pDqmN3fzRswqv_KigMK2c7abs",
+                    "urn:li:fs_normalized_profile:ACoAACye8KQB1YnSu519jGScBmQOpTOAA7YpZgw",
+                    "urn:li:fs_normalized_profile:ACoAABTc0tYBMdDcfRv24I-pv6peuo3bjxC7oBQ",
+                    "urn:li:fs_normalized_profile:ACoAACgSagABHrkGyC6mPYCGio5OpDf9omfwQEs"
+                ],
+                "headline": {
+                    "textDirection": "USER_LOCALE",
+                    "text": "20 employees working in Information Technology",
+                    "$type": "com.linkedin.voyager.common.TextViewModel"
+                },
+                "$recipeTypes": [
+                    "com.linkedin.voyager.deco.organization.web.highlights.WebHighlightItem"
+                ],
+                "totalPeopleCount": 20,
+                "organizationPeopleProfileUrnsResolutionResults": {
+                    "*urn:li:fs_normalized_profile:ACoAACye8KQB1YnSu519jGScBmQOpTOAA7YpZgw": "urn:li:fs_normalized_profile:ACoAACye8KQB1YnSu519jGScBmQOpTOAA7YpZgw",
+                    "*urn:li:fs_normalized_profile:ACoAABTc0tYBMdDcfRv24I-pv6peuo3bjxC7oBQ": "urn:li:fs_normalized_profile:ACoAABTc0tYBMdDcfRv24I-pv6peuo3bjxC7oBQ",
+                    "*urn:li:fs_normalized_profile:ACoAACgSagABHrkGyC6mPYCGio5OpDf9omfwQEs": "urn:li:fs_normalized_profile:ACoAACgSagABHrkGyC6mPYCGio5OpDf9omfwQEs",
+                    "*urn:li:fs_normalized_profile:ACoAAC1JXWABL4pDqmN3fzRswqv_KigMK2c7abs": "urn:li:fs_normalized_profile:ACoAAC1JXWABL4pDqmN3fzRswqv_KigMK2c7abs"
+                },
+                "$type": "com.linkedin.voyager.organization.highlights.HighlightItem"
+            },
+            {
+                "itemType": "JOB",
+                "recommendedJobs": false,
+                "normalizedJobPostingUrns": [
+                    "urn:li:fs_normalized_jobPosting:1963116937",
+                    "urn:li:fs_normalized_jobPosting:1963153934"
+                ],
+                "$recipeTypes": [
+                    "com.linkedin.voyager.deco.organization.web.highlights.WebHighlightItem"
+                ],
+                "$type": "com.linkedin.voyager.organization.highlights.HighlightItem",
+                "totalJobsCounts": 2,
+                "normalizedJobPostingUrnsResolutionResults": {
+                    "*urn:li:fs_normalized_jobPosting:1963116937": "urn:li:fs_normalized_jobPosting:1963116937",
+                    "*urn:li:fs_normalized_jobPosting:1963153934": "urn:li:fs_normalized_jobPosting:1963153934"
+                },
+                "jobPostingsReferenceId": "8352519181595786013314",
+                "headline": {
+                    "textDirection": "USER_LOCALE",
+                    "text": "2 recently posted jobs",
+                    "$type": "com.linkedin.voyager.common.TextViewModel"
+                }
+            }
+        ],
+        "paging": {
+            "total": 2,
+            "count": 3,
+            "start": 0,
+            "links": []
+        },
+        "$type": "com.linkedin.restli.common.CollectionResponse"
+    },
+    "meta": {
+        "microSchema": {
+            "version": "2",
+            "types": {
+                "com.linkedin.voyager.deco.identity.normalizedprofile.shared.WebListedProfile": {
+                    "fields": {
+                        "profilePicture": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "lastName": {
+                            "type": "string"
+                        },
+                        "firstName": {
+                            "type": "string"
+                        },
+                        "distance": {
+                            "type": "string"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "location": {
+                            "type": "com.linkedin.voyager.identity.normalizedprofile.Location"
+                        },
+                        "publicIdentifier": {
+                            "type": "string"
+                        },
+                        "headline": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.identity.normalizedprofile.Profile"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.OrganizationEventsCardForHighlightReel": {
+                    "fields": {
+                        "streamLive": {
+                            "type": "boolean"
+                        },
+                        "shortDisplayEventTime": {
+                            "type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "attendeeCount": {
+                            "type": "int"
+                        },
+                        "eventResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.web.highlights.ProfessionalEventForOrganizationEvent",
+                            "resolvedFrom": "event"
+                        },
+                        "event": {
+                            "type": "string"
+                        },
+                        "attendeeConnectionsCount": {
+                            "type": "int"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.OrganizationEvent"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.CompactOrganizationPhoto": {
+                    "fields": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "image": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.content.OrganizationPhoto"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.WebProductReviewSummary": {
+                    "fields": {
+                        "reviewerUrns": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "productUrnResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.web.WebHighlightReelProduct",
+                            "resolvedFrom": "productUrn"
+                        },
+                        "description": {
+                            "type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "totalReviews": {
+                            "type": "int"
+                        },
+                        "reviewerUrnsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.identity.normalizedprofile.shared.WebListedProfile"
+                            },
+                            "resolvedFrom": "reviewerUrns"
+                        },
+                        "productUrn": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.products.ReviewSummary"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.WebTargetedContentForHighlightItem": {
+                    "fields": {
+                        "vanityName": {
+                            "type": "string"
+                        },
+                        "additionalMediaSections": {
+                            "type": {
+                                "array": "com.linkedin.voyager.organization.content.MediaSection"
+                            }
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "photosSection": {
+                            "type": "com.linkedin.voyager.deco.organization.web.highlights.FullPhotosSection"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.content.TargetedContent"
+                },
+                "com.linkedin.voyager.deco.jobs.web.shared.relevancereasons.WebListedInNetworkDetails": {
+                    "fields": {
+                        "topConnections": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "totalNumberOfConnections": {
+                            "type": "int"
+                        },
+                        "topConnectionsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.identity.normalizedprofile.shared.WebListedProfile"
+                            },
+                            "resolvedFrom": "topConnections"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.shared.InNetworkRelevanceReasonDetails"
+                },
+                "com.linkedin.voyager.deco.organization.shared.WebCompactSchool": {
+                    "fields": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "logo": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.shared.School"
+                },
+                "com.linkedin.voyager.deco.common.WebFullSkill": {
+                    "fields": {
+                        "standardizedName": {
+                            "type": "string"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.shared.Skill"
+                },
+                "com.linkedin.voyager.deco.jobs.web.shared.WebJobPostingRelevanceReasonDetail": {
+                    "fields": {
+                        "maximumCommuteTravelTimeMinutes": {
+                            "type": "int"
+                        },
+                        "superTitleResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.jobs.web.shared.WebFullSuperTitle",
+                            "resolvedFrom": "superTitle"
+                        },
+                        "salaryHighEnd": {
+                            "type": "double"
+                        },
+                        "responseRate": {
+                            "type": "double"
+                        },
+                        "growthRate": {
+                            "type": "double"
+                        },
+                        "salaryHighEndDisplay": {
+                            "type": "string"
+                        },
+                        "salaryHigherThanMemberPercentage": {
+                            "type": "double"
+                        },
+                        "totalNumberOfPeople": {
+                            "type": "int"
+                        },
+                        "monthsOfExperience": {
+                            "type": "int"
+                        },
+                        "skills": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "applicantCount": {
+                            "type": "int"
+                        },
+                        "profileUrnsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.identity.normalizedprofile.shared.WebListedProfile"
+                            },
+                            "resolvedFrom": "profileUrns"
+                        },
+                        "activelyHiringCompany": {
+                            "type": "boolean"
+                        },
+                        "compensationSource": {
+                            "type": "string"
+                        },
+                        "highGrowthCompanyResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.shared.WebCompactCompany",
+                            "resolvedFrom": "highGrowthCompany"
+                        },
+                        "skillsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.common.WebFullSkill"
+                            },
+                            "resolvedFrom": "skills"
+                        },
+                        "mostRecentSchoolResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.shared.WebCompactSchool",
+                            "resolvedFrom": "mostRecentSchool"
+                        },
+                        "salaryHigherThanSimilarTitlePercentage": {
+                            "type": "double"
+                        },
+                        "highGrowthCompany": {
+                            "type": "string"
+                        },
+                        "currentCompany": {
+                            "type": "string"
+                        },
+                        "superTitle": {
+                            "type": "string"
+                        },
+                        "currentCompanyResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.shared.WebCompactCompany",
+                            "resolvedFrom": "currentCompany"
+                        },
+                        "salaryLowEnd": {
+                            "type": "double"
+                        },
+                        "salaryMedian": {
+                            "type": "double"
+                        },
+                        "mostRecentSchool": {
+                            "type": "string"
+                        },
+                        "percentile": {
+                            "type": "double"
+                        },
+                        "salaryHigherThanIndustryPercentage": {
+                            "type": "double"
+                        },
+                        "relevanceReasonFlavor": {
+                            "type": "string"
+                        },
+                        "salaryLowEndDisplay": {
+                            "type": "string"
+                        },
+                        "salaryCurrencyCode": {
+                            "type": "string"
+                        },
+                        "profileUrns": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "salaryHigherThanMemberAmount": {
+                            "type": "double"
+                        },
+                        "travelMode": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.relevancereasons.JobPostingRelevanceReasonDetail"
+                },
+                "com.linkedin.voyager.deco.organization.web.WebHighlightReelProduct": {
+                    "fields": {
+                        "productCategories": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "logo": {
+                            "type": "com.linkedin.common.VectorImage"
+                        },
+                        "localizedName": {
+                            "type": "string"
+                        },
+                        "universalName": {
+                            "type": "string"
+                        },
+                        "localizedDescription": {
+                            "type": "string"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.OrganizationProduct"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.WebContentTopicDataCard": {
+                    "fields": {
+                        "feedTopic": {
+                            "type": "com.linkedin.voyager.feed.FeedTopic"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "followAction": {
+                            "type": "com.linkedin.voyager.feed.render.FollowAction"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.feed.ContentTopicData"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.FullPhotosSection": {
+                    "fields": {
+                        "photosResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.highlights.CompactOrganizationPhoto"
+                            },
+                            "resolvedFrom": "photos"
+                        },
+                        "photos": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "visible": {
+                            "type": "boolean"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.content.PhotosSection"
+                },
+                "com.linkedin.voyager.deco.jobs.web.shared.WebAllJobPostingRelevanceReasons": {
+                    "fields": {
+                        "reasons": {
+                            "type": {
+                                "array": "com.linkedin.voyager.deco.jobs.web.shared.relevancereasons.WebListedJobPostingRelevanceReason"
+                            }
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.relevancereasons.JobPostingRelevanceReasons"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.ProfessionalEventForOrganizationEvent": {
+                    "fields": {
+                        "lifecycleState": {
+                            "type": "string"
+                        },
+                        "vanityName": {
+                            "type": "string"
+                        },
+                        "endsOn": {
+                            "type": "com.linkedin.common.Date"
+                        },
+                        "localizedName": {
+                            "type": "string"
+                        },
+                        "address": {
+                            "type": "com.linkedin.common.Address"
+                        },
+                        "backgroundImage": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "timeZoneOffset": {
+                            "type": "float"
+                        },
+                        "timeZone": {
+                            "type": "string"
+                        },
+                        "venueDetails": {
+                            "type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "displayEventTime": {
+                            "type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "eventTimezone": {
+                            "type": "string"
+                        },
+                        "viewerStatus": {
+                            "type": "string"
+                        },
+                        "openEvent": {
+                            "type": "boolean"
+                        },
+                        "startsOn": {
+                            "type": "com.linkedin.common.Date"
+                        },
+                        "hostViewer": {
+                            "type": "boolean"
+                        },
+                        "logoImageUrn": {
+                            "type": "string"
+                        },
+                        "logoImage": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "endTimeOfDay": {
+                            "type": "com.linkedin.common.TimeOfDay"
+                        },
+                        "backgroundImageUrn": {
+                            "type": "string"
+                        },
+                        "localizedDescription": {
+                            "type": "com.linkedin.pemberly.text.AttributedText"
+                        },
+                        "startTimeOfDay": {
+                            "type": "com.linkedin.common.TimeOfDay"
+                        },
+                        "timeRange": {
+                            "type": "com.linkedin.common.TimeRange"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.growth.events.ProfessionalEvent"
+                },
+                "com.linkedin.voyager.deco.jobs.web.shared.relevancereasons.WebListedJobPostingRelevanceReason": {
+                    "fields": {
+                        "jobPosting": {
+                            "type": "string"
+                        },
+                        "details": {
+                            "type": {
+                                "union": [
+                                    "com.linkedin.voyager.deco.jobs.web.shared.relevancereasons.WebListedInNetworkDetails",
+                                    "com.linkedin.voyager.jobs.shared.JobSeekerQualifiedRelevanceReasonDetails",
+                                    "com.linkedin.voyager.deco.jobs.web.shared.relevancereasons.WebListedSchoolRecruitDetails",
+                                    "com.linkedin.voyager.jobs.shared.HiddenGemRelevanceReasonDetails",
+                                    "com.linkedin.voyager.deco.jobs.web.shared.relevancereasons.WebListedCompanyRecruitDetails"
+                                ]
+                            }
+                        },
+                        "jobPostingRelevanceReasonDetail": {
+                            "type": "com.linkedin.voyager.deco.jobs.web.shared.WebJobPostingRelevanceReasonDetail"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.relevancereasons.JobPostingRelevanceReason"
+                },
+                "com.linkedin.voyager.deco.organization.shared.WebCompactCompany": {
+                    "fields": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "logo": {
+                            "type": "com.linkedin.voyager.organization.CompanyLogoImage"
+                        },
+                        "universalName": {
+                            "type": "string"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.Company"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.ReviewedProductsCardForHighlightReel": {
+                    "fields": {
+                        "totalRecentReviews": {
+                            "type": "int"
+                        },
+                        "recentReviewSummaries": {
+                            "type": {
+                                "array": "com.linkedin.voyager.deco.organization.web.highlights.WebProductReviewSummary"
+                            }
+                        },
+                        "totalProductsWithRecentReviews": {
+                            "type": "int"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.highlights.ReviewedProductsHighlightReel"
+                },
+                "com.linkedin.voyager.deco.jobs.web.shared.WebCompactJobPostingCompany": {
+                    "fields": {
+                        "companyResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.shared.WebCompactCompany",
+                            "resolvedFrom": "company"
+                        },
+                        "company": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.JobPostingCompany"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.WebProfileCardForHighlightReel": {
+                    "fields": {
+                        "profilePicture": {
+                            "type": {
+                                "union": [
+                                    "string",
+                                    "com.linkedin.voyager.common.MediaProxyImage",
+                                    "com.linkedin.voyager.common.MediaProcessorImage",
+                                    "com.linkedin.common.VectorImage"
+                                ]
+                            }
+                        },
+                        "mostRecentPosition": {
+                            "type": "com.linkedin.voyager.identity.normalizedprofile.Position"
+                        },
+                        "lastName": {
+                            "type": "string"
+                        },
+                        "firstName": {
+                            "type": "string"
+                        },
+                        "distance": {
+                            "type": "string"
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.identity.normalizedprofile.Profile"
+                },
+                "com.linkedin.voyager.deco.jobs.web.shared.WebFullSuperTitle": {
+                    "fields": {
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "localizedName": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.shared.SuperTitle"
+                },
+                "com.linkedin.voyager.deco.jobs.web.shared.relevancereasons.WebListedSchoolRecruitDetails": {
+                    "fields": {
+                        "totalNumberOfAlumni": {
+                            "type": "int"
+                        },
+                        "mostRecentlyGraduatedAlumni": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "mostRecentlyGraduatedAlumniResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.identity.normalizedprofile.shared.WebListedProfile"
+                            },
+                            "resolvedFrom": "mostRecentlyGraduatedAlumni"
+                        },
+                        "mostRecentSchool": {
+                            "type": "string"
+                        },
+                        "mostRecentSchoolResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.shared.WebCompactSchool",
+                            "resolvedFrom": "mostRecentSchool"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.shared.SchoolRecruitRelevanceReasonDetails"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.ProductsCardForHighlightReel": {
+                    "fields": {
+                        "totalCount": {
+                            "type": "int"
+                        },
+                        "productUrns": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "productUrnsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.WebHighlightReelProduct"
+                            },
+                            "resolvedFrom": "productUrns"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.highlights.ProductsHighlightReel"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.WebJobPostingCardForHighlightReel": {
+                    "fields": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "listedAt": {
+                            "type": "long"
+                        },
+                        "companyDetails": {
+                            "type": {
+                                "union": [
+                                    "com.linkedin.voyager.jobs.JobPostingCompanyName",
+                                    "com.linkedin.voyager.deco.jobs.web.shared.WebCompactJobPostingCompany"
+                                ]
+                            }
+                        },
+                        "entityUrn": {
+                            "type": "string"
+                        },
+                        "topNRelevanceReasonsInjectionResult": {
+                            "type": "com.linkedin.voyager.deco.jobs.web.shared.WebAllJobPostingRelevanceReasons",
+                            "isInjection": true
+                        },
+                        "formattedLocation": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.JobPosting"
+                },
+                "com.linkedin.voyager.deco.jobs.web.shared.relevancereasons.WebListedCompanyRecruitDetails": {
+                    "fields": {
+                        "mostRecentlyTransitionedCoworkersResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.identity.normalizedprofile.shared.WebListedProfile"
+                            },
+                            "resolvedFrom": "mostRecentlyTransitionedCoworkers"
+                        },
+                        "totalNumberOfPastCoworkers": {
+                            "type": "int"
+                        },
+                        "currentCompanyResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.shared.WebCompactCompany",
+                            "resolvedFrom": "currentCompany"
+                        },
+                        "mostRecentlyTransitionedCoworkers": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "currentCompany": {
+                            "type": "string"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.jobs.shared.CompanyRecruitRelevanceReasonDetails"
+                },
+                "com.linkedin.voyager.deco.organization.web.highlights.WebHighlightItem": {
+                    "fields": {
+                        "peopleGroupingType": {
+                            "type": "string"
+                        },
+                        "itemType": {
+                            "type": "string"
+                        },
+                        "upcomingEventsCount": {
+                            "type": "int"
+                        },
+                        "normalizedJobPostingUrns": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "totalPeopleCount": {
+                            "type": "int"
+                        },
+                        "products": {
+                            "type": "com.linkedin.voyager.deco.organization.web.highlights.ProductsCardForHighlightReel"
+                        },
+                        "nextUpcomingEvents": {
+                            "type": {
+                                "array": "com.linkedin.voyager.deco.organization.web.highlights.OrganizationEventsCardForHighlightReel"
+                            }
+                        },
+                        "recentVideoPosts": {
+                            "type": {
+                                "array": "com.linkedin.voyager.feed.render.UpdateV2"
+                            }
+                        },
+                        "organizationTargetedContentUrn": {
+                            "type": "string"
+                        },
+                        "normalizedJobPostingUrnsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.highlights.WebJobPostingCardForHighlightReel"
+                            },
+                            "resolvedFrom": "normalizedJobPostingUrns"
+                        },
+                        "jobPostingsReferenceId": {
+                            "type": "string"
+                        },
+                        "associatedHashtagFollowerProfileUrnsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.highlights.WebProfileCardForHighlightReel"
+                            },
+                            "resolvedFrom": "associatedHashtagFollowerProfileUrns"
+                        },
+                        "targetedContentDefaultView": {
+                            "type": "boolean"
+                        },
+                        "headline": {
+                            "type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "associatedHashtagTrendingPost": {
+                            "type": "com.linkedin.voyager.feed.render.UpdateV2"
+                        },
+                        "announcement": {
+                            "type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "reviewedProducts": {
+                            "type": "com.linkedin.voyager.deco.organization.web.highlights.ReviewedProductsCardForHighlightReel"
+                        },
+                        "organizationPeopleProfileUrns": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "associatedHashtagFollowerProfileUrns": {
+                            "type": {
+                                "array": "string"
+                            }
+                        },
+                        "recommendedJobs": {
+                            "type": "boolean"
+                        },
+                        "associatedHashtagUrn": {
+                            "type": "string"
+                        },
+                        "organizationPeopleProfileUrnsResolutionResults": {
+                            "type": {
+                                "map": "com.linkedin.voyager.deco.organization.web.highlights.WebProfileCardForHighlightReel"
+                            },
+                            "resolvedFrom": "organizationPeopleProfileUrns"
+                        },
+                        "totalJobsCounts": {
+                            "type": "int"
+                        },
+                        "associatedHashtagUrnResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.web.highlights.WebContentTopicDataCard",
+                            "resolvedFrom": "associatedHashtagUrn"
+                        },
+                        "organizationTargetedContentUrnResolutionResult": {
+                            "type": "com.linkedin.voyager.deco.organization.web.highlights.WebTargetedContentForHighlightItem",
+                            "resolvedFrom": "organizationTargetedContentUrn"
+                        }
+                    },
+                    "baseType": "com.linkedin.voyager.organization.highlights.HighlightItem"
+                }
+            }
+        }
+    },
+    "included": [
+        {
+            "lastName": "Hernandez",
+            "distance": "OUT_OF_NETWORK",
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.web.highlights.WebProfileCardForHighlightReel"
+            ],
+            "$type": "com.linkedin.voyager.identity.normalizedprofile.Profile",
+            "profilePicture": {
+                "$type": "com.linkedin.common.VectorImage",
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQFFn6wuqckqgg/profile-displayphoto-shrink_",
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "expiresAt": 1601510400000,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1601510400&v=beta&t=WwxYohVNJ9wcbIgaKfChmjyBJgPKx9ehkViV6JaSoAA",
+                        "$type": "com.linkedin.common.VectorArtifact",
+                        "height": 100
+                    },
+                    {
+                        "width": 200,
+                        "expiresAt": 1601510400000,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1601510400&v=beta&t=3DszQr5LVMWYrLZv9yZq9CL7RQPSzGJHeWME17kExZI",
+                        "$type": "com.linkedin.common.VectorArtifact",
+                        "height": 200
+                    },
+                    {
+                        "width": 400,
+                        "expiresAt": 1601510400000,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1601510400&v=beta&t=T1pbDsiHNahMHVjDr2wSHflGHT4CKysevXMlm0lSQPA",
+                        "$type": "com.linkedin.common.VectorArtifact",
+                        "height": 400
+                    },
+                    {
+                        "width": 800,
+                        "expiresAt": 1601510400000,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1601510400&v=beta&t=O2oyaf-n5g5gAnPOgIiUmx0IkDMJNJPdbWt__-U4aiU",
+                        "$type": "com.linkedin.common.VectorArtifact",
+                        "height": 800
+                    }
+                ]
+            },
+            "firstName": "Victoriano",
+            "entityUrn": "urn:li:fs_normalized_profile:ACoAAC1JXWABL4pDqmN3fzRswqv_KigMK2c7abs",
+            "mostRecentPosition": {
+                "positionId": 1508620684,
+                "companyName": "Mark",
+                "company": "urn:li:fs_normalized_company:614213",
+                "title": "Jefe de equipo",
+                "$type": "com.linkedin.voyager.identity.normalizedprofile.Position"
+            }
+        },
+        {
+            "lastName": "fulton",
+            "distance": "OUT_OF_NETWORK",
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.web.highlights.WebProfileCardForHighlightReel"
+            ],
+            "$type": "com.linkedin.voyager.identity.normalizedprofile.Profile",
+            "firstName": "jacob",
+            "profilePicture": null,
+            "entityUrn": "urn:li:fs_normalized_profile:ACoAACgSagABHrkGyC6mPYCGio5OpDf9omfwQEs",
+            "mostRecentPosition": {
+                "positionId": 1349853018,
+                "companyName": "Mark",
+                "company": "urn:li:fs_normalized_company:614213",
+                "title": "IT Professional",
+                "$type": "com.linkedin.voyager.identity.normalizedprofile.Position"
+            }
+        },
+        {
+            "lastName": "Lima",
+            "distance": "OUT_OF_NETWORK",
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.web.highlights.WebProfileCardForHighlightReel"
+            ],
+            "$type": "com.linkedin.voyager.identity.normalizedprofile.Profile",
+            "firstName": "Thomas",
+            "profilePicture": null,
+            "entityUrn": "urn:li:fs_normalized_profile:ACoAABTc0tYBMdDcfRv24I-pv6peuo3bjxC7oBQ",
+            "mostRecentPosition": {
+                "positionId": 549456976,
+                "companyName": "Mark-It Services",
+                "company": "urn:li:fs_normalized_company:614213",
+                "title": "Data Analyst/Team Leader",
+                "$type": "com.linkedin.voyager.identity.normalizedprofile.Position"
+            }
+        },
+        {
+            "lastName": "Bridges",
+            "distance": "OUT_OF_NETWORK",
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.web.highlights.WebProfileCardForHighlightReel"
+            ],
+            "$type": "com.linkedin.voyager.identity.normalizedprofile.Profile",
+            "profilePicture": {
+                "$type": "com.linkedin.common.VectorImage",
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQHy8aTifeYZJA/profile-displayphoto-shrink_",
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "expiresAt": 1601510400000,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1601510400&v=beta&t=yfnLz7DqRfNENjSx1ZNEJM_YvxX2l0MPMLptgVktPRc",
+                        "$type": "com.linkedin.common.VectorArtifact",
+                        "height": 100
+                    },
+                    {
+                        "width": 200,
+                        "expiresAt": 1601510400000,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1601510400&v=beta&t=Y_BDnGQaatvKOIgynABsaU3_u4Yia9B9E5H_ZJbbp_M",
+                        "$type": "com.linkedin.common.VectorArtifact",
+                        "height": 200
+                    },
+                    {
+                        "width": 400,
+                        "expiresAt": 1601510400000,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1601510400&v=beta&t=a7VS_wJq9HeZm6wIqhEwy-dBnzdZAZPZVHL1JkFzYOA",
+                        "$type": "com.linkedin.common.VectorArtifact",
+                        "height": 400
+                    },
+                    {
+                        "width": 800,
+                        "expiresAt": 1601510400000,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1601510400&v=beta&t=rFmTxiJSAUY41baJWprB9nqFveZCk02ygSA0vhKO_sM",
+                        "$type": "com.linkedin.common.VectorArtifact",
+                        "height": 800
+                    }
+                ]
+            },
+            "firstName": "Dianne",
+            "entityUrn": "urn:li:fs_normalized_profile:ACoAACye8KQB1YnSu519jGScBmQOpTOAA7YpZgw",
+            "mostRecentPosition": {
+                "positionId": 1490836153,
+                "companyName": "Mark",
+                "company": "urn:li:fs_normalized_company:614213",
+                "title": "Marketing Data Consultant",
+                "$type": "com.linkedin.voyager.identity.normalizedprofile.Position"
+            }
+        },
+        {
+            "companyDetails": {
+                "company": "urn:li:fs_normalized_company:614213",
+                "*companyResolutionResult": "urn:li:fs_normalized_company:614213",
+                "$recipeTypes": [
+                    "com.linkedin.voyager.deco.jobs.web.shared.WebCompactJobPostingCompany"
+                ],
+                "$type": "com.linkedin.voyager.jobs.JobPostingCompany"
+            },
+            "formattedLocation": "Catanzaro, IT",
+            "title": "Tecnico montatore/assistenza",
+            "listedAt": 1595601324000,
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.web.highlights.WebJobPostingCardForHighlightReel"
+            ],
+            "$type": "com.linkedin.voyager.jobs.JobPosting",
+            "entityUrn": "urn:li:fs_normalized_jobPosting:1963153934"
+        },
+        {
+            "companyDetails": {
+                "company": "urn:li:fs_normalized_company:614213",
+                "*companyResolutionResult": "urn:li:fs_normalized_company:614213",
+                "$recipeTypes": [
+                    "com.linkedin.voyager.deco.jobs.web.shared.WebCompactJobPostingCompany"
+                ],
+                "$type": "com.linkedin.voyager.jobs.JobPostingCompany"
+            },
+            "formattedLocation": "Catanzaro, IT",
+            "title": "Impiego marketing",
+            "listedAt": 1595599490000,
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.web.highlights.WebJobPostingCardForHighlightReel"
+            ],
+            "$type": "com.linkedin.voyager.jobs.JobPosting",
+            "entityUrn": "urn:li:fs_normalized_jobPosting:1963116937"
+        },
+        {
+            "$recipeTypes": [
+                "com.linkedin.voyager.deco.organization.shared.WebCompactCompany"
+            ],
+            "url": "https://www.linkedin.com/company/mark",
+            "$type": "com.linkedin.voyager.organization.Company",
+            "entityUrn": "urn:li:fs_normalized_company:614213",
+            "name": "Mark",
+            "logo": {
+                "image": {
+                    "$type": "com.linkedin.common.VectorImage",
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQHu42bXf9VYKg/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "expiresAt": 1603929600000,
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1603929600&v=beta&t=Pc1pCkXZu0JfPT8BR2erb54R2fOjk2fGE37B3j_ToHE",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 200
+                        },
+                        {
+                            "width": 100,
+                            "expiresAt": 1603929600000,
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1603929600&v=beta&t=nfLoBclXWp5eSMiwWPpDSJkMyIvZooyIHjPkGfqyFos",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 100
+                        },
+                        {
+                            "width": 400,
+                            "expiresAt": 1603929600000,
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1603929600&v=beta&t=SNuszgEF6MFz713I6tDFG7SlpB2CKw-YPUpHVWYWDYw",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 400
+                        }
+                    ]
+                },
+                "type": "SQUARE_LOGO",
+                "$type": "com.linkedin.voyager.organization.CompanyLogoImage"
+            },
+            "universalName": "mark"
+        }
+    ]
+}

@@ -1,0 +1,785 @@
+[
+    {
+        "general": {
+            "imgUrl": "https://media-exp1.licdn.com/dms/image/C5603AQHv9IK9Ts0dFA/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=jBkdpk23kJ5r9zxjndQ2LngYx13-iWZNyRai7MU1kmw",
+            "fullName": "Bill Gates",
+            "headline": "Co-chair, Bill & Melinda Gates Foundation",
+            "company": "Bill & Melinda Gates Foundation",
+            "school": "Harvard University",
+            "profileUrl": "https://www.linkedin.com/in/williamhgates/",
+            "description": "Co-chair of the Bill & Melinda Gates Foundation. Microsoft Co-founder. Voracious reader. Avid traveler. Active blogger.",
+            "subscribers": 28089221,
+            "firstName": "Bill",
+            "lastName": "Gates",
+            "location": "Seattle, Washington",
+            "vmid": "ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc",
+            "linkedinSalesNavigatorUrl": "https://www.linkedin.com/sales/people/ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc,name",
+            "mutualConnectionsUrl": "https://www.linkedin.com/search/results/people/?facetNetwork=%5B%22F%22%5D&facetConnectionOf=%5B%22ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH&RESULT_TYPE=PEOPLE",
+            "connectionsUrl": "https://www.linkedin.com/search/results/people/?facetConnectionOf=%5B%22ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc%22%5D&facetNetwork=%5B%22F%22%2C%22S%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH",
+            "connectionsCount": 7,
+            "backgroundUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQGeHmoGyMRF2A/profile-displaybackgroundimage-shrink_350_1400/0?e=1601510400&v=beta&t=6uGfhCdCU8pTjJFjXH3bDWI95L6ZGpjLabfXDGS_xLk"
+        },
+        "jobs": [
+            {
+                "companyName": "Bill & Melinda Gates Foundation",
+                "companyUrl": "https://www.linkedin.com/company/bill-&-melinda-gates-foundation/",
+                "jobTitle": "Co-chair",
+                "dateRange": "2000 – Present",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "Microsoft",
+                "companyUrl": "https://www.linkedin.com/company/microsoft/",
+                "jobTitle": "Co-founder",
+                "dateRange": "1975 – Present",
+                "location": null,
+                "description": null
+            }
+        ],
+        "schools": [
+            {
+                "schoolUrl": "https://www.linkedin.com/school/18483/?legacySchoolId=18483",
+                "schoolName": "Harvard University",
+                "dateRange": "1973 – 1975"
+            },
+            {
+                "schoolUrl": "https://www.linkedin.com/search/results/all/?keywords=Lakeside%20School%2C%20Seattle",
+                "schoolName": "Lakeside School, Seattle"
+            }
+        ],
+        "details": {
+            "linkedinProfile": "https://www.linkedin.com/in/williamhgates",
+            "websites": "gatesnot.es/linkedin"
+        },
+        "skills": [],
+        "allSkills": "",
+        "query": "https://www.linkedin.com/in/williamhgates/",
+        "timestamp": "2020-07-29T14:49:43.663Z"
+    },
+    {
+        "general": {
+            "imgUrl": "https://media-exp1.licdn.com/dms/image/C5603AQHHUuOSlRVA1w/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=4h_fZi8--wrx4NMxmFMsGAVh2poUpJc959okPvUh3l8",
+            "fullName": "Satya Nadella",
+            "headline": "CEO at Microsoft",
+            "company": "Microsoft",
+            "school": "The University of Chicago Booth School of Business",
+            "profileUrl": "https://www.linkedin.com/in/satyanadella/",
+            "connectionDegree": "3rd+",
+            "description": "As CEO of Microsoft, I define my mission and that of my company as empowering every person and every organization on the planet to achieve more.",
+            "subscribers": 8124833,
+            "firstName": "Satya",
+            "lastName": "Nadella",
+            "location": "Redmond, Washington",
+            "vmid": "ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ",
+            "linkedinSalesNavigatorUrl": "https://www.linkedin.com/sales/people/ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ,name",
+            "mutualConnectionsUrl": "https://www.linkedin.com/search/results/people/?facetNetwork=%5B%22F%22%5D&facetConnectionOf=%5B%22ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH&RESULT_TYPE=PEOPLE",
+            "connectionsUrl": "https://www.linkedin.com/search/results/people/?facetConnectionOf=%5B%22ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ%22%5D&facetNetwork=%5B%22F%22%2C%22S%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH",
+            "connectionsCount": 500,
+            "backgroundUrl": "https://media-exp1.licdn.com/dms/image/C5616AQHEITsxuRUzWw/profile-displaybackgroundimage-shrink_350_1400/0?e=1601510400&v=beta&t=WBg0wT1Qb6lvukyi8IklHUX9lxW6O87o2hu7ir0rPuI"
+        },
+        "jobs": [
+            {
+                "companyName": "Microsoft",
+                "companyUrl": "https://www.linkedin.com/company/microsoft/",
+                "jobTitle": "CEO",
+                "dateRange": "Feb 2014 – Present",
+                "location": "Greater Seattle Area",
+                "description": null
+            },
+            {
+                "companyName": "University of Chicago",
+                "companyUrl": "https://www.linkedin.com/company/uchicago/",
+                "jobTitle": "Member Board Of Trustees",
+                "dateRange": "Sep 2018 – Present",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "Starbucks",
+                "companyUrl": "https://www.linkedin.com/company/starbucks/",
+                "jobTitle": "Board Member",
+                "dateRange": "Jan 2017 – Present",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "Fred Hutch",
+                "companyUrl": "https://www.linkedin.com/company/fredhutch/",
+                "jobTitle": "Board Member",
+                "dateRange": "Jul 2016 – Present",
+                "location": null,
+                "description": null
+            }
+        ],
+        "schools": [
+            {
+                "schoolUrl": "https://www.linkedin.com/school/18315/?legacySchoolId=18315",
+                "schoolName": "The University of Chicago Booth School of Business",
+                "dateRange": "1994 – 1996"
+            },
+            {
+                "schoolUrl": "https://www.linkedin.com/school/21103/?legacySchoolId=21103",
+                "schoolName": "Manipal Institute of Technology, Manipal",
+                "degree": "Bachelor’s Degree",
+                "degreeSpec": "Electrical Engineering"
+            },
+            {
+                "schoolUrl": "https://www.linkedin.com/school/19691/?legacySchoolId=19691",
+                "schoolName": "University of Wisconsin-Milwaukee",
+                "degree": "Master’s Degree",
+                "degreeSpec": "Computer Science"
+            }
+        ],
+        "details": {
+            "linkedinProfile": "https://www.linkedin.com/in/satyanadella",
+            "websites": "microsoft.com/ceo"
+        },
+        "skills": [],
+        "allSkills": "",
+        "query": "https://www.linkedin.com/in/satyanadella/",
+        "timestamp": "2020-07-29T14:49:56.862Z"
+    },
+    {
+        "general": {
+            "imgUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQFM3Y2r-OEStw/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=KDGGEEq5LTDtlCX7t1NfhcYmvazW0LUgokn48xd5pWU",
+            "fullName": "Jeff Weiner",
+            "headline": "Executive Chairman at LinkedIn",
+            "company": "LinkedIn",
+            "school": "The Wharton School",
+            "profileUrl": "https://www.linkedin.com/in/jeffweiner08/",
+            "connectionDegree": "3rd+",
+            "description": "Jeff Weiner is the executive chairman of LinkedIn, where he continues to help LinkedIn realize its vision of creating economic opportunity for every member of the global workforce. He'll also continue to mentor and coach the leadership team, advise on key strategic initiatives, and help to represent the company externally. In addition to his ongoing work at LinkedIn, Jeff is focused on investing, coaching and his philanthropic work, including helping to ensure that compassion is taught and practiced in every primary school in the U.S.\n\nPrior to becoming executive chairman in June 2020, Jeff was the CEO of LinkedIn. During his 11-year tenure, LinkedIn grew its membership base from 33M to more than 690M, increased its revenue from $78M to over $7.9B and expanded the team from 338 employees to over 16,000.\n\nAlso, presently resides on the board of directors for Intuit, Donorschoose.org and Everfi, an ed tech company with which he co-founded The Compassion Project, a non-profit whose mission is to ensure compassion is taught in every elementary school in the U.S.\n\nAdditionally, an active early and growth stage investor through his Next Play Ventures fund and separately, the newly created Concrete Rose Capital fund, focused on investing in diverse founders, start-ups serving underserved communities and/or building diverse teams. \n\nPrior to LinkedIn, was an Executive in Residence at Accel Partners and Greylock Partners.  Primarily focused on advising the leadership teams of the firm's existing consumer technology portfolio companies while also working closely with the firm’s partners to evaluate new investment opportunities.\n\nPreviously served in key leadership roles at Yahoo! for over seven years, most recently as the Executive Vice President of Yahoo!'s Network Division managing Yahoo's consumer web product portfolio, including Yahoo's Front Page, Mail, Search, and Media products.",
+            "subscribers": 10817823,
+            "firstName": "Jeff",
+            "lastName": "Weiner",
+            "location": "San Francisco Bay Area",
+            "vmid": "ACoAAAFUu6sBhlQbcvAS0GdcPE344dA3vwutzVM",
+            "linkedinSalesNavigatorUrl": "https://www.linkedin.com/sales/people/ACoAAAFUu6sBhlQbcvAS0GdcPE344dA3vwutzVM,name",
+            "mutualConnectionsUrl": "https://www.linkedin.com/search/results/people/?facetNetwork=%5B%22F%22%5D&facetConnectionOf=%5B%22ACoAAAFUu6sBhlQbcvAS0GdcPE344dA3vwutzVM%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH&RESULT_TYPE=PEOPLE",
+            "connectionsUrl": "https://www.linkedin.com/search/results/people/?facetConnectionOf=%5B%22ACoAAAFUu6sBhlQbcvAS0GdcPE344dA3vwutzVM%22%5D&facetNetwork=%5B%22F%22%2C%22S%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH",
+            "connectionsCount": 500,
+            "backgroundUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQFJHyicpAYHXQ/profile-displaybackgroundimage-shrink_350_1400/0?e=1601510400&v=beta&t=IjB4uZhEdnlzE6N7HOLYAP5V-YNq7sGcCL5g3ZsjxkQ"
+        },
+        "jobs": [
+            {
+                "companyName": "LinkedIn",
+                "companyUrl": "https://www.linkedin.com/company/linkedin/",
+                "jobTitle": "Executive Chairman",
+                "dateRange": "Jun 2020 – Present",
+                "location": null,
+                "description": "Help LinkedIn realize its vision of creating economic opportunity for every member of the global workforce. Continue to mentor and coach the leadership team, advise on key strategic initiatives, and help to represent the company externally with customers, partners, governments, and the media."
+            },
+            {
+                "companyName": "LinkedIn",
+                "companyUrl": "https://www.linkedin.com/company/linkedin/",
+                "jobTitle": "CEO",
+                "dateRange": "Dec 2008 – Jun 2020",
+                "location": null,
+                "description": "Over 11 year tenure as CEO, LinkedIn grew its membership base from 33M to more than 690M, increased its revenue from $78M to $7.9B and expanded the team from 338 employees to over 16,000."
+            },
+            {
+                "companyName": "Next Play Ventures",
+                "companyUrl": "https://www.linkedin.com/company/next-play-ventures/",
+                "jobTitle": "Founding Partner",
+                "dateRange": "2014 – Present",
+                "location": "San Francisco Bay Area",
+                "description": "Our mission is to coach and invest in entrepreneurial leaders building world-class, purpose-driven organizations. Focus primarily on early stage and growth opportunities, e.g., Brex, Figma, Notion, Headspace, Scale, Wildlife Interactive, Headspin, Vox Media, Cameo, Seesaw, Ginger.io, and more. Previous exits include Slack (IPO) and Cloudera (IPO)."
+            },
+            {
+                "companyName": "Concrete Rose Capital",
+                "companyUrl": "https://www.linkedin.com/company/concreterosecapital/",
+                "jobTitle": "Founding LP, Investment Committee",
+                "dateRange": "Oct 2019 – Present",
+                "location": "San Francisco Bay Area",
+                "description": "Advisor and member of the investment committee for this newly created early stage fund and foundation focused on empowering diverse founders, start-ups serving underserved communities, and companies committed to building diverse teams."
+            },
+            {
+                "companyName": "Intuit",
+                "companyUrl": "https://www.linkedin.com/company/intuit/",
+                "jobTitle": "Member, Board of Directors",
+                "dateRange": "Apr 2012 – Present",
+                "location": "Mountain View, CA",
+                "description": "Intuit is a leading provider of innovative business and financial management solutions for small and medium-sized businesses, consumers, accounting professionals and financial institutions."
+            },
+            {
+                "companyName": "DonorsChoose",
+                "companyUrl": "https://www.linkedin.com/company/donorschoose/",
+                "jobTitle": "Member, Board of Directors",
+                "dateRange": "2007 – Present",
+                "location": null,
+                "description": "One of the web's leading philanthropic marketplaces, designed to enable teachers to upload classroom projects in need of funding, and for anyone to select and fund a project."
+            },
+            {
+                "companyName": "EVERFI",
+                "companyUrl": "https://www.linkedin.com/company/everfi/",
+                "jobTitle": "Member Board Of Directors",
+                "dateRange": "Sep 2017 – Present",
+                "location": "Washington D.C. Metro Area",
+                "description": "Partnered with this innovative educational coursework and platform provider to develop and distribute The Compassion Project, an initiative designed to ensure compassion is taught in every primary school in the U.S."
+            },
+            {
+                "companyName": "Boys & Girls Clubs of the Peninsula",
+                "companyUrl": "https://www.linkedin.com/company/bgcpeninsula/",
+                "jobTitle": "Member, Advisory Board",
+                "dateRange": "2011 – Present",
+                "location": "San Francisco Bay Area",
+                "description": "BGCP’s mission is to help its members develop the academic and life skills they need to complete high school ready for college and career.\n\nBGCP serves youth in grades K–12 at nine locations: three clubhouses and six school sites in East Palo Alto, Menlo Park, and Redwood City, where over half the youth drop out of high school. While most youth development organizations select the young people whom they serve, BGCP serves all youth. The organization has grown rapidly over the past five years and now serves 2,000 active members at its nine sites."
+            },
+            {
+                "companyName": "Venture For America",
+                "companyUrl": "https://www.linkedin.com/company/venture-for-america/",
+                "jobTitle": "Member, Advisory Board",
+                "dateRange": "2012 – Present",
+                "location": "Greater New York City Area",
+                "description": "Innovative fellowship program that places top college graduates in start-ups for two years in low-cost U.S. cities to generate job growth and train the next generation of entrepreneurs."
+            },
+            {
+                "companyName": "Malaria No More",
+                "companyUrl": "https://www.linkedin.com/company/malaria-no-more/",
+                "jobTitle": "Member, Board of Directors",
+                "dateRange": "2007 – Dec 2015",
+                "location": null,
+                "description": "Non-profit organization with the mission to eradicate the millions of preventable and treatable deaths due to malaria.  Working in conjunction with the United Nations Millennium Development Goals."
+            },
+            {
+                "companyName": "Accel Partners",
+                "companyUrl": "https://www.linkedin.com/company/accel-vc/",
+                "jobTitle": "Executive in Residence",
+                "dateRange": "Sep 2008 – Jun 2009",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "Greylock",
+                "companyUrl": "https://www.linkedin.com/company/greylock-partners/",
+                "jobTitle": "Executive in Residence",
+                "dateRange": "Sep 2008 – Jun 2009",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "Yahoo!",
+                "companyUrl": "https://www.linkedin.com/company/yahoo/",
+                "jobTitle": "Executive Vice President Network Division",
+                "dateRange": "Feb 2007 – Jun 2008",
+                "location": null,
+                "description": "Led a team of over 3,000 employees, managing products reaching over 500 million consumers, and overseeing a P&L responsible for roughly $3 billion in annual revenue.  Helped drive the Network’s Open and Social strategy and growth of the company’s category-leading consumer web products, including Yahoo's Front Page, Mail, Search, and Media products, e.g. News, Sports, Finance, Entertainment. \n\nPreviously, was part of the Search leadership team that directed the acquisition and integration of Inktomi, AltaVista, FAST as well as the development of Yahoo! Search Technology. Oversaw development of Yahoo! Answers, and led the acquisitions of Flickr and del.icio.us.  Helped lead the team formed to revitalize the company's Search Marketing efforts. \n\nFrom 2001 to 2002, oversaw Corporate Development at Yahoo!, responsible for the development and modification of overall corporate and individual business unit strategy and M&A."
+            },
+            {
+                "companyName": "Yahoo!",
+                "companyUrl": "https://www.linkedin.com/company/yahoo/",
+                "jobTitle": "Senior Vice President, Search and Marketplace",
+                "dateRange": "Sep 2002 – Feb 2007",
+                "location": "Sunnyvale, CA",
+                "description": null
+            },
+            {
+                "companyName": "Yahoo!",
+                "companyUrl": "https://www.linkedin.com/company/yahoo/",
+                "jobTitle": "Senior Vice President Corporate Development",
+                "dateRange": "May 2001 – Sep 2002",
+                "location": "Sunnyvale, CA",
+                "description": null
+            },
+            {
+                "companyName": "Windsor Media",
+                "companyUrl": "https://www.linkedin.com/search/results/all/?keywords=Windsor%20Media",
+                "jobTitle": "Founding Partner",
+                "dateRange": "Jun 2000 – Apr 2001",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "Warner Bros. Studios",
+                "companyUrl": "https://www.linkedin.com/company/warner-bros.-studios/",
+                "jobTitle": "Vice President Online",
+                "dateRange": "Sep 1998 – Mar 2000",
+                "location": null,
+                "description": "Helped oversee Warner Bros.' online efforts, including Warner Bros. Online and Entertaindom (one of the web's first original entertainment destination sites)."
+            },
+            {
+                "companyName": "Warner Bros. Studios",
+                "companyUrl": "https://www.linkedin.com/company/warner-bros.-studios/",
+                "jobTitle": "Director, Online",
+                "dateRange": "Apr 1997 – Sep 1998",
+                "location": "Burbank, CA",
+                "description": null
+            },
+            {
+                "companyName": "Warner Bros. Studios",
+                "companyUrl": "https://www.linkedin.com/company/warner-bros.-studios/",
+                "jobTitle": "Manager, Online",
+                "dateRange": "Apr 1996 – Apr 1997",
+                "location": "Burbank, CA",
+                "description": null
+            },
+            {
+                "companyName": "Warner Bros. Studios",
+                "companyUrl": "https://www.linkedin.com/company/warner-bros.-studios/",
+                "jobTitle": "Senior Analyst, Corporate Development",
+                "dateRange": "Sep 1994 – Apr 1996",
+                "location": "Burbank, CA",
+                "description": "Responsible for M&A evaluation, new business development, etc. In December, 1994, wrote the initial business plan for Warner Bros. Online. Division was approved and created in July, 1995."
+            },
+            {
+                "companyName": "Braxton Associates",
+                "companyUrl": "https://www.linkedin.com/company/braxton-associates/",
+                "jobTitle": "Senior Analyst",
+                "dateRange": "Sep 1993 – Sep 1994",
+                "location": "Boston",
+                "description": "Analyst for strategic management consulting division of Deloitte & Touche. Case work included scenario planning, international expansion, brand consolidation, and new distribution strategies across multiple industries including food, health care, and energy."
+            },
+            {
+                "companyName": "Braxton Associates",
+                "companyUrl": "https://www.linkedin.com/company/braxton-associates/",
+                "jobTitle": "Analyst",
+                "dateRange": "Sep 1992 – Sep 1993",
+                "location": "Boston, MA",
+                "description": null
+            }
+        ],
+        "schools": [
+            {
+                "schoolUrl": "https://www.linkedin.com/school/19329/?legacySchoolId=19329",
+                "schoolName": "The Wharton School",
+                "degree": "Bachelor of Science",
+                "degreeSpec": "Economics",
+                "dateRange": "1988 – 1992"
+            }
+        ],
+        "details": {
+            "linkedinProfile": "https://www.linkedin.com/in/jeffweiner08",
+            "websites": "linkedin.com/",
+            "twitter": "jeffweiner"
+        },
+        "skills": [
+            {
+                "name": "Leadership",
+                "endorsements": "99+"
+            },
+            {
+                "name": "Entrepreneurship",
+                "endorsements": "99+"
+            },
+            {
+                "name": "Strategy",
+                "endorsements": "99+"
+            },
+            {
+                "name": "Product Development",
+                "endorsements": "93"
+            },
+            {
+                "name": "Product Marketing",
+                "endorsements": "99+"
+            },
+            {
+                "name": "Business Strategy",
+                "endorsements": "99+"
+            },
+            {
+                "name": "Strategic Planning",
+                "endorsements": "99+"
+            },
+            {
+                "name": "Product Management",
+                "endorsements": "79"
+            },
+            {
+                "name": "Social Media",
+                "endorsements": "68"
+            },
+            {
+                "name": "User Experience",
+                "endorsements": "47"
+            },
+            {
+                "name": "Corporate Development",
+                "endorsements": "35"
+            },
+            {
+                "name": "Non-profits",
+                "endorsements": "30"
+            },
+            {
+                "name": "Analytics",
+                "endorsements": "30"
+            },
+            {
+                "name": "Mergers & Acquisitions",
+                "endorsements": "27"
+            },
+            {
+                "name": "Nonprofits",
+                "endorsements": "10"
+            },
+            {
+                "name": "Mobile Applications",
+                "endorsements": "9"
+            },
+            {
+                "name": "Education",
+                "endorsements": "3"
+            },
+            {
+                "name": "Executive Management",
+                "endorsements": "99+"
+            },
+            {
+                "name": "Team Leadership",
+                "endorsements": "14"
+            },
+            {
+                "name": "Thought Leadership",
+                "endorsements": "13"
+            },
+            {
+                "name": "Leadership Development",
+                "endorsements": "11"
+            },
+            {
+                "name": "Mentoring",
+                "endorsements": "6"
+            },
+            {
+                "name": "LinkedIn",
+                "endorsements": "74"
+            },
+            {
+                "name": "Business Operations",
+                "endorsements": "11"
+            },
+            {
+                "name": "Motivation",
+                "endorsements": "6"
+            },
+            {
+                "name": "Awesomeness",
+                "endorsements": "6"
+            }
+        ],
+        "allSkills": "Leadership, Entrepreneurship, Strategy, Product Development, Product Marketing, Business Strategy, Strategic Planning, Product Management, Social Media, User Experience, Corporate Development, Non-profits, Analytics, Mergers & Acquisitions, Nonprofits, Mobile Applications, Education, Executive Management, Team Leadership, Thought Leadership, Leadership Development, Mentoring, LinkedIn, Business Operations, Motivation, Awesomeness",
+        "query": "https://www.linkedin.com/in/jeffweiner08/",
+        "timestamp": "2020-07-29T14:50:21.294Z"
+    },
+    {
+        "general": {
+            "imgUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQGrF3xalEe-qQ/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=Exan-sXbIj6HobHKB14JrM77GOcvsLa4VridbXISx1s",
+            "fullName": "Mary Barra",
+            "headline": "Chairman and Chief Executive Officer at General Motors",
+            "company": "General Motors",
+            "school": "Stanford University Graduate School of Business",
+            "profileUrl": "https://www.linkedin.com/in/mary-barra-29469712/",
+            "description": "General Motors CEO leading an outstanding team. Passionate about customers. Supporter of STEM education.",
+            "subscribers": 1206884,
+            "firstName": "Mary",
+            "lastName": "Barra",
+            "location": "Greater Detroit Area",
+            "vmid": "ACoAAAKXsdABMUNfdYaKncs26A2_S3I4W9dID70",
+            "linkedinSalesNavigatorUrl": "https://www.linkedin.com/sales/people/ACoAAAKXsdABMUNfdYaKncs26A2_S3I4W9dID70,name",
+            "mutualConnectionsUrl": "https://www.linkedin.com/search/results/people/?facetNetwork=%5B%22F%22%5D&facetConnectionOf=%5B%22ACoAAAKXsdABMUNfdYaKncs26A2_S3I4W9dID70%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH&RESULT_TYPE=PEOPLE",
+            "connectionsUrl": "https://www.linkedin.com/search/results/people/?facetConnectionOf=%5B%22ACoAAAKXsdABMUNfdYaKncs26A2_S3I4W9dID70%22%5D&facetNetwork=%5B%22F%22%2C%22S%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH",
+            "connectionsCount": 500,
+            "backgroundUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQHLBo73kq4FZw/profile-displaybackgroundimage-shrink_350_1400/0?e=1601510400&v=beta&t=PyWR78syAJxhIySEsyDGpitWuHTK1jGWGNf3BSolcYc"
+        },
+        "jobs": [
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Chairman and Chief Executive Officer",
+                "dateRange": "Jan 2016 – Present",
+                "location": "Greater Detroit Area",
+                "description": "Responsible for leading the Board of Directors, establishing General Motors' strategic direction and managing the company’s day-to-day global operations, including vehicle sales in more than 125 countries.\n\nDriving General Motors to become the global industry leader in automotive technology and design, product quality and safety, customer experience and business results.\n\nLeading the company toward a future of zero crashes, zero emissions and zero congestion."
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Chief Executive Officer",
+                "dateRange": "Jan 2014 – Jan 2016",
+                "location": null,
+                "description": "Responsible for day-to-day management of GM’s global operations.\n\nAchieved record global sales, earnings and net income in 2015.\n\nRedefined the company’s purpose and values, putting the customer at the center of everything GM does.\n\n    \n        …\n      \n        see more"
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Executive Vice President – Global Product Development",
+                "dateRange": "2013 – 2014",
+                "location": null,
+                "description": "Led the Global Product Development function responsible for Design, Engineering, Program Management and Purchasing, Supply Chain and Logistics."
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Senior Vice President – Global Product Development",
+                "dateRange": "2011 – 2013",
+                "location": null,
+                "description": "Led the Global Product Development function responsible for Design, Engineering, Program Management and Quality."
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Vice President – Global Human Resources",
+                "dateRange": "Sep 2009 – 2011",
+                "location": null,
+                "description": "Led the HR function globally during a period of unprecedented change.  Redefined talent management, leadership development, compensation, benefits, health care, organizational transformation and other HR systems."
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Vice President – Global Manufacturing Engineering",
+                "dateRange": "2008 – 2009",
+                "location": null,
+                "description": "Transformed Global Manufacturing Engineering operations.  Drove streamlining initiative recognized by the United States Treasury and major consulting groups for delivering “industry-leading flexibility strategy at benchmark investment levels.”"
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Executive Director – Vehicle Manufacturing Engineering",
+                "dateRange": "2004 – 2008",
+                "location": null,
+                "description": "Built an industry-leading Manufacturing Engineering organization.  Integrated six independent groups into one manufacturing engineering operation to quickly improve performance and support product development."
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Plant Manager, Detroit Hamtramck Assembly",
+                "dateRange": "2003 – 2004",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Executive Director, Competitive Operations Engineering – Vehicle Operations",
+                "dateRange": "2001 – 2003",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "General Director, Internal Communications – Corporate Staffs",
+                "dateRange": "1999 – 2001",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Executive Assistant to the Chairman & Vice Chairman",
+                "dateRange": "1996 – 1999",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Manager, Manufacturing Planning – Midsize Car Division",
+                "dateRange": "1993 – 1996",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Senior Staff Engineer, Operations Engineering Services – Chevrolet–Pontiac–Canada Group",
+                "dateRange": "1990 – 1993",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Acting Superintendent, Maintenance & Tooling/Senior Plant Engineer",
+                "dateRange": "1985 – 1988",
+                "location": null,
+                "description": null
+            },
+            {
+                "companyName": "General Motors",
+                "companyUrl": "https://www.linkedin.com/company/general-motors/",
+                "jobTitle": "Kettering University Co-op Student – Pontiac Motor Division",
+                "dateRange": "1980 – 1985",
+                "location": null,
+                "description": null
+            }
+        ],
+        "schools": [
+            {
+                "schoolUrl": "https://www.linkedin.com/school/17927/?legacySchoolId=17927",
+                "schoolName": "Stanford University Graduate School of Business",
+                "degree": "MBA",
+                "degreeSpec": "Business",
+                "dateRange": "1988 – 1990"
+            },
+            {
+                "schoolUrl": "https://www.linkedin.com/school/18607/?legacySchoolId=18607",
+                "schoolName": "Kettering University",
+                "degree": "BSEE",
+                "degreeSpec": "Electrical Engineering",
+                "dateRange": "1980 – 1985"
+            }
+        ],
+        "details": {
+            "linkedinProfile": "https://www.linkedin.com/in/mary-barra-29469712"
+        },
+        "skills": [],
+        "allSkills": "",
+        "query": "https://www.linkedin.com/in/mary-barra-29469712/",
+        "timestamp": "2020-07-29T14:50:39.739Z"
+    },
+    {
+        "general": {
+            "imgUrl": "https://media-exp1.licdn.com/dms/image/C5603AQHc74aYOtwurA/profile-displayphoto-shrink_800_800/0?e=1601510400&v=beta&t=3ZuVXM9JnflgYH-ad7iG6rh8rzX_VuprhSxJI_EyTvE",
+            "fullName": "Susan Wojcicki",
+            "headline": "CEO of YouTube",
+            "company": "YouTube",
+            "school": "University of California, Los Angeles",
+            "profileUrl": "https://www.linkedin.com/in/susan-wojcicki-b136a99/",
+            "connectionDegree": "3rd+",
+            "description": "",
+            "firstName": "Susan",
+            "lastName": "Wojcicki",
+            "location": "San Francisco Bay Area",
+            "vmid": "ACoAAAG0RP8BOrcF3hChALHar-Kb_m9q-RwUtN4",
+            "linkedinSalesNavigatorUrl": "https://www.linkedin.com/sales/people/ACoAAAG0RP8BOrcF3hChALHar-Kb_m9q-RwUtN4,name",
+            "mutualConnectionsUrl": "https://www.linkedin.com/search/results/people/?facetNetwork=%5B%22F%22%5D&facetConnectionOf=%5B%22ACoAAAG0RP8BOrcF3hChALHar-Kb_m9q-RwUtN4%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH&RESULT_TYPE=PEOPLE",
+            "connectionsUrl": "https://www.linkedin.com/search/results/people/?facetConnectionOf=%5B%22ACoAAAG0RP8BOrcF3hChALHar-Kb_m9q-RwUtN4%22%5D&facetNetwork=%5B%22F%22%2C%22S%22%5D&origin=MEMBER_PROFILE_CANNED_SEARCH",
+            "subscribers": 20312,
+            "connectionsCount": 500
+        },
+        "jobs": [
+            {
+                "companyName": "YouTube",
+                "companyUrl": "https://www.linkedin.com/company/youtube/",
+                "jobTitle": "CEO",
+                "dateRange": "Feb 2014 – Present",
+                "location": null,
+                "description": "Responsible for YouTube"
+            },
+            {
+                "companyName": "Google",
+                "companyUrl": "https://www.linkedin.com/company/google/",
+                "jobTitle": "SVP of Adwords & AdSense",
+                "dateRange": "Apr 1999 – Jan 2014",
+                "location": null,
+                "description": "Responsible for designing and building Google's advertising and analytic products."
+            }
+        ],
+        "schools": [
+            {
+                "schoolUrl": "https://www.linkedin.com/school/17950/?legacySchoolId=17950",
+                "schoolName": "University of California, Los Angeles",
+                "degree": "MBA",
+                "degreeSpec": "Economics",
+                "dateRange": "1996 – 1998"
+            },
+            {
+                "schoolUrl": "https://www.linkedin.com/school/17960/?legacySchoolId=17960",
+                "schoolName": "University of California, Santa Cruz",
+                "degree": "MS",
+                "degreeSpec": "Economics",
+                "dateRange": "1991 – 1993"
+            },
+            {
+                "schoolUrl": "https://www.linkedin.com/school/18483/?legacySchoolId=18483",
+                "schoolName": "Harvard University",
+                "degree": "AB",
+                "degreeSpec": "History/Literature",
+                "dateRange": "1986 – 1990"
+            }
+        ],
+        "details": {
+            "linkedinProfile": "https://www.linkedin.com/in/susan-wojcicki-b136a99",
+            "websites": "google.com/corporate/execs.html#susan"
+        },
+        "skills": [
+            {
+                "name": "Analytics",
+                "endorsements": "27"
+            },
+            {
+                "name": "Google Adwords",
+                "endorsements": "24"
+            },
+            {
+                "name": "Product Management",
+                "endorsements": "18"
+            },
+            {
+                "name": "Start-ups",
+                "endorsements": "14"
+            },
+            {
+                "name": "Online Advertising",
+                "endorsements": "7"
+            },
+            {
+                "name": "Strategy",
+                "endorsements": "7"
+            },
+            {
+                "name": "video",
+                "endorsements": "0"
+            },
+            {
+                "name": "Leadership",
+                "endorsements": "7"
+            }
+        ],
+        "allSkills": "Analytics, Google Adwords, Product Management, Start-ups, Online Advertising, Strategy, video, Leadership",
+        "query": "https://www.linkedin.com/in/susan-wojcicki-b136a99/",
+        "timestamp": "2020-07-29T14:50:52.843Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    },
+    {
+        "baseUrl": "",
+        "error": "Empty line",
+        "timestamp": "2020-07-29T14:50:55.465Z"
+    }
+]

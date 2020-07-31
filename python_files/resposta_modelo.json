@@ -1,9 +1,13 @@
 {
     "empresas" : [
         {
+            "url": "string",
+            "dados_obtidos": "bool", // Só é true quando todos os funcionarios tiveram seus dados obtidos
             "nome": "string", // Ex.: "Centro de Análise de Dados LTDA"
             "funcionarios": [
                 {
+                    "url": "string",
+                    "dados_obtidos": "bool",
                     "nome": "string",
                     "sobrenome": "string",
                     "cargo_atual": "string",
