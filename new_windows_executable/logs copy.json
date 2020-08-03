@@ -1,0 +1,16 @@
+{
+    "logs": [
+        {
+            "hora_de_inicio": "",
+            "hora_finalizado": "",
+            "total_de_paginas_acessadas": 140,
+            "dados_obtidos": [
+                {
+                    "empresa": "",
+                    "company_id": 123,
+                    "ultima_pagina_de_busca_por_funcionarios": 30
+                }
+            ]
+        }
+    ]
+}

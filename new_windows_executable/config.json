@@ -1,0 +1,11 @@
+{
+    "login": {
+        "username": "testelinkedinpj@gmail.com",
+        "password": "polijunior"
+    },
+    "paths": {
+        "companies_excel": "../Empresas.xlsx",
+        "cookies": "../cookies.txt",
+        "employees_json": "../output.json"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "login": {
+        "username": "testelinkedinpj@gmail.com",
+        "password": "polijunior"
+    },
+    "paths": {
+        "input": "input.xlsx",
+        "output_empresas": "output_empresas.json",
+        "output_perfis": "output_perfis.json",
+        "cookies": "cookies.txt",
+        "logs": "logs.json"
+    },
+    "config": {
+        "max_paginas_por_dia": 150,
+	"max_paginas_de_conexoes_por_perfil": 0
+    }
+}

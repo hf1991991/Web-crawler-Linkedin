@@ -1,0 +1,31 @@
+# HTTP Cookie File for linkedin.com by Genuinous @genuinous.
+# To download cookies for this tab click here, or download all cookies.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://www.linkedin.com/company/liv-up/"
+#   2) curl --cookie cookies.txt "https://www.linkedin.com/company/liv-up/"
+#   3) aria2c --load-cookies cookies.txt "https://www.linkedin.com/company/liv-up/"
+#
+.linkedin.com	TRUE	/	TRUE	1658476966	bcookie	"v=2&5c4207a0-3ca5-49dd-8db6-18a0cb664dbf"
+.www.linkedin.com	TRUE	/	TRUE	1658476966	bscookie	"v=1&202007212025125759a248-07ca-4082-8a8d-b8ad2d4f42b9AQHwSFaietTj9aWtHlFnV9yY2iNfFoOz"
+.linkedin.com	TRUE	/	TRUE	1626899114	lissc	1
+.linkedin.com	TRUE	/	TRUE	1604241571	li_sugr	2e2ac444-e7df-4107-ad8f-b369d5384b79
+.linkedin.com	TRUE	/	FALSE	1659537570	_ga	GA1.2.1896886942.1595371984
+.linkedin.com	TRUE	/	FALSE	1599057571	aam_uuid	73122930277935516623672857515575679095
+.linkedin.com	TRUE	/	TRUE	1603148025	_guid	a3a20e0d-813c-4148-89c3-eaf069176274
+.www.linkedin.com	TRUE	/	FALSE	253402257600	G_ENABLED_IDPS	google
+www.linkedin.com	FALSE	/	TRUE	1658598137	visit	v=1&M
+www.linkedin.com	FALSE	/	FALSE	1611721997	g_state	{"i_p":1598589197813,"i_l":3}
+.www.linkedin.com	TRUE	/	TRUE	1604152568	JSESSIONID	"ajax:8461909104486185125"
+www.linkedin.com	FALSE	/	FALSE	1596817832	fid	AQGuqngBawNvrAAAAXOltfPWM8i4x-Pp7y_zpAQk0knH0aQF1gOCABm0YKsdZubCueeNPPER70EdiQ
+.linkedin.com	TRUE	/	FALSE	1596551970	_gid	GA1.2.2113211807.1596376537
+.linkedin.com	TRUE	/	TRUE	1604152568	liap	true
+.www.linkedin.com	TRUE	/	TRUE	1627912568	li_at	AQEDATHVaMACT7GRAAABc691UGgAAAFz04HUaE0AhKjXqp2dnUrMBFg6KvBOQcLGjiflLe2tcLx93wd6yaT0nLL1c4oWg8zE-PCDlPRpuEsFxeO3kbrF2OzEmxSCWE1v5bm2lHas8Em5tmLORbllexUQ
+.linkedin.com	TRUE	/	TRUE	0	lang	v=2&lang=en-us
+.www.linkedin.com	TRUE	/	FALSE	0	spectroscopyId	7b2a3dce-bb27-4004-b159-2aa3ca7613f8
+.www.linkedin.com	TRUE	/	TRUE	1599057570	UserMatchHistory	AQL4JHKjF6hnVwAAAXO0w2RPdBzkxXsT6Q9Bxzi4ki01R_r3-6Ba6py-od2zefgWJ_Zd2kJ8UxhSPiqRcPoaQrYHDbcieXVCdAUkDozPeig_qlDr8XqDsy2_A8amEVNYlxmLx8tcGWV75saS1d1_XYPt54H7_CCo1UrYNTTTmpYjM23Yex4DytUyvv5-BTbGykOa8eOjf2Nts0YKtyMElJEGFeimsYSy6Tw99SS1gkLZabRZDQXISg9lmq6k2jF67SZEENE
+.linkedin.com	TRUE	/	FALSE	1596465630	_gat	1
+.linkedin.com	TRUE	/	TRUE	1599057571	UserMatchHistory	AQLZDGKWHAhakAAAAXO0w2gTZHPHPb2fmlRMdI1JgQVB_HTJThJq4fuK7_pDys9CnuI7mK8xab-mQbSvP5W9yGNwRtx7COJjV4MTq6t2SpIZPg
+.linkedin.com	TRUE	/	TRUE	1599057571	li_oatml	AQEkXZ0UNbJAigAAAXO0w2kwtgrYSqaD8h8AlEWNAP7QYOPTNhEB0w0IT_7nMi_7LG9zuWCFxoXWpbwkeOuK0Xj3ybxTj2cm
+.linkedin.com	TRUE	/	TRUE	1596546666	lidc	"b=VB68:s=V:r=V:g=2564:u=5:i=1596465572:t=1596546666:v=1:sig=AQF1K_AavYm3SK0MmcPESFE2ByvCc-dB"
+.linkedin.com	TRUE	/	FALSE	0	AMCVS_14215E3D5995C57C0A495C55%40AdobeOrg	1
+.linkedin.com	TRUE	/	FALSE	1612017571	AMCV_14215E3D5995C57C0A495C55%40AdobeOrg	-408604571%7CMCIDTS%7C18477%7CMCMID%7C73288573949544824053618557981164170172%7CMCAAMLH-1597070371%7C4%7CMCAAMB-1597070371%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1596472771s%7CNONE%7CvVersion%7C4.6.0%7CMCCIDH%7C2132102839

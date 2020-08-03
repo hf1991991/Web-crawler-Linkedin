@@ -1,5 +1,5 @@
 from scrapy.crawler import CrawlerProcess
-from multiprocessing import Process
+from multiprocessing import Process, freeze_support
 from webcrawler.spiders.linkedin_employees_spider import LinkedinSpider
 import colorama
 from termcolor import cprint
@@ -10,17 +10,15 @@ import json
 colorama.init()
 
 whiteprint = lambda x: cprint(x, 'white')
-checkprint = lambda x: whiteprint('✅ %s' % x)
-errorprint = lambda x: whiteprint('❌ %s' % x)
-
+checkprint = lambda x: cprint(x, 'green')
+errorprint = lambda x: cprint(x, 'red')
 
 def format_file_path(path):
     try:
-        path = path.replace('\\', '')
-        if path[0] == '/':
+        if path[0] == '"':
             path = path[1:]
-        if 'Users' in path:
-            path = '/'.join(path.split('/')[2:])
+        if path[-1] == '"':
+            path = path[:-1]
         while path[0] == ' ':
             path = path[1:]
         while path[-1] == ' ':
@@ -59,13 +57,13 @@ def read_config_file(config_path):
 
     for path in config_data['paths']:
         if not file_exists(config_data['paths'][path]):
-            errorprint('O arquivo %s não existe. Entre no config.json e corrija o erro.' % config_data['paths'][path])
+            errorprint('O arquivo %s não existe ou está aberto. Entre no config.json e corrija o erro, ou fecheo-o.' % config_data['paths'][path])
             return None
 
     return config_data
 
 
-def execute_crawling():
+def execute_crawling(username, password,  cookies_path,  employees_json_path):
     process = CrawlerProcess(
         settings={
             'DOWNLOAD_DELAY': 2
@@ -81,49 +79,53 @@ def execute_crawling():
     process.start()
 
 
-config_exists = False
-employees_json_path = None
-cookies_path = None
-username = None
-password = None
+if __name__ == '__main__':
+    # https://stackoverflow.com/questions/24944558/pyinstaller-built-windows-exe-fails-with-multiprocessing
+    freeze_support()
 
-while not config_exists:
+    config_exists = False
+    employees_json_path = None
+    cookies_path = None
+    username = None
+    password = None
 
-    whiteprint('\nDigite o caminho do arquivo config.json (selecione o arquivo no Finder e aperte ⌘ C): ')
-    config_path = format_file_path(input())
-    print()
+    while not config_exists:
 
-    if file_exists(config_path):
-        config_exists = True
-        checkprint('Configurações carregadas!\n')
+        # whiteprint('\nDigite o caminho do arquivo config.json (ou selecione o arquivo no Windows Explorer e arraste-o para esta janela): ')
+        config_path = format_file_path('../config.json')
+        print()
 
-        config_data = read_config_file(config_path)
+        if file_exists(config_path):
+            config_exists = True
+            checkprint('config.json encontrado!\n')
 
-        if config_data is not None:
-            employees_json_path = config_data['paths']['employees_json']
-            cookies_path = config_data['paths']['cookies']
-            username = config_data['login']['username']
-            password = config_data['login']['password']
+            config_data = read_config_file(config_path)
+
+            if config_data is not None:
+                employees_json_path = config_data['paths']['employees_json']
+                cookies_path = config_data['paths']['cookies']
+                username = config_data['login']['username']
+                password = config_data['login']['password']
+
+            else:
+                config_exists = False
 
         else:
-            config_exists = False
+            errorprint('O arquivo %s não existe neste diretório ou está aberto. Feche-o e tente novamente' % config_path)
 
-    else:
-        errorprint('O arquivo %s não existe. Digite novamente' % config_path)
+    dont_stop = True
 
-dont_stop = True
+    while dont_stop:
+        p = Process(target=execute_crawling, args=(username, password, cookies_path,  employees_json_path))
+        p.start()
+        p.join()
 
-while dont_stop:
-    p = Process(target=execute_crawling)
-    p.start()
-    p.join()
+        print()
+        checkprint('Processo finalizado!\nAperte enter para abrir o arquivo JSON.')
+        input()
 
-    print()
-    checkprint('Processo finalizado!\nAperte enter para abrir o arquivo JSON. (Caso já esteja aberto, feche-o antes)')
-    input()
+        os.system('Notepad /a "%s"' % employees_json_path)
 
-    os.system("open '/Applications/TextEdit.app' '%s'" % employees_json_path)
-
-    whiteprint('Quer realizar o crawl novamente? (s/n)')
-    dont_stop = input() == 's'
-    print()
+        whiteprint('Quer realizar o crawl novamente? (s/n)')
+        dont_stop = input() == 's'
+        print()

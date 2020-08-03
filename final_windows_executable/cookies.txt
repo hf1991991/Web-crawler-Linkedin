@@ -1,0 +1,27 @@
+# HTTP Cookie File for linkedin.com by Genuinous @genuinous.
+# To download cookies for this tab click here, or download all cookies.
+# Usage Examples:
+#   1) wget -x --load-cookies cookies.txt "https://www.linkedin.com/company/liv-up/"
+#   2) curl --cookie cookies.txt "https://www.linkedin.com/company/liv-up/"
+#   3) aria2c --load-cookies cookies.txt "https://www.linkedin.com/company/liv-up/"
+#
+.linkedin.com	TRUE	/	TRUE	1659602945	bcookie	"v=2&c401ae8e-81d0-429d-804e-7fcd87cf6ba8"
+.www.linkedin.com	TRUE	/	TRUE	1659602945	bscookie	"v=1&20200803211132e55dbbff-fd9f-45d0-8a8d-8c366032f003AQHR09iTM4OBTa8MHHMuKOCPDlw4NEvT"
+.linkedin.com	TRUE	/	TRUE	1628025093	lissc	1
+.www.linkedin.com	TRUE	/	FALSE	253402257600	G_ENABLED_IDPS	google
+.linkedin.com	TRUE	/	FALSE	1659561119	_ga	GA1.2.368141067.1596489093
+.linkedin.com	TRUE	/	FALSE	1596575519	_gid	GA1.2.505187817.1596489093
+.linkedin.com	TRUE	/	FALSE	0	AMCVS_14215E3D5995C57C0A495C55%40AdobeOrg	1
+.linkedin.com	TRUE	/	FALSE	1599081121	aam_uuid	81570796897899158502356314483712046202
+.linkedin.com	TRUE	/	TRUE	1604265116	liap	true
+.www.linkedin.com	TRUE	/	TRUE	1628025116	li_at	AQEDATHVaMAFGzhOAAABc7YqqkYAAAFz2jcuRlYABNdBArLygzfO-v3NolOsHJRhqWN69XuIrmrMDz0trKkc9Fp87BBdKiQCTd9f8lBe15hwbAsSHPmC6TxN8c1pmVpKHxbOy34sK515fUuJnCmIo-JZ
+.www.linkedin.com	TRUE	/	TRUE	1604265116	JSESSIONID	"ajax:7372084903174602499"
+.linkedin.com	TRUE	/	TRUE	0	lang	v=2&lang=en-us
+.www.linkedin.com	TRUE	/	FALSE	0	spectroscopyId	067131db-1992-43b8-8a11-19552d7a2d13
+.www.linkedin.com	TRUE	/	TRUE	1599081119	UserMatchHistory	AQKujWv5OiEgnAAAAXO2KrdKDp-XzBZUc5WEycruRfDcu6-RE1V4NCPw9sMIGqNLGOtBVq6f5yytQRWckDmeCvEYYI5AcMiFSut0fIZVHZnEpwAB7O3VOh_tVoxO8XgM0GzswxpuUT--hq1g8TTVbcwDoJpvyH1TqpfnJTQEwm2etDNw60JPP2jKjZ6JSjA_2KIDjgmIA-t5A1EHaflmsHWxUVjFViqBzdEcB_JUbMM_
+.linkedin.com	TRUE	/	TRUE	1604265120	_guid	6c0f5f35-84c7-4337-996b-e607315a4197
+.linkedin.com	TRUE	/	TRUE	1604265121	li_sugr	2ae2dbd7-4133-4606-af9d-05f7e867bd9a
+.linkedin.com	TRUE	/	TRUE	1599081121	UserMatchHistory	AQLEVclearcBqAAAAXO2KruSLpelKyIsdMBASxRlflih0eXCGO5wUzW6mb5La-bPV9ejhPawp4EkNexxsRWaMF5xFcnkIdNT-7YLjXZ05X4DWQ
+.linkedin.com	TRUE	/	TRUE	1599081121	li_oatml	AQErTmN-i60ypAAAAXO2Kr1VQBaWeguSAp8F8i60GrYwqyIXehJDzMxeIq9kYQqRMEk9q0JidHK15xnImD2XOyLkhfrGhiZp
+.linkedin.com	TRUE	/	TRUE	1596575518	lidc	"b=TB68:s=T:r=T:g=2527:u=8:i=1596489121:t=1596575516:v=1:sig=AQHNpJz139mEpCYgNNUGfiEUN1dfesG9"
+.linkedin.com	TRUE	/	FALSE	1612041121	AMCV_14215E3D5995C57C0A495C55%40AdobeOrg	-408604571%7CMCIDTS%7C18478%7CMCMID%7C82136992976203737612340852238310786993%7CMCAAMLH-1597093921%7C4%7CMCAAMB-1597093921%7C6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y%7CMCOPTOUT-1596496321s%7CNONE%7CvVersion%7C4.6.0%7CMCCIDH%7C2132102839
