@@ -1,6 +1,17 @@
 {
     "logs": [
         {
+            "data": "2020-08-04",
+            "paginas_acessadas": {
+                "empresas": 0,
+                "pesquisa_de_funcionarios": 0,
+                "perfis": 3,
+                "pesquisa_de_conexoes": 0,
+                "total": 3
+            },
+            "dados_obtidos": []
+        },
+        {
             "data": "2020-08-03",
             "paginas_acessadas": {
                 "empresas": 8,

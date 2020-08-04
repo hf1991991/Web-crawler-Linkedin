@@ -444,6 +444,30 @@ class ProfilesLinkedinSpider(InitSpider):
 
         return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')
 
+    def get_member_badges_json_dictionary(self, response):
+        body = str(response.body.decode('utf8'))
+
+        birthIndex = body.rindex('com.linkedin.voyager.identity.profile.MemberBadges')
+        start = body[:birthIndex].rindex('<code ')
+        end = body[start:].index('</code>') + start
+
+        while (not body[start:end].startswith('{')) and start < end:
+            start += 1
+
+        while (not body[start:end].endswith('}')) and start < end:
+            end -= 1
+
+        if start >= end:
+            whiteprint('ERRO em get_member_badges_json_dictionary: não foi possivel obter dados do usuário em %s' % response.url)
+            return None
+
+        # save_to_file(
+        #     response.url.split('/')[4] + '.html',
+        #     convert_unicode(body[start:end], unicode_dict)
+        # )
+
+        return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')
+
     def get_object_by_type(self, included_array, obj_type):
         array = []
         for obj in included_array:
@@ -476,6 +500,16 @@ class ProfilesLinkedinSpider(InitSpider):
             'inicio': self.convert_date((date_range['start']) if ('start' in date_range) else None),
             'fim': self.convert_date((date_range['end']) if ('end' in date_range) else None)
         } if date_range is not None else None
+
+    def stringify_date(self, date):
+        return '%04i-%02i' \
+            % (
+                0 if (date is None) or (date['ano'] is None) else date['ano'],
+                0 if (date is None) or (date['mes'] is None) else date['mes']
+            )
+
+    def stringify_date_range(self, date_range):
+        return self.stringify_date(None if date_range is None else date_range['inicio'])
 
     def format_conections(self, connections):
         return {
@@ -569,69 +603,93 @@ class ProfilesLinkedinSpider(InitSpider):
                 if following_json is None:
                     raise ParsingException('Erro com following_json')
 
+                member_badges_json = self.get_member_badges_json_dictionary(response)
+
+                if member_badges_json is None:
+                    raise ParsingException('Erro com member_badges_json')
+
                 user_dict.update({
                     'nome': user_data['firstName'] if 'firstName' in user_data else None,
                     'sobrenome': user_data['lastName'] if 'lastName' in user_data else None,
+                    'user_id': member_badges_json['data']['entityUrn'].split(':')[-1],
                     'cargo_atual': user_data['headline'] if 'headline' in user_data else None,
                     'localizacao_atual': user_data['locationName'] if 'locationName' in user_data else None,
                     'sobre': user_data['summary'] if 'summary' in user_data else None,
+                    'premium': user_data['premium'] if 'premium' in user_data else None,
+                    'influenciador': user_data['influencer'] if 'influencer' in user_data else None,
+                    'procura_emprego': member_badges_json['data']['jobSeeker'],
                     'seguidores': following_json['data']['followersCount'],
                     'conexoes': self.format_conections(following_json['data']['connectionsCount']),
                     'habilidades': [skill['name'] for skill in skills_data],
                     'linguas': [language['name'] for language in languages_data],
                     'cursos_feitos': [course['name'] for course in courses_data],
-                    'premios': [
-                        {
-                            'nome': honor['title'] if 'title' in honor else None,
-                            'instituicao': honor['issuer'] if 'issuer' in honor else None,
-                            'descricao': honor['description'] if 'description' in honor else None,
-                            'data': self.convert_date(
-                                honor['issuedOn'] if 'issuedOn' in honor else None,
-                            )
-                        } for honor in honors_data
-                    ],
-                    'estudos': [
-                        {
-                            'instituicao': experience['schoolName'] if 'schoolName' in experience else None,
-                            'formacao': experience['fieldOfStudy'] if 'fieldOfStudy' in experience else None,
-                            'tilulo_obtido': experience['degreeName'] if 'degreeName' in experience else None,
-                            'descricao': experience['description'] if 'description' in experience else None,
-                            'periodo': self.convert_date_range(
-                                experience['dateRange'] if 'dateRange' in experience else None
-                            ),
-                        } for experience in education_data
-                    ],
-                    'experiencia_profissional': [
-                        {
-                            'instituicao': experience['companyName'] if 'companyName' in experience else None,
-                            'cargo': experience['title'] if 'title' in experience else None,
-                            'descricao': experience['description'] if 'description' in experience else None,
-                            'periodo': self.convert_date_range(
-                                experience['dateRange'] if 'dateRange' in experience else None
-                            ),
-                        } for experience in positions_data
-                    ],
-                    'voluntariado': [
-                        {
-                            'instituicao': experience['companyName'] if 'companyName' in experience else None,
-                            'papel': experience['role'] if 'role' in experience else None,
-                            'causa': experience['cause'] if 'cause' in experience else None,
-                            'descricao': experience['description'] if 'description' in experience else None,
-                            'periodo': self.convert_date_range(
-                                experience['dateRange'] if 'dateRange' in experience else None
-                            ),
-                        } for experience in volunteer_data
-                    ],
-                    'projetos': [
-                        {
-                            'titulo': project['title'],
-                            'url': project['url'],
-                            'descricao': project['description'],
-                            'periodo': self.convert_date_range(
-                                project['dateRange']
-                            )
-                        } for project in projects_data
-                    ],
+                    'premios': sorted(
+                        [
+                            {
+                                'nome': honor['title'] if 'title' in honor else None,
+                                'instituicao': honor['issuer'] if 'issuer' in honor else None,
+                                'descricao': honor['description'] if 'description' in honor else None,
+                                'data': self.convert_date(
+                                    honor['issuedOn'] if 'issuedOn' in honor else None,
+                                )
+                            } for honor in honors_data
+                        ],
+                        key=lambda x: self.stringify_date(x['data'])
+                    ),
+                    'estudos': sorted(
+                        [
+                            {
+                                'instituicao': experience['schoolName'] if 'schoolName' in experience else None,
+                                'formacao': experience['fieldOfStudy'] if 'fieldOfStudy' in experience else None,
+                                'tilulo_obtido': experience['degreeName'] if 'degreeName' in experience else None,
+                                'descricao': experience['description'] if 'description' in experience else None,
+                                'periodo': self.convert_date_range(
+                                    experience['dateRange'] if 'dateRange' in experience else None
+                                ),
+                            } for experience in education_data
+                        ],
+                        key=lambda x: self.stringify_date_range(x['periodo'])
+                    ),
+                    'experiencia_profissional': sorted(
+                        [
+                            {
+                                'instituicao': experience['companyName'] if 'companyName' in experience else None,
+                                'cargo': experience['title'] if 'title' in experience else None,
+                                'descricao': experience['description'] if 'description' in experience else None,
+                                'periodo': self.convert_date_range(
+                                    experience['dateRange'] if 'dateRange' in experience else None
+                                ),
+                            } for experience in positions_data
+                        ],
+                        key=lambda x: self.stringify_date_range(x['periodo'])
+                    ),
+                    'voluntariado': sorted(
+                        [
+                            {
+                                'instituicao': experience['companyName'] if 'companyName' in experience else None,
+                                'papel': experience['role'] if 'role' in experience else None,
+                                'causa': experience['cause'] if 'cause' in experience else None,
+                                'descricao': experience['description'] if 'description' in experience else None,
+                                'periodo': self.convert_date_range(
+                                    experience['dateRange'] if 'dateRange' in experience else None
+                                ),
+                            } for experience in volunteer_data
+                        ],
+                        key=lambda x: self.stringify_date_range(x['periodo'])
+                    ),
+                    'projetos': sorted(
+                        [
+                            {
+                                'titulo': project['title'],
+                                'url': project['url'],
+                                'descricao': project['description'],
+                                'periodo': self.convert_date_range(
+                                    project['dateRange']
+                                )
+                            } for project in projects_data
+                        ],
+                        key=lambda x: self.stringify_date_range(x['periodo'])
+                    ),
                     'dados_obtidos': True
                 })
 

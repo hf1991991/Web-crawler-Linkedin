@@ -1,0 +1,11 @@
+{
+    "data": {
+        "premium": false,
+        "influencer": false,
+        "entityUrn": "urn:li:fs_memberBadges:ACoAACHAYngBHR7LUufQU0EPRSbbpQzJLEHTlos",
+        "openLink": false,
+        "jobSeeker": false,
+        "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+    },
+    "included": []
+}
