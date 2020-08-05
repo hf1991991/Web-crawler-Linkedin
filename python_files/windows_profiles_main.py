@@ -50,6 +50,21 @@ def parse_json_file(path):
         return None
 
 
+def check_open_paths(config_data):
+    for path in config_data['paths']:
+        config_data['paths'][path] = config_data['paths'][path]
+        error = test_file(config_data['paths'][path])
+        if error is not None:
+            if isinstance(error, FileNotFoundError):
+                error_text = 'O arquivo %s não existe. Entre no config.json e corrija o erro.' % config_data['paths'][path]
+            elif isinstance(error, PermissionError):
+                error_text = 'O arquivo %s está aberto. Feche-o e tente novamente.' % config_data['paths'][path]
+            errorprint('%s\nAperte enter para continuar.' % error_text)
+            input()
+            return True
+    return False
+
+
 def read_config_file(config_path):
 
     config_data = parse_json_file(config_path)
@@ -59,22 +74,12 @@ def read_config_file(config_path):
         input()
         return None
 
-    for path in config_data['paths']:
-        config_data['paths'][path] = '../' + config_data['paths'][path]
-        error = test_file(config_data['paths'][path])
-        if error is not None:
-            if isinstance(error, FileNotFoundError):
-                error_text = 'O arquivo %s não existe. Entre no config.json e corrija o erro.' % config_data['paths'][path]
-            elif isinstance(error, PermissionError):
-                error_text = 'O arquivo %s está aberto. Feche-o e tente novamente.' % config_data['paths'][path]
-            errorprint('%s\nAperte enter para continuar.' % error_text)
-            input()
-            return None
+    if check_open_paths(config_data): return None
 
     return config_data
 
 
-def execute_crawling(username, password, max_page_requests, max_connection_pages, logs_path, input_excel_path,  cookies_path,  output_json_path):
+def execute_crawling(username, password, max_page_requests, max_connection_pages, logs_path, input_excel_path,  cookies_path,  output_json_path, ensure_ascii):
     process = CrawlerProcess(
         settings={
             'DOWNLOAD_DELAY': 2
@@ -89,7 +94,8 @@ def execute_crawling(username, password, max_page_requests, max_connection_pages
         logs_path=logs_path,
         input_excel_path=input_excel_path, 
         cookies_path=cookies_path, 
-        output_json_path=output_json_path
+        output_json_path=output_json_path,
+        ensure_ascii=ensure_ascii
     )
     process.start()
 
@@ -99,12 +105,14 @@ if __name__ == '__main__':
     freeze_support()
 
     config_exists = False
+    config_data = None
     input_excel_path = None
     output_json_path = None
     cookies_path = None
     logs_path = None
     max_page_requests = None
     max_connection_pages = None
+    ensure_ascii = None
     username = None
     password = None
 
@@ -128,6 +136,7 @@ if __name__ == '__main__':
                 logs_path = config_data['paths']['logs']
                 max_page_requests = config_data['config']['max_paginas_por_dia']
                 max_connection_pages = config_data['config']['max_paginas_de_conexoes_por_perfil']
+                ensure_ascii = not config_data['config']['permitir_caracteres_nao_ascii_no_output']
                 username = config_data['login']['username']
                 password = config_data['login']['password']
 
@@ -135,7 +144,7 @@ if __name__ == '__main__':
                 config_exists = False
 
         else:
-            errorprint('%s\nAperte enter para continuar' % str(error).replace('../', ''))
+            errorprint('%s\nAperte enter para continuar' % error)
             input()
 
     fresh_cookies = False
@@ -147,6 +156,10 @@ if __name__ == '__main__':
     dont_stop = True
 
     while dont_stop:
+
+        while check_open_paths(config_data):
+            true = True
+
         p = Process(
             target=execute_crawling, 
             args=(
@@ -157,7 +170,8 @@ if __name__ == '__main__':
                 logs_path, 
                 input_excel_path, 
                 cookies_path, 
-                output_json_path
+                output_json_path,
+                ensure_ascii
             )
         )
         p.start()

@@ -4,14 +4,15 @@
         "password": "polijunior"
     },
     "paths": {
-        "input": "final_windows_executable/input.xlsx",
-        "output_empresas": "final_windows_executable/output_empresas.json",
-        "output_perfis": "final_windows_executable/output_perfis.json",
-        "cookies": "final_windows_executable/cookies.txt",
-        "logs": "final_windows_executable/logs.json"
+        "input": "../final_windows_executable/input.xlsx",
+        "output_empresas": "../final_windows_executable/output_empresas.json",
+        "output_perfis": "../final_windows_executable/output_perfis.json",
+        "cookies": "../final_windows_executable/cookies.txt",
+        "logs": "../final_windows_executable/logs.json"
     },
     "config": {
         "max_paginas_por_dia": 150,
-        "max_paginas_de_conexoes_por_perfil": 0
+        "max_paginas_de_conexoes_por_perfil": 1,
+        "permitir_caracteres_nao_ascii_no_output": false
     }
 }

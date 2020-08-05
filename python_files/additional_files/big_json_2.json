@@ -3356,108 +3356,31 @@
             "*profileHonors": "urn:li:collectionResponse:JWFBg8yOcYLDPpGva0/cEcDGlTYBm98FUMv2T86yLAc=",
             "*profileSkills": "urn:li:collectionResponse:oMeLbYrQLEACGj3g3AeGjFJYGyFVUxdNAT0ZKZLwK0E=",
             "multiLocaleHeadline": {
-                "en_US": "Talent Acquisition Partner at FreshBooks - We\"re Hiring!"},"*profileProjects":"urn:li:collectionResponse: 4GHo/uweCSUVCFP9qlX90/DS5ZJOwdOVumye8GRhbho=","*profilePublications":"urn:li:collectionResponse:F7GefU7/hkm9xNMO05tG9p5mHXnBEK+Nz5+dJmkYVHk=","lastName":"Badawi","multiLocalePhoneticFirstName":null,"volunteerCauses":null,"*industry":"urn:li:fsd_industry: 96","showPremiumSubscriberBadge":true,"tempStatusEmoji":null,"maidenName":null,"geoLocationBackfilled":true,"multiLocaleFullNamePronunciationAudio":{},"phoneticLastName":null,"premium":true,"influencer":false,"*profileCourses":"urn:li:collectionResponse:ey6UWmMKB8jCFd3kwDrCSN2hsJNkKtp5Y+28+MBV6RU=","entityUrn":"urn:li:fsd_profile:ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q","*profileEducations":"urn:li:collectionResponse:yUzMTMRY86urV7zO5hlECY+xDcMNtEhafBzEsCnJPyo=","headline":"Talent Acquisition Partner at FreshBooks - We\"re Hiring!",
-                "fullNamePronunciationAudio": null,
-                "summary": null,
-                "locationName": "Toronto, Ontario, Canada",
-                "supportedLocales": [
-                    {
-                        "country": "US",
-                        "language": "en",
-                        "$recipeTypes": [
-                            "com.linkedin.voyager.dash.deco.common.Locale"
-                        ],
-                        "$type": "com.linkedin.common.Locale"
-                    }
-                ],
-                "address": null,
-                "multiLocaleAddress": null,
-                "*profileVolunteerExperiences": "urn:li:collectionResponse:81bkTdtxx4qT1LRTQG7m7KeIj4LoH3jCKGxLmsZMA8U=",
-                "educationOnProfileTopCardShown": true,
-                "industryUrn": "urn:li:fsd_industry:96",
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Profile",
-                "geoLocation": {
-                    "*geo": "urn:li:fsd_geo:100761630",
-                    "$recipeTypes": [
-                        "com.linkedin.voyager.dash.deco.identity.profile.ProfileGeoLocation"
-                    ],
-                    "geoUrn": "urn:li:fsd_geo:100761630",
-                    "$type": "com.linkedin.voyager.dash.identity.profile.ProfileGeoLocation"
-                },
-                "tempStatus": null,
-                "*profileTreasuryMediaProfile": "urn:li:collectionResponse:M/Swoy8P/RId1tPOpvwZd4pmDUkNe81vSXukvMwfSXk=",
-                "location": {
-                    "preferredGeoPlace": "urn:li:fs_city:(ca,2-1-0-1080)",
-                    "countryCode": "ca",
-                    "$type": "com.linkedin.voyager.dash.identity.profile.ProfileLocation"
-                },
-                "backgroundPicture": {
-                    "displayImageReference": {
-                        "vectorImage": {
-                            "$recipeTypes": [
-                                "com.linkedin.deco.recipe.anonymous.Anon1762519396"
-                            ],
-                            "rootUrl": "https://media-exp1.licdn.com/dms/image/C5616AQEPaAzl4x8kug/profile-displaybackgroundimage-shrink_",
-                            "artifacts": [
-                                {
-                                    "width": 800,
-                                    "fileIdentifyingUrlPathSegment": "200_800/0?e=1597881600&v=beta&t=qZ2QZr_qH95x_6MeTkBn-MJCN0L_TJEqL-OywlC8_Is",
-                                    "expiresAt": 1597881600000,
-                                    "height": 200,
-                                    "$type": "com.linkedin.common.VectorArtifact"
-                                },
-                                {
-                                    "width": 1400,
-                                    "fileIdentifyingUrlPathSegment": "350_1400/0?e=1597881600&v=beta&t=VDsWL6PG-m4hiQwkmU3Mo0y71tMpqnR072mN_dBf8JY",
-                                    "expiresAt": 1597881600000,
-                                    "height": 350,
-                                    "$type": "com.linkedin.common.VectorArtifact"
-                                }
-                            ],
-                            "$type": "com.linkedin.common.VectorImage"
-                        }
-                    },
-                    "$recipeTypes": [
-                        "com.linkedin.voyager.dash.deco.identity.profile.OriginalAndDisplayImage"
-                    ],
-                    "displayImageUrn": "urn:li:digitalmediaAsset:C5616AQEPaAzl4x8kug",
-                    "photoFilterEditInfo": {
-                        "bottomLeft": {
-                            "x": 8.167157882300002E-17,
-                            "y": 1.0,
-                            "$type": "com.linkedin.common.Coordinate2D"
-                        },
-                        "vignette": 0.0,
-                        "bottomRight": {
-                            "x": 1.0,
-                            "y": 1.0,
-                            "$type": "com.linkedin.common.Coordinate2D"
-                        },
-                        "topRight": {
-                            "x": 1.0,
-                            "y": 8.167157882300002E-17,
-                            "$type": "com.linkedin.common.Coordinate2D"
-                        },
-                        "$recipeTypes": [
-                            "com.linkedin.voyager.dash.deco.identity.profile.PhotoFilterEditInfo"
-                        ],
-                        "$type": "com.linkedin.voyager.dash.identity.profile.PhotoFilterEditInfo",
-                        "saturation": 0.0,
-                        "brightness": 0.0,
-                        "photoFilterType": "ORIGINAL",
-                        "contrast": 0.0,
-                        "topLeft": {
-                            "x": 8.167157882300002E-17,
-                            "y": 8.167157882300002E-17,
-                            "$type": "com.linkedin.common.Coordinate2D"
-                        }
-                    },
-                    "$type": "com.linkedin.voyager.dash.identity.profile.PhotoFilterPicture"
-                },
-                "primaryLocale": {
+                "en_US": "Talent Acquisition Partner at FreshBooks - We\"re Hiring!"
+            },
+            "*profileProjects": "urn:li:collectionResponse: 4GHo/uweCSUVCFP9qlX90/DS5ZJOwdOVumye8GRhbho=",
+            "*profilePublications": "urn:li:collectionResponse:F7GefU7/hkm9xNMO05tG9p5mHXnBEK+Nz5+dJmkYVHk=",
+            "lastName": "Badawi",
+            "multiLocalePhoneticFirstName": null,
+            "volunteerCauses": null,
+            "*industry": "urn:li:fsd_industry: 96",
+            "showPremiumSubscriberBadge": true,
+            "tempStatusEmoji": null,
+            "maidenName": null,
+            "geoLocationBackfilled": true,
+            "multiLocaleFullNamePronunciationAudio": {},
+            "phoneticLastName": null,
+            "premium": true,
+            "influencer": false,
+            "*profileCourses": "urn:li:collectionResponse:ey6UWmMKB8jCFd3kwDrCSN2hsJNkKtp5Y+28+MBV6RU=",
+            "entityUrn": "urn:li:fsd_profile:ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q",
+            "*profileEducations": "urn:li:collectionResponse:yUzMTMRY86urV7zO5hlECY+xDcMNtEhafBzEsCnJPyo=",
+            "headline": "Talent Acquisition Partner at FreshBooks - We\"re Hiring!",
+            "fullNamePronunciationAudio": null,
+            "summary": null,
+            "locationName": "Toronto, Ontario, Canada",
+            "supportedLocales": [
+                {
                     "country": "US",
                     "language": "en",
                     "$recipeTypes": [
@@ -3465,718 +3388,814 @@
                     ],
                     "$type": "com.linkedin.common.Locale"
                 }
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,203)",
-                "name": "Call Centers",
-                "multiLocaleName": {
-                    "en_US": "Call Centers"
-                },
+            ],
+            "address": null,
+            "multiLocaleAddress": null,
+            "*profileVolunteerExperiences": "urn:li:collectionResponse:81bkTdtxx4qT1LRTQG7m7KeIj4LoH3jCKGxLmsZMA8U=",
+            "educationOnProfileTopCardShown": true,
+            "industryUrn": "urn:li:fsd_industry:96",
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileWithEntities"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Profile",
+            "geoLocation": {
+                "*geo": "urn:li:fsd_geo:100761630",
                 "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+                    "com.linkedin.voyager.dash.deco.identity.profile.ProfileGeoLocation"
                 ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+                "geoUrn": "urn:li:fsd_geo:100761630",
+                "$type": "com.linkedin.voyager.dash.identity.profile.ProfileGeoLocation"
             },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,182)",
-                "name": "IT Recruitment",
-                "multiLocaleName": {
-                    "en_US": "IT Recruitment"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+            "tempStatus": null,
+            "*profileTreasuryMediaProfile": "urn:li:collectionResponse:M/Swoy8P/RId1tPOpvwZd4pmDUkNe81vSXukvMwfSXk=",
+            "location": {
+                "preferredGeoPlace": "urn:li:fs_city:(ca,2-1-0-1080)",
+                "countryCode": "ca",
+                "$type": "com.linkedin.voyager.dash.identity.profile.ProfileLocation"
             },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,194)",
-                "name": "Microsoft Word",
-                "multiLocaleName": {
-                    "en_US": "Microsoft Word"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,198)",
-                "name": "Data Entry",
-                "multiLocaleName": {
-                    "en_US": "Data Entry"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,207)",
-                "name": "Event Management",
-                "multiLocaleName": {
-                    "en_US": "Event Management"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,195)",
-                "name": "Budgets",
-                "multiLocaleName": {
-                    "en_US": "Budgets"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,137452437)",
-                "name": "Social Media",
-                "multiLocaleName": {
-                    "en_US": "Social Media"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,187)",
-                "name": "Customer Satisfaction",
-                "multiLocaleName": {
-                    "en_US": "Customer Satisfaction"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,208)",
-                "name": "Market Research",
-                "multiLocaleName": {
-                    "en_US": "Market Research"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,201)",
-                "name": "Sales",
-                "multiLocaleName": {
-                    "en_US": "Sales"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,180)",
-                "name": "Time Management",
-                "multiLocaleName": {
-                    "en_US": "Time Management"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,192)",
-                "name": "Microsoft Office",
-                "multiLocaleName": {
-                    "en_US": "Microsoft Office"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,196)",
-                "name": "Retail",
-                "multiLocaleName": {
-                    "en_US": "Retail"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,209)",
-                "name": "Event Planning",
-                "multiLocaleName": {
-                    "en_US": "Event Planning"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,205)",
-                "name": "Data Analysis",
-                "multiLocaleName": {
-                    "en_US": "Data Analysis"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,181)",
-                "name": "Customer Service",
-                "multiLocaleName": {
-                    "en_US": "Customer Service"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,193)",
-                "name": "Microsoft Excel",
-                "multiLocaleName": {
-                    "en_US": "Microsoft Excel"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,197)",
-                "name": "Marketing",
-                "multiLocaleName": {
-                    "en_US": "Marketing"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,189)",
-                "name": "Recruiting",
-                "multiLocaleName": {
-                    "en_US": "Recruiting"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,206)",
-                "name": "Accounting",
-                "multiLocaleName": {
-                    "en_US": "Accounting"
-                },
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
-                ],
-                "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
-            },
-            {
-                "industry": {
-                    "*urn:li:fsd_industry:4": "urn:li:fsd_industry:4"
-                },
-                "industryUrns": [
-                    "urn:li:fsd_industry:4"
-                ],
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
-                ],
-                "url": "https://www.linkedin.com/company/freshbooks/",
-                "$type": "com.linkedin.voyager.dash.organization.Company",
-                "employeeCountRange": {
-                    "start": 201,
-                    "end": 500,
-                    "$recipeTypes": [
-                        "com.linkedin.voyager.dash.deco.common.IntegerRange"
-                    ],
-                    "$type": "com.linkedin.common.IntegerRange"
-                },
-                "entityUrn": "urn:li:fsd_company:116468",
-                "name": "FreshBooks",
-                "logo": {
+            "backgroundPicture": {
+                "displayImageReference": {
                     "vectorImage": {
                         "$recipeTypes": [
-                            "com.linkedin.deco.recipe.anonymous.Anon1116930124"
+                            "com.linkedin.deco.recipe.anonymous.Anon1762519396"
                         ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQFxZ2B46VJvRg/company-logo_",
+                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C5616AQEPaAzl4x8kug/profile-displaybackgroundimage-shrink_",
                         "artifacts": [
                             {
-                                "width": 200,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=CNv3P4lvqH6EwQ6uFMCM6tq9N520eG94FhTABO7sCSw",
-                                "expiresAt": 1600905600000,
+                                "width": 800,
+                                "fileIdentifyingUrlPathSegment": "200_800/0?e=1597881600&v=beta&t=qZ2QZr_qH95x_6MeTkBn-MJCN0L_TJEqL-OywlC8_Is",
+                                "expiresAt": 1597881600000,
                                 "height": 200,
                                 "$type": "com.linkedin.common.VectorArtifact"
                             },
                             {
-                                "width": 100,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=k55KUDK57CtrQXWlgio4X0l1RsKu7YwI34VIiMhSykE",
-                                "expiresAt": 1600905600000,
-                                "height": 100,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 400,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=wMkn-2SELRliorlqeFY59m4NiyeTCEZDSrpwXPpt1XI",
-                                "expiresAt": 1600905600000,
-                                "height": 400,
+                                "width": 1400,
+                                "fileIdentifyingUrlPathSegment": "350_1400/0?e=1597881600&v=beta&t=VDsWL6PG-m4hiQwkmU3Mo0y71tMpqnR072mN_dBf8JY",
+                                "expiresAt": 1597881600000,
+                                "height": 350,
                                 "$type": "com.linkedin.common.VectorArtifact"
                             }
                         ],
                         "$type": "com.linkedin.common.VectorImage"
                     }
                 },
-                "universalName": "freshbooks"
-            },
-            {
-                "industry": {
-                    "*urn:li:fsd_industry:96": "urn:li:fsd_industry:96"
-                },
-                "industryUrns": [
-                    "urn:li:fsd_industry:96"
-                ],
                 "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+                    "com.linkedin.voyager.dash.deco.identity.profile.OriginalAndDisplayImage"
                 ],
-                "url": "https://www.linkedin.com/company/ntt-data-americas/",
-                "$type": "com.linkedin.voyager.dash.organization.Company",
-                "employeeCountRange": {
-                    "start": 10001,
+                "displayImageUrn": "urn:li:digitalmediaAsset:C5616AQEPaAzl4x8kug",
+                "photoFilterEditInfo": {
+                    "bottomLeft": {
+                        "x": 8.167157882300002E-17,
+                        "y": 1.0,
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
+                    "vignette": 0.0,
+                    "bottomRight": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
+                    "topRight": {
+                        "x": 1.0,
+                        "y": 8.167157882300002E-17,
+                        "$type": "com.linkedin.common.Coordinate2D"
+                    },
                     "$recipeTypes": [
-                        "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                        "com.linkedin.voyager.dash.deco.identity.profile.PhotoFilterEditInfo"
                     ],
-                    "$type": "com.linkedin.common.IntegerRange"
-                },
-                "entityUrn": "urn:li:fsd_company:2494361",
-                "name": "NTT DATA Services",
-                "logo": {
-                    "vectorImage": {
-                        "$recipeTypes": [
-                            "com.linkedin.deco.recipe.anonymous.Anon1116930124"
-                        ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C510BAQGmwapbXMRoRg/company-logo_",
-                        "artifacts": [
-                            {
-                                "width": 200,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=kYtPUA9d9i_8nlUKbtaVNgssFkLxtmlLna_zZvh9imE",
-                                "expiresAt": 1600905600000,
-                                "height": 200,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 100,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=7WIyHMq6pqY2t20BEMjSZlrT2TcGBJ9DUjjo6_l2knY",
-                                "expiresAt": 1600905600000,
-                                "height": 100,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 400,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=lvFBBPqGNkqaLBoyfXkBRUo4rmYFqLbMQs9g9s6glf0",
-                                "expiresAt": 1600905600000,
-                                "height": 400,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            }
-                        ],
-                        "$type": "com.linkedin.common.VectorImage"
+                    "$type": "com.linkedin.voyager.dash.identity.profile.PhotoFilterEditInfo",
+                    "saturation": 0.0,
+                    "brightness": 0.0,
+                    "photoFilterType": "ORIGINAL",
+                    "contrast": 0.0,
+                    "topLeft": {
+                        "x": 8.167157882300002E-17,
+                        "y": 8.167157882300002E-17,
+                        "$type": "com.linkedin.common.Coordinate2D"
                     }
                 },
-                "universalName": "ntt-data-americas"
+                "$type": "com.linkedin.voyager.dash.identity.profile.PhotoFilterPicture"
             },
-            {
-                "industry": {
-                    "*urn:li:fsd_industry:96": "urn:li:fsd_industry:96"
-                },
-                "industryUrns": [
-                    "urn:li:fsd_industry:96"
-                ],
+            "primaryLocale": {
+                "country": "US",
+                "language": "en",
                 "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+                    "com.linkedin.voyager.dash.deco.common.Locale"
                 ],
-                "url": "https://www.linkedin.com/company/01-millennium-consulting/",
-                "$type": "com.linkedin.voyager.dash.organization.Company",
-                "employeeCountRange": {
-                    "start": 11,
-                    "end": 50,
+                "$type": "com.linkedin.common.Locale"
+            }
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,203)",
+            "name": "Call Centers",
+            "multiLocaleName": {
+                "en_US": "Call Centers"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,182)",
+            "name": "IT Recruitment",
+            "multiLocaleName": {
+                "en_US": "IT Recruitment"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,194)",
+            "name": "Microsoft Word",
+            "multiLocaleName": {
+                "en_US": "Microsoft Word"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,198)",
+            "name": "Data Entry",
+            "multiLocaleName": {
+                "en_US": "Data Entry"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,207)",
+            "name": "Event Management",
+            "multiLocaleName": {
+                "en_US": "Event Management"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,195)",
+            "name": "Budgets",
+            "multiLocaleName": {
+                "en_US": "Budgets"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,137452437)",
+            "name": "Social Media",
+            "multiLocaleName": {
+                "en_US": "Social Media"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,187)",
+            "name": "Customer Satisfaction",
+            "multiLocaleName": {
+                "en_US": "Customer Satisfaction"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,208)",
+            "name": "Market Research",
+            "multiLocaleName": {
+                "en_US": "Market Research"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,201)",
+            "name": "Sales",
+            "multiLocaleName": {
+                "en_US": "Sales"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,180)",
+            "name": "Time Management",
+            "multiLocaleName": {
+                "en_US": "Time Management"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,192)",
+            "name": "Microsoft Office",
+            "multiLocaleName": {
+                "en_US": "Microsoft Office"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,196)",
+            "name": "Retail",
+            "multiLocaleName": {
+                "en_US": "Retail"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,209)",
+            "name": "Event Planning",
+            "multiLocaleName": {
+                "en_US": "Event Planning"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,205)",
+            "name": "Data Analysis",
+            "multiLocaleName": {
+                "en_US": "Data Analysis"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,181)",
+            "name": "Customer Service",
+            "multiLocaleName": {
+                "en_US": "Customer Service"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,193)",
+            "name": "Microsoft Excel",
+            "multiLocaleName": {
+                "en_US": "Microsoft Excel"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,197)",
+            "name": "Marketing",
+            "multiLocaleName": {
+                "en_US": "Marketing"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,189)",
+            "name": "Recruiting",
+            "multiLocaleName": {
+                "en_US": "Recruiting"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "entityUrn": "urn:li:fsd_skill:(ACoAAAWEek4BajqDsIutopY9XM4GurI8O2ewi7Q,206)",
+            "name": "Accounting",
+            "multiLocaleName": {
+                "en_US": "Accounting"
+            },
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.FullProfileSkill"
+            ],
+            "$type": "com.linkedin.voyager.dash.identity.profile.Skill"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:4": "urn:li:fsd_industry:4"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:4"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/freshbooks/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 201,
+                "end": 500,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                ],
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:116468",
+            "name": "FreshBooks",
+            "logo": {
+                "vectorImage": {
                     "$recipeTypes": [
-                        "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                        "com.linkedin.deco.recipe.anonymous.Anon1116930124"
                     ],
-                    "$type": "com.linkedin.common.IntegerRange"
-                },
-                "entityUrn": "urn:li:fsd_company:1165436",
-                "name": "01 Millennium Consulting",
-                "logo": {
-                    "vectorImage": {
-                        "$recipeTypes": [
-                            "com.linkedin.deco.recipe.anonymous.Anon1116930124"
-                        ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQE2iiqsO1HBfw/company-logo_",
-                        "artifacts": [
-                            {
-                                "width": 200,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=tBXPqfirVJi0bfULeO0zg1dG_WgNyQeMf-OyYQu4zk0",
-                                "expiresAt": 1600905600000,
-                                "height": 200,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 100,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=ASYHHbIJGKs19IKQHyv61TyGaO1R23kZ6ra-iLyamxo",
-                                "expiresAt": 1600905600000,
-                                "height": 100,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 400,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=ALsQ4uyH5h1et3VGIzjvxfLGBC7UlYxWkKaDLVogGc4",
-                                "expiresAt": 1600905600000,
-                                "height": 400,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            }
-                        ],
-                        "$type": "com.linkedin.common.VectorImage"
-                    }
-                },
-                "universalName": "01-millennium-consulting"
-            },
-            {
-                "industry": {
-                    "*urn:li:fsd_industry:43": "urn:li:fsd_industry:43"
-                },
-                "industryUrns": [
-                    "urn:li:fsd_industry:43"
-                ],
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
-                ],
-                "url": "https://www.linkedin.com/company/wealthsimple/",
-                "$type": "com.linkedin.voyager.dash.organization.Company",
-                "employeeCountRange": {
-                    "start": 201,
-                    "end": 500,
-                    "$recipeTypes": [
-                        "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQFxZ2B46VJvRg/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=CNv3P4lvqH6EwQ6uFMCM6tq9N520eG94FhTABO7sCSw",
+                            "expiresAt": 1600905600000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=k55KUDK57CtrQXWlgio4X0l1RsKu7YwI34VIiMhSykE",
+                            "expiresAt": 1600905600000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=wMkn-2SELRliorlqeFY59m4NiyeTCEZDSrpwXPpt1XI",
+                            "expiresAt": 1600905600000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
                     ],
-                    "$type": "com.linkedin.common.IntegerRange"
-                },
-                "entityUrn": "urn:li:fsd_company:5208813",
-                "name": "Wealthsimple",
-                "logo": {
-                    "vectorImage": {
-                        "$recipeTypes": [
-                            "com.linkedin.deco.recipe.anonymous.Anon1116930124"
-                        ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0BAQFLSqm4awostg/company-logo_",
-                        "artifacts": [
-                            {
-                                "width": 200,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=ET57hYUwKFeVu8EMkUhGiLIeiAIf8af8bI7GaOksxxM",
-                                "expiresAt": 1600905600000,
-                                "height": 200,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 100,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=s9QbSnxoS_o2-C7FGBINPXTjkOOxLlt9QO4wcm7YyPY",
-                                "expiresAt": 1600905600000,
-                                "height": 100,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 400,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=JxsUrabWfq5ja4dF0B0UbeFO-felnl1CsfYjSDz95s4",
-                                "expiresAt": 1600905600000,
-                                "height": 400,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            }
-                        ],
-                        "$type": "com.linkedin.common.VectorImage"
-                    }
-                },
-                "universalName": "wealthsimple"
-            },
-            {
-                "industry": {
-                    "*urn:li:fsd_industry:4": "urn:li:fsd_industry:4"
-                },
-                "industryUrns": [
-                    "urn:li:fsd_industry:4"
-                ],
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
-                ],
-                "url": "https://www.linkedin.com/company/tribalscale/",
-                "$type": "com.linkedin.voyager.dash.organization.Company",
-                "employeeCountRange": {
-                    "start": 201,
-                    "end": 500,
-                    "$recipeTypes": [
-                        "com.linkedin.voyager.dash.deco.common.IntegerRange"
-                    ],
-                    "$type": "com.linkedin.common.IntegerRange"
-                },
-                "entityUrn": "urn:li:fsd_company:10275251",
-                "name": "TribalScale",
-                "logo": {
-                    "vectorImage": {
-                        "$recipeTypes": [
-                            "com.linkedin.deco.recipe.anonymous.Anon1116930124"
-                        ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQHFjX8Rfqzt6w/company-logo_",
-                        "artifacts": [
-                            {
-                                "width": 200,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=vZe-ONidK0Q4bFRyn5piDCMXM2m4wQHOcPIVrqNsFOU",
-                                "expiresAt": 1600905600000,
-                                "height": 200,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 100,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=uwiIVUGxnDK4i2RaxZZfLuvYZe5TJ0ZK4UeDiGxGdJ0",
-                                "expiresAt": 1600905600000,
-                                "height": 100,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            },
-                            {
-                                "width": 400,
-                                "$recipeTypes": [
-                                    "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
-                                ],
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=4ns3qE2AFLE059aM8DddHJKlUWLSI-DQxIl_Vcdx6Wc",
-                                "expiresAt": 1600905600000,
-                                "height": 400,
-                                "$type": "com.linkedin.common.VectorArtifact"
-                            }
-                        ],
-                        "$type": "com.linkedin.common.VectorImage"
-                    }
-                },
-                "universalName": "tribalscale"
-            },
-            {
-                "active": true,
-                "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.organization.MiniSchool"
-                ],
-                "url": "https://www.linkedin.com/company/3496630/",
-                "$type": "com.linkedin.voyager.dash.organization.School",
-                "entityUrn": "urn:li:fsd_school:164173",
-                "name": "BrainStation",
-                "logo": {
-                    "vectorImage": {
-                        "$recipeTypes": [
-                            "com.linkedin.voyager.dash.deco.organization.VectorImage"
-                        ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQEIJpSk2gyHRA/company-logo_",
-                        "artifacts": [
-                            {
-                                "width": 200,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=3g_OSbhAk40h7qqaJgCeeTyxs19VMzVXXLqHpUb-mDQ",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 200
-                            },
-                            {
-                                "width": 100,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=XAwbTFNKgCAd1LmOpP1hcbxc046nHvu1Z36laWTpJxQ",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 100
-                            },
-                            {
-                                "width": 400,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=idQBIrFambxbE4tayUgikQ7aZRERqIPEyURWvWUpVXI",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 400
-                            }
-                        ],
-                        "$type": "com.linkedin.common.VectorImage"
-                    }
+                    "$type": "com.linkedin.common.VectorImage"
                 }
             },
-            {
-                "active": true,
+            "universalName": "freshbooks"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:96": "urn:li:fsd_industry:96"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:96"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/ntt-data-americas/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 10001,
                 "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.organization.MiniSchool"
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
                 ],
-                "url": "https://www.linkedin.com/company/15094114/",
-                "$type": "com.linkedin.voyager.dash.organization.School",
-                "entityUrn": "urn:li:fsd_school:12441",
-                "name": "Burgundy School of Business - BSB",
-                "logo": {
-                    "vectorImage": {
-                        "$recipeTypes": [
-                            "com.linkedin.voyager.dash.deco.organization.VectorImage"
-                        ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQGk6nG8WumCLA/company-logo_",
-                        "artifacts": [
-                            {
-                                "width": 200,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=txifVvc9khGDAGGMtM-OHMHFFch8a0snK1Jlt8-rynk",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 200
-                            },
-                            {
-                                "width": 100,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=TrVSlC_6r2HvmNY2uRSddK1m4sh49Tmw6oIBV_3i7pU",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 100
-                            },
-                            {
-                                "width": 400,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=sA9BDKCunFuTS52GMMdQVUkyIOR8j_F7l5QokmYrr3c",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 400
-                            }
-                        ],
-                        "$type": "com.linkedin.common.VectorImage"
-                    }
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:2494361",
+            "name": "NTT DATA Services",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.deco.recipe.anonymous.Anon1116930124"
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C510BAQGmwapbXMRoRg/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=kYtPUA9d9i_8nlUKbtaVNgssFkLxtmlLna_zZvh9imE",
+                            "expiresAt": 1600905600000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=7WIyHMq6pqY2t20BEMjSZlrT2TcGBJ9DUjjo6_l2knY",
+                            "expiresAt": 1600905600000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=lvFBBPqGNkqaLBoyfXkBRUo4rmYFqLbMQs9g9s6glf0",
+                            "expiresAt": 1600905600000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
                 }
             },
-            {
-                "active": true,
+            "universalName": "ntt-data-americas"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:96": "urn:li:fsd_industry:96"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:96"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/01-millennium-consulting/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 11,
+                "end": 50,
                 "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.organization.MiniSchool"
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
                 ],
-                "url": "https://www.linkedin.com/company/3660/",
-                "$type": "com.linkedin.voyager.dash.organization.School",
-                "entityUrn": "urn:li:fsd_school:10861",
-                "name": "University of Toronto",
-                "logo": {
-                    "vectorImage": {
-                        "$recipeTypes": [
-                            "com.linkedin.voyager.dash.deco.organization.VectorImage"
-                        ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQE2yEMrkNmDVw/company-logo_",
-                        "artifacts": [
-                            {
-                                "width": 200,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=E5Y2PKkMyRqWLeMLfAn4mimovlFpMyrokNGX2k-ZPtc",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 200
-                            },
-                            {
-                                "width": 100,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=8g2P88Vbn-zkFKxsdLH48VZ-WUELWRAIEfFx64Uvez0",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 100
-                            },
-                            {
-                                "width": 400,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=kdx54L5I4V0-guMyK-UQotZwe1QjLDzJhbuP-7nHvtM",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 400
-                            }
-                        ],
-                        "$type": "com.linkedin.common.VectorImage"
-                    }
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:1165436",
+            "name": "01 Millennium Consulting",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.deco.recipe.anonymous.Anon1116930124"
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQE2iiqsO1HBfw/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=tBXPqfirVJi0bfULeO0zg1dG_WgNyQeMf-OyYQu4zk0",
+                            "expiresAt": 1600905600000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=ASYHHbIJGKs19IKQHyv61TyGaO1R23kZ6ra-iLyamxo",
+                            "expiresAt": 1600905600000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=ALsQ4uyH5h1et3VGIzjvxfLGBC7UlYxWkKaDLVogGc4",
+                            "expiresAt": 1600905600000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
                 }
             },
-            {
-                "active": true,
+            "universalName": "01-millennium-consulting"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:43": "urn:li:fsd_industry:43"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:43"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/wealthsimple/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 201,
+                "end": 500,
                 "$recipeTypes": [
-                    "com.linkedin.voyager.dash.deco.organization.MiniSchool"
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
                 ],
-                "url": "https://www.linkedin.com/company/14912/",
-                "$type": "com.linkedin.voyager.dash.organization.School",
-                "entityUrn": "urn:li:fsd_school:10836",
-                "name": "Brock University",
-                "logo": {
-                    "vectorImage": {
-                        "$recipeTypes": [
-                            "com.linkedin.voyager.dash.deco.organization.VectorImage"
-                        ],
-                        "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQFfCxx1ZgEF_w/company-logo_",
-                        "artifacts": [
-                            {
-                                "width": 200,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=5lvhllze6ooAQJaNtR9H9jE43lplOnv1OI0ol6bz_Sg",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 200
-                            },
-                            {
-                                "width": 100,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=IK_B68eHWnJZ0Mad5-_W6HL75Zb09CK4UHv_m20ldfk",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 100
-                            },
-                            {
-                                "width": 400,
-                                "expiresAt": 1600905600000,
-                                "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=Z9M3h4FnUkkLTvf1qIGSIL2lwn2Z3FSAUIr9115bWLU",
-                                "$type": "com.linkedin.common.VectorArtifact",
-                                "height": 400
-                            }
-                        ],
-                        "$type": "com.linkedin.common.VectorImage"
-                    }
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:5208813",
+            "name": "Wealthsimple",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.deco.recipe.anonymous.Anon1116930124"
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E0BAQFLSqm4awostg/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=ET57hYUwKFeVu8EMkUhGiLIeiAIf8af8bI7GaOksxxM",
+                            "expiresAt": 1600905600000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=s9QbSnxoS_o2-C7FGBINPXTjkOOxLlt9QO4wcm7YyPY",
+                            "expiresAt": 1600905600000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=JxsUrabWfq5ja4dF0B0UbeFO-felnl1CsfYjSDz95s4",
+                            "expiresAt": 1600905600000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "universalName": "wealthsimple"
+        },
+        {
+            "industry": {
+                "*urn:li:fsd_industry:4": "urn:li:fsd_industry:4"
+            },
+            "industryUrns": [
+                "urn:li:fsd_industry:4"
+            ],
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.identity.profile.LinkablePositionCompany"
+            ],
+            "url": "https://www.linkedin.com/company/tribalscale/",
+            "$type": "com.linkedin.voyager.dash.organization.Company",
+            "employeeCountRange": {
+                "start": 201,
+                "end": 500,
+                "$recipeTypes": [
+                    "com.linkedin.voyager.dash.deco.common.IntegerRange"
+                ],
+                "$type": "com.linkedin.common.IntegerRange"
+            },
+            "entityUrn": "urn:li:fsd_company:10275251",
+            "name": "TribalScale",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.deco.recipe.anonymous.Anon1116930124"
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQHFjX8Rfqzt6w/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=vZe-ONidK0Q4bFRyn5piDCMXM2m4wQHOcPIVrqNsFOU",
+                            "expiresAt": 1600905600000,
+                            "height": 200,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 100,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=uwiIVUGxnDK4i2RaxZZfLuvYZe5TJ0ZK4UeDiGxGdJ0",
+                            "expiresAt": 1600905600000,
+                            "height": 100,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        },
+                        {
+                            "width": 400,
+                            "$recipeTypes": [
+                                "com.linkedin.voyager.dash.deco.identity.profile.VectorArtifact"
+                            ],
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=4ns3qE2AFLE059aM8DddHJKlUWLSI-DQxIl_Vcdx6Wc",
+                            "expiresAt": 1600905600000,
+                            "height": 400,
+                            "$type": "com.linkedin.common.VectorArtifact"
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            },
+            "universalName": "tribalscale"
+        },
+        {
+            "active": true,
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.organization.MiniSchool"
+            ],
+            "url": "https://www.linkedin.com/company/3496630/",
+            "$type": "com.linkedin.voyager.dash.organization.School",
+            "entityUrn": "urn:li:fsd_school:164173",
+            "name": "BrainStation",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.organization.VectorImage"
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQEIJpSk2gyHRA/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=3g_OSbhAk40h7qqaJgCeeTyxs19VMzVXXLqHpUb-mDQ",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 200
+                        },
+                        {
+                            "width": 100,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=XAwbTFNKgCAd1LmOpP1hcbxc046nHvu1Z36laWTpJxQ",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 100
+                        },
+                        {
+                            "width": 400,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=idQBIrFambxbE4tayUgikQ7aZRERqIPEyURWvWUpVXI",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 400
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
                 }
             }
-        ]
-    }
+        },
+        {
+            "active": true,
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.organization.MiniSchool"
+            ],
+            "url": "https://www.linkedin.com/company/15094114/",
+            "$type": "com.linkedin.voyager.dash.organization.School",
+            "entityUrn": "urn:li:fsd_school:12441",
+            "name": "Burgundy School of Business - BSB",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.organization.VectorImage"
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D0BAQGk6nG8WumCLA/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=txifVvc9khGDAGGMtM-OHMHFFch8a0snK1Jlt8-rynk",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 200
+                        },
+                        {
+                            "width": 100,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=TrVSlC_6r2HvmNY2uRSddK1m4sh49Tmw6oIBV_3i7pU",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 100
+                        },
+                        {
+                            "width": 400,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=sA9BDKCunFuTS52GMMdQVUkyIOR8j_F7l5QokmYrr3c",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 400
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            }
+        },
+        {
+            "active": true,
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.organization.MiniSchool"
+            ],
+            "url": "https://www.linkedin.com/company/3660/",
+            "$type": "com.linkedin.voyager.dash.organization.School",
+            "entityUrn": "urn:li:fsd_school:10861",
+            "name": "University of Toronto",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.organization.VectorImage"
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQE2yEMrkNmDVw/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=E5Y2PKkMyRqWLeMLfAn4mimovlFpMyrokNGX2k-ZPtc",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 200
+                        },
+                        {
+                            "width": 100,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=8g2P88Vbn-zkFKxsdLH48VZ-WUELWRAIEfFx64Uvez0",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 100
+                        },
+                        {
+                            "width": 400,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=kdx54L5I4V0-guMyK-UQotZwe1QjLDzJhbuP-7nHvtM",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 400
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            }
+        },
+        {
+            "active": true,
+            "$recipeTypes": [
+                "com.linkedin.voyager.dash.deco.organization.MiniSchool"
+            ],
+            "url": "https://www.linkedin.com/company/14912/",
+            "$type": "com.linkedin.voyager.dash.organization.School",
+            "entityUrn": "urn:li:fsd_school:10836",
+            "name": "Brock University",
+            "logo": {
+                "vectorImage": {
+                    "$recipeTypes": [
+                        "com.linkedin.voyager.dash.deco.organization.VectorImage"
+                    ],
+                    "rootUrl": "https://media-exp1.licdn.com/dms/image/C560BAQFfCxx1ZgEF_w/company-logo_",
+                    "artifacts": [
+                        {
+                            "width": 200,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "200_200/0?e=1600905600&v=beta&t=5lvhllze6ooAQJaNtR9H9jE43lplOnv1OI0ol6bz_Sg",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 200
+                        },
+                        {
+                            "width": 100,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "100_100/0?e=1600905600&v=beta&t=IK_B68eHWnJZ0Mad5-_W6HL75Zb09CK4UHv_m20ldfk",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 100
+                        },
+                        {
+                            "width": 400,
+                            "expiresAt": 1600905600000,
+                            "fileIdentifyingUrlPathSegment": "400_400/0?e=1600905600&v=beta&t=Z9M3h4FnUkkLTvf1qIGSIL2lwn2Z3FSAUIr9115bWLU",
+                            "$type": "com.linkedin.common.VectorArtifact",
+                            "height": 400
+                        }
+                    ],
+                    "$type": "com.linkedin.common.VectorImage"
+                }
+            }
+        }
+    ]
+}

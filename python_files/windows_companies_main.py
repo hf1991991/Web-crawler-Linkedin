@@ -50,6 +50,21 @@ def parse_json_file(path):
         return None
 
 
+def check_open_paths(config_data):
+    for path in config_data['paths']:
+        config_data['paths'][path] = config_data['paths'][path]
+        error = test_file(config_data['paths'][path])
+        if error is not None:
+            if isinstance(error, FileNotFoundError):
+                error_text = 'O arquivo %s não existe. Entre no config.json e corrija o erro.' % config_data['paths'][path]
+            elif isinstance(error, PermissionError):
+                error_text = 'O arquivo %s está aberto. Feche-o e tente novamente.' % config_data['paths'][path]
+            errorprint('%s\nAperte enter para continuar.' % error_text)
+            input()
+            return True
+    return False
+
+
 def read_config_file(config_path):
 
     config_data = parse_json_file(config_path)
@@ -59,24 +74,17 @@ def read_config_file(config_path):
         input()
         return None
 
-    for path in config_data['paths']:
-        config_data['paths'][path] = '../' + config_data['paths'][path]
-        error = test_file(config_data['paths'][path])
-        if error is not None:
-            if isinstance(error, FileNotFoundError):
-                error_text = 'O arquivo %s não existe. Entre no config.json e corrija o erro.' % config_data['paths'][path]
-            elif isinstance(error, PermissionError):
-                error_text = 'O arquivo %s está aberto. Feche-o e tente novamente.' % config_data['paths'][path]
-            errorprint('%s\nAperte enter para continuar.' % error_text)
-            input()
-            return None
+    if check_open_paths(config_data): return None
 
     return config_data
 
 
-def find_last_log(logs_data):
+def find_last_not_empty_log(logs_data):
     logs_data['logs'].sort(key=lambda x: x['data'], reverse=True)
-    return logs_data['logs'][0] if len(logs_data['logs']) > 0 else None
+    for log in logs_data['logs']:
+        if len(log['dados_obtidos']) > 0:
+            return log
+    return None
 
 
 def get_date():
@@ -92,7 +100,8 @@ def get_companies_with_progress_to_continue(last_log):
 
 def should_continue_previous_progress(logs_path, output_json_path):
     logs_data = parse_json_file(logs_path)
-    last_log = find_last_log(logs_data)
+    last_log = find_last_not_empty_log(logs_data)
+    if last_log is None: return False
     previous_progress = list(get_companies_with_progress_to_continue(last_log))
     if len(previous_progress) > 0:
         whiteprint(
@@ -124,7 +133,7 @@ def should_continue_previous_progress(logs_path, output_json_path):
     return False
 
 
-def execute_crawling(username, password, continue_previous_progress, max_page_requests, max_connection_pages, logs_path, input_excel_path,  cookies_path,  output_json_path):
+def execute_crawling(username, password, continue_previous_progress, max_page_requests, max_connection_pages, logs_path, input_excel_path,  cookies_path,  output_json_path, ensure_ascii):
     process = CrawlerProcess(
         settings={
             'DOWNLOAD_DELAY': 2
@@ -140,7 +149,8 @@ def execute_crawling(username, password, continue_previous_progress, max_page_re
         logs_path=logs_path,
         input_excel_path=input_excel_path, 
         cookies_path=cookies_path, 
-        output_json_path=output_json_path
+        output_json_path=output_json_path,
+        ensure_ascii=ensure_ascii
     )
     process.start()
 
@@ -156,6 +166,7 @@ if __name__ == '__main__':
     logs_path = None
     max_page_requests = None
     max_connection_pages = None
+    ensure_ascii = None
     username = None
     password = None
 
@@ -179,6 +190,7 @@ if __name__ == '__main__':
                 logs_path = config_data['paths']['logs']
                 max_page_requests = config_data['config']['max_paginas_por_dia']
                 max_connection_pages = config_data['config']['max_paginas_de_conexoes_por_perfil']
+                ensure_ascii = not config_data['config']['permitir_caracteres_nao_ascii_no_output']
                 username = config_data['login']['username']
                 password = config_data['login']['password']
 
@@ -186,7 +198,7 @@ if __name__ == '__main__':
                 config_exists = False
 
         else:
-            errorprint('%s\nAperte enter para continuar' % str(error).replace('../', ''))
+            errorprint('%s\nAperte enter para continuar' % error)
             input()
 
     fresh_cookies = False
@@ -198,6 +210,10 @@ if __name__ == '__main__':
     dont_stop = True
 
     while dont_stop:
+
+        while check_open_paths(config_data):
+            true = True
+        
         p = Process(
             target=execute_crawling, 
             args=(
@@ -209,7 +225,8 @@ if __name__ == '__main__':
                 logs_path, 
                 input_excel_path, 
                 cookies_path, 
-                output_json_path
+                output_json_path,
+                ensure_ascii
             )
         )
         p.start()

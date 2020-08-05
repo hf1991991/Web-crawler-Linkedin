@@ -1,0 +1,1454 @@
+{
+    "data": {
+        "metadata": {
+            "totalResultDisplayText": {
+                "text": "14 results",
+                "$type": "com.linkedin.voyager.common.TextViewModel"
+            },
+            "searchId": "0bb80a51-32d6-4c0b-8564-c009e5f48ccf",
+            "totalResultCount": 14,
+            "origin": "OTHER",
+            "numVisibleResults": 10,
+            "$type": "com.linkedin.voyager.search.BlendedSearchMetadata"
+        },
+        "entityUrn": "urn:li:collectionResponse:ZJm4SmjUfkkTVLaZ04ZvQT8k0Ry4ii4DBAs2CYvAKXY=",
+        "elements": [
+            {
+                "extendedElements": [
+                    {
+                        "searchTieIn": "PREMIUM_UPSELL",
+                        "type": "SEARCH_TIE_IN",
+                        "$type": "com.linkedin.voyager.search.ExtendedSearchHit"
+                    }
+                ],
+                "elements": [],
+                "type": "SEARCH_FEATURES",
+                "$type": "com.linkedin.voyager.search.BlendedSearchCluster"
+            },
+            {
+                "extendedElements": [],
+                "elements": [
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:50778611",
+                        "navigationUrl": "https://www.linkedin.com/in/maria-carolina-lacombe-92b00915",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Maria Carolina Lacombe",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "1 shared connection",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+                        "publicIdentifier": "maria-carolina-lacombe-92b00915",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Venture Capital at Valor Capital Group - Hiring! at ValorCapital/Jobs",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "EdzVzboVTKqNd0rlhLLYJg=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAnXGQ8BYUQdOgC9SWPvQNnWj7jxfBhowWE",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAnXGQ8BYUQdOgC9SWPvQNnWj7jxfBhowWE",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:165091599",
+                        "navigationUrl": "https://www.linkedin.com/in/philliptl",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Phillip Trauer",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "1 shared connection",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAnXGQ8BYUQdOgC9SWPvQNnWj7jxfBhowWE",
+                        "publicIdentifier": "philliptl",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Principal at Valor Capital Group",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "CiETCYxsRIuwadxNr6wZVA=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAgs5fcBurCqGzIav3KDQDhD0MuS2SQqXoU",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAgs5fcBurCqGzIav3KDQDhD0MuS2SQqXoU",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAADHeNEYBU11YkcS_a-J7Vx1F14MJzfYZbLY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAACCd6t0BwHWX2c7Xg5S0PIr2B94S9_SR-JM",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAAn8oQoBO-d0tOxKxSsYuC7PwRKLFLKJffY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:137160183",
+                        "navigationUrl": "https://www.linkedin.com/in/mario-mello-133b2739",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Mario Mello",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "4 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAgs5fcBurCqGzIav3KDQDhD0MuS2SQqXoU",
+                        "publicIdentifier": "mario-mello-133b2739",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Founder - Poder do Voto app Venture Partner Valor Capital Group - Fintec Board Member Scale up Advisor",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "gq/zFhM4TLGWqjWf7Z1yEw=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAB5FqQcBl5CmSepQp-CHfH5NmeuDl1UMb_g",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAB5FqQcBl5CmSepQp-CHfH5NmeuDl1UMb_g",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAACCd6t0BwHWX2c7Xg5S0PIr2B94S9_SR-JM",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:507881735",
+                        "navigationUrl": "https://www.linkedin.com/in/nathalyaleite",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Nathalya Leite",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "2 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAB5FqQcBl5CmSepQp-CHfH5NmeuDl1UMb_g",
+                        "publicIdentifier": "nathalyaleite",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Venture Capital Analyst at Valor Capital Group",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Greater New York City Area",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "SS14WF2ITMOPKGSkQuxDLg=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_3",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAABmuHQBEkXjTdqIFGwbbEKShkIJ_yTZ7U8",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAABmuHQBEkXjTdqIFGwbbEKShkIJ_yTZ7U8",
+                        "socialProofImagePile": [],
+                        "trackingUrn": "urn:li:member:6731892",
+                        "navigationUrl": "https://www.linkedin.com/in/everson",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Everson Lopes",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "0 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "3rd+",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAABmuHQBEkXjTdqIFGwbbEKShkIJ_yTZ7U8",
+                        "publicIdentifier": "everson",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "MD, The Hive Brasil; Venture Partner Valor Capital Group",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "3pwxYekwTuOhkBHptfPbNw=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAAM5hEBKYe_xHoK3-ptA1Td3_wIYycypwk",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAAM5hEBKYe_xHoK3-ptA1Td3_wIYycypwk",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:845329",
+                        "navigationUrl": "https://www.linkedin.com/in/antoine-colaco-241349",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Antoine Colaco",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "1 shared connection",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAAM5hEBKYe_xHoK3-ptA1Td3_wIYycypwk",
+                        "publicIdentifier": "antoine-colaco-241349",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Partner at Valor Capital Group",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "San Francisco Bay Area",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "dTue4KxXRO2RXA8CyxX3ow=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_3",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAABwmXsBKX5st6-rdC7zom_PV4wRqVAv5Qk",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAABwmXsBKX5st6-rdC7zom_PV4wRqVAv5Qk",
+                        "socialProofImagePile": [],
+                        "trackingUrn": "urn:li:member:7379323",
+                        "navigationUrl": "https://www.linkedin.com/in/michaelnicklas",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Michael Nicklas",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "0 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "3rd+",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAABwmXsBKX5st6-rdC7zom_PV4wRqVAv5Qk",
+                        "publicIdentifier": "michaelnicklas",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Partner at Valor Capital Group, LLC",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Rio de Janeiro Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "40hZmV0iSRS/2cyxWZbNdg=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_3",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAZOy84B8LmMmjqtC3VoNX2jCr0-IcPQ6cw",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAZOy84B8LmMmjqtC3VoNX2jCr0-IcPQ6cw",
+                        "socialProofImagePile": [],
+                        "trackingUrn": "urn:li:member:105827278",
+                        "navigationUrl": "https://www.linkedin.com/in/scott-sobel-77a5362b",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Scott Sobel",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "0 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "3rd+",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAZOy84B8LmMmjqtC3VoNX2jCr0-IcPQ6cw",
+                        "publicIdentifier": "scott-sobel-77a5362b",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Partner at Valor Capital Group, LLC",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Greater New York City Area",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "DWEq1ZxjQDakaKVd9TqxbQ=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_3",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAACmAzWcBObTAsVjQW8_2NioajNpqCDg0byg",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAACmAzWcBObTAsVjQW8_2NioajNpqCDg0byg",
+                        "socialProofImagePile": [],
+                        "trackingUrn": "urn:li:member:696307047",
+                        "navigationUrl": "https://www.linkedin.com/in/eduardo-szajman-573237175",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Eduardo Szajman",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "0 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "3rd+",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAACmAzWcBObTAsVjQW8_2NioajNpqCDg0byg",
+                        "publicIdentifier": "eduardo-szajman-573237175",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Co-Founder at SplytPay",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "New York, New York, United States",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "c91T9+UJTj6BV15f1DDgRw=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_3",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAACwY5sEB5yCo5dKVmPZ0m4zO9V3l9T1l5Pk",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAACwY5sEB5yCo5dKVmPZ0m4zO9V3l9T1l5Pk",
+                        "socialProofImagePile": [],
+                        "trackingUrn": "urn:li:member:739829441",
+                        "navigationUrl": "https://www.linkedin.com/in/sam-heck-055926187",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Sam Heck",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "0 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "3rd+",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAACwY5sEB5yCo5dKVmPZ0m4zO9V3l9T1l5Pk",
+                        "publicIdentifier": "sam-heck-055926187",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Director at Valor Capital Group",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Greater New York City Area",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "MmG6gxYXQuSYNGDJqwUBOg=="
+                    }
+                ],
+                "type": "SEARCH_HITS",
+                "$type": "com.linkedin.voyager.search.BlendedSearchCluster"
+            },
+            {
+                "extendedElements": [
+                    {
+                        "type": "FEEDBACK_CARD",
+                        "feedbackCard": {
+                            "title": {
+                                "textDirection": "USER_LOCALE",
+                                "attributes": [],
+                                "text": "Are these search results helpful?",
+                                "$type": "com.linkedin.voyager.common.TextViewModel"
+                            },
+                            "subtitle": {
+                                "textDirection": "USER_LOCALE",
+                                "attributes": [],
+                                "text": "Your feedback helps us improve.",
+                                "$type": "com.linkedin.voyager.common.TextViewModel"
+                            },
+                            "$type": "com.linkedin.voyager.search.FeedbackCard"
+                        },
+                        "$type": "com.linkedin.voyager.search.ExtendedSearchHit"
+                    }
+                ],
+                "type": "SEARCH_FEATURES",
+                "$type": "com.linkedin.voyager.search.BlendedSearchCluster"
+            }
+        ],
+        "paging": {
+            "count": 10,
+            "start": 0,
+            "total": 14,
+            "links": []
+        },
+        "$type": "com.linkedin.restli.common.CollectionResponse"
+    },
+    "included": [
+        {
+            "premium": true,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAACwY5sEB5yCo5dKVmPZ0m4zO9V3l9T1l5Pk",
+            "openLink": true,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAnXGQ8BYUQdOgC9SWPvQNnWj7jxfBhowWE",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAABwmXsBKX5st6-rdC7zom_PV4wRqVAv5Qk",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAZOy84B8LmMmjqtC3VoNX2jCr0-IcPQ6cw",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": true,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAABmuHQBEkXjTdqIFGwbbEKShkIJ_yTZ7U8",
+            "openLink": true,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": true,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAACmAzWcBObTAsVjQW8_2NioajNpqCDg0byg",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAgs5fcBurCqGzIav3KDQDhD0MuS2SQqXoU",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAB5FqQcBl5CmSepQp-CHfH5NmeuDl1UMb_g",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAAM5hEBKYe_xHoK3-ptA1Td3_wIYycypwk",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "firstName": "Mario",
+            "lastName": "Mello",
+            "memorialized": null,
+            "occupation": "Founder - Poder do Voto app Venture Partner Valor Capital Group - Fintec Board Member Scale up Advisor",
+            "objectUrn": "urn:li:member:137160183",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAgs5fcBurCqGzIav3KDQDhD0MuS2SQqXoU",
+            "backgroundImage": null,
+            "publicIdentifier": "mario-mello-133b2739",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=dmY5LRl0j5r5uZtFyYCMFsQP0ZgXDZEocSDRuavVGTc",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=IJ5vDPDLGmYB_2I-lZ6hWFE9Fvq2u1_mixOv9q8vlmU",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=3Fobo5gmuB8pZ7AAbykzMhDc2pQezoCz_3qgmPBJTPc",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=nURdnskbQhyhdMiH5cq_2K_pGEtQvy33l_au7Lx_CHc",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQEsIQ_kwbH_NQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "G4g1jxVORc6EocA5CyV7jQ==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Eduardo",
+            "lastName": "Szajman",
+            "memorialized": null,
+            "occupation": "Co-Founder at SplytPay",
+            "objectUrn": "urn:li:member:696307047",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAACmAzWcBObTAsVjQW8_2NioajNpqCDg0byg",
+            "backgroundImage": null,
+            "publicIdentifier": "eduardo-szajman-573237175",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=zhbJFnh9D3ri4NjFL9cMHOb5_XpQJsh5YPg8-Y0A4m0",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=i8k81Z5U-TKPO7raBYTGHdMmgfSaq1_geFUWfUX1SGo",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=Y5Tqt0F_C0-QXGXu4wPdfyl5CU_IGPsIK-DpZtAbWqo",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=Mep1BBK6zAU9oTAqr0ItYZ99VRfvTV_e6Exuk7BSL5M",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQHSNP0pRbW-Sg/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "mn/2o5BuRH2kBiB4R0Gr0Q==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Eduardo",
+            "lastName": "Fuentes",
+            "memorialized": null,
+            "occupation": "Venture Capitalist | Data Miner @ Distrito",
+            "objectUrn": "urn:li:member:462298599",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=bkG-EBoguVbBOwfYZUigJt0SmMnzBmElI8M0NNPyWm4",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=b1Yn7OTaHxXA_YGi-RWCr2Q0T55GjprtyJS0mCTQDPI",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQErdgqDhUYRZg/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "eduardo-fuentes-ab39a510a",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=9vOSwEnK1qe3Bb4U1wi66qapbP53tIpKc5syZL-UdDU",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=iqjh46o_Qzu3D_SiQ9YeAjz1oHn7lxY6VI890LiY4fE",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=rBz0IiyDG9rqeYIhtqJbi864Fbo_XcIb_CmWLj8d8kk",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=R7vNn2Omp30OT6X-Xb_Z2vSxAa1d2LD7jhQtQ3EoV90",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQGIKe7LjZ1tig/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "xQgkx2OAR36AxLimq3Dtkw==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Nathalya",
+            "lastName": "Leite",
+            "memorialized": null,
+            "occupation": "Venture Capital Analyst at Valor Capital Group",
+            "objectUrn": "urn:li:member:507881735",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAB5FqQcBl5CmSepQp-CHfH5NmeuDl1UMb_g",
+            "backgroundImage": null,
+            "publicIdentifier": "nathalyaleite",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=o7-yL1tCZJrIYZAo83pDvrKYiAmlfKDenH-K25gHkWI",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=YgDeig-HyGH196zhtfyGKqvT3c9byOcPaf3ZBib8L98",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=4fJAAKhg5V1mNsKUYgcMI3DLNrJen7ZfMP2QAj6y_fE",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=g9taeHFMvw4_uRKkxGJCbbCtZ4rR16Xupug-m_FIaPQ",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQG7FRtbgD3SKA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "tap276B5QMOdb3ZC09IcEQ==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Antoine",
+            "lastName": "Colaco",
+            "memorialized": null,
+            "occupation": "Partner at Valor Capital Group",
+            "objectUrn": "urn:li:member:845329",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAAM5hEBKYe_xHoK3-ptA1Td3_wIYycypwk",
+            "backgroundImage": null,
+            "publicIdentifier": "antoine-colaco-241349",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=Vw4WV4cx83kavTNa4ufMrNvMzBtC34Igfzi97GYfAYU",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=5FKjhdi4HU-71ELL1Cl6RqcW9VQCfIaCl9WeTzLazpM",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=IjtYzEoVUDDBJMt5ObNJu506gCiDZE8zRz7ST_I1S50",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=TGWP1hYn1tHIWew7Wm13Y-mphPNqiRW5G0YBa2iEoow",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQFrEzQMkyYtUQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "Wr92aYYwSzidDGdx3+jr/w==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Sam",
+            "lastName": "Heck",
+            "memorialized": null,
+            "occupation": "Director at Valor Capital Group",
+            "objectUrn": "urn:li:member:739829441",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAACwY5sEB5yCo5dKVmPZ0m4zO9V3l9T1l5Pk",
+            "backgroundImage": null,
+            "publicIdentifier": "sam-heck-055926187",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=iNO7x2atIGpikfM7vvSnv7Ba6on3IZgrt2GWl_JZVUs",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=VaJBraqscFChiBt0k9dAtASt7jF5iuUYUo25tzprEXE",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=Ayymzze0FlZCBFsQnfKKorBEwjCS5q0eJRFtcg8l-1Q",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=TkOMW0zBIRx7FwYhcoK62e7xYm2G0Gk0JE--qndBlBM",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQFHWjfTfkHc7g/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "2xq7fhFcSXCD/CjoVCbjNQ==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Michael",
+            "lastName": "Nicklas",
+            "memorialized": null,
+            "occupation": "Partner at Valor Capital Group, LLC",
+            "objectUrn": "urn:li:member:7379323",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAABwmXsBKX5st6-rdC7zom_PV4wRqVAv5Qk",
+            "backgroundImage": null,
+            "publicIdentifier": "michaelnicklas",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=NEfkHf3pCJnKtM5dYCXyFQYWxeCq5jz8RzEso7g6UvM",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=QUZ1_LH-GbIsvsZ_xx9Jh9kXc-aLNJUYCgI2shnd_Rc",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=mqTfCpErdasHLhO9zDLJI_ncUMeShuMTVgAgm51K874",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=avmt0YJ6dRdkaFOOViJzcOO5oAjOdrr3LwGG4tpRoLU",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQG219l-1RpmMA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "RsLeaA4cTfyxY9Oi8afuSg==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Everson",
+            "lastName": "Lopes",
+            "memorialized": null,
+            "occupation": "MD, The Hive Brasil; Venture Partner Valor Capital Group",
+            "objectUrn": "urn:li:member:6731892",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAABmuHQBEkXjTdqIFGwbbEKShkIJ_yTZ7U8",
+            "backgroundImage": null,
+            "publicIdentifier": "everson",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=VJUEaFKojarWp4QJti2TttncOiTB6atScGQLWFCqo18",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=uu7HlF08Xdb-AAaRRx8M4dh6nSruHFGqP5_cZRrB_Sc",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=W_MX26TbdNvqm60xK0VFhKiQULG9WK5nErWLsBibbZA",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=upB9ZZGg1G-yuMXfI98jRUva2asORGXTHa4JGwCJUgs",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C5603AQG4ytjR_v8XJA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "5XHMORYHT+yzTql0cs1pwg==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Phillip",
+            "lastName": "Trauer",
+            "memorialized": null,
+            "occupation": "Principal at Valor Capital Group",
+            "objectUrn": "urn:li:member:165091599",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAnXGQ8BYUQdOgC9SWPvQNnWj7jxfBhowWE",
+            "backgroundImage": null,
+            "publicIdentifier": "philliptl",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=EEt5FcKvUobQ_5LR4QKmMr4Ski3M-5ZltXZlt55G3bk",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=DZ4xAz1ZrDwmDeUIfZR_xGQng5rN_mZvds1kyCKhHYc",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=iGrJUW2OvJowanlMsuUbtv_jxfD1jmSZZuLv-5p0UD4",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=EEcJ1M5SaherMcyKOliIvsSBzGrcgqIONlNE_3n8j9c",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQG6aunh2QOmdw/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "iHb4UbijRt+AOYUkQ62YSA==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Jo\u00e3o",
+            "lastName": "Gustavo",
+            "memorialized": null,
+            "occupation": "Gerente de Relacionamentos na Poli J\u00fanior",
+            "objectUrn": "urn:li:member:836645958",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAADHeNEYBU11YkcS_a-J7Vx1F14MJzfYZbLY",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=zcgloCd8hJGO-Ur3iuHwyeaaEX5t5pjuOm1c59dmL2Q",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=azBhAELsV5rAKQdA4tBZlR-jgYTE_DSwkmGuLyJ2AsE",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQG9gT4qMPl8Ug/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "jo\u00e3o-gustavo-1462361b4",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1596661200&v=beta&t=Zs9ONQ9JJnkqTHDSmVDx4BvNxQWVzdMJrpWOpQpzAh0",
+                        "expiresAt": 1596661200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1596661200&v=beta&t=irEZg_4_xEFG_4p6Lta6SNZY_X9-qARjNKkolkF1hhE",
+                        "expiresAt": 1596661200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1596661200&v=beta&t=nDzOghrMIsG54BK1gVeSLcxyms0qKMvmXoIW1rT8gqE",
+                        "expiresAt": 1596661200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1596661200&v=beta&t=5xNCbwarvErWIlMfT4eSDrOxaeQtFgo1pkOzmzmkJqc",
+                        "expiresAt": 1596661200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D35AQHvB4wlLVKFBg/profile-framedphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "zDDLle0GRoSSqvmLbJowdg==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Scott",
+            "lastName": "Sobel",
+            "memorialized": null,
+            "occupation": "Partner at Valor Capital Group, LLC",
+            "objectUrn": "urn:li:member:105827278",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAZOy84B8LmMmjqtC3VoNX2jCr0-IcPQ6cw",
+            "backgroundImage": null,
+            "publicIdentifier": "scott-sobel-77a5362b",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=lSKzyuAII-zkEriZ-WjIPDuSBzLk5rUEvQP5I-U5NQA",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=IX_39E-l7KRCEzdbmq1MwmwLfu30b8UnjKKCF-CkRHE",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=4XhWYSuJw2OfNy3gTGjTW0molVCCSDDe0tVOA82Q4l4",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=ZzM3HY911xOabpS-gTxj9aMqzwqq5LPgHNud02wI6to",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C5603AQGLTm7LUvr4uQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "8luanQN9Sk6AhmsEo53Q1A==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Maria Carolina",
+            "lastName": "Lacombe",
+            "memorialized": null,
+            "occupation": "Venture Capital at Valor Capital Group - Hiring! at ValorCapital/Jobs",
+            "objectUrn": "urn:li:member:50778611",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+            "backgroundImage": null,
+            "publicIdentifier": "maria-carolina-lacombe-92b00915",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=LoT0CRBxkqeFhttJKyQ1P5gj7RXqS5Ym7yt54kH6FqE",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=IqV_1Vxk__5_-0ExUgdjSQFSUDCp3o2e8BSbucomevg",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=u8BiElrlfBdSmrmvYbRsw8uC2rUIX7MolB9qOTGlnGA",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=Ip0ZamwI2Peg3FZF6iiGh5SJ79eVbV1Ohu0kofAjuRk",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQH_u0WNLaDzEA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "LNCOq29oQhSqFv1n7s2aXA==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Julia",
+            "lastName": "Benavides Adelino",
+            "memorialized": null,
+            "occupation": "Data Miner",
+            "objectUrn": "urn:li:member:547220189",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAACCd6t0BwHWX2c7Xg5S0PIr2B94S9_SR-JM",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=Ssbqt_bEPwDE5oVP5XipH79sUP0_DJ3StHD9NwiTIqc",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=AOBnWqXoUYQXCdDCWvd0j6g3n5yyJSm4sEBxuMp1mqI",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQH08CGDpwcUlw/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "juliaba",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=xNwmQc0ZewIUET2oZgheXql6dqOaBOcmUtNsVdAzIT4",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=C6fXu1mfahXjbZa_h5XgbRpVF1pj1mZZAHImdL_C9RM",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=L-TBokan_IsAbfOSxHe-ZMTp4ljs-HR4RmkOhVoODxQ",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=PZ7bFxHreWurbtUPgCR3E0DABHSvdEbY-usc0RIrqAU",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQHP0z6zRyeUhA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "NTNCjrDOTaifEtFFiMr3sA==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Felipe",
+            "lastName": "Lopes",
+            "memorialized": null,
+            "occupation": "Gest\u00e3o Financeira | Inova\u00e7\u00e3o e Empreendedorismo",
+            "objectUrn": "urn:li:member:167551242",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAn8oQoBO-d0tOxKxSsYuC7PwRKLFLKJffY",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=CqTKCvQ30G3sCJbE42S0TVOr7o6JEQzMAlySqkZ8_t4",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=lWibiqjXr3vFXeRO2gsexyRC99MScX2tSrmDZ5nFFgE",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E16AQHJMJiA1DfLIg/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "felipelopesribeiro",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=yErRllolRYoqWQ1NBDJY3NJgVZJa0y0WHqMPIelzm1o",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=zLnnFOWwmhmBrZgbxh_2Duw_oSyQrdj9t1fBnoa3urA",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=EbYuxOe9KMwg5QLjCJmGgra1UIQe-CT78R1S3uw7lp4",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=0HU_YqEx-TT5rPEIyBUkciZAgD-INisDcE1SSGspr-4",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQG_liMsnp9sTA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "TllVsLOqRq+rSs/niJN0yg==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        }
+    ]
+}

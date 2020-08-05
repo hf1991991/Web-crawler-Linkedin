@@ -76,21 +76,27 @@ class CompaniesLinkedinSpider(InitSpider):
     company_urls = []
 
     stored_employees_search_requests = []
+    stored_profile_requests = []
+
+    first_profile_requested = False
 
     request_retries = {}
 
-    def __init__(self, username, password, continue_previous_progress, max_page_requests, max_connection_pages, logs_path, cookies_path, input_excel_path, output_json_path):
+    current_session_connection_pages_parsed_per_profile = {}
+
+    def __init__(self, username, password, continue_previous_progress, max_page_requests, max_connection_pages, logs_path, cookies_path, input_excel_path, output_json_path, ensure_ascii):
         self.username = username
         self.password = password
         self.continue_previous_progress = continue_previous_progress
         self.current_date = get_date()
         self.max_page_requests = max_page_requests
         self.max_connection_pages = max_connection_pages
+        self.ensure_ascii = ensure_ascii
         self.parse_cookies(cookies_path)
         self.input_excel_path = input_excel_path
         self.output_json_path = output_json_path
-        self.employees_json_data = read_json_file(output_json_path)
-        if self.employees_json_data is None: self.employees_json_data = { 'empresas': [] }
+        self.output_json_data = read_json_file(output_json_path)
+        if self.output_json_data is None: self.output_json_data = { 'empresas': [] }
         self.logs_path = logs_path
         self.logs_data = read_json_file(logs_path)
         if self.logs_data is None: self.logs_data = { 'logs': [] }
@@ -152,7 +158,7 @@ class CompaniesLinkedinSpider(InitSpider):
             self.stored_employees_search_requests.extend(
                 self.load_company_employee_search_pages_requests(company_log['company_id'])
             )
-        return self.get_employees_search_requests()
+        return self.start_employees_search_requests()
                 
     def load_company_employee_search_pages_requests(self, company_id):
         company = self.find_company_by_id(company_id)
@@ -165,11 +171,11 @@ class CompaniesLinkedinSpider(InitSpider):
         for page in range(start, totalEmployeeSearchPages):
             yield self.cookie_request(
                 url='https://www.linkedin.com/search/results/people/?facetCurrentCompany=%%5B"%s"%%5D&page=%i' % (company_id, page + 1),
-                callback=self.parse_employees_search,
+                callback=self.store_profile_requests_of_employee_searches,
                 priority=(-page)
             )
 
-    def get_employees_search_requests(self):
+    def start_employees_search_requests(self):
         self.stored_employees_search_requests.sort(key=lambda x: -x.priority)
         self.stored_employees_search_requests = \
             self.stored_employees_search_requests[:self.max_employees_search_pages]
@@ -221,7 +227,11 @@ class CompaniesLinkedinSpider(InitSpider):
         self.logs_data['logs'].sort(key=lambda x: x['data'], reverse=True)
         save_to_file(
             self.logs_path,
-            json.dumps(self.logs_data, indent=4),
+            json.dumps(
+                self.logs_data, 
+                indent=4, 
+                ensure_ascii=self.ensure_ascii
+            ),
             dont_print=True
         )
 
@@ -254,9 +264,16 @@ class CompaniesLinkedinSpider(InitSpider):
             })
             self.save_log()
 
-    def resume_progress_from_last_log(self):
+    def find_last_not_empty_log(self):
         self.logs_data['logs'].sort(key=lambda x: x['data'], reverse=True)
-        self.current_log['dados_obtidos'] = deepcopy(self.logs_data['logs'][0]['dados_obtidos']) if len(self.logs_data['logs']) > 0 else None
+        for log in self.logs_data['logs']:
+            if len(log['dados_obtidos']) > 0:
+                return log
+        return None
+
+    def resume_progress_from_last_log(self):
+        last_log = self.find_last_not_empty_log()
+        self.current_log['dados_obtidos'] = deepcopy(last_log['dados_obtidos'])
 
     def all_pages_parsed_count(self):
         return (
@@ -322,7 +339,7 @@ class CompaniesLinkedinSpider(InitSpider):
 
     def count_employees_with_url(self, company_id):
         count = 0
-        for company in self.employees_json_data['empresas']:
+        for company in self.output_json_data['empresas']:
             if company['company_id'] == company_id:
                 for employee in company['funcionarios']:
                     if ('url' in employee) and employee['url'] is not None:
@@ -377,9 +394,16 @@ class CompaniesLinkedinSpider(InitSpider):
         self.workbook.save(self.input_excel_path)
 
     def find_company_by_id(self, company_id):
-        for company in self.employees_json_data['empresas']:
+        for company in self.output_json_data['empresas']:
             if company['company_id'] == company_id:
                 return company
+
+    def find_user_by_id(self, user_id):
+        for company in self.output_json_data['empresas']:
+            for employee in company['funcionarios']:
+                if ('user_id' in employee) and (employee['user_id'] == user_id):
+                    return employee
+        return None
 
     def refresh_workbook_company_data(self, company_id):
         company = self.find_company_by_id(company_id)
@@ -394,7 +418,11 @@ class CompaniesLinkedinSpider(InitSpider):
 
             if link == company['url']:
 
-                links_sheet['B%i' % line] = '%i/%i' % (company_log['ultima_pagina_de_busca_de_funcionarios_acessada'], company_log['total_de_paginas_de_busca_de_funcionario'])
+                links_sheet['B%i' % line] = '%i/%i' \
+                    % (
+                        company_log['ultima_pagina_de_busca_de_funcionarios_acessada'], 
+                        company_log['total_de_paginas_de_busca_de_funcionario']
+                    )
                 links_sheet['D%i' % line] = company['nome']
 
                 self.workbook.save(self.input_excel_path)
@@ -444,13 +472,19 @@ class CompaniesLinkedinSpider(InitSpider):
         for url in self.company_urls:
             yield self.cookie_request(
                 url=url,
-                callback=self.store_requests_preserving_priority
+                callback=self.store_employees_search_requests_preserving_priority
             )
 
-    def store_requests_preserving_priority(self, response):
+    def store_employees_search_requests_preserving_priority(self, response):
         self.stored_employees_search_requests.extend(self.parse_company(response))
         if self.current_session_companies_parsed == len(self.company_urls):
-            return self.get_employees_search_requests()
+            return self.start_employees_search_requests()
+
+    def store_profile_requests_of_employee_searches(self, response):
+        self.stored_profile_requests.extend(self.parse_employees_search(response))
+        if (not self.first_profile_requested) and (len(self.stored_profile_requests) > 0):
+            self.first_profile_requested = True
+            return self.stored_profile_requests.pop(0)
 
     def calculate_max_employees_search_pages_to_access(self):
         self.max_employees_search_pages = max(
@@ -468,6 +502,13 @@ class CompaniesLinkedinSpider(InitSpider):
             ),
             0
         )
+
+    def profile_counter(self):
+        self.current_session_profiles_parsed += 1
+        return {
+            'counter': '(%i/%i) ' % (self.current_session_profiles_parsed, self.total_employees_left_to_access),
+            'new_request': self.stored_profile_requests.pop(0) if len(self.stored_profile_requests) > 0 else None
+        }
 
     def get_company_included_array(self, response):
         body = str(response.body.decode('utf8'))
@@ -494,8 +535,7 @@ class CompaniesLinkedinSpider(InitSpider):
 
         return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')['included']
 
-    def get_employees_search_elements(self, response):
-
+    def get_search_data(self, response):
         body = str(response.body.decode('utf8'))
 
         birthIndex = body.rindex('&quot;com.linkedin.voyager.search.BlendedSearchCluster&quot;')
@@ -518,9 +558,10 @@ class CompaniesLinkedinSpider(InitSpider):
         #     convert_unicode(body[start:end], unicode_dict)
         # )
 
-        blendedSearchClusterCollection = parse_text_to_json(body[start:end], unicode_dict, 'aa.json')['data']['elements']
+        return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')
 
-        for blendedSearchCluster in blendedSearchClusterCollection:
+    def get_search_results(self, search_data):
+        for blendedSearchCluster in search_data['data']['elements']:
             if blendedSearchCluster['type'] == 'SEARCH_HITS':
                 return blendedSearchCluster['elements']
 
@@ -605,6 +646,11 @@ class CompaniesLinkedinSpider(InitSpider):
                 array.append(obj)
         return array
 
+    def get_object_by_user_id(self, array, user_id):
+        for obj in array:
+            if obj['entityUrn'].split(':')[-1] == user_id:
+                return obj
+
     def compare_employees(self, employee1, employee2):
         if ('url' in employee1) and ('url' in employee2):
             return employee1['url'] == employee2['url']
@@ -620,7 +666,7 @@ class CompaniesLinkedinSpider(InitSpider):
         return False
 
     def insert_employee_if_necessary(self, company_id, new_employee):
-        for company in self.employees_json_data['empresas']:
+        for company in self.output_json_data['empresas']:
             if company['company_id'] == company_id:
 
                 for existing_employee in company['funcionarios']:
@@ -635,6 +681,41 @@ class CompaniesLinkedinSpider(InitSpider):
 
                 company['funcionarios'].append(new_employee)
                 return
+
+    def reorder_user_dict(self, user_dict):
+        keys = [
+            "url",
+            "dados_obtidos",
+            "nome",
+            "sobrenome",
+            "user_id",
+            "cargo_atual",
+            "localizacao_atual",
+            "foto_de_perfil",
+            "plano_de_fundo",
+            "sobre",
+            "premium",
+            "influenciador",
+            "procura_emprego",
+            "seguidores",
+            "conexoes",
+            "habilidades",
+            "linguas",
+            "cursos_feitos",
+            "premios",
+            "estudos",
+            "experiencia_profissional",
+            "voluntariado",
+            "projetos"
+        ]
+
+        new_user_dict = {}
+
+        for key in keys:
+            new_user_dict[key] = deepcopy(user_dict[key])
+
+        return new_user_dict
+
 
     def convert_date(self, date):
         return {
@@ -658,17 +739,24 @@ class CompaniesLinkedinSpider(InitSpider):
     def stringify_date_range(self, date_range):
         return self.stringify_date(None if date_range is None else date_range['inicio'])
 
-    def format_conections(self, connections):
+    def format_connections(self, connections):
         return {
             'numero_exato': connections if connections != 500 else None,
-            'minimo': connections if connections == 500 else None
+            'minimo': connections if connections == 500 else None,
+            'conexoes_obtidas': []
         }
 
-    def get_company_id_from_profile_response(self, response):
-        for company in self.employees_json_data['empresas']:
+    def get_picture_url(self, image_data):
+        if image_data is None: return None
+        start = image_data['rootUrl']
+        end = sorted(image_data['artifacts'], key=lambda x: x['width'])[-1]['fileIdentifyingUrlPathSegment']
+        return start + end
+
+    def get_company_from_profile_url(self, url):
+        for company in self.output_json_data['empresas']:
             for funcionario in company['funcionarios']:
-                if ('url' in funcionario) and (response.url == funcionario['url']):
-                    return company['company_id']
+                if ('url' in funcionario) and (url == funcionario['url']):
+                    return company
         return None
 
     # Isso pode ser ativado quando a url não começa com www:
@@ -704,18 +792,18 @@ class CompaniesLinkedinSpider(InitSpider):
                 'dados_de_funcionarios_obtidos': 0,
                 'funcionarios': [],
             }
-            self.employees_json_data['empresas'].append(company)
+            self.output_json_data['empresas'].append(company)
         
         else:
             company.update({
                 'quantidade_funcionarios': company_info['staffCount'],
             })
+        
+        self.create_company_log_if_necessary(company)
 
         self.refresh_workbook_company_data(company_id)
 
         checkprint('(%i/%i) Dados da página da empresa %s corretamente obtidos!\n' % (self.current_session_companies_parsed, len(self.company_urls), company_info['name']))
-        
-        self.create_company_log_if_necessary(company)
         
         return self.load_company_employee_search_pages_requests(company_id)
 
@@ -738,27 +826,40 @@ class CompaniesLinkedinSpider(InitSpider):
         #     response.body
         # )
 
-        search_response = self.get_employees_search_elements(response)
+        search_data = self.get_search_data(response)
 
-        if search_response is not None:
+        search_results = self.get_search_results(search_data)
 
-            for employee_data in search_response:
+        all_mini_profile_data = self.get_object_by_type(
+            search_data['included'], 
+            'com.linkedin.voyager.identity.shared.MiniProfile'
+        )
+
+        if search_results is not None:
+
+            for employee_data in search_results:
+
+                employee_user_id = employee_data['targetUrn'].split(':')[-1]
+
+                employee_mini_profile_data = self.get_object_by_user_id(all_mini_profile_data, employee_user_id)
 
                 employee_url = employee_data['navigationUrl']
 
                 user_data = {
+                    'user_id': employee_user_id,
                     'localizacao_atual': employee_data['subline']['text'] if 'subline' in employee_data else None,
                     'cargo_atual': employee_data['headline']['text'] if 'headline' in employee_data else None,
+                    'foto_de_perfil': self.get_picture_url(employee_mini_profile_data['picture']),
                     'dados_obtidos': False
                 }
 
                 if '/in/UNKNOWN' in employee_url:
-
-                    self.current_session_profiles_parsed += 1
-
+                    counter = self.profile_counter()
+                    if counter['new_request'] is not None:
+                        yield counter['new_request']
                     whiteprint(
-                        '(%i/%i) Não foi possível obter url do funcionário da empresa %s. Pessoa fora de sua rede.\n'
-                        % (self.current_session_profiles_parsed, self.total_employees_left_to_access, company['nome'])
+                        '%sNão foi possível obter url do funcionário da empresa %s. Pessoa fora de sua rede.\n'
+                        % (counter['counter'], company['nome'])
                     )
 
                 else:
@@ -778,7 +879,11 @@ class CompaniesLinkedinSpider(InitSpider):
 
             save_to_file(
                 self.output_json_path,
-                json.dumps(self.employees_json_data, indent=4),
+                json.dumps(
+                    self.output_json_data, 
+                    indent=4, 
+                    ensure_ascii=self.ensure_ascii
+                ),
                 dont_print=True
             )
 
@@ -793,21 +898,19 @@ class CompaniesLinkedinSpider(InitSpider):
         self.profiles_parsed += 1
         self.update_current_log()
 
-        self.current_session_profiles_parsed += 1
+        user_dict = {
+            'url': response.url,
+            'dados_obtidos': False
+        }
 
-        user_dict = None
-
-        # Pode haver um erro quando é igual a None:
-        company_id = self.get_company_id_from_profile_response(response)
-
-        company = self.find_company_by_id(company_id)
-
-        counter = '(%i/%i) ' % (self.current_session_profiles_parsed, self.total_employees_left_to_access)
+        company = self.get_company_from_profile_url(response.url)
 
         # Se página não tiver a seguinte string, ela provavelmente foi carregada errada:
         if 'linkedin.com/in/' not in str(response.url):
-            errorprint('%sEste não é um link de um perfil: %s\n' %
-                       (counter, response.url))
+            counter = self.profile_counter()
+            if counter['new_request'] is not None:
+                yield counter['new_request']
+            errorprint('%sEste não é um link de um perfil: %s\n' % (counter['counter'], response.url))
 
         # Se página não tiver a seguinte string, ela provavelmente
         # foi carregada errada, ou não é uma página válida:
@@ -818,18 +921,25 @@ class CompaniesLinkedinSpider(InitSpider):
             self.request_retries[str(response.url)] = retries + 1
 
             if retries < 1:
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
                 warnprint(
                     '%sErro no parsing de %s\nAdicionando novamente à fila de links...\n' 
-                    % (counter, response.url)
+                    % (counter['counter'], response.url)
                 )
                 self.total_employees_left_to_access += 1
-                return self.cookie_request(
+                yield self.cookie_request(
                     url=response.url, 
                     callback=self.parse_profile, 
                     dont_filter=True
                 )
+                return None
             else:
-                errorprint('%sEste provavelmente não é um link de um perfil: %s' % (counter, response.url))
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
+                errorprint('%sEste provavelmente não é um link de um perfil: %s' % (counter['counter'], response.url))
 
         else:
 
@@ -874,18 +984,28 @@ class CompaniesLinkedinSpider(InitSpider):
                 if member_badges_json is None:
                     raise ParsingException('Erro com member_badges_json')
 
-                user_dict = {
+                user_id = member_badges_json['data']['entityUrn'].split(':')[-1]
+
+                user_dict.update({
                     'nome': user_data['firstName'] if 'firstName' in user_data else None,
                     'sobrenome': user_data['lastName'] if 'lastName' in user_data else None,
-                    'user_id': member_badges_json['data']['entityUrn'].split(':')[-1],
+                    'user_id': user_id,
                     'cargo_atual': user_data['headline'] if 'headline' in user_data else None,
                     'localizacao_atual': user_data['locationName'] if 'locationName' in user_data else None,
+                    'foto_de_perfil': self.get_picture_url(
+                        None if ('profilePicture' not in user_data) or (user_data['profilePicture'] is None) \
+                        else user_data['profilePicture']['displayImageReference']['vectorImage']
+                    ),
+                    'plano_de_fundo': self.get_picture_url(
+                        None if ('backgroundPicture' not in user_data) or (user_data['backgroundPicture'] is None) \
+                        else user_data['backgroundPicture']['displayImageReference']['vectorImage']
+                    ),
                     'sobre': user_data['summary'] if 'summary' in user_data else None,
                     'premium': user_data['premium'] if 'premium' in user_data else None,
                     'influenciador': user_data['influencer'] if 'influencer' in user_data else None,
                     'procura_emprego': member_badges_json['data']['jobSeeker'],
                     'seguidores': following_json['data']['followersCount'],
-                    'conexoes': self.format_conections(following_json['data']['connectionsCount']),
+                    'conexoes': self.format_connections(following_json['data']['connectionsCount']),
                     'habilidades': [skill['name'] for skill in skills_data],
                     'linguas': [language['name'] for language in languages_data],
                     'cursos_feitos': [course['name'] for course in courses_data],
@@ -957,36 +1077,141 @@ class CompaniesLinkedinSpider(InitSpider):
                         key=lambda x: self.stringify_date_range(x['periodo'])
                     ),
                     'dados_obtidos': True
-                }
+                })
 
-                for company_index in range(len(self.employees_json_data['empresas'])):
-                    if self.employees_json_data['empresas'][company_index]['company_id'] == company_id:
+                existing_employee = self.find_user_by_id(user_id)
 
-                        matches = False
+                if existing_employee is None:
+                    existing_employee = {}
+                    company['funcionarios'].append(existing_employee)
 
-                        for employee_index in range(len(self.employees_json_data['empresas'][company_index]['funcionarios'])):
-                            if ('url' in self.employees_json_data['empresas'][company_index]['funcionarios'][employee_index]) \
-                                and (self.employees_json_data['empresas'][company_index]['funcionarios'][employee_index]['url'] == str(response.url)):
+                existing_employee.update(user_dict)
 
-                                matches = True
+                existing_employee = self.reorder_user_dict(existing_employee)
 
-                                self.employees_json_data['empresas'][company_index]['funcionarios'][employee_index].update(user_dict)
+                self.current_session_connection_pages_parsed_per_profile[user_id] = 0
 
-                        if not matches:
-                            self.employees_json_data['empresas'][company_index]['funcionarios'].append(user_dict)
+                for page in range(self.max_connection_pages):
+                    yield self.cookie_request(
+                        url='https://www.linkedin.com/search/results/people/?facetConnectionOf=%%5B%%22%s%%22%%5D&page=%i' \
+                            % (user_id, page + 1),
+                        callback=self.parse_connections_page
+                    )
 
-                checkprint('%sParsing corretamente realizado em %s da empresa %s\n' % (counter, response.url, company['nome']))
+                if self.max_connection_pages == 0:
+                    counter = self.profile_counter()
+                    if counter['new_request'] is not None:
+                        yield counter['new_request']
+                    checkprint('%sParsing corretamente realizado em %s da empresa %s\n' % (counter['counter'], response.url, company['nome']))
 
             except ParsingException:
-                errorprint('%sErro no parsing de %s da empresa %s\n' % (counter, response.url, company['nome']))
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
+                errorprint('%sErro no parsing de %s da empresa %s\n' % (counter['counter'], response.url, company['nome']))
             except Exception as e:
-                errorprint('%sErro grave no parsing de %s da empresa %s: %s\n' % (counter, response.url, company['nome'], e))
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
+                errorprint('%sErro grave no parsing de %s da empresa %s: %s\n' % (counter['counter'], response.url, company['nome'], e))
 
         save_to_file(
             self.output_json_path,
-            json.dumps(self.employees_json_data, indent=4),
+            json.dumps(
+                self.output_json_data, 
+                indent=4, 
+                ensure_ascii=self.ensure_ascii
+            ),
             dont_print=True
         )
+
+    def parse_connections_page(self, response):
+        self.check_response_status(response)
+
+        self.connection_pages_parsed += 1
+        self.update_current_log()
+
+        self.current_session_connection_pages_parsed += 1
+
+        user_id = str(response.url).split('facetConnectionOf=')[-1].split('&page')[0][6:-6]
+
+        self.current_session_connection_pages_parsed_per_profile[user_id] += 1
+
+        profile = self.find_user_by_id(user_id)
+        company = self.get_company_from_profile_url(profile['url'])
+
+        # save_to_file(
+        #     response.url.split('/')[4] + '.html',
+        #     response.body
+        # )
+
+        search_data = self.get_search_data(response)
+
+        search_results = self.get_search_results(search_data)
+        
+        all_member_badges = self.get_object_by_type(
+            search_data['included'], 
+            'com.linkedin.voyager.identity.profile.MemberBadges'
+        )
+        all_mini_profile_data = self.get_object_by_type(
+            search_data['included'], 
+            'com.linkedin.voyager.identity.shared.MiniProfile'
+        )
+
+        if search_results is not None:
+
+            for connection in search_results:
+
+                connection_user_id = connection['targetUrn'].split(':')[-1]
+
+                connection_member_badges = self.get_object_by_user_id(all_member_badges, connection_user_id)
+                connection_mini_profile_data = self.get_object_by_user_id(all_mini_profile_data, connection_user_id)
+
+                connection_data = {
+                    'url': connection['navigationUrl'],
+                    'nome': connection_mini_profile_data['firstName'],
+                    'sobrenome': connection_mini_profile_data['lastName'],
+                    'user_id': connection_user_id,
+                    'cargo_atual': connection_mini_profile_data['occupation'],
+                    'localizacao_atual': connection['subline']['text'],
+                    'foto_de_perfil': self.get_picture_url(connection_mini_profile_data['picture']),
+                    'plano_de_fundo': self.get_picture_url(connection_mini_profile_data['backgroundImage']),
+                    'premium': connection_member_badges['premium'],
+                    'influenciador': connection_member_badges['influencer'],
+                    'procura_emprego': connection_member_badges['jobSeeker']
+                }
+
+                found = False
+                    
+                for existing_connection in profile['conexoes']['conexoes_obtidas']:
+                    if existing_connection['url'] == connection_data['url']:
+                        found = True
+                        existing_connection.update(connection_data)
+
+                if not found:
+                    profile['conexoes']['conexoes_obtidas'].append(connection_data)
+
+            save_to_file(
+                self.output_json_path,
+                json.dumps(
+                    self.output_json_data, 
+                    indent=4, 
+                    ensure_ascii=self.ensure_ascii
+                ),
+                dont_print=True
+            )
+
+            if self.current_session_connection_pages_parsed_per_profile[user_id] == self.max_connection_pages:
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
+                checkprint('%sParsing corretamente realizado em %s da empresa %s\n' % (counter['counter'], profile['url'], company['nome']))
+
+        else:
+            counter = self.profile_counter()
+            if counter['new_request'] is not None:
+                yield counter['new_request']
+            errorprint('%sErro no parsing de lista de conexões de %s da empresa %s\n' % (counter['counter'], profile['url'], company['nome']))
 
 
 def get_date():

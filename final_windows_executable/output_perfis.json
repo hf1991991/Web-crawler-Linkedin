@@ -1,200 +1,275 @@
 {
     "perfis": [
         {
-            "url": "https://www.linkedin.com/in/alcparo",
+            "url": "https://www.linkedin.com/in/hellen-neves-138048123",
             "dados_obtidos": true,
-            "nome": "Andre Luiz",
-            "sobrenome": "Catini Paro",
-            "user_id": "ACoAAAUXOOUBzInTpcXZvVDOyCGXUoVwXeaDR9A",
-            "cargo_atual": "Tech Lead Data Scientist at Neon",
+            "nome": "Hellen",
+            "sobrenome": "Neves",
+            "user_id": "ACoAAB5wqrwBD7tZ-4k4oihBv94Yqu_kRvEv1WE",
+            "cargo_atual": "Tech Recruiter | Talent Acquisition @ Neon \ud83d\udc99",
             "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+            "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQFFIyohUqOAHQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=nQRic40vkyoYQksfhBa-4wrmlIC6SaMlvJRB4X8CIUY",
+            "plano_de_fundo": "https://media-exp1.licdn.com/dms/image/C4D16AQFEWWic9O77gQ/profile-displaybackgroundimage-shrink_350_1400/0?e=1602115200&v=beta&t=GJFVRMDmhP1YMLIxz79iO5dWi86gdI8_c9AB_aCHKac",
             "sobre": null,
-            "premium": false,
+            "premium": true,
             "influenciador": false,
             "procura_emprego": false,
-            "seguidores": 755,
+            "seguidores": 7874,
             "conexoes": {
                 "numero_exato": null,
-                "minimo": 500
+                "minimo": 500,
+                "conexoes_obtidas": [
+                    {
+                        "url": "https://www.linkedin.com/in/cintya-rasa-900064114",
+                        "nome": "Cintya",
+                        "sobrenome": "Rasa",
+                        "user_id": "ACoAABx8BhABRi8Ew_HeOfLkB20QzF3UdNSMec4",
+                        "cargo_atual": "Community Manager | Startups | Innovation",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQFrQF6J7eU4BA/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=PJuyuFdvyO78ilXqNVeLHhRVNBi1WRPfttY8DMkTKDg",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/fspina",
+                        "nome": "Felipe",
+                        "sobrenome": "Spina",
+                        "user_id": "ACoAAABTZwwBV3vKp0oN3oqbYiat19USdRXKSEA",
+                        "cargo_atual": "Partner | Head of Growth at Distrito",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4E03AQEWYUAdnqeOZQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=ZPUCmFlEHfz6PAGfEO_ogQL3LNQmAGmI7tPO1JX4gJQ",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/filipe-portugal-49801193",
+                        "nome": "Filipe",
+                        "sobrenome": "Portugal",
+                        "user_id": "ACoAABPBynQB4VutoENIAUXzGF_07bj00y0-T5I",
+                        "cargo_atual": "Investments at Canary",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQGVFN_ql2wnag/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=qXlLenQNenFOU0Gl-wnqdbeoYSEkFV6sCjk4cQcxbLw",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/rodrigomfogaca",
+                        "nome": "Rodrigo",
+                        "sobrenome": "Marino Foga\u00e7a",
+                        "user_id": "ACoAAAxwk_gBWlseyJ6lw-WfxVnNZdT2JUTEUTE",
+                        "cargo_atual": "Venture Capital Analyst",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": null,
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/felipe-tena-a5093bb0",
+                        "nome": "Felipe",
+                        "sobrenome": "Tena",
+                        "user_id": "ACoAABehrxwBcIvgPe6l8M4s-bAVn846TOLcgnc",
+                        "cargo_atual": "Investment Banking at Ita\u00fa BBA",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQGqwNWsL9nfgg/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=Wks-bRwKRFocxMo9G_B4jJTGoADogeZ7Mks2d9y83Ts",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/ricardocici",
+                        "nome": "Ricardo",
+                        "sobrenome": "Cici",
+                        "user_id": "ACoAAAiM4GQB91OZwnZAQKfx9mep42yNegMRvvg",
+                        "cargo_atual": "Co-Founder - Confere (we're hiring!) <> Google and VISA startup",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C5603AQH-UDDwvEB0Kg/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=ocfgif_Fvv3zO8F1QYvmvVh2i64nsoi3bIQOeyfK5pU",
+                        "plano_de_fundo": null,
+                        "premium": true,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/mariomarcoccia",
+                        "nome": "M\u00e1rio",
+                        "sobrenome": "Franzago Marcoccia",
+                        "user_id": "ACoAABpQEIgBjE0o0ymg2RnFxQPer5Frphqej7U",
+                        "cargo_atual": "Associate Consultant at Bain & Company",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQGUiA0Qv1x2gQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=kSFvne310Sn9p2Pl9_JbTk9zm1pRlUXsDVR1KsykdPU",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/gabrielbraga",
+                        "nome": "Gabriel",
+                        "sobrenome": "Braga",
+                        "user_id": "ACoAAAAVwj8B_pblo675tdKDnqd1c8yxO0fOtsM",
+                        "cargo_atual": "Co-founder & CEO at QuintoAndar",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQEB7uDQ3e5fHw/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=B25Tw4OI0KQj7DT7S8FVgnOC6hxQ8nej2WFx6lMBtlw",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/sergiofurio",
+                        "nome": "Sergio",
+                        "sobrenome": "Furio",
+                        "user_id": "ACoAAAA9gZUB4i5tFXMSw4YVOZM7MCzlHhpfFbc",
+                        "cargo_atual": "Founder & CEO at Creditas",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4E03AQFvKUsGQsAFDA/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=LjdfX7ezUmSMJuYvdt6JnEejeP6UfJEIQbVqPwUDHs8",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/victor-mesnik-688b2a88",
+                        "nome": "Victor",
+                        "sobrenome": "Mesnik",
+                        "user_id": "ACoAABKtLUgBC63h2ms5PWryVqwGP2ZGzzCmhrU",
+                        "cargo_atual": "Investment Banking at Rothschild",
+                        "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQEzpBmZZUVosQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=dkgYzo4u_FwkqWSQbd20LX71NQ5rCq0Hr3xyuzKfbE0",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    }
+                ]
             },
             "habilidades": [
-                "Big Data",
-                "Programming",
-                "R",
-                "C",
-                "ITIL",
-                "English",
-                "Machine Learning",
-                "SQL",
-                "Watson",
-                "BMC Remedy",
-                "Research",
-                "Java",
-                "Analytics",
-                "Software Engineering",
-                "BMC Remedy AR System",
-                "Cloudera Impala",
-                "Hadoop",
-                "C++",
-                "Data Science",
-                "JavaScript"
+                "Microsoft Word",
+                "Microsoft PowerPoint",
+                "Aquisi\u00e7\u00e3o de talentos",
+                "Microsoft Office",
+                "Consultoria",
+                "Recursos humanos",
+                "Sele\u00e7\u00e3o de executivos",
+                "Recrutamento",
+                "Estrat\u00e9gia empresarial",
+                "Microsoft Excel",
+                "Entrevistas"
             ],
             "linguas": [
-                "English",
-                "Spanish",
-                "French",
-                "Portuguese"
+                "Ingl\u00eas",
+                "Portugu\u00eas"
             ],
             "cursos_feitos": [],
             "premios": [],
             "estudos": [
                 {
-                    "instituicao": "Universidade de S\u00e3o Paulo",
-                    "formacao": "Computer Science",
-                    "tilulo_obtido": "Bachelor\u2019s Degree",
+                    "instituicao": "Universidade Presbiteriana Mackenzie",
+                    "formacao": null,
+                    "tilulo_obtido": "Psicologia",
                     "descricao": null,
                     "periodo": {
                         "inicio": {
                             "mes": null,
-                            "ano": 2010
+                            "ano": 2014
                         },
                         "fim": {
                             "mes": null,
-                            "ano": 2015
+                            "ano": 2018
                         }
                     }
                 },
                 {
-                    "instituicao": "University of Bristol",
-                    "formacao": "Computer Science",
-                    "tilulo_obtido": "Bachelor's Degree",
-                    "descricao": "Study abroad scholarship as part of the Brazilian government program Science Without Borders.",
+                    "instituicao": "Universidade Presbiteriana Mackenzie",
+                    "formacao": null,
+                    "tilulo_obtido": "Especializa\u00e7\u00e3o em Gest\u00e3o Estrat\u00e9gica de Pessoas ",
+                    "descricao": null,
                     "periodo": {
                         "inicio": {
                             "mes": null,
-                            "ano": 2013
+                            "ano": 2020
                         },
                         "fim": {
                             "mes": null,
-                            "ano": 2014
+                            "ano": 2021
                         }
                     }
                 }
             ],
             "experiencia_profissional": [
                 {
-                    "instituicao": "Institute of Mathematics and Computer Science - University of S\u00e3o Paulo",
-                    "cargo": "Undergraduate Researcher",
-                    "descricao": "Undergraduate Researcher sponsored by the Conselho Nacional de Desenvolvimento Cient\u00edfico e Tecnol\u00f3gico (CNPq) under supervision of Dr. Andr\u00e9 Carlos Ponce de Leon Ferreira de Carvalho as part of the institutional program called Scientific Initiation. My research investigated the use of meta-learning to select more robust classifiers when the data set presents class noise.",
+                    "instituicao": "2XS Search and Success",
+                    "cargo": "Researcher",
+                    "descricao": "Atua\u00e7\u00e3o na \u00e1rea de Recrutamento Executivo;\nLevantamento de empresas (hunting); \nRastreamento e mapeamento de Executivos;\nAgendamentos de entrevista;\nAcompanhamento do processo seletivo at\u00e9 a contrata\u00e7\u00e3o.",
                     "periodo": {
                         "inicio": {
-                            "mes": 8,
-                            "ano": 2011
-                        },
-                        "fim": {
-                            "mes": 8,
-                            "ano": 2013
-                        }
-                    }
-                },
-                {
-                    "instituicao": "Icaro Tech",
-                    "cargo": "Intern",
-                    "descricao": "Business Area: Information & Communication Technology Management (ICTM).\n\n- Development and customization of BMC Remedy ITSM applications.",
-                    "periodo": {
-                        "inicio": {
-                            "mes": 1,
-                            "ano": 2015
+                            "mes": 5,
+                            "ano": 2016
                         },
                         "fim": {
                             "mes": 7,
-                            "ano": 2015
-                        }
-                    }
-                },
-                {
-                    "instituicao": "Icaro Tech",
-                    "cargo": "Systems Analyst",
-                    "descricao": "Business Area: Information & Communication Technology Management (ICTM).\n\n- Development and customization of BMC Remedy ITSM applications.\n- Participated in an international project with an Australian client. Worked through all the project cycle, writing design documents, developing, customizing and deploying BMC Remedy ITSM applications while dealing with the 13 hours time-zone.\n- Acted internally as Configuration Manager where I was responsible for maintain and manage a few projects' repositories using Subversion.",
-                    "periodo": {
-                        "inicio": {
-                            "mes": 8,
-                            "ano": 2015
-                        },
-                        "fim": {
-                            "mes": 2,
-                            "ano": 2016
-                        }
-                    }
-                },
-                {
-                    "instituicao": "Icaro Tech",
-                    "cargo": "Analytics Consultant",
-                    "descricao": "Business Area: Consulting and Analytics.\n\n- Consulting in Analytics, Big Data and Machine Learning.\n- Design of customized analyses in R, Scala and Python for Icaro Tech Dash Analytics (DA).\n- Experience with the Amazon Web Services (AWS) and Hadoop ecosystem for Big Data pipelines.\n- Research and Development of cognitive solutions using IBM Bluemix platform and IBM Watson APIs.\n- Development of dashboards in JavaScript for Icaro Tech Advanced Dashboards 2 (AD2).",
-                    "periodo": {
-                        "inicio": {
-                            "mes": 3,
-                            "ano": 2016
-                        },
-                        "fim": {
-                            "mes": 6,
                             "ano": 2017
                         }
                     }
                 },
                 {
-                    "instituicao": "Santander Brasil",
-                    "cargo": "Credit Risk Analyst",
-                    "descricao": "Acting as Data Scientist at the Retail Risk area with the following responsibilities:\n- Development of credit risk models with machine learning techniques leveraging Santander's Big Data infrastructure and tools.\n- Exploration of new data sources, internal and external, and feature engineering.\n- Provide internal training on Machine Learning techniques, Big Data architecture and programming languages such as Python and R.\n- Monitor and manage projects with partners.\n- Development of dashboards in order to monitor risk KPIs such as bad rate, over and rating distribution.\n\nToolbox: Python (scikit-learn, pyspark, pandas, NumPy, SciPy, seaborn etc), Cloudera Data Science Workbench, Hadoop Ecosystem (Spark, Hive, HUE, Impala etc), PMML, Gitlab, SAS and Atlassian Confluence.",
+                    "instituicao": "Sodexo",
+                    "cargo": "HR Intern",
+                    "descricao": "Atua\u00e7\u00e3o na \u00e1rea de Desenvolvimento Humano e Organizacional, em projetos e programas estrat\u00e9gicos como: Ciclo de Avalia\u00e7\u00e3o de Desempenho, Pesquisa de Engajamento e a\u00e7\u00f5es de desdobramento, treinamentos, Programa de Est\u00e1gio e Proposta de Valor do Colaborador.",
                     "periodo": {
                         "inicio": {
-                            "mes": 6,
+                            "mes": 7,
                             "ano": 2017
                         },
                         "fim": {
-                            "mes": 6,
+                            "mes": 12,
                             "ano": 2018
                         }
                     }
                 },
                 {
-                    "instituicao": "Santander Brasil",
-                    "cargo": "Senior Credit Risk Analyst",
+                    "instituicao": "Sodexo",
+                    "cargo": "HR Analyst",
                     "descricao": null,
                     "periodo": {
                         "inicio": {
+                            "mes": 1,
+                            "ano": 2019
+                        },
+                        "fim": {
                             "mes": 6,
-                            "ano": 2018
-                        },
-                        "fim": {
-                            "mes": 4,
                             "ano": 2019
-                        }
-                    }
-                },
-                {
-                    "instituicao": "Santander Brasil",
-                    "cargo": "Credit Risk Consultant",
-                    "descricao": null,
-                    "periodo": {
-                        "inicio": {
-                            "mes": 4,
-                            "ano": 2019
-                        },
-                        "fim": {
-                            "mes": 2,
-                            "ano": 2020
                         }
                     }
                 },
                 {
                     "instituicao": "Neon",
-                    "cargo": "Tech Lead Data Scientist",
-                    "descricao": null,
+                    "cargo": "Junior Talent Acquisition ",
+                    "descricao": "A Neon \u00e9 uma fintech brasileira, fundada em 2016, que tem a miss\u00e3o de unir tecnologia e design para redesenhar e simplificar a experi\u00eancia financeira das pessoas.\n\nCom mais de 350 funcion\u00e1rios, a Neon levantou, em 2018, R$ 72 milh\u00f5es de investimentos Series A em round liderado pela Propel Ventures, Monashees e Quona, que contou tamb\u00e9m com a Yellow Ventures, Omydiar Network e Tera Capital. Sendo a conta digital o principal produto, a fintech possui uma parceria com o Banco Votorantim para cust\u00f3dia e liquida\u00e7\u00e3o de suas contas.",
                     "periodo": {
                         "inicio": {
-                            "mes": 3,
-                            "ano": 2020
+                            "mes": 6,
+                            "ano": 2019
+                        },
+                        "fim": null
+                    }
+                },
+                {
+                    "instituicao": "Neon",
+                    "cargo": "Tech Recruiter ",
+                    "descricao": "Respons\u00e1vel por todas as etapas do recrutamento e sele\u00e7\u00e3o de diversas \u00e1reas de Tecnologia e Produto (Infraestrutura, Desenvolvimento, Agilidade, Quality Assurance e outros);\nAtua\u00e7\u00e3o estrat\u00e9gica e consultiva baseada em an\u00e1lises de mercado; \nElabora\u00e7\u00e3o, implementa\u00e7\u00e3o e acompanhamento de projetos internos de Talent Acquisition;\nAtua\u00e7\u00e3o com metodologias \u00e1geis.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": 9,
+                            "ano": 2019
                         },
                         "fim": null
                     }
@@ -204,87 +279,159 @@
             "projetos": []
         },
         {
-            "url": "https://www.linkedin.com/in/leslie-devost-032615194",
+            "url": "https://www.linkedin.com/in/rodrigo-salem-703824115",
             "dados_obtidos": true,
-            "nome": "Leslie",
-            "sobrenome": "Devost",
-            "user_id": "ACoAAC2nOuYBZdaj6eQR3eCIzBlvAqGV7_NC8EQ",
-            "cargo_atual": "EMEA Marketing Manager chez Mark",
-            "localizacao_atual": "France",
-            "sobre": null,
+            "nome": "Rodrigo",
+            "sobrenome": "Salem",
+            "user_id": "ACoAABzGsPMBXInl8tIglQxN82engewGcrlrpvs",
+            "cargo_atual": "GPM | Partner na Neon",
+            "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+            "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQFZBVkVNziEpw/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=AVinIIPjUDK-WFWQ4-38GxcUwfJST1uBDmYW4-QapPI",
+            "plano_de_fundo": null,
+            "sobre": "Direito pela UFBA, com p\u00f3s em finan\u00e7as pela Universidade da Calif\u00f3rnia e FGV. Perfil empreendedor e anal\u00edtico com 8 anos de experi\u00eancia em controladoria e finan\u00e7as. Gestor em empresas de diferentes setores com experi\u00eancia em M&A. Business Development e CFO.\n\nrodrigo.salem@meifacil.com",
             "premium": false,
             "influenciador": false,
             "procura_emprego": false,
-            "seguidores": 3135,
+            "seguidores": 784,
             "conexoes": {
                 "numero_exato": null,
-                "minimo": 500
+                "minimo": 500,
+                "conexoes_obtidas": [
+                    {
+                        "url": "https://www.linkedin.com/in/gabriela-dantas",
+                        "nome": "Gabriela",
+                        "sobrenome": "Dantas",
+                        "user_id": "ACoAAB955J0Bpvk5nTHS1e1GfMse3btkOcV5fQw",
+                        "cargo_atual": "People Management Coordinator na Distrito",
+                        "localizacao_atual": "S\u00e3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4E03AQEgf4YH5fkZqQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=0Ti_1QJoyTZcqsxSbq92yFNtCWtLCgZJ_774dlmmVrk",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    }
+                ]
             },
-            "habilidades": [
-                "Gestion de projet",
-                "Planification strat\u00e9gique",
-                "Strat\u00e9gie marketing"
-            ],
+            "habilidades": [],
             "linguas": [],
             "cursos_feitos": [],
             "premios": [],
             "estudos": [
                 {
-                    "instituicao": "HEC Lausanne - La Facult\u00e9 des Hautes Etudes Commerciales de l'Universit\u00e9 de Lausanne",
-                    "formacao": "Math\u00e9matiques computationnelles",
-                    "tilulo_obtido": "Master's degree",
+                    "instituicao": "Universidade Federal da Bahia",
+                    "formacao": null,
+                    "tilulo_obtido": "Bacharelado em Direito",
                     "descricao": null,
                     "periodo": {
                         "inicio": {
                             "mes": null,
-                            "ano": 2006
+                            "ano": 1998
                         },
                         "fim": {
                             "mes": null,
-                            "ano": 2009
+                            "ano": 2003
+                        }
+                    }
+                },
+                {
+                    "instituicao": "University of California, San Diego",
+                    "formacao": null,
+                    "tilulo_obtido": "Finance",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2004
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2005
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Funda\u00e7\u00e3o Getulio Vargas",
+                    "formacao": null,
+                    "tilulo_obtido": "Administra\u00e7\u00e3o - Especializa\u00e7\u00e3o",
+                    "descricao": "CEAG",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2005
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2006
                         }
                     }
                 }
             ],
             "experiencia_profissional": [
                 {
-                    "instituicao": "Barclays",
-                    "cargo": "Marketing Assistant Internship",
-                    "descricao": null,
-                    "periodo": {
-                        "inicio": {
-                            "mes": 9,
-                            "ano": 2008
-                        },
-                        "fim": {
-                            "mes": 11,
-                            "ano": 2008
-                        }
-                    }
-                },
-                {
-                    "instituicao": "SAP",
-                    "cargo": "Senior Marketing Project Manager",
-                    "descricao": null,
-                    "periodo": {
-                        "inicio": {
-                            "mes": 2,
-                            "ano": 2009
-                        },
-                        "fim": {
-                            "mes": 12,
-                            "ano": 2012
-                        }
-                    }
-                },
-                {
-                    "instituicao": "Mark",
-                    "cargo": "EMEA Marketing Manager ",
+                    "instituicao": "Ita\u00fa Unibanco",
+                    "cargo": "Analista de riscos",
                     "descricao": null,
                     "periodo": {
                         "inicio": {
                             "mes": 1,
-                            "ano": 2013
+                            "ano": 2006
+                        },
+                        "fim": {
+                            "mes": 8,
+                            "ano": 2007
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Pl\u00e1sticos Novel - Myers do Brasil",
+                    "cargo": "Controller",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": 8,
+                            "ano": 2007
+                        },
+                        "fim": {
+                            "mes": 4,
+                            "ano": 2014
+                        }
+                    }
+                },
+                {
+                    "instituicao": "ContadorX - Contabilidade Online",
+                    "cargo": "Founder & CEO",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": 7,
+                            "ano": 2015
+                        },
+                        "fim": {
+                            "mes": 12,
+                            "ano": 2016
+                        }
+                    }
+                },
+                {
+                    "instituicao": "MEI F\u00e1cil",
+                    "cargo": "Founder - Business Developer",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": 1,
+                            "ano": 2017
+                        },
+                        "fim": null
+                    }
+                },
+                {
+                    "instituicao": "Neon",
+                    "cargo": "GPM | Partner",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": 12,
+                            "ano": 2019
                         },
                         "fim": null
                     }
@@ -294,255 +441,605 @@
             "projetos": []
         },
         {
-            "url": "https://www.linkedin.com/in/tamaraf",
+            "url": "https://www.linkedin.com/in/stephanie-fernandes-scortecci-2ab066117",
             "dados_obtidos": true,
-            "nome": "Tamara Freire R.",
-            "sobrenome": "Cavalcanti",
-            "user_id": "ACoAAASk2xkBR_KzR2RxLtLzwLbEXNhoAZnijY4",
-            "cargo_atual": "Tech Recruiter I Talent Acquisition at Neon - We're Hiring \ud83d\udc99",
-            "localizacao_atual": "Jundia\u00ed, S\u00e3o Paulo, Brazil",
-            "sobre": "Psic\u00f3loga e Recrutadora, apaixonada por pessoas e tecnologia. \n10 anos de experi\u00eancia em Recrutamento e Sele\u00e7\u00e3o.\nExpertise em Tecnologia da Informa\u00e7\u00e3o e Executive search (posi\u00e7\u00f5es de m\u00e9dio/alto n\u00edvel).\nFoco na Atra\u00e7\u00e3o e Sele\u00e7\u00e3o de talentos que se alinhem a cultura e os valores da organiza\u00e7\u00e3o.\nFamiliaridade com diferentes \u00e1reas do universo tecnol\u00f3gico, buscando profissionais com foco em Desenvolvimento Front/Back End: Mobile (iOS, Android) Java, .Net/C#, PHP, Delphi, Python, C/C++, Cobol entre outras. \nDBA/AD, Analista de Suporte /Sistemas / Requisitos / Processos / Neg\u00f3cios / Testes e Automa\u00e7\u00e3o.\nCoordenadores e Gerentes de projetos de desenvolvimento, infraestrutura e telecom. \nPosi\u00e7\u00f5es de Cybersecurity e Infraestrutura no geral. \nBusiness Intelligence: Tableau, Qlikview, Qlik sense, Cognos, SSIS, BW, Power BI, Pentaho, Hyperion e MicroStrategy. \nCRM e ERPs: SAP, TOTVS, Oracle, Microsoft e Datasul.\nMiddleware / Arquitetura de Solu\u00e7\u00f5es Oracle e IBM: SOA / BPM /Websphere / Weblogic. Bigdata: Hadoop, Spark e Scala.\nViv\u00eancia em Startup de tecnologia utilizando metodologia \u00e1gil para os processos seletivos.",
+            "nome": "Stephanie ",
+            "sobrenome": "Fernandes Scortecci",
+            "user_id": "ACoAAB0EwCMBEx6sIE6ND8IGGVfb2TT9a9Qs30s",
+            "cargo_atual": "Product Manager at Neon",
+            "localizacao_atual": "S\u00c3\u00a3o Paulo, S\u00c3\u00a3o Paulo, Brazil",
+            "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQHTTQbXsodkVw/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=A7GRPrOxac5-IkepcPzyK-a4CljgcR3w5Gfp2DhaFOs",
+            "plano_de_fundo": null,
+            "sobre": "Dedicated, striving and always chasing after new knowledge, with this profile I managed in just 1 year and a half to be the leadership of an international product, working in various stages that compose the product development (from the project to the manufacturing quality).\nDuring all these years of experience, I have faced several challenges, some of this seemed bigger than what I could face and I ended up overcoming with a lot of effort, dedication and humbleness to listen to and to look for more experienced people. The patent development was challenging and at the beginning completely unknown to me. After a few months working with the team responsible for patents we elaborated a document praised by all. The implementation of a quality process in the electronics production was another great challenge, successfully overcame. At the beginning of the project I had almost no knowledge about electronics manufacture process and at the end we were able to implement quality process with a high success rate for a low current consumption product.\nDeveloping product and coordinating tasks is always a challenge \u00e2\u20ac\u201c taking field trips, following up the manufacture process (in another state), meetings with all the teams, coordinating people. The job can be stressful, and to keep the balance at work it is important a personal balance: Sports (such as boxing and swimming), hanging out with family and friends, travelling with family, playing with the dog when I arrive from work, watching a film or tv shows are activities that help me to keep the balance and have a more efficient work rhythm.\n",
             "premium": false,
             "influenciador": false,
             "procura_emprego": false,
-            "seguidores": 31869,
+            "seguidores": 648,
             "conexoes": {
                 "numero_exato": null,
-                "minimo": 500
+                "minimo": 500,
+                "conexoes_obtidas": [
+                    {
+                        "url": "https://www.linkedin.com/in/tiago-aires-paranhos-729745191",
+                        "nome": "Tiago",
+                        "sobrenome": "Aires Paranhos",
+                        "user_id": "ACoAAC0jTdEBGL_uE3NXLDaqKdapoz1bgpoF9L8",
+                        "cargo_atual": "Coordenador de marketing na Poli J\u00c3\u00banior",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C5603AQFAErXouVC0Mg/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=KpVJdvbceGjWEyM6GMGg16Ynzb4srI4263Umb_ZZm6Y",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    }
+                ]
             },
             "habilidades": [
-                "Recrutamento e Sele\u00e7\u00e3o Executive",
-                "Desenvolvimento de pessoas",
-                "Consultoria de RH",
-                "Negocia\u00e7\u00e3o",
-                "Relacionamento com clientes",
-                "Terceiriza\u00e7\u00e3o de servi\u00e7os",
+                "Engenharia",
+                "Project Management",
+                "Ingl\u00c3\u00aas",
+                "SolidWorks",
+                "Desenvolvimento de produtos",
+                "C",
+                "Gest\u00c3\u00a3o de fornecedores",
+                "Product Development",
+                "AutoCAD",
+                "Autodesk Inventor",
                 "Microsoft Excel",
-                "recruiting",
-                "Entrevistas",
-                "Planejamento estrat\u00e9gico",
-                "Recrutamento em tecnologia",
-                "Marketing de motor de busca",
-                "Tecnologia da informa\u00e7\u00e3o",
-                "Recrutamento e Sele\u00e7\u00e3o",
-                "Capta\u00e7\u00e3o de recursos",
-                "Scrum",
-                "Intelig\u00eancia empresarial",
-                "Triagem",
-                "Ciclo completo de recrutamento",
-                "Desenvolvimento de recursos humanos"
+                "Development Projects",
+                "Microsoft Office",
+                "Matlab",
+                "Trabalho em equipe",
+                "Communication",
+                "Alem\u00c3\u00a3o",
+                "CAD",
+                "English",
+                "Planejamento de projetos"
             ],
             "linguas": [
-                "Ingl\u00eas"
+                "English",
+                "Portuguese",
+                "German"
             ],
             "cursos_feitos": [],
-            "premios": [
-                {
-                    "nome": "Manpower Perm Cup (1\u00b0 lugar)",
-                    "instituicao": null,
-                    "descricao": "Recrutadora que proporcionou o maior faturamento de vagas entre as linhas de neg\u00f3cio (Staffing / Experis / Trade) no Manpowergroup.",
-                    "data": {
-                        "mes": 11,
-                        "ano": 2017
-                    }
-                },
-                {
-                    "nome": "Manpower Perm Cup (1\u00b0 lugar)",
-                    "instituicao": null,
-                    "descricao": "Recrutadora que proporcionou o maior faturamento de vagas entre as linhas de neg\u00f3cio (Staffing / Experis / Trade) no Manpowergroup.",
-                    "data": {
-                        "mes": 2,
-                        "ano": 2018
-                    }
-                },
-                {
-                    "nome": "Manpower Perm Cup (1\u00b0 lugar)",
-                    "instituicao": null,
-                    "descricao": "Recrutadora que proporcionou o maior faturamento de vagas entre as linhas de neg\u00f3cio (Staffing / Experis / Trade) no Manpowergroup.",
-                    "data": {
-                        "mes": 4,
-                        "ano": 2018
-                    }
-                },
-                {
-                    "nome": "Copa Latam Mix",
-                    "instituicao": null,
-                    "descricao": "Quem mais conseguiu cobrir ou operar servi\u00e7os vendidos.\nGanhadora exclusiva da linha de neg\u00f3cios Experis Brasil.",
-                    "data": {
-                        "mes": 6,
-                        "ano": 2018
-                    }
-                },
-                {
-                    "nome": "Manpower Perm Cup (1\u00b0 lugar)",
-                    "instituicao": null,
-                    "descricao": "Recrutadora que proporcionou o maior faturamento de vagas entre as linhas de neg\u00f3cio (Staffing / Experis / Trade) no Manpowergroup.",
-                    "data": {
-                        "mes": 8,
-                        "ano": 2018
-                    }
-                },
-                {
-                    "nome": "Manpower Perm Cup Trimestral ( 1\u00ba lugar )",
-                    "instituicao": "Ganhadora do 3\u00ba trimestre de 2018",
-                    "descricao": "Recrutadora que proporcionou o maior faturamento de vagas no trimestre entre as linhas de neg\u00f3cio (Staffing / Experis / Trade) no Manpowergroup.",
-                    "data": {
-                        "mes": 9,
-                        "ano": 2018
-                    }
-                },
-                {
-                    "nome": "Manpower Perm Cup (1\u00b0 lugar)",
-                    "instituicao": null,
-                    "descricao": "Recrutadora que proporcionou o maior faturamento de vagas entre as linhas de neg\u00f3cio (Staffing / Experis / Trade) no Manpowergroup.",
-                    "data": {
-                        "mes": 9,
-                        "ano": 2018
-                    }
-                },
-                {
-                    "nome": "Premia\u00e7\u00e3o PERM CUP ANUAL - Manpowergroup",
-                    "instituicao": null,
-                    "descricao": "Uma das recrutadoras que proporcionou maior faturamento para companhia em 2018.\n\n\n",
-                    "data": {
-                        "mes": 1,
-                        "ano": 2019
-                    }
-                }
-            ],
+            "premios": [],
             "estudos": [
                 {
-                    "instituicao": "Universidade Paulista",
-                    "formacao": "Gradua\u00e7\u00e3o em Psicologia ",
-                    "tilulo_obtido": "UNIP",
+                    "instituicao": "Escola Polit\u00c3\u00a9cnica da USP ",
+                    "formacao": "Mechatronic",
+                    "tilulo_obtido": "Engineering",
                     "descricao": null,
                     "periodo": {
                         "inicio": {
                             "mes": null,
-                            "ano": 2010
+                            "ano": 2011
                         },
                         "fim": {
+                            "mes": null,
+                            "ano": 2016
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Technische Universit\u00c3\u00a4t Darmstadt",
+                    "formacao": "Engenharia Mec\u00c3\u00a2nica",
+                    "tilulo_obtido": "Mestrado",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
                             "mes": null,
                             "ano": 2014
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2016
                         }
                     }
                 },
                 {
-                    "instituicao": "IELS Malta - Institute of English Language Studies",
-                    "formacao": null,
-                    "tilulo_obtido": "General English Course",
-                    "descricao": null,
+                    "instituicao": "Funda\u00c3\u00a7\u00c3\u00a3o Getulio Vargas",
+                    "formacao": "Project Manager",
+                    "tilulo_obtido": "PEC",
+                    "descricao": "The course covers the different managerial processes applicable to projects, programs and portfolios and explored in the norms of the Project Management Institute (PMI), but is not limited to them, aiming to broaden the managerial repertoire in the conditions of our country. Aims at the practical application of techniques and methods.",
                     "periodo": {
                         "inicio": {
                             "mes": null,
-                            "ano": 2019
+                            "ano": 2018
                         },
                         "fim": {
                             "mes": null,
-                            "ano": 2019
-                        }
-                    }
-                },
-                {
-                    "instituicao": "Escola Conquer",
-                    "formacao": null,
-                    "tilulo_obtido": "Curso de Orat\u00f3ria",
-                    "descricao": null,
-                    "periodo": {
-                        "inicio": {
-                            "mes": null,
-                            "ano": 2020
-                        },
-                        "fim": {
-                            "mes": null,
-                            "ano": 2020
+                            "ano": 2018
                         }
                     }
                 }
             ],
             "experiencia_profissional": [
                 {
-                    "instituicao": "Banco Nossa Caixa S.A.",
-                    "cargo": "Menor Aprendiz",
-                    "descricao": null,
+                    "instituicao": "PET Mecatr\u00c3\u00b4nica - POLI USP",
+                    "cargo": "Membro",
+                    "descricao": "O grupo PET \u00c3\u00a9 fundamentado sobre um trip\u00c3\u00a9 que engloba Pesquisa, Ensino e Extens\u00c3\u00a3o. Dentro do grupo puder participar de projetos diversos, abaixo alguns projetos que considero de maiores relev\u00c3\u00a2ncias:\n\n* Simp\u00c3\u00b3sio de Engenharia Mecatr\u00c3\u00b4nica: Tinha como intuito levar um pouco mais da mercado de trabalho do engenheiro mecatr\u00c3\u00b4nica para os alunos do curso na EPUSP.  O projeto cresceu e em 2013, em conjunto com o CAM - Centro Acad\u00c3\u00aamico Mec\u00c3\u00a2nica e Mecatr\u00c3\u00b4nica - Poli USP foi criado a SEMOV (http://cam.poli.usp.br/semov/)\n\n*Caf\u00c3\u00a9 filos\u00c3\u00b3fico: Dentro desse projeto reun\u00c3\u00adamos algumas pessoas, membros e n\u00c3\u00a3o membros, para discutir o valor e o papel do engenheiro na sociedade. \n\n*EAEM - Escola Avan\u00c3\u00a7ada de Engenharia Mecatr\u00c3\u00b4nica: Durante uma semana alunos do ensino m\u00c3\u00a9dio viviam dentro do campus da USP. Os alunos selecionados para participar do programa ficam alujados no CEPE-USP e tem aulas com os professores do curso de engenharia da Escola Polit\u00c3\u00a9cnica da USP. Os membros dos PET s\u00c3\u00a3o os respons\u00c3\u00a1veis por toda a organiza\u00c3\u00a7\u00c3\u00a3o do evento.",
                     "periodo": {
                         "inicio": {
-                            "mes": 10,
-                            "ano": 2007
+                            "mes": 2,
+                            "ano": 2012
                         },
                         "fim": {
-                            "mes": 10,
-                            "ano": 2009
+                            "mes": 8,
+                            "ano": 2013
                         }
                     }
                 },
                 {
-                    "instituicao": "Mazzatech Systems & Outsourcing",
-                    "cargo": "Tech Recruiter",
-                    "descricao": "Participa\u00e7\u00e3o da equipe de recrutamento e sele\u00e7\u00e3o, realizando an\u00fancios de vagas, defini\u00e7\u00e3o do perfil junto aos clientes, triagem de curr\u00edculos, entrevistas presenciais, aplica\u00e7\u00f5es de testes psicol\u00f3gicos e t\u00e9cnicos, elabora\u00e7\u00e3o de parecer das entrevistas e acompanhamento da evolu\u00e7\u00e3o at\u00e9 a finaliza\u00e7\u00e3o do mesmo.\nRespons\u00e1vel por diversas demandas de vagas e perfis da \u00e1rea de TI. \nTendo como foco as principais tecnologias: .Net, C#, VB6, Java, PHP, Delphi, Testes, UML, BI, ERP\u2019s, Oracle/SQL Server, Web, Redes/Infraestrutura entre outras.\nPrincipais clientes atendidos: Accenture, Allianz Seguros, Andrade Gutierrez, BES, Buscap\u00e9, Carrefour, Magazine Lu\u00edza, Natura, Panco, Pernambucanas, UOL e Valor Econ\u00f4mico.",
+                    "instituicao": "Group of Solid Mechanics and Structural Impact",
+                    "cargo": "Inicia\u00c3\u00a7\u00c3\u00a3o Cientifica",
+                    "descricao": "Projeto de Pesquisa sobre normas de seguran\u00c3\u00a7a veicular quanto ao impacto frontal, com bolsa FAPESP. \n\nO projeto consiste em um estudo e an\u00c3\u00a1lise de diversas normas existentes para avaliar o carro durante uma colis\u00c3\u00a3o frontal.",
                     "periodo": {
                         "inicio": {
-                            "mes": 9,
-                            "ano": 2009
+                            "mes": 8,
+                            "ano": 2013
                         },
                         "fim": {
-                            "mes": 9,
-                            "ano": 2012
-                        }
-                    }
-                },
-                {
-                    "instituicao": "BRQ Digital Solutions",
-                    "cargo": "Tech Recruiter",
-                    "descricao": "Participa\u00e7\u00e3o da equipe de Recrutamento e Sele\u00e7\u00e3o. Alinhamento de perfis buscando entendimentos das necessidades dos clientes, triagem e an\u00e1lise de curr\u00edculos, divulga\u00e7\u00e3o de vagas, entrevistas telef\u00f4nicas e presenciais, entrevistas nos clientes at\u00e9 o fechamento dos processos seletivos.\nRespons\u00e1vel pela condu\u00e7\u00e3o de processos seletivos para \u00e1rea de TI, contando com Analistas de Sistemas, Neg\u00f3cios, Projetos, Infraestrutura, Suporte, Arquiteto de sistemas, Desenvolvedores de Softwares, Analistas de testes, Gerente de projetos entre outros.\nBusca de profissionais que atuam com diversas solu\u00e7\u00f5es de mercado: Microsoft, IBM, Sun, Oracle entre outras.\nVagas para baixa e alta plataforma, linguagens, ferramentas e metodologias variadas.\nCondu\u00e7\u00e3o de processos seletivos para clientes das \u00e1reas: Financeira, Seguros, Telecom, Varejo, E-commerce e energia.",
-                    "periodo": {
-                        "inicio": {
-                            "mes": 9,
-                            "ano": 2012
-                        },
-                        "fim": {
-                            "mes": 9,
+                            "mes": 4,
                             "ano": 2014
                         }
                     }
                 },
                 {
-                    "instituicao": "eWave do Brasil",
-                    "cargo": "Tech Recruiter",
-                    "descricao": "Participa\u00e7\u00e3o da equipe de recrutamento e sele\u00e7\u00e3o, sendo ponto focal em S\u00e3o Paulo, reportando para matriz em Curitiba.\nRealizava o levantamento de perfil junto aos clientes, divulga\u00e7\u00e3o de vagas, avalia\u00e7\u00e3o de candidatos, entrevistas individuais, por compet\u00eancias e elabora\u00e7\u00e3o de parecer.\nAcompanhamento das entrevistas nos clientes at\u00e9 o fechamento dos processos.\nContrata\u00e7\u00e3o de profissionais com foco em arquitetura de solu\u00e7\u00f5es/Middleware: IBM, Oracle e Microsoft. Atua\u00e7\u00e3o com outras posi\u00e7\u00f5es de Java, .Net, Mobile, PHP e Delphi.\nPrincipais clientes atendidos: Scania, Sem Parar, Brasil Prev, EMC, Ferrero, Serasa, SKY, Tribanco e SEBRAE.\nContrata\u00e7\u00f5es para f\u00e1brica de Software em S\u00e3o Paulo, tendo apoio da \u00e1rea t\u00e9cnica.\nContrata\u00e7\u00f5es para \u00e1reas administrativas internas em S\u00e3o Paulo: Recursos Humanos, Departamento pessoal, Comercial, Marketing e atendimento.\nApoio no recrutamento e sele\u00e7\u00e3o de profissionais para outros estados: Curitiba, Belo Horizonte, Rio de Janeiro, Bras\u00edlia e Porto Alegre.\nPremia\u00e7\u00f5es e Reconhecimentos: Meta 2015 conclu\u00edda com sucesso no time de R&S - Viagem para Argentina.",
+                    "instituicao": "J. Assy",
+                    "cargo": "Estagi\u00c3\u00a1rio",
+                    "descricao": "Iniciar o desenvolvimento de um projeto para sensoriamento de plantadeira na agricultura de precis\u00c3\u00a3o. \nDesenvolver e coordenar um projeto desde a sua concep\u00c3\u00a7\u00c3\u00a3o at\u00c3\u00a9 os primeiros prot\u00c3\u00b3tipos para levar a campo para testes. \nComo estagiaria j\u00c3\u00a1 iniciei o trabalho em desenvolvimento e gerenciamento de projeto, sendo respons\u00c3\u00a1vel por definir as etapas do projeto, testes necess\u00c3\u00a1rios, tecnologia utilizada, aprimoramento da tecnologia para aplicar ao projeto, desenvolvimento da primeira vers\u00c3\u00a3o do software embarcado e algumas vers\u00c3\u00b5es de hardware para o sistema embarcado.",
                     "periodo": {
                         "inicio": {
-                            "mes": 9,
-                            "ano": 2014
+                            "mes": 5,
+                            "ano": 2016
                         },
                         "fim": {
-                            "mes": 9,
-                            "ano": 2015
+                            "mes": 12,
+                            "ano": 2016
                         }
                     }
                 },
                 {
-                    "instituicao": "ManpowerGroup",
-                    "cargo": "Talent Acquisition Specialist",
-                    "descricao": "Atua\u00e7\u00e3o na linha de neg\u00f3cios Experis (Posi\u00e7\u00f5es em Tech, Finan\u00e7as e Engenharia).\n\nRespons\u00e1vel por todo ciclo de recrutamento e sele\u00e7\u00e3o: alinhamento das expectativas do cliente, estrat\u00e9gia de recrutamento atrav\u00e9s de hunting, divulga\u00e7\u00e3o de vagas em sites espec\u00edficos, m\u00eddias sociais e networking.\nEntrevistas pessoais, por Skype e screening telef\u00f4nico.\nMapeamento de mercado.\nPosi\u00e7\u00f5es de tecnologia: Front-end, Back-end, Python, .Net, Java, C++, PHP, Mobile (Android e iOS), Scrum, BigData, Business Intelligence, Infraestrutura, Redes/Network, Digital, Seguran\u00e7a da informa\u00e7\u00e3o, Arquitetura de solu\u00e7\u00f5es.\nExecutive: R&S especializado (m\u00e9dio e alto n\u00edvel) para as \u00e1reas de Engenharia, Finan\u00e7as, Marketing e Vendas.\nAtua\u00e7\u00e3o como Team Leader, sendo figura de refer\u00eancia para o time de R&S. Orientando sobre os processos da \u00e1rea, estrat\u00e9gias de sele\u00e7\u00e3o e divis\u00e3o das vagas. \n \nPrincipais projetos: Participa\u00e7\u00e3o do projeto Ol\u00edmpico Rio 2016, Projeto Santoro Capgemini.\n\nPremia\u00e7\u00f5es e Reconhecimentos:\n\nManpower Perm Cup - 1\u00b0 lugar (2017, 2018, 2019) - Recrutadora que proporcionou o maior faturamento de vagas entre as linhas de neg\u00f3cios.\n\nPremia\u00e7\u00e3o Perm Cup Anual: Uma das recrutadoras que proporcionou maior faturamento para companhia em 2018.\n\nCopa Latam Mix Manpowergroup 2018 \u2013 Funcion\u00e1ria que mais conseguiu cobrir ou operar servi\u00e7os vendidos na linha de neg\u00f3cios Experis Brasil.",
+                    "instituicao": "J. Assy",
+                    "cargo": "Engenheiro de desenvolvimento de produtos",
+                    "descricao": "Continua\u00c3\u00a7\u00c3\u00a3o e aprimoramento do projeto iniciado no per\u00c3\u00adodo de est\u00c3\u00a1gio. \nDar continuidade ao desenvolvimento, com uma maior coordena\u00c3\u00a7\u00c3\u00a3o de equipe e de projeto. \nDesenvolvimento de testes para verificar a robustez eletr\u00c3\u00b4nica e mec\u00c3\u00a2nica do produto, assim como pesquisa e desenvolvimento de patente. \n\nExperiencia em coordenar produto internacional - dentre as fun\u00c3\u00a7\u00c3\u00b5es destaca-se:\n* Compreens\u00c3\u00a3o do mercado externo, para atender melhor as necessidades de cada mercado;\n* Reuni\u00c3\u00b5es ministradas em ingl\u00c3\u00aas\n* Viagens para os EUA para acompanhar o produto em campo\n\nExperiencia em implementa\u00c3\u00a7\u00c3\u00a3o de IPC A-610 para melhoria da qualidade de fabrica\u00c3\u00a7\u00c3\u00a3o de eletr\u00c3\u00b4nicos\n\nCompreens\u00c3\u00a3o de processo de fabrica\u00c3\u00a7\u00c3\u00a3o de eletr\u00c3\u00b4nicos e verifica\u00c3\u00a7\u00c3\u00a3o de qualidade",
                     "periodo": {
                         "inicio": {
+                            "mes": 1,
+                            "ano": 2017
+                        },
+                        "fim": {
                             "mes": 11,
-                            "ano": 2015
-                        },
-                        "fim": {
-                            "mes": 10,
                             "ano": 2019
                         }
                     }
                 },
                 {
+                    "instituicao": "MEI F\u00c3\u00a1cil",
+                    "cargo": "Product Manager",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": 11,
+                            "ano": 2019
+                        },
+                        "fim": null
+                    }
+                },
+                {
                     "instituicao": "Neon",
-                    "cargo": "Tech Recruiter / Talent Acquisition ",
-                    "descricao": "A Neon \u00e9 uma fintech brasileira, fundada em 2016, que tem a miss\u00e3o de unir tecnologia e design para redesenhar e simplificar a experi\u00eancia financeira das pessoas. \nEm 2019 fomos eleitos como a 4\u00aa melhor LinkedIn Top Startup para trabalhar no Brasil.\n\nParticipa\u00e7\u00e3o do time de Talent Acquisition com foco nas posi\u00e7\u00f5es de Tecnologia, envolvendo as \u00e1reas de Mobile, Sustenta\u00e7\u00e3o, Desenvolvimento, Engenharia, Arquitetura, Infraestrutura e Dados.\nParceria com gerentes das \u00e1reas para avalia\u00e7\u00e3o t\u00e9cnica e fit cultural dos candidatos.",
+                    "cargo": "Product Manager",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": 12,
+                            "ano": 2019
+                        },
+                        "fim": null
+                    }
+                }
+            ],
+            "voluntariado": [],
+            "projetos": []
+        },
+        {
+            "url": "https://www.linkedin.com/in/patricksigrist",
+            "dados_obtidos": true,
+            "nome": "Patrick",
+            "sobrenome": "Sigrist",
+            "user_id": "ACoAAAM43mYBI_5hQ5oChVHPsHukq0-bPfV2q0g",
+            "cargo_atual": "Co-Founder at Nomad, Founder of iFood",
+            "localizacao_atual": "S\u00c3\u00a3o Paulo, S\u00c3\u00a3o Paulo, Brazil",
+            "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQGifAyWFrojmA/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=8PsTXDyyXwWT7dGalKAZqdNGU9Ljx8HVVoKnIV6vSjY",
+            "plano_de_fundo": "https://media-exp1.licdn.com/dms/image/C5616AQHTZxR2XwoGUA/profile-displaybackgroundimage-shrink_350_1400/0?e=1602115200&v=beta&t=12V_VQRU001PYKgOzywIFY8Ouzn49wMqeOvHoafiCsE",
+            "sobre": "Creator and Founder of iFood, is an entrepreneur that devoted the past 20 years to the Brazilian startup ecosystem. Partner founder and investor at a couple of other successful startups, is actively involved in his businesses with a very successful founder, CEO, advisor, investor and M&A track record. \n\nAfter making one of the Brazilian greatest internet company and exit, lived in Palo Alto, for 2 years and decided to return to Brazil for a greater challenge: Nomad, the first US Bank for Brazilians!",
+            "premium": false,
+            "influenciador": false,
+            "procura_emprego": false,
+            "seguidores": 1650,
+            "conexoes": {
+                "numero_exato": null,
+                "minimo": 500,
+                "conexoes_obtidas": [
+                    {
+                        "url": "https://www.linkedin.com/in/fspina",
+                        "nome": "Felipe",
+                        "sobrenome": "Spina",
+                        "user_id": "ACoAAABTZwwBV3vKp0oN3oqbYiat19USdRXKSEA",
+                        "cargo_atual": "Partner | Head of Growth at Distrito",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4E03AQEWYUAdnqeOZQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=ZPUCmFlEHfz6PAGfEO_ogQL3LNQmAGmI7tPO1JX4gJQ",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/cintya-rasa-900064114",
+                        "nome": "Cintya",
+                        "sobrenome": "Rasa",
+                        "user_id": "ACoAABx8BhABRi8Ew_HeOfLkB20QzF3UdNSMec4",
+                        "cargo_atual": "Community Manager | Startups | Innovation",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQFrQF6J7eU4BA/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=PJuyuFdvyO78ilXqNVeLHhRVNBi1WRPfttY8DMkTKDg",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/filipe-portugal-49801193",
+                        "nome": "Filipe",
+                        "sobrenome": "Portugal",
+                        "user_id": "ACoAABPBynQB4VutoENIAUXzGF_07bj00y0-T5I",
+                        "cargo_atual": "Investments at Canary",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQGVFN_ql2wnag/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=qXlLenQNenFOU0Gl-wnqdbeoYSEkFV6sCjk4cQcxbLw",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/rodrigomfogaca",
+                        "nome": "Rodrigo",
+                        "sobrenome": "Marino Foga\u00c3\u00a7a",
+                        "user_id": "ACoAAAxwk_gBWlseyJ6lw-WfxVnNZdT2JUTEUTE",
+                        "cargo_atual": "Venture Capital Analyst",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": null,
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/felipe-tena-a5093bb0",
+                        "nome": "Felipe",
+                        "sobrenome": "Tena",
+                        "user_id": "ACoAABehrxwBcIvgPe6l8M4s-bAVn846TOLcgnc",
+                        "cargo_atual": "Investment Banking at Ita\u00c3\u00ba BBA",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQGqwNWsL9nfgg/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=Wks-bRwKRFocxMo9G_B4jJTGoADogeZ7Mks2d9y83Ts",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/mariomarcoccia",
+                        "nome": "M\u00c3\u00a1rio",
+                        "sobrenome": "Franzago Marcoccia",
+                        "user_id": "ACoAABpQEIgBjE0o0ymg2RnFxQPer5Frphqej7U",
+                        "cargo_atual": "Associate Consultant at Bain & Company",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQGUiA0Qv1x2gQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=kSFvne310Sn9p2Pl9_JbTk9zm1pRlUXsDVR1KsykdPU",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/ricardocici",
+                        "nome": "Ricardo",
+                        "sobrenome": "Cici",
+                        "user_id": "ACoAAAiM4GQB91OZwnZAQKfx9mep42yNegMRvvg",
+                        "cargo_atual": "Co-Founder - Confere (we're hiring!) <> Google and VISA startup",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C5603AQH-UDDwvEB0Kg/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=ocfgif_Fvv3zO8F1QYvmvVh2i64nsoi3bIQOeyfK5pU",
+                        "plano_de_fundo": null,
+                        "premium": true,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/gabrielbraga",
+                        "nome": "Gabriel",
+                        "sobrenome": "Braga",
+                        "user_id": "ACoAAAAVwj8B_pblo675tdKDnqd1c8yxO0fOtsM",
+                        "cargo_atual": "Co-founder & CEO at QuintoAndar",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQEB7uDQ3e5fHw/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=B25Tw4OI0KQj7DT7S8FVgnOC6hxQ8nej2WFx6lMBtlw",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/sergiofurio",
+                        "nome": "Sergio",
+                        "sobrenome": "Furio",
+                        "user_id": "ACoAAAA9gZUB4i5tFXMSw4YVOZM7MCzlHhpfFbc",
+                        "cargo_atual": "Founder & CEO at Creditas",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo Area, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4E03AQFvKUsGQsAFDA/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=LjdfX7ezUmSMJuYvdt6JnEejeP6UfJEIQbVqPwUDHs8",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    },
+                    {
+                        "url": "https://www.linkedin.com/in/victor-mesnik-688b2a88",
+                        "nome": "Victor",
+                        "sobrenome": "Mesnik",
+                        "user_id": "ACoAABKtLUgBC63h2ms5PWryVqwGP2ZGzzCmhrU",
+                        "cargo_atual": "Investment Banking at Rothschild",
+                        "localizacao_atual": "S\u00c3\u00a3o Paulo, S\u00c3\u00a3o Paulo, Brazil",
+                        "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQEzpBmZZUVosQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=dkgYzo4u_FwkqWSQbd20LX71NQ5rCq0Hr3xyuzKfbE0",
+                        "plano_de_fundo": null,
+                        "premium": false,
+                        "influenciador": false,
+                        "procura_emprego": false
+                    }
+                ]
+            },
+            "habilidades": [
+                "Online Advertising",
+                "Strategic Planning",
+                "Mergers & Acquisitions",
+                "Marketing Strategy",
+                "Venture Capital",
+                "Business Planning",
+                "Entrepreneurship",
+                "Management Consulting",
+                "Business Strategy",
+                "Market Planning",
+                "Start-ups",
+                "Negotiation",
+                "Strategic Partnerships",
+                "Strategy",
+                "International Business"
+            ],
+            "linguas": [
+                "Portuguese",
+                "English",
+                "Spanish",
+                "French"
+            ],
+            "cursos_feitos": [],
+            "premios": [],
+            "estudos": [
+                {
+                    "instituicao": "Col\u00c3\u00a9gio Santa Cruz",
+                    "formacao": null,
+                    "tilulo_obtido": null,
+                    "descricao": null,
+                    "periodo": null
+                },
+                {
+                    "instituicao": null,
+                    "formacao": "Engenharia Florestal",
+                    "tilulo_obtido": "Bachelor",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 1988
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 1992
+                        }
+                    }
+                },
+                {
+                    "instituicao": null,
+                    "formacao": "Spatial Data Analisys",
+                    "tilulo_obtido": "Master\u00e2\u20ac\u2122s Degree",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 1995
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 1997
+                        }
+                    }
+                },
+                {
+                    "instituicao": "FIA - Funda\u00c3\u00a7\u00c3\u00a3o Instituto de Administra\u00c3\u00a7\u00c3\u00a3o",
+                    "formacao": "Executivo Internacional",
+                    "tilulo_obtido": "Master of Business Administration (M.B.A.)",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2004
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2005
+                        }
+                    }
+                },
+                {
+                    "instituicao": "University of California, Berkeley, Haas School of Business",
+                    "formacao": null,
+                    "tilulo_obtido": "Venture Capital Executive Program",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2015
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2015
+                        }
+                    }
+                }
+            ],
+            "experiencia_profissional": [
+                {
+                    "instituicao": "iFood",
+                    "cargo": "Co-Founder and CEO",
+                    "descricao": "Disk Cook (the precursor and mother of iFood) was a high end full-service food delivery and logistic platform, where people ordered from the best restaurants in town and really tracked their order in real time using probably the coolest food delivery APP on market. Started as an offline channel (call center), Disk Cook became famous for displaying the best quality restaurants delivery system. It is responsible for creating and transferring most of its system and know-how to iFood. In 2014, iFood decided to buy its mother, transforming Disk Cook in a premium service offering exclusive restaurants focused on more demanding customers.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 1999
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2015
+                        }
+                    }
+                },
+                {
+                    "instituicao": "iFood S/A",
+                    "cargo": "Founder, M&A and Chairman of the Board",
+                    "descricao": "iFood is the biggest online restaurant marketplace for food ordering in Latam and one of the biggest in the world. The concept was idealized inside Disk Cook in 2006, and launched in 2011 with the investment of Warehouse VC. In 2012, Movile Internet invested and joined the group. In 2013 iFood was already the marked leader in the country with a growth rate much higher than any other player. After creating and bootstrapping the company, as the M&A head, I was responsible to merge with Just-Eat and to acquire 5 other companies in the segment. iFood was transformed to become the biggest Latam player and one of the best operated delivery platforms in the world. For sure one of the first Brazilian Unicorn!",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2007
+                        },
+                        "fim": {
+                            "mes": 3,
+                            "ano": 2015
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Rapiddo",
+                    "cargo": "Co-Founder",
+                    "descricao": "RapiDDo, acquired by iFood was a last mile logistic platform, concentrated on delivering documents or other goods in a very short time frame with real time tracking. It was created based on the know-how accumulated from the DiskCook dispatch and tracking system. The company is rapidly increasing and promises to change the SDD (Same Day Delivery) market.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2014
+                        },
+                        "fim": {
+                            "mes": 2,
+                            "ano": 2015
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Cheftime",
+                    "cargo": "Co-Founder",
+                    "descricao": "Cheftime, acquired by GPA, is the best food kit you can get to cook your own meal! Having recipes from the best Chefs in town, it portions all necessary ingredients you need to have a great cooking experience and enjoy a relaxing time with someone you cherish. Just order something tasteful you want to cook and you\u00e2\u20ac\u2122ll get it in no time.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2014
+                        },
+                        "fim": {
+                            "mes": 1,
+                            "ano": 2015
+                        }
+                    }
+                },
+                {
+                    "instituicao": "BestTables",
+                    "cargo": "Investor",
+                    "descricao": "BestTables is a restaurant table booking system from Europe that began in Brazil in partnership with DiskCook. It\u00e2\u20ac\u2122s one of the best product in this field and is now  part of TripAdvisor. As an investor, the main goal was to help BestTables launch and succeed in the Brazilian market.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2014
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2015
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Confident Cannabis",
+                    "cargo": "Investor",
+                    "descricao": "Confident Cannabis is bringing transparency to legal cannabis through technology. Building the biggest real-time database of cannabis in the world by offering free software to cannabis testing labs. CC empower producers to communicate their quality to sell more at higher prices, enable retailers to rate their supply to make better purchasing decisions, and help consumers understand product ingredients so they can buy with confidence.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2015
+                        },
+                        "fim": {
+                            "mes": 2,
+                            "ano": 2015
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Banco Neon",
+                    "cargo": "Partner | Board Member",
+                    "descricao": "Like a Bank, but completely different!\nDo you like your bank? Neon is here to change that. Just try to open an account with Neon (yes, it's digital) and you'll understand the concept, see you there...",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2015
+                        },
+                        "fim": null
+                    }
+                },
+                {
+                    "instituicao": "Audacy Corporation",
+                    "cargo": "Investor",
+                    "descricao": "In the past 5 years, unprecedented expansion of satellite data and services has led to industry growth exceeding 35% a year. Ground based satellite communications solutions have reached their limits. Audacy was acquired by Electro Optic Systems Holdings Ltd. of Australia (EOS) and was a fundamental enabler providing data performance for satellite payload tasking and payload data downlinking beyond anything previously available.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2015
+                        },
+                        "fim": {
+                            "mes": 1,
+                            "ano": 2015
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Lumia Capital",
+                    "cargo": "Advisory Board Member",
+                    "descricao": "Advisory Council member. Providing guidance for global expansion to Lumia Capital's portfolio companies.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": 5,
+                            "ano": 2016
+                        },
+                        "fim": null
+                    }
+                },
+                {
+                    "instituicao": "Yellow Ventures",
+                    "cargo": "Founder | Partner",
+                    "descricao": "Seed-stage Venture Capital in Brazil\nwww.yellowventures.com",
                     "periodo": {
                         "inicio": {
                             "mes": 10,
+                            "ano": 2016
+                        },
+                        "fim": null
+                    }
+                },
+                {
+                    "instituicao": "Nomad",
+                    "cargo": "Co-Founder",
+                    "descricao": "Nomad is the first US Digital Bank offering global financial services for the Brazilian mass affluent. For us, every one should have access to the best financial services in the world and be able to open a regulated account in USD. \nA Nomad is someone who travels, who lives. Someone who discovers and learns with the support of technology.\nA nomad accumulates spiritual, cultural, and personal riches. Thinks in English, in dollars.\nA Nomad knows what is important and understands that is good to have some of their money in dollars.\nFor security. For practicality. And now, because it is the smart thing to do. \nBe Nomad, Be Global",
+                    "periodo": {
+                        "inicio": {
+                            "mes": 1,
                             "ano": 2019
                         },
                         "fim": null

@@ -83,12 +83,15 @@ class ProfilesLinkedinSpider(InitSpider):
 
     request_retries = {}
 
-    def __init__(self, username, password, max_page_requests, max_connection_pages, logs_path, cookies_path, input_excel_path, output_json_path):
+    current_session_connection_pages_parsed_per_profile = {}
+
+    def __init__(self, username, password, max_page_requests, max_connection_pages, logs_path, cookies_path, input_excel_path, output_json_path, ensure_ascii):
         self.username = username
         self.password = password
         self.current_date = get_date()
         self.max_page_requests = max_page_requests
         self.max_connection_pages = max_connection_pages
+        self.ensure_ascii = ensure_ascii
         self.parse_cookies(cookies_path)
         self.input_excel_path = input_excel_path
         self.output_json_path = output_json_path
@@ -130,12 +133,13 @@ class ProfilesLinkedinSpider(InitSpider):
 
     def load_initial_requests(self):
         if self.verify_excel_links() is not None: return not None
-        self._postinit_reqs = list(self.start_profiles_requests())[:self.max_profile_pages]
+        self.load_profiles_requests()
+        self._postinit_reqs = self.profiles_requests.pop(0)
         return None
 
     def verify_excel_links(self):
         if len(self.profiles_urls) == 0:
-            errorprint('Não há links de empresa no Excel.\n')
+            checkprint('Todos os links de perfis no Excel já passaram pelo scraping!\nCaso queira novamente obter dados de seus links, entre em %s e apague o valor "Sim" das linhas de tais links.\n' % self.input_excel_path)
             return not None
         return None
 
@@ -254,7 +258,14 @@ class ProfilesLinkedinSpider(InitSpider):
         link = links_sheet['C%i' % line].value
 
         while link is not None:
-            self.profiles_urls.append(link)
+            
+            empty_cell = False
+            for column in "D":
+                if links_sheet['%s%i' % (column, line)].value == None:
+                    empty_cell = True
+
+            if links_sheet['B%i' % line].value != 'Sim' or empty_cell:
+                self.profiles_urls.append(link)
 
             line += 1
             link = links_sheet['C%i' % line].value
@@ -344,12 +355,16 @@ class ProfilesLinkedinSpider(InitSpider):
     def start_requests(self):
         return iterate_spider_output(self.init_request())
 
-    def start_profiles_requests(self):
+    def load_profiles_requests(self):
+        self.profiles_requests = []
         for url in self.profiles_urls:
-            yield self.cookie_request(
-                url=url,
-                callback=self.parse_profile
+            self.profiles_requests.append(
+                self.cookie_request(
+                    url=url,
+                    callback=self.parse_profile
+                )
             )
+        self.profiles_requests = self.profiles_requests[:self.max_profile_pages]
 
     def calculate_max_profile_pages_to_access(self):
         self.max_profile_pages = max(
@@ -364,8 +379,19 @@ class ProfilesLinkedinSpider(InitSpider):
             0
         )
 
-    def get_employees_search_elements(self, response):
+    def profile_counter(self):
+        self.current_session_profiles_parsed += 1
+        return {
+            'counter': '(%i/%i) ' % (self.current_session_profiles_parsed, len(self.profiles_urls)),
+            'new_request': self.profiles_requests.pop(0) if len(self.profiles_requests) > 0 else None
+        }
 
+    def find_user_by_id(self, user_id):
+        for profile in self.output_json_data['perfis']:
+            if profile['user_id'] == user_id:
+                return profile
+
+    def get_search_data(self, response):
         body = str(response.body.decode('utf8'))
 
         birthIndex = body.rindex('&quot;com.linkedin.voyager.search.BlendedSearchCluster&quot;')
@@ -388,9 +414,10 @@ class ProfilesLinkedinSpider(InitSpider):
         #     convert_unicode(body[start:end], unicode_dict)
         # )
 
-        blendedSearchClusterCollection = parse_text_to_json(body[start:end], unicode_dict, 'aa.json')['data']['elements']
+        return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')
 
-        for blendedSearchCluster in blendedSearchClusterCollection:
+    def get_search_results(self, search_data):
+        for blendedSearchCluster in search_data['data']['elements']:
             if blendedSearchCluster['type'] == 'SEARCH_HITS':
                 return blendedSearchCluster['elements']
 
@@ -444,12 +471,41 @@ class ProfilesLinkedinSpider(InitSpider):
 
         return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')
 
+    def get_member_badges_json_dictionary(self, response):
+        body = str(response.body.decode('utf8'))
+
+        birthIndex = body.rindex('com.linkedin.voyager.identity.profile.MemberBadges')
+        start = body[:birthIndex].rindex('<code ')
+        end = body[start:].index('</code>') + start
+
+        while (not body[start:end].startswith('{')) and start < end:
+            start += 1
+
+        while (not body[start:end].endswith('}')) and start < end:
+            end -= 1
+
+        if start >= end:
+            whiteprint('ERRO em get_member_badges_json_dictionary: não foi possivel obter dados do usuário em %s' % response.url)
+            return None
+
+        # save_to_file(
+        #     response.url.split('/')[4] + '.html',
+        #     convert_unicode(body[start:end], unicode_dict)
+        # )
+
+        return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')
+
     def get_object_by_type(self, included_array, obj_type):
         array = []
         for obj in included_array:
             if obj['$type'] == obj_type:
                 array.append(obj)
         return array
+
+    def get_object_by_user_id(self, array, user_id):
+        for obj in array:
+            if obj['entityUrn'].split(':')[-1] == user_id:
+                return obj
 
     def compare_employees(self, employee1, employee2):
         if ('url' in employee1) and ('url' in employee2):
@@ -477,11 +533,28 @@ class ProfilesLinkedinSpider(InitSpider):
             'fim': self.convert_date((date_range['end']) if ('end' in date_range) else None)
         } if date_range is not None else None
 
-    def format_conections(self, connections):
+    def stringify_date(self, date):
+        return '%04i-%02i' \
+            % (
+                0 if (date is None) or (date['ano'] is None) else date['ano'],
+                0 if (date is None) or (date['mes'] is None) else date['mes']
+            )
+
+    def stringify_date_range(self, date_range):
+        return self.stringify_date(None if date_range is None else date_range['inicio'])
+
+    def format_connections(self, connections):
         return {
             'numero_exato': connections if connections != 500 else None,
-            'minimo': connections if connections == 500 else None
+            'minimo': connections if connections == 500 else None,
+            'conexoes_obtidas': []
         }
+
+    def get_picture_url(self, image_data):
+        if image_data is None: return None
+        start = image_data['rootUrl']
+        end = sorted(image_data['artifacts'], key=lambda x: x['width'])[-1]['fileIdentifyingUrlPathSegment']
+        return start + end
 
     # Isso pode ser ativado quando a url não começa com www:
     def check_response_status(self, response):
@@ -495,19 +568,17 @@ class ProfilesLinkedinSpider(InitSpider):
         self.profiles_parsed += 1
         self.update_current_log()
 
-        self.current_session_profiles_parsed += 1
-
         user_dict = {
             'url': response.url,
             'dados_obtidos': False
         }
 
-        counter = '(%i/%i) ' % (self.current_session_profiles_parsed, len(self.profiles_urls))
-
         # Se página não tiver a seguinte string, ela provavelmente foi carregada errada:
         if 'linkedin.com/in/' not in str(response.url):
-            errorprint('%sEste não é um link de um perfil: %s\n' %
-                       (counter, response.url))
+            counter = self.profile_counter()
+            if counter['new_request'] is not None:
+                yield counter['new_request']
+            errorprint('%sEste não é um link de um perfil: %s\n' % (counter['counter'], response.url))
 
         # Se página não tiver a seguinte string, ela provavelmente
         # foi carregada errada, ou não é uma página válida:
@@ -518,18 +589,24 @@ class ProfilesLinkedinSpider(InitSpider):
             self.request_retries[str(response.url)] = retries + 1
 
             if retries < 1:
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
                 warnprint(
-                    '%sErro no parsing de %s\nAdicionando novamente à fila de links...\n' 
-                    % (counter, response.url)
+                    '%sErro no parsing de %s\nAdicionando novamente à fila de links...\n' % (counter['counter'], response.url)
                 )
                 self.profiles_urls.append(response.url)
-                return self.cookie_request(
+                yield self.cookie_request(
                     url=response.url, 
                     callback=self.parse_profile, 
                     dont_filter=True
                 )
+                return None
             else:
-                errorprint('%sEste provavelmente não é um link de um perfil: %s' % (counter, response.url))
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
+                errorprint('%sEste provavelmente não é um link de um perfil: %s' % (counter['counter'], response.url))
 
         else:
 
@@ -569,71 +646,113 @@ class ProfilesLinkedinSpider(InitSpider):
                 if following_json is None:
                     raise ParsingException('Erro com following_json')
 
+                member_badges_json = self.get_member_badges_json_dictionary(response)
+
+                if member_badges_json is None:
+                    raise ParsingException('Erro com member_badges_json')
+
                 user_dict.update({
                     'nome': user_data['firstName'] if 'firstName' in user_data else None,
                     'sobrenome': user_data['lastName'] if 'lastName' in user_data else None,
+                    'user_id': member_badges_json['data']['entityUrn'].split(':')[-1],
                     'cargo_atual': user_data['headline'] if 'headline' in user_data else None,
                     'localizacao_atual': user_data['locationName'] if 'locationName' in user_data else None,
+                    'foto_de_perfil': self.get_picture_url(
+                        None if user_data['profilePicture'] is None \
+                        else user_data['profilePicture']['displayImageReference']['vectorImage']
+                    ),
+                    'plano_de_fundo': self.get_picture_url(
+                        None if user_data['backgroundPicture'] is None \
+                        else user_data['backgroundPicture']['displayImageReference']['vectorImage']
+                    ),
                     'sobre': user_data['summary'] if 'summary' in user_data else None,
+                    'premium': user_data['premium'] if 'premium' in user_data else None,
+                    'influenciador': user_data['influencer'] if 'influencer' in user_data else None,
+                    'procura_emprego': member_badges_json['data']['jobSeeker'],
                     'seguidores': following_json['data']['followersCount'],
-                    'conexoes': self.format_conections(following_json['data']['connectionsCount']),
+                    'conexoes': self.format_connections(following_json['data']['connectionsCount']),
                     'habilidades': [skill['name'] for skill in skills_data],
                     'linguas': [language['name'] for language in languages_data],
                     'cursos_feitos': [course['name'] for course in courses_data],
-                    'premios': [
-                        {
-                            'nome': honor['title'] if 'title' in honor else None,
-                            'instituicao': honor['issuer'] if 'issuer' in honor else None,
-                            'descricao': honor['description'] if 'description' in honor else None,
-                            'data': self.convert_date(
-                                honor['issuedOn'] if 'issuedOn' in honor else None,
-                            )
-                        } for honor in honors_data
-                    ],
-                    'estudos': [
-                        {
-                            'instituicao': experience['schoolName'] if 'schoolName' in experience else None,
-                            'formacao': experience['fieldOfStudy'] if 'fieldOfStudy' in experience else None,
-                            'tilulo_obtido': experience['degreeName'] if 'degreeName' in experience else None,
-                            'descricao': experience['description'] if 'description' in experience else None,
-                            'periodo': self.convert_date_range(
-                                experience['dateRange'] if 'dateRange' in experience else None
-                            ),
-                        } for experience in education_data
-                    ],
-                    'experiencia_profissional': [
-                        {
-                            'instituicao': experience['companyName'] if 'companyName' in experience else None,
-                            'cargo': experience['title'] if 'title' in experience else None,
-                            'descricao': experience['description'] if 'description' in experience else None,
-                            'periodo': self.convert_date_range(
-                                experience['dateRange'] if 'dateRange' in experience else None
-                            ),
-                        } for experience in positions_data
-                    ],
-                    'voluntariado': [
-                        {
-                            'instituicao': experience['companyName'] if 'companyName' in experience else None,
-                            'papel': experience['role'] if 'role' in experience else None,
-                            'causa': experience['cause'] if 'cause' in experience else None,
-                            'descricao': experience['description'] if 'description' in experience else None,
-                            'periodo': self.convert_date_range(
-                                experience['dateRange'] if 'dateRange' in experience else None
-                            ),
-                        } for experience in volunteer_data
-                    ],
-                    'projetos': [
-                        {
-                            'titulo': project['title'],
-                            'url': project['url'],
-                            'descricao': project['description'],
-                            'periodo': self.convert_date_range(
-                                project['dateRange']
-                            )
-                        } for project in projects_data
-                    ],
+                    'premios': sorted(
+                        [
+                            {
+                                'nome': honor['title'] if 'title' in honor else None,
+                                'instituicao': honor['issuer'] if 'issuer' in honor else None,
+                                'descricao': honor['description'] if 'description' in honor else None,
+                                'data': self.convert_date(
+                                    honor['issuedOn'] if 'issuedOn' in honor else None,
+                                )
+                            } for honor in honors_data
+                        ],
+                        key=lambda x: self.stringify_date(x['data'])
+                    ),
+                    'estudos': sorted(
+                        [
+                            {
+                                'instituicao': experience['schoolName'] if 'schoolName' in experience else None,
+                                'formacao': experience['fieldOfStudy'] if 'fieldOfStudy' in experience else None,
+                                'tilulo_obtido': experience['degreeName'] if 'degreeName' in experience else None,
+                                'descricao': experience['description'] if 'description' in experience else None,
+                                'periodo': self.convert_date_range(
+                                    experience['dateRange'] if 'dateRange' in experience else None
+                                ),
+                            } for experience in education_data
+                        ],
+                        key=lambda x: self.stringify_date_range(x['periodo'])
+                    ),
+                    'experiencia_profissional': sorted(
+                        [
+                            {
+                                'instituicao': experience['companyName'] if 'companyName' in experience else None,
+                                'cargo': experience['title'] if 'title' in experience else None,
+                                'descricao': experience['description'] if 'description' in experience else None,
+                                'periodo': self.convert_date_range(
+                                    experience['dateRange'] if 'dateRange' in experience else None
+                                ),
+                            } for experience in positions_data
+                        ],
+                        key=lambda x: self.stringify_date_range(x['periodo'])
+                    ),
+                    'voluntariado': sorted(
+                        [
+                            {
+                                'instituicao': experience['companyName'] if 'companyName' in experience else None,
+                                'papel': experience['role'] if 'role' in experience else None,
+                                'causa': experience['cause'] if 'cause' in experience else None,
+                                'descricao': experience['description'] if 'description' in experience else None,
+                                'periodo': self.convert_date_range(
+                                    experience['dateRange'] if 'dateRange' in experience else None
+                                ),
+                            } for experience in volunteer_data
+                        ],
+                        key=lambda x: self.stringify_date_range(x['periodo'])
+                    ),
+                    'projetos': sorted(
+                        [
+                            {
+                                'titulo': project['title'],
+                                'url': project['url'],
+                                'descricao': project['description'],
+                                'periodo': self.convert_date_range(
+                                    project['dateRange']
+                                )
+                            } for project in projects_data
+                        ],
+                        key=lambda x: self.stringify_date_range(x['periodo'])
+                    ),
                     'dados_obtidos': True
                 })
+
+                self.current_session_connection_pages_parsed_per_profile[user_dict['user_id']] = 0
+
+                for page in range(self.max_connection_pages):
+                    yield self.cookie_request(
+                        url='https://www.linkedin.com/search/results/people/?facetConnectionOf=%%5B%%22%s%%22%%5D&page=%i' \
+                            % (user_dict['user_id'], page + 1),
+                        priority=1,
+                        callback=self.parse_connections_page
+                    )
 
                 updated = False
 
@@ -647,18 +766,119 @@ class ProfilesLinkedinSpider(InitSpider):
 
                 save_to_file(
                     self.output_json_path,
-                    json.dumps(self.output_json_data, indent=4),
+                    json.dumps(
+                        self.output_json_data, 
+                        indent=4, 
+                        ensure_ascii=self.ensure_ascii
+                    ),
                     dont_print=True
                 )
 
-                checkprint('%sParsing corretamente realizado em %s\n' % (counter, response.url))
+                if self.max_connection_pages == 0:
+                    counter = self.profile_counter()
+                    if counter['new_request'] is not None:
+                        yield counter['new_request']
+                    checkprint('%sParsing corretamente realizado em %s\n' % (counter['counter'], response.url))
 
             except ParsingException:
-                errorprint('%sErro no parsing de %s\n' % (counter, response.url))
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
+                errorprint('%sErro no parsing de %s\n' % (counter['counter'], response.url))
             except Exception as e:
-                errorprint('%sErro grave no parsing de %s: %s\n' % (counter, response.url, e))
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
+                errorprint('%sErro grave no parsing de %s: %s\n' % (counter['counter'], response.url, e))
 
         self.refresh_workbook_profiles_data(user_dict)
+
+    def parse_connections_page(self, response):
+        self.check_response_status(response)
+
+        self.connection_pages_parsed += 1
+        self.update_current_log()
+
+        self.current_session_connection_pages_parsed += 1
+
+        user_id = str(response.url).split('facetConnectionOf=')[-1].split('&page')[0][6:-6]
+
+        self.current_session_connection_pages_parsed_per_profile[user_id] += 1
+
+        profile = self.find_user_by_id(user_id)
+
+        # save_to_file(
+        #     response.url.split('/')[4] + '.html',
+        #     response.body
+        # )
+
+        search_data = self.get_search_data(response)
+
+        search_results = self.get_search_results(search_data)
+        
+        all_member_badges = self.get_object_by_type(
+            search_data['included'], 
+            'com.linkedin.voyager.identity.profile.MemberBadges'
+        )
+        all_mini_profile_data = self.get_object_by_type(
+            search_data['included'], 
+            'com.linkedin.voyager.identity.shared.MiniProfile'
+        )
+
+        if search_results is not None:
+
+            for connection in search_results:
+
+                connection_user_id = connection['targetUrn'].split(':')[-1]
+
+                connection_member_badges = self.get_object_by_user_id(all_member_badges, connection_user_id)
+                connection_mini_profile_data = self.get_object_by_user_id(all_mini_profile_data, connection_user_id)
+
+                connection_data = {
+                    'url': connection['navigationUrl'],
+                    'nome': connection_mini_profile_data['firstName'],
+                    'sobrenome': connection_mini_profile_data['lastName'],
+                    'user_id': connection_user_id,
+                    'cargo_atual': connection_mini_profile_data['occupation'],
+                    'localizacao_atual': connection['subline']['text'],
+                    'foto_de_perfil': self.get_picture_url(connection_mini_profile_data['picture']),
+                    'plano_de_fundo': self.get_picture_url(connection_mini_profile_data['backgroundImage']),
+                    'premium': connection_member_badges['premium'],
+                    'influenciador': connection_member_badges['influencer'],
+                    'procura_emprego': connection_member_badges['jobSeeker']
+                }
+
+                found = False
+                    
+                for existing_connection in profile['conexoes']['conexoes_obtidas']:
+                    if existing_connection['url'] == connection_data['url']:
+                        found = True
+                        existing_connection.update(connection_data)
+
+                if not found:
+                    profile['conexoes']['conexoes_obtidas'].append(connection_data)
+
+            save_to_file(
+                self.output_json_path,
+                json.dumps(
+                    self.output_json_data, 
+                    indent=4, 
+                    ensure_ascii=self.ensure_ascii
+                ),
+                dont_print=True
+            )
+
+            if self.current_session_connection_pages_parsed_per_profile[user_id] == self.max_connection_pages:
+                counter = self.profile_counter()
+                if counter['new_request'] is not None:
+                    yield counter['new_request']
+                checkprint('%sParsing corretamente realizado em %s\n' % (counter['counter'], profile['url']))
+
+        else:
+            counter = self.profile_counter()
+            if counter['new_request'] is not None:
+                yield counter['new_request']
+            errorprint('%sErro no parsing de lista de conexões de %s\n' % (counter['counter'], profile['url']))
 
 
 def get_date():

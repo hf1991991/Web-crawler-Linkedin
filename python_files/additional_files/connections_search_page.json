@@ -1,0 +1,1750 @@
+{
+    "data": {
+        "metadata": {
+            "totalResultDisplayText": {
+                "text": "About 680,000,000 results",
+                "$type": "com.linkedin.voyager.common.TextViewModel"
+            },
+            "searchId": "d13c3e77-6c5f-4c6f-abb6-aa42b6b94ec7",
+            "totalResultCount": 680760864,
+            "origin": "FACETED_SEARCH",
+            "numVisibleResults": 10,
+            "$type": "com.linkedin.voyager.search.BlendedSearchMetadata"
+        },
+        "entityUrn": "urn:li:collectionResponse:578P+XLf56yIoUHe1D3V7laEvR+4hbiAu+zAcwEsl8c=",
+        "elements": [
+            {
+                "extendedElements": [],
+                "elements": [
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:50778611",
+                        "navigationUrl": "https://www.linkedin.com/in/maria-carolina-lacombe-92b00915",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Maria Carolina Lacombe",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "1 shared connection",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+                        "publicIdentifier": "maria-carolina-lacombe-92b00915",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Venture Capital at Valor Capital Group - Hiring! at ValorCapital/Jobs",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "hF1Qz4HwS6yBG0PoZvUehw=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAZC09MB2aucYNpWJhl5O2I3KjTvv-WuyUA",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAZC09MB2aucYNpWJhl5O2I3KjTvv-WuyUA",
+                        "insights": [
+                            {
+                                "type": "MARKETPLACE_SERVICES",
+                                "insightText": {
+                                    "textDirection": "USER_LOCALE",
+                                    "attributes": [
+                                        {
+                                            "start": 0,
+                                            "length": 17,
+                                            "type": "BOLD",
+                                            "$type": "com.linkedin.voyager.common.TextAttribute"
+                                        }
+                                    ],
+                                    "text": "Provides services - Data Reporting, Database Development, Business Analytics",
+                                    "$type": "com.linkedin.voyager.common.TextViewModel"
+                                },
+                                "$type": "com.linkedin.voyager.search.Insight"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:105042899",
+                        "navigationUrl": "https://www.linkedin.com/in/thassyopereira",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Thassyo Pereira",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAZC09MB2aucYNpWJhl5O2I3KjTvv-WuyUA",
+                        "publicIdentifier": "thassyopereira",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "CEO @ Kondado",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "TVwAIO5PSu2OA2i9R/pRfQ=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAAHWs4BiWYFfRKGGYu9a26RjF9s2U0Zl_k",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAAHWs4BiWYFfRKGGYu9a26RjF9s2U0Zl_k",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAB6qajQB7rGLBrEaJhFITYMqdFDiYmV09-Y",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:481998",
+                        "navigationUrl": "https://www.linkedin.com/in/carlodapuzzo",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Carlo Dapuzzo",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "2 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAAHWs4BiWYFfRKGGYu9a26RjF9s2U0Zl_k",
+                        "publicIdentifier": "carlodapuzzo",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Venture Capital",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "KBJGG4FwSqKLdz1Rl/YTcQ=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAACi70rUBdenVLUAaen0HxJf8nz7IgbEHMMM",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAACi70rUBdenVLUAaen0HxJf8nz7IgbEHMMM",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:683397813",
+                        "navigationUrl": "https://www.linkedin.com/in/andr%C3%A9-casmerides-a19a50170",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Andr\u00e9 Casmerides",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "1 shared connection",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAACi70rUBdenVLUAaen0HxJf8nz7IgbEHMMM",
+                        "publicIdentifier": "andr\u00e9-casmerides-a19a50170",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Investment Analyst at Bossa Nova",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "6UoClIo6QVyXxW/yRtpJdw=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAAukYmwBM6aqmTbVPTASUHW2Ma1SdWW3r08",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAAukYmwBM6aqmTbVPTASUHW2Ma1SdWW3r08",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAB6qajQB7rGLBrEaJhFITYMqdFDiYmV09-Y",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:195322476",
+                        "navigationUrl": "https://www.linkedin.com/in/alinebindel",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Aline Bindel",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "1 shared connection",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAAukYmwBM6aqmTbVPTASUHW2Ma1SdWW3r08",
+                        "publicIdentifier": "alinebindel",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Investment Analyst",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "0iUSeTE/Q7CUcrv0t2sG+g=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAA3ddJIB_3JY4XbaWvbg9qCQcJpkU4OyRNE",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAA3ddJIB_3JY4XbaWvbg9qCQcJpkU4OyRNE",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAACDF8VkBEMQKI7xL8awR1WDn3X-rUWhfgLs",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAACFQY4gBe3gwTAsHbxUXGa77QuZJUvUAqj4",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAACmCb-gB-GD8tqDlAb1zCHPKZRrAm7GnnwQ",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:232617106",
+                        "navigationUrl": "https://www.linkedin.com/in/henrique-bredda-46aaa065",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Henrique Bredda",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "4 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAA3ddJIB_3JY4XbaWvbg9qCQcJpkU4OyRNE",
+                        "publicIdentifier": "henrique-bredda-46aaa065",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Portfolio Manager at Alaska Asset Management",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "ff4M4inIRPCKU2M+occyFQ=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAA44r3kBo0afP61uwRyRbBGkMHuA7DXSkUY",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAA44r3kBo0afP61uwRyRbBGkMHuA7DXSkUY",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAADFjSkBCU8xfwsew5edehbDUQON9OiEdbY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAB6qajQB7rGLBrEaJhFITYMqdFDiYmV09-Y",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:238595961",
+                        "navigationUrl": "https://www.linkedin.com/in/guoliva",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Gustavo Oliva",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "2 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAA44r3kBo0afP61uwRyRbBGkMHuA7DXSkUY",
+                        "publicIdentifier": "guoliva",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Associate at Canary",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "9a4Td+wWT1qRC3Q+wXjRGg=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAACbwkNYBVcjq26R71FDI1C2j26OmHnBlagA",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAACbwkNYBVcjq26R71FDI1C2j26OmHnBlagA",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAAsavygBY-O5PXfzKZcybNvsY8ZdyMWV7y8",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAB9CMhYBuirNxgXEFc6JnIz_uCYPwvG77ZI",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            },
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAB9HEcgBKjhaVEIYn7R_WV4eVe39QWL4aJc",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:653299926",
+                        "navigationUrl": "https://www.linkedin.com/in/andrea-dos-santos-sim%C3%B5es",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Andrea Sim\u00f5es",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "12 shared connections",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAACbwkNYBVcjq26R71FDI1C2j26OmHnBlagA",
+                        "publicIdentifier": "andrea-dos-santos-sim\u00f5es",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "HR | Recrutamento e sele\u00e7\u00e3o",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "MY9yTtbISgyitqtsg4GhkA=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAABfskoIBjSRp9Odx_JD6qtIpThXdvLjCkpU",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAABfskoIBjSRp9Odx_JD6qtIpThXdvLjCkpU",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:401379970",
+                        "navigationUrl": "https://www.linkedin.com/in/jo%C3%A3o-pedro-de-simone-0aa508b2",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Jo\u00e3o Pedro De Simone",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "1 shared connection",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAABfskoIBjSRp9Odx_JD6qtIpThXdvLjCkpU",
+                        "publicIdentifier": "jo\u00e3o-pedro-de-simone-0aa508b2",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Co-founder at WORC ( We're hiring )",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "VaILRaiXSnWw1XiRRolojg=="
+                    },
+                    {
+                        "memberDistance": {
+                            "value": "DISTANCE_2",
+                            "$type": "com.linkedin.voyager.common.MemberDistance"
+                        },
+                        "image": {
+                            "attributes": [
+                                {
+                                    "sourceType": "PROFILE_PICTURE",
+                                    "*miniProfile": "urn:li:fs_miniProfile:ACoAAA3DQaEB8lZE4k7f-kHaJ2MGGJC_iESSSiQ",
+                                    "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                }
+                            ],
+                            "accessibilityTextAttributes": [],
+                            "$type": "com.linkedin.voyager.common.ImageViewModel"
+                        },
+                        "targetUrn": "urn:li:fs_miniProfile:ACoAAA3DQaEB8lZE4k7f-kHaJ2MGGJC_iESSSiQ",
+                        "socialProofImagePile": [
+                            {
+                                "attributes": [
+                                    {
+                                        "sourceType": "PROFILE_PICTURE",
+                                        "*miniProfile": "urn:li:fs_miniProfile:ACoAAB6qajQB7rGLBrEaJhFITYMqdFDiYmV09-Y",
+                                        "$type": "com.linkedin.voyager.common.ImageAttribute"
+                                    }
+                                ],
+                                "accessibilityTextAttributes": [],
+                                "$type": "com.linkedin.voyager.common.ImageViewModel"
+                            }
+                        ],
+                        "trackingUrn": "urn:li:member:230900129",
+                        "navigationUrl": "https://www.linkedin.com/in/maria-teresa-fornea-caron-9153b265",
+                        "title": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Maria Teresa Fornea Caron",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "type": "PROFILE",
+                        "$type": "com.linkedin.voyager.search.SearchHitV2",
+                        "headless": false,
+                        "socialProofText": "1 shared connection",
+                        "secondaryTitle": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "2nd",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "*badges": "urn:li:fs_memberBadges:ACoAAA3DQaEB8lZE4k7f-kHaJ2MGGJC_iESSSiQ",
+                        "publicIdentifier": "maria-teresa-fornea-caron-9153b265",
+                        "headline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "Founder & CEO at Bcredi",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "nameMatch": false,
+                        "subline": {
+                            "textDirection": "USER_LOCALE",
+                            "text": "S\u00e3o Paulo Area, Brazil",
+                            "$type": "com.linkedin.voyager.common.TextViewModel"
+                        },
+                        "trackingId": "z7N7vRAaQkeMlD3zkrXExg=="
+                    }
+                ],
+                "type": "SEARCH_HITS",
+                "$type": "com.linkedin.voyager.search.BlendedSearchCluster"
+            }
+        ],
+        "paging": {
+            "count": 10,
+            "start": 30,
+            "total": 1000,
+            "links": []
+        },
+        "$type": "com.linkedin.restli.common.CollectionResponse"
+    },
+    "included": [
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAA3ddJIB_3JY4XbaWvbg9qCQcJpkU4OyRNE",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAACbwkNYBVcjq26R71FDI1C2j26OmHnBlagA",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAukYmwBM6aqmTbVPTASUHW2Ma1SdWW3r08",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAABfskoIBjSRp9Odx_JD6qtIpThXdvLjCkpU",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": true,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAZC09MB2aucYNpWJhl5O2I3KjTvv-WuyUA",
+            "openLink": true,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAAAHWs4BiWYFfRKGGYu9a26RjF9s2U0Zl_k",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": true,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAA3DQaEB8lZE4k7f-kHaJ2MGGJC_iESSSiQ",
+            "openLink": true,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAAA44r3kBo0afP61uwRyRbBGkMHuA7DXSkUY",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "premium": false,
+            "influencer": false,
+            "entityUrn": "urn:li:fs_memberBadges:ACoAACi70rUBdenVLUAaen0HxJf8nz7IgbEHMMM",
+            "openLink": false,
+            "jobSeeker": false,
+            "$type": "com.linkedin.voyager.identity.profile.MemberBadges"
+        },
+        {
+            "firstName": "Andrea",
+            "lastName": " Sim\u00f5es",
+            "memorialized": null,
+            "occupation": "HR | Recrutamento e sele\u00e7\u00e3o",
+            "objectUrn": "urn:li:member:653299926",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAACbwkNYBVcjq26R71FDI1C2j26OmHnBlagA",
+            "backgroundImage": null,
+            "publicIdentifier": "andrea-dos-santos-sim\u00f5es",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=mSt0hfO5tQddDdjAnpoqcQ1IyaTSIvbHM0hs4EHs35k",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=76guySl785Cb58cA-0HPhGdOBxJUuQTCwMHqQKHNcsk",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=nMRn7h2YjMyfmK2ENHqXgthpx5LAYXL6wxGxex1P2-A",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=JrbGqmHKa1s0RoT-WTSPDn1eMjd_QPX5ameaZCAggXk",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQF04hfMrXeU3w/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "D9ohqSR7Q/mxehgPssaYrA==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Jo\u00e3o Pedro",
+            "lastName": "De Simone",
+            "memorialized": null,
+            "occupation": "Co-founder at WORC ( We're hiring )",
+            "objectUrn": "urn:li:member:401379970",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAABfskoIBjSRp9Odx_JD6qtIpThXdvLjCkpU",
+            "backgroundImage": null,
+            "publicIdentifier": "jo\u00e3o-pedro-de-simone-0aa508b2",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=9phyJTiRBuH3y5Val6D0_oB9Pxmoha1WuQji5KVQ-Xw",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=TlMGcVtnFXip2JCs21wc_GgUsLmKxdbKnh4htntOmn0",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=4FCxsCA9cxcjagOSpNTnLxm1VRtGY4RLBFkAac23eC8",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=GuQaF5GNy4S332NpfQUt5SdHkiyT6C2IbRnTgHaOezY",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C5603AQHc-iqd5g8GDA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "TO5eyH86S9iczahgbhUh6A==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Gabriel",
+            "lastName": "Santos",
+            "memorialized": null,
+            "occupation": "Digital Transformation | Digital Products | Startups Ecosystem | Data Science Researcher",
+            "objectUrn": "urn:li:member:514484788",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAB6qajQB7rGLBrEaJhFITYMqdFDiYmV09-Y",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=dGpaFTD3JS-QKjI4sQpWn1odETILdVoIGqFWvN-mlEk",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=ZW7fZvc_U2ah7YgOZWNYuobirCQsrN5l1wOh4qxNE7A",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQGrUNnDb7j9Mw/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "gabriel-s-304372124",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=0kbU_ouFM9jP1FNRQCrz52KNqBZ4x71hF3L3XqqDjnw",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=xgxdM8oE_DbDf8yxazxuclKuIsf9dPiH6I9o7tn5OWU",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=8pqR6iSskcDm83Olu5_auC6e0OCvJOttquXcKdigvv0",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=MY_1mJqjmAooBxA7DrND0MQ-8-SqzOvv1am3LyRVdno",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQHdXtb0r1ZcXQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "XEdeeawiS7Kx8MHLXSVGHw==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Henrique",
+            "lastName": "Bredda",
+            "memorialized": null,
+            "occupation": "Portfolio Manager at Alaska Asset Management",
+            "objectUrn": "urn:li:member:232617106",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAA3ddJIB_3JY4XbaWvbg9qCQcJpkU4OyRNE",
+            "backgroundImage": null,
+            "publicIdentifier": "henrique-bredda-46aaa065",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=qNNHwfqzN7e4Fd9x5VzOhYDQxOVqcI0fMFN6ykBq3rs",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=KrK7ZNbCckgux3V5hAd0L8nA5Dv8jZV9vTgyHp_Tc8g",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=MuUqZe70hdoZML9xTGVy-ggXIcj7jZjebX2CfkB7h4U",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=MBIuiqNsRTYNgkp3qGYEd0FzhBB7urRLJfyQdXb94uU",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQGWLp8FQYfvzA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "60ANHatHR3ete5bIQT4ZKw==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Maria Carolina",
+            "lastName": "Lacombe",
+            "memorialized": null,
+            "occupation": "Venture Capital at Valor Capital Group - Hiring! at ValorCapital/Jobs",
+            "objectUrn": "urn:li:member:50778611",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAMG0fMBJryCs5gA77zzV-9X5-mXApX9aRQ",
+            "backgroundImage": null,
+            "publicIdentifier": "maria-carolina-lacombe-92b00915",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=LoT0CRBxkqeFhttJKyQ1P5gj7RXqS5Ym7yt54kH6FqE",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=IqV_1Vxk__5_-0ExUgdjSQFSUDCp3o2e8BSbucomevg",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=u8BiElrlfBdSmrmvYbRsw8uC2rUIX7MolB9qOTGlnGA",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=Ip0ZamwI2Peg3FZF6iiGh5SJ79eVbV1Ohu0kofAjuRk",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQH_u0WNLaDzEA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "wl1r6Oy8QPyGcaZ+D64TEQ==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Claudio Ad\u00e3o",
+            "lastName": "Cunha",
+            "memorialized": null,
+            "occupation": "End-To-End Analytics | Retail | Mining Engineering",
+            "objectUrn": "urn:li:member:524751304",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAB9HEcgBKjhaVEIYn7R_WV4eVe39QWL4aJc",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=_eDaqmEUmGOXdD8FpluuWIQvPIqfNSeSyIyRsZunJ4g",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=MoRQsountCwF9JyZURTRO_-ZoBInuhtbkfoWJ0IHysw",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C5616AQEzuy7p9k3fkQ/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "claudio-ad\u00e3o-cunha-6348a3127",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=H0BhYAgdtUjhG7isN30KATIFGmWITXICiTIL83v6iJo",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=MGCOLr1A_hL3L54ZLdrP_l1jO-1454c4xOglimNuVpE",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=hY5wUB1LF7mv0wIjshMOvkXejYiiwDKTRxFbZHpaiY4",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=5NCQDb58CjDRPczdNGIjuzMlLys68KhVN_jCAymCJ60",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQGnv0-esvrd0w/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "Ezym2Vn3QnOAFgmeaWk9Aw==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Eduardo",
+            "lastName": "Fuentes",
+            "memorialized": null,
+            "occupation": "Venture Capitalist | Data Miner @ Distrito",
+            "objectUrn": "urn:li:member:462298599",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAABuOHecBrNv-eqOoBG6XY37OFWeoUIpQtIY",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=bkG-EBoguVbBOwfYZUigJt0SmMnzBmElI8M0NNPyWm4",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=b1Yn7OTaHxXA_YGi-RWCr2Q0T55GjprtyJS0mCTQDPI",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQErdgqDhUYRZg/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "eduardo-fuentes-ab39a510a",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=9vOSwEnK1qe3Bb4U1wi66qapbP53tIpKc5syZL-UdDU",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=iqjh46o_Qzu3D_SiQ9YeAjz1oHn7lxY6VI890LiY4fE",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=rBz0IiyDG9rqeYIhtqJbi864Fbo_XcIb_CmWLj8d8kk",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=R7vNn2Omp30OT6X-Xb_Z2vSxAa1d2LD7jhQtQ3EoV90",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQGIKe7LjZ1tig/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "WCGghpEITAmjxPvKuSLBfA==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Andr\u00e9",
+            "lastName": "Casmerides",
+            "memorialized": null,
+            "occupation": "Investment Analyst at Bossa Nova",
+            "objectUrn": "urn:li:member:683397813",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAACi70rUBdenVLUAaen0HxJf8nz7IgbEHMMM",
+            "backgroundImage": null,
+            "publicIdentifier": "andr\u00e9-casmerides-a19a50170",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=irlHEhsIRYIzmPTUp_c_WjGy68TVKgJSwQpPLmqOSas",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=Fh0878PDTTbsdID89B_lte7iAzXGam--wJ6XrWqbcMA",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=BZPdsbVWNms7VVJ7TEZGnYE_OjELgoBfhg4yMqY5CwY",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=eU3Tu9o_zQy4sHo7yme6Mi2U1zKhkxcMqW3B_cUCWd8",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQFCI36xtr-hOQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "EDcuudhkRAascqtoarx11A==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Carlo",
+            "lastName": "Dapuzzo",
+            "memorialized": null,
+            "occupation": "Venture Capital",
+            "objectUrn": "urn:li:member:481998",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAAHWs4BiWYFfRKGGYu9a26RjF9s2U0Zl_k",
+            "backgroundImage": null,
+            "publicIdentifier": "carlodapuzzo",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=7yv9lp22h1M42Si2GmPh-dRAyZ1NYOJKaIgwBlqTUQ0",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=c3NjThYoaPuXTTwsl6zy0B8XEKnj1zgiDsbWN1xD4mE",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=x2hQ1DsYMpQctcd91fmXKFFs8q4067S7UKl3cubJ3ss",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=92IPAhFrI-ffTfYAkomBi99PbCS6sccqLROfmJrpBzo",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQHUJIYwzLSA4Q/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "ghSBvTCqRyijOjFQ7DMr5g==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Jorge",
+            "lastName": "Guerra",
+            "memorialized": null,
+            "occupation": "Consultor funcional de Oracle Financial Senior na Tech Mahindra",
+            "objectUrn": "urn:li:member:12946729",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAADFjSkBCU8xfwsew5edehbDUQON9OiEdbY",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=mVmzh2VVlUQODrpismVtw9biTQOOXXjDio-APRd4rP0",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=8p_d7MhX6Mx-KZkIvK9OBGXtt7vRrnykIZiaQxfJYxg",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E16AQECSf5DlogvKQ/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "jorgeguerraoficial",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=NLNG1SrEhSAsR8SjOSdLMufZtPrPZD0VlXIXCoJTEWI",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=D6qACDEw_mScH0BIiNh73jdJ7buP2JBjkDlpGqoBeOI",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=i9xjj-t_JovS5cNsDr1bnHetKLsHafA6WxYJs6UdvdE",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=jCOuq2kuxzJiknp4oIEZIKTdJ6mQ2RD32jM0gAcHls0",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQFEweKZX7gKoQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "GeiHN+/PTOS4RrcMxjyCfQ==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Lucas Massaro",
+            "lastName": "Hori de Miranda",
+            "memorialized": null,
+            "occupation": "Mechatronics engineering undergraduate student at the Polytechnic School of the University of S\u00e3o Paulo",
+            "objectUrn": "urn:li:member:186302248",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAsavygBY-O5PXfzKZcybNvsY8ZdyMWV7y8",
+            "backgroundImage": null,
+            "publicIdentifier": "lucas-massaro-hori-de-miranda-97448552",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=KgdgF7-Jrx1SYLTfFLslKSDlERw3yG0VOtRSoI2gnrM",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=jrjhf43LwGDIuNlGGVVLHJdqW13piLkCXcGpOAKzBv8",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=tWUIe_gKX2wpDgKDZnrI6zoHNWm0Qs-LejZvC-ELQxI",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=YbGvKlTg8CeMEk5e9mzvpImI7qG4qs7ZumhWcMSW910",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQF6zaPpusm29w/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "sya9+9SNSISDXAlAe3DSmQ==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Vitor",
+            "lastName": "Landim",
+            "memorialized": null,
+            "occupation": "Coordenador na Poli J\u00fanior",
+            "objectUrn": "urn:li:member:549843289",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAACDF8VkBEMQKI7xL8awR1WDn3X-rUWhfgLs",
+            "backgroundImage": null,
+            "publicIdentifier": "vitorlandim",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=jWM2j9rh18VufO2XCuIm_yLSwTTNH6NDufSyw8pcCb0",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=_i7SpEiXeJzz4WwjhEz63mjD7sfcJ5ebrlUJSgZbSls",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=905nxyLISMqXTEPyJ_Ix1x2wxh1_NKSOacuOVXhtIWQ",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=ZKE377NvPx9Egaa2s9myEta27srh91Ie80JUvVCSsZo",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQGm7KB63n4Nog/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "C3clKZDCR8+WeyGBmpOIKA==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Diego",
+            "lastName": "Manzo de Arruda",
+            "memorialized": null,
+            "occupation": "Consultor na Poli J\u00fanior",
+            "objectUrn": "urn:li:member:696414184",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAACmCb-gB-GD8tqDlAb1zCHPKZRrAm7GnnwQ",
+            "backgroundImage": null,
+            "publicIdentifier": "diego-manzo-de-arruda-574289175",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=Y5inuvnw5q1cZuBkohSsdCpv7saSZz5VroKudivVXFo",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=uqfZzWaz_Td66e3QTzxOHVPlK8spuE3bWwZbvTbj8dg",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=dJ_hJZEriT9dUxHq2d0TSjIkvya-tKVKqC9pf_xrkI4",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=HYodIMnqMSBVo9EopfH5GoVtZAgnsVNd9-Xx_YMWF3s",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4E03AQEOPdg0xEJFCw/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "k7G+nMNaSk2jYtIVZjwXgQ==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Aline",
+            "lastName": "Bindel",
+            "memorialized": null,
+            "occupation": "Investment Analyst",
+            "objectUrn": "urn:li:member:195322476",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAukYmwBM6aqmTbVPTASUHW2Ma1SdWW3r08",
+            "backgroundImage": null,
+            "publicIdentifier": "alinebindel",
+            "picture": null,
+            "trackingId": "ti+OZynRRRq7IDKpCnZc1A==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Gustavo",
+            "lastName": "Oliva",
+            "memorialized": null,
+            "occupation": "Associate at Canary",
+            "objectUrn": "urn:li:member:238595961",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAA44r3kBo0afP61uwRyRbBGkMHuA7DXSkUY",
+            "backgroundImage": null,
+            "publicIdentifier": "guoliva",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=KiLq32de9R1zEv2eTSjjACPqfrTJu5DI4RcGTxxyc5o",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=O5_ts6QGjGm2an-6SLTioXh09r7266aL2MmRljJ6E-4",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=NCVgtYPZVrGVCpUZIG6s0AyEMf3oKvY8gFLenY7ihRk",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=lM9JBx72kgoG18yP5VTKGrIG5YYfTvPSxEKh0E9Vfc0",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQFD71WPF9o7WA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "Nsa9FaF3Rr6qb8kVA2kMFA==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Thassyo",
+            "lastName": "Pereira",
+            "memorialized": null,
+            "occupation": "CEO @ Kondado",
+            "objectUrn": "urn:li:member:105042899",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAAZC09MB2aucYNpWJhl5O2I3KjTvv-WuyUA",
+            "backgroundImage": null,
+            "publicIdentifier": "thassyopereira",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=Lqil1ENJKss4r6ho6JrF8VLVtgNJaHIF8WJodQG-UHY",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=pcGli4986U64GbdT6RQwlh4GD9ZrsSdn8tR8xPOufkg",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=TjnHk48eiSQtKNakVEBUSa0qJ2zi3Dj47xfLbYk2fX0",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=gCAG0WHdqP2rWYhbRa50fDe5pfoOObYF1R5_wLeuYtM",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQHZ_TsCWsE3wQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "7X3kfwWiRRuVnW7S6MkT6w==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Karol",
+            "lastName": "Castilho",
+            "memorialized": null,
+            "occupation": "Events & Parnership na Distrito",
+            "objectUrn": "urn:li:member:558916488",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAACFQY4gBe3gwTAsHbxUXGa77QuZJUvUAqj4",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=j2FUUQuMZ_Ui-8slnqALHWtne8Jmo5Zv6vGSVLPVbKw",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=GJRajo5GFj7Th7B7qDACS9uywr1DCiQl3jedT9ENguI",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D16AQHIYIyP5euZNQ/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "karolyne-castilho",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=9NwioJBasrRF-f9ZY-kxJeXYOuFJUlFRa-fZYd5Kt0s",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=ReUcIvaCWsIDMNNgi7X7Gd8-HcgZe2dBstyu6hETDPQ",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=F9hrkE3CztBKatAxShCEgficnYUfEn-X4-Qc7FVc_Sc",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=JTuhyvWvbWZBtCo_rkLOaY97ppnUOX3Dzvl-GqbiXVc",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQGT_2fhvjy0hQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "FNZqZy7qRQWu5PUtJNFQ/w==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Maria Teresa",
+            "lastName": "Fornea Caron",
+            "memorialized": null,
+            "occupation": "Founder & CEO at Bcredi",
+            "objectUrn": "urn:li:member:230900129",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAA3DQaEB8lZE4k7f-kHaJ2MGGJC_iESSSiQ",
+            "backgroundImage": null,
+            "publicIdentifier": "maria-teresa-fornea-caron-9153b265",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=RZuOU5xGqTcfWTh6CYo_kuZFjRvvdByJyQi9fjvByko",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=mrONhy6qUq_BvPe-7eS5NOqhD4hyP_813LMklFK410Y",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=c7sl9-d8UBPzD7tuXapVOMKoGyQPY-odNMNCH1m1nhc",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=cxJY_6U9isaQdzkCNCW4OMizZ2BZ58-sU-RSBcJQzro",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQHu37-b1cYqPA/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "skqTOrBuQ/ieNhSbmBOXMg==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        },
+        {
+            "firstName": "Gabriel",
+            "lastName": "Duarte",
+            "memorialized": null,
+            "occupation": "Engenharia da Computa\u00e7\u00e3o | Escola Polit\u00e9cnica da USP",
+            "objectUrn": "urn:li:member:524431894",
+            "entityUrn": "urn:li:fs_miniProfile:ACoAAB9CMhYBuirNxgXEFc6JnIz_uCYPwvG77ZI",
+            "backgroundImage": {
+                "artifacts": [
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "200_800/0?e=1602115200&v=beta&t=buKoPxQBi3O7yrSY4zGjPXO-lZj_qkAO5xAQkr37l5I",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 1400,
+                        "fileIdentifyingUrlPathSegment": "350_1400/0?e=1602115200&v=beta&t=jb_MzThnN8mEuMOX9ZhQM6Bx6Vqjka_IJSvggzhexHg",
+                        "expiresAt": 1602115200000,
+                        "height": 350,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C5616AQFhMEmqGJbtWg/profile-displaybackgroundimage-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "publicIdentifier": "gmduarte",
+            "picture": {
+                "artifacts": [
+                    {
+                        "width": 100,
+                        "fileIdentifyingUrlPathSegment": "100_100/0?e=1602115200&v=beta&t=0Zmtoko8Hlei2xoxJz1YQgML45YH5LfNqTosOtoN-rc",
+                        "expiresAt": 1602115200000,
+                        "height": 100,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 200,
+                        "fileIdentifyingUrlPathSegment": "200_200/0?e=1602115200&v=beta&t=td_400VmKO-yTCSkG9hzhgghouqLXztVpLQuBOqHodc",
+                        "expiresAt": 1602115200000,
+                        "height": 200,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 400,
+                        "fileIdentifyingUrlPathSegment": "400_400/0?e=1602115200&v=beta&t=iuIyc0-N-bfZrgV-EVNlEMhMERybnqwyJN7QsXZ8qsc",
+                        "expiresAt": 1602115200000,
+                        "height": 400,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    },
+                    {
+                        "width": 800,
+                        "fileIdentifyingUrlPathSegment": "800_800/0?e=1602115200&v=beta&t=G5F9bAh3XdwEpZkLsM-NAPbYDUtLGTT9eDwTT38W_GA",
+                        "expiresAt": 1602115200000,
+                        "height": 800,
+                        "$type": "com.linkedin.common.VectorArtifact"
+                    }
+                ],
+                "rootUrl": "https://media-exp1.licdn.com/dms/image/C4D03AQE4TDSK8W-miQ/profile-displayphoto-shrink_",
+                "$type": "com.linkedin.common.VectorImage"
+            },
+            "trackingId": "2+6erIyhQdSQjhQaitIRew==",
+            "$type": "com.linkedin.voyager.identity.shared.MiniProfile"
+        }
+    ]
+}
