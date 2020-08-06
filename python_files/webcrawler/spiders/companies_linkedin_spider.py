@@ -146,6 +146,19 @@ class CompaniesLinkedinSpider(InitSpider):
             self._postinit_reqs = self.start_company_requests()
         return None
 
+    def count_real_max_employees_profiles_to_parse(self):
+        employees = 0
+        if self.continue_previous_progress:
+            for company_log in self.current_log['dados_obtidos']:
+                company = self.find_company_by_id(company_log['company_id'])
+                employees += company['quantidade_funcionarios']
+        else:
+            for company_url in self.company_urls:
+                company = self.find_company_by_url(company_url)
+                employees += 0 if company is None \
+                    else company['quantidade_funcionarios']
+        return employees
+
     def verify_excel_links(self):
         if len(self.company_urls) == 0:
             errorprint('Não há links de empresa no Excel.\n')
@@ -416,6 +429,12 @@ class CompaniesLinkedinSpider(InitSpider):
             if company['company_id'] == company_id:
                 return company
 
+    def find_company_by_url(self, url):
+        for company in self.output_json_data['empresas']:
+            if company['url'] == url:
+                return company
+        return None
+
     def find_user_by_id(self, user_id):
         for company in self.output_json_data['empresas']:
             for employee in company['funcionarios']:
@@ -519,7 +538,10 @@ class CompaniesLinkedinSpider(InitSpider):
             ),
             0
         )
-        self.total_employees_left_to_access = 10 * self.max_employees_search_pages + self.current_session_profiles_parsed
+        self.total_employees_left_to_access = min(
+            10 * self.max_employees_search_pages + self.current_session_profiles_parsed,
+            self.count_real_max_employees_profiles_to_parse()
+        )
 
     def profile_counter(self):
         return '(%i/%i) ' % (self.current_session_profiles_parsed, self.total_employees_left_to_access)
