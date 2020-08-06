@@ -80,6 +80,7 @@ def read_config_file(config_path):
 
 
 def find_last_not_empty_log(logs_data):
+    if (logs_data is None) or ('logs' not in logs_data): return None
     logs_data['logs'].sort(key=lambda x: x['data'], reverse=True)
     for log in logs_data['logs']:
         if len(log['dados_obtidos']) > 0:
