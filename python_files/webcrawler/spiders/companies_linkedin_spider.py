@@ -185,7 +185,6 @@ class CompaniesLinkedinSpider(InitSpider):
 
     def get_next_employee_search_request(self):
         self.calculate_max_employees_search_pages_to_access()
-        checkprint('len = %i' % len(self.stored_employees_search_requests))
         if self.max_employees_search_pages == 0: return None
         return self.stored_employees_search_requests.pop(0) if len(self.stored_employees_search_requests) > 0 else None
 
@@ -315,11 +314,24 @@ class CompaniesLinkedinSpider(InitSpider):
         return Request(
             url=url,
             priority=priority,
-            callback=callback,
+            callback=self.create_parse_with_response_check(
+                callback
+            ),
             dont_filter=dont_filter,
             meta=meta,
             cookies=self.chrome_cookies
         )
+
+    def create_parse_with_response_check(self, parse_function):
+
+        def parse_with_check(response):
+            # Isso pode ser ativado quando a url não começa com www:
+            if response.status == 999:
+                errorprint('Status 999. O Linkedin começou a restringir pedidos.\nO crawler será encerrado automaticamente.\n')
+            else:
+                return parse_function(response)
+
+        return parse_with_check
 
     def read_excel(self):
         self.workbook = load_workbook(filename=self.input_excel_path)
@@ -489,7 +501,7 @@ class CompaniesLinkedinSpider(InitSpider):
     def store_profile_requests_of_employee_searches(self, response):
         self.stored_profile_requests.extend(self.parse_employees_search(response))
         self.first_profile_requested = True
-        return self.get_next_profile_request(profile_parsed=False) or self.get_next_employee_search_request()
+        return self.get_next_profile_request(initial_request=True) or self.get_next_employee_search_request()
 
     def calculate_max_employees_search_pages_to_access(self):
         self.max_employees_search_pages = max(
@@ -508,27 +520,12 @@ class CompaniesLinkedinSpider(InitSpider):
             0
         )
         self.total_employees_left_to_access = 10 * self.max_employees_search_pages + self.current_session_profiles_parsed
-        checkprint(
-            'max_employees_search_pages = %s' \
-            % (
-                (
-                    self.max_page_requests 
-                    - self.current_log['paginas_acessadas']['total'] 
-                    - (
-                        0 if self.continue_previous_progress or self.first_profile_requested \
-                        else len(self.company_urls)
-                    )
-                ) / (
-                    11 + 10 * self.max_connection_pages
-                )
-            )
-        )
 
     def profile_counter(self):
         return '(%i/%i) ' % (self.current_session_profiles_parsed, self.total_employees_left_to_access)
 
-    def get_next_profile_request(self, profile_parsed=True):
-        if profile_parsed: self.current_session_profiles_parsed += 1
+    def get_next_profile_request(self, initial_request=False):
+        if not initial_request: self.current_session_profiles_parsed += 1
         self.current_profile_stored_connections_requests = []
         return self.stored_profile_requests.pop(0) if len(self.stored_profile_requests) > 0 else None
 
@@ -790,14 +787,7 @@ class CompaniesLinkedinSpider(InitSpider):
                     return company
         return None
 
-    # Isso pode ser ativado quando a url não começa com www:
-    def check_response_status(self, response):
-        if response.status == 999:
-            errorprint('Status 999. O Linkedin começou a restringir pedidos.\nO crawler será encerrado automaticamente.\n')
-            raise CloseSpider('Spider encerrado manualmente')
-
     def parse_company(self, response):
-        self.check_response_status(response)
 
         self.companies_parsed += 1
         self.update_current_log()
@@ -839,7 +829,6 @@ class CompaniesLinkedinSpider(InitSpider):
         return self.load_company_employee_search_pages_requests(company_id)
 
     def parse_employees_search(self, response):
-        self.check_response_status(response)
 
         self.employee_searches_parsed += 1
         self.update_current_log()
@@ -921,7 +910,6 @@ class CompaniesLinkedinSpider(InitSpider):
             errorprint('Erro no parsing de lista de funcionários.\n')
 
     def parse_profile(self, response):
-        self.check_response_status(response)
 
         self.profiles_parsed += 1
         self.update_current_log()
@@ -1155,7 +1143,6 @@ class CompaniesLinkedinSpider(InitSpider):
         )
 
     def parse_connections_page(self, response):
-        self.check_response_status(response)
 
         self.connection_pages_parsed += 1
         self.update_current_log()

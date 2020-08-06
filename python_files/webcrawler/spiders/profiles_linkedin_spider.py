@@ -138,7 +138,7 @@ class ProfilesLinkedinSpider(InitSpider):
     def load_initial_requests(self):
         if self.verify_excel_links() is not None: return not None
         self.load_profiles_requests()
-        self._postinit_reqs = self.get_next_profile_request()
+        self._postinit_reqs = self.get_next_profile_request(initial_request=True)
         return None
 
     def verify_excel_links(self):
@@ -221,7 +221,9 @@ class ProfilesLinkedinSpider(InitSpider):
         return Request(
             url=url,
             priority=priority,
-            callback=callback,
+            callback=self.create_parse_with_response_check(
+                callback
+            ),
             dont_filter=dont_filter,
             meta=meta,
             cookies=self.chrome_cookies
@@ -381,23 +383,16 @@ class ProfilesLinkedinSpider(InitSpider):
             ),
             0
         )
-        checkprint(
-            'max_profile_pages = %s' \
-            % (
-                (
-                    self.max_page_requests 
-                    - self.current_log['paginas_acessadas']['total']
-                ) / (
-                    1 + self.max_connection_pages
-                )
-            )
+        self.profile_pages_left_to_parse = min(
+            len(self.profile_urls), 
+            self.max_profile_pages + self.current_session_profiles_parsed
         )
 
     def profile_counter(self):
-        self.current_session_profiles_parsed += 1
-        return '(%i/%i) ' % (self.current_session_profiles_parsed, min(len(self.profile_urls), self.max_profile_pages))
+        return '(%i/%i) ' % (self.current_session_profiles_parsed, self.profile_pages_left_to_parse)
 
-    def get_next_profile_request(self):
+    def get_next_profile_request(self, initial_request=False):
+        if not initial_request: self.current_session_profiles_parsed += 1
         self.calculate_max_profile_pages_to_access()
         if self.max_profile_pages == 0: return None
         self.current_profile_stored_connections_requests = []
@@ -582,15 +577,18 @@ class ProfilesLinkedinSpider(InitSpider):
         end = sorted(image_data['artifacts'], key=lambda x: x['width'])[-1]['fileIdentifyingUrlPathSegment']
         return start + end
 
-    # Isso pode ser ativado quando a url não começa com www:
-    def check_response_status(self, response):
-        if response.status == 999:
-            errorprint('Status 999. O Linkedin começou a restringir pedidos.\nO crawler será encerrado automaticamente.\n')
-            raise CloseSpider('Spider encerrado manualmente')
+    def create_parse_with_response_check(self, parse_function):
+
+        def parse_with_check(response):
+            # Isso pode ser ativado quando a url não começa com www:
+            if response.status == 999:
+                errorprint('Status 999. O Linkedin começou a restringir pedidos.\nO crawler será encerrado automaticamente.\n')
+            else:
+                return parse_function(response)
+
+        return parse_with_check
 
     def parse_profile(self, response):
-        self.check_response_status(response)
-
         self.profiles_parsed += 1
         self.update_current_log()
 
@@ -822,7 +820,6 @@ class ProfilesLinkedinSpider(InitSpider):
         self.refresh_workbook_profiles_data(user_dict)
 
     def parse_connections_page(self, response):
-        self.check_response_status(response)
 
         self.connection_pages_parsed += 1
         self.update_current_log()

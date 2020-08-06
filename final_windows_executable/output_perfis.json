@@ -1,0 +1,155 @@
+{
+    "perfis": [
+        {
+            "url": "https://www.linkedin.com/in/hellen-neves-138048123",
+            "dados_obtidos": true,
+            "nome": "Hellen",
+            "sobrenome": "Neves",
+            "user_id": "ACoAAB5wqrwBD7tZ-4k4oihBv94Yqu_kRvEv1WE",
+            "cargo_atual": "Tech Recruiter | Talent Acquisition @ Neon \ud83d\udc99",
+            "localizacao_atual": "S\u00e3o Paulo, S\u00e3o Paulo, Brazil",
+            "foto_de_perfil": "https://media-exp1.licdn.com/dms/image/C4D03AQFFIyohUqOAHQ/profile-displayphoto-shrink_800_800/0?e=1602115200&v=beta&t=nQRic40vkyoYQksfhBa-4wrmlIC6SaMlvJRB4X8CIUY",
+            "plano_de_fundo": "https://media-exp1.licdn.com/dms/image/C4D16AQFEWWic9O77gQ/profile-displaybackgroundimage-shrink_350_1400/0?e=1602115200&v=beta&t=GJFVRMDmhP1YMLIxz79iO5dWi86gdI8_c9AB_aCHKac",
+            "grau_de_conexao": {
+                "numero_exato": 3,
+                "minimo": null
+            },
+            "sobre": null,
+            "premium": true,
+            "influenciador": false,
+            "procura_emprego": false,
+            "seguidores": 7875,
+            "conexoes": {
+                "numero_exato": null,
+                "minimo": 500,
+                "conexoes_obtidas": []
+            },
+            "habilidades": [
+                "Microsoft Word",
+                "Microsoft PowerPoint",
+                "Aquisi\u00e7\u00e3o de talentos",
+                "Microsoft Office",
+                "Consultoria",
+                "Recursos humanos",
+                "Sele\u00e7\u00e3o de executivos",
+                "Recrutamento",
+                "Estrat\u00e9gia empresarial",
+                "Microsoft Excel",
+                "Entrevistas"
+            ],
+            "linguas": [
+                "Ingl\u00eas",
+                "Portugu\u00eas"
+            ],
+            "cursos_feitos": [],
+            "premios": [],
+            "estudos": [
+                {
+                    "instituicao": "Universidade Presbiteriana Mackenzie",
+                    "formacao": null,
+                    "tilulo_obtido": "Psicologia",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2014
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2018
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Universidade Presbiteriana Mackenzie",
+                    "formacao": null,
+                    "tilulo_obtido": "Especializa\u00e7\u00e3o em Gest\u00e3o Estrat\u00e9gica de Pessoas ",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": null,
+                            "ano": 2020
+                        },
+                        "fim": {
+                            "mes": null,
+                            "ano": 2021
+                        }
+                    }
+                }
+            ],
+            "experiencia_profissional": [
+                {
+                    "instituicao": "2XS Search and Success",
+                    "cargo": "Researcher",
+                    "descricao": "Atua\u00e7\u00e3o na \u00e1rea de Recrutamento Executivo;\nLevantamento de empresas (hunting); \nRastreamento e mapeamento de Executivos;\nAgendamentos de entrevista;\nAcompanhamento do processo seletivo at\u00e9 a contrata\u00e7\u00e3o.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": 5,
+                            "ano": 2016
+                        },
+                        "fim": {
+                            "mes": 7,
+                            "ano": 2017
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Sodexo",
+                    "cargo": "HR Intern",
+                    "descricao": "Atua\u00e7\u00e3o na \u00e1rea de Desenvolvimento Humano e Organizacional, em projetos e programas estrat\u00e9gicos como: Ciclo de Avalia\u00e7\u00e3o de Desempenho, Pesquisa de Engajamento e a\u00e7\u00f5es de desdobramento, treinamentos, Programa de Est\u00e1gio e Proposta de Valor do Colaborador.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": 7,
+                            "ano": 2017
+                        },
+                        "fim": {
+                            "mes": 12,
+                            "ano": 2018
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Sodexo",
+                    "cargo": "HR Analyst",
+                    "descricao": null,
+                    "periodo": {
+                        "inicio": {
+                            "mes": 1,
+                            "ano": 2019
+                        },
+                        "fim": {
+                            "mes": 6,
+                            "ano": 2019
+                        }
+                    }
+                },
+                {
+                    "instituicao": "Neon",
+                    "cargo": "Junior Talent Acquisition ",
+                    "descricao": "A Neon \u00e9 uma fintech brasileira, fundada em 2016, que tem a miss\u00e3o de unir tecnologia e design para redesenhar e simplificar a experi\u00eancia financeira das pessoas.\n\nCom mais de 350 funcion\u00e1rios, a Neon levantou, em 2018, R$ 72 milh\u00f5es de investimentos Series A em round liderado pela Propel Ventures, Monashees e Quona, que contou tamb\u00e9m com a Yellow Ventures, Omydiar Network e Tera Capital. Sendo a conta digital o principal produto, a fintech possui uma parceria com o Banco Votorantim para cust\u00f3dia e liquida\u00e7\u00e3o de suas contas.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": 6,
+                            "ano": 2019
+                        },
+                        "fim": null
+                    }
+                },
+                {
+                    "instituicao": "Neon",
+                    "cargo": "Tech Recruiter ",
+                    "descricao": "Respons\u00e1vel por todas as etapas do recrutamento e sele\u00e7\u00e3o de diversas \u00e1reas de Tecnologia e Produto (Infraestrutura, Desenvolvimento, Agilidade, Quality Assurance e outros);\nAtua\u00e7\u00e3o estrat\u00e9gica e consultiva baseada em an\u00e1lises de mercado; \nElabora\u00e7\u00e3o, implementa\u00e7\u00e3o e acompanhamento de projetos internos de Talent Acquisition;\nAtua\u00e7\u00e3o com metodologias \u00e1geis.",
+                    "periodo": {
+                        "inicio": {
+                            "mes": 9,
+                            "ano": 2019
+                        },
+                        "fim": null
+                    }
+                }
+            ],
+            "voluntariado": [],
+            "projetos": []
+        }
+    ]
+}
