@@ -31,7 +31,7 @@ def format_file_path(path):
 
 def test_file(path):
     try:
-        f = open(path, 'r+')
+        f = open(path, 'r+', encoding="utf8")
         f.close()
         return None
     except FileNotFoundError:
@@ -42,7 +42,7 @@ def test_file(path):
 
 def parse_json_file(path):
     try:
-        f = open(path, 'r+')
+        f = open(path, 'r+', encoding="utf8")
         data = json.loads(f.read())
         f.close()
         return data

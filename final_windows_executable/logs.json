@@ -1,6 +1,42 @@
 {
     "logs": [
         {
+            "data": "2020-08-06",
+            "paginas_acessadas": {
+                "empresas": 8,
+                "pesquisa_de_funcionarios": 14,
+                "perfis": 85,
+                "pesquisa_de_conexoes": 45,
+                "total": 152
+            },
+            "dados_obtidos": [
+                {
+                    "empresa": "Liv Up",
+                    "company_id": "10475106",
+                    "ultima_pagina_de_busca_de_funcionarios_acessada": 3,
+                    "total_de_paginas_de_busca_de_funcionario": 28
+                },
+                {
+                    "empresa": "Distrito",
+                    "company_id": "9195616",
+                    "ultima_pagina_de_busca_de_funcionarios_acessada": 3,
+                    "total_de_paginas_de_busca_de_funcionario": 10
+                },
+                {
+                    "empresa": "Neon",
+                    "company_id": "10430926",
+                    "ultima_pagina_de_busca_de_funcionarios_acessada": 3,
+                    "total_de_paginas_de_busca_de_funcionario": 72
+                },
+                {
+                    "empresa": "Mark",
+                    "company_id": "614213",
+                    "ultima_pagina_de_busca_de_funcionarios_acessada": 2,
+                    "total_de_paginas_de_busca_de_funcionario": 77
+                }
+            ]
+        },
+        {
             "data": "2020-08-05",
             "paginas_acessadas": {
                 "empresas": 24,

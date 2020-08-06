@@ -185,6 +185,7 @@ class CompaniesLinkedinSpider(InitSpider):
 
     def get_next_employee_search_request(self):
         self.calculate_max_employees_search_pages_to_access()
+        checkprint('len = %i' % len(self.stored_employees_search_requests))
         if self.max_employees_search_pages == 0: return None
         return self.stored_employees_search_requests.pop(0) if len(self.stored_employees_search_requests) > 0 else None
 
@@ -308,7 +309,6 @@ class CompaniesLinkedinSpider(InitSpider):
             self.current_session_employee_searches_parsed = 0
             self.current_session_profiles_parsed = 0
             self.current_session_connection_pages_parsed = 0
-        self.initial_current_session_profiles_parsed = self.current_session_profiles_parsed
 
     # Talvez seja interessante implementar headers também
     def cookie_request(self, url, priority=0, callback=None, cookies=None, meta=None, dont_filter=False):
@@ -488,9 +488,8 @@ class CompaniesLinkedinSpider(InitSpider):
 
     def store_profile_requests_of_employee_searches(self, response):
         self.stored_profile_requests.extend(self.parse_employees_search(response))
-        if (not self.first_profile_requested) and (len(self.stored_profile_requests) > 0):
-            self.first_profile_requested = True
-            return self.get_next_profile_request()
+        self.first_profile_requested = True
+        return self.get_next_profile_request(profile_parsed=False) or self.get_next_employee_search_request()
 
     def calculate_max_employees_search_pages_to_access(self):
         self.max_employees_search_pages = max(
@@ -508,7 +507,7 @@ class CompaniesLinkedinSpider(InitSpider):
             ),
             0
         )
-        self.total_employees_left_to_access = 10 * self.max_employees_search_pages + self.initial_current_session_profiles_parsed
+        self.total_employees_left_to_access = 10 * self.max_employees_search_pages + self.current_session_profiles_parsed
         checkprint(
             'max_employees_search_pages = %s' \
             % (
@@ -526,10 +525,10 @@ class CompaniesLinkedinSpider(InitSpider):
         )
 
     def profile_counter(self):
-        self.current_session_profiles_parsed += 1
         return '(%i/%i) ' % (self.current_session_profiles_parsed, self.total_employees_left_to_access)
 
-    def get_next_profile_request(self):
+    def get_next_profile_request(self, profile_parsed=True):
+        if profile_parsed: self.current_session_profiles_parsed += 1
         self.current_profile_stored_connections_requests = []
         return self.stored_profile_requests.pop(0) if len(self.stored_profile_requests) > 0 else None
 
@@ -886,7 +885,6 @@ class CompaniesLinkedinSpider(InitSpider):
                 }
 
                 if '/in/UNKNOWN' in employee_url:
-                    yield self.get_next_profile_request() or self.get_next_employee_search_request()
                     whiteprint(
                         '%sNão foi possível obter url do funcionário da empresa %s. Pessoa fora de sua rede.\n'
                         % (self.profile_counter(), company['nome'])
@@ -921,8 +919,6 @@ class CompaniesLinkedinSpider(InitSpider):
 
         else:
             errorprint('Erro no parsing de lista de funcionários.\n')
-
-        yield self.get_next_employee_search_request()
 
     def parse_profile(self, response):
         self.check_response_status(response)
@@ -1285,11 +1281,14 @@ def convert_unicode(text, replacements):
 
 def read_json_file(path):
     try:
-        f = open(path, 'r+')
+        f = open(path, 'r+', encoding="utf8")
         data = json.loads(f.read())
         f.close()
         return data
     except json.decoder.JSONDecodeError:
+        return None
+    except Exception as e:
+        errorprint('Houve um erro na leitura de %s. É possível que tal arquivo esteja mal formatado: %s' % (path, e))
         return None
 
 

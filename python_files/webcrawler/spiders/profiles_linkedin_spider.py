@@ -947,11 +947,14 @@ def convert_unicode(text, replacements):
 
 def read_json_file(path):
     try:
-        f = open(path, 'r+')
+        f = open(path, 'r+', encoding="utf8")
         data = json.loads(f.read())
         f.close()
         return data
     except json.decoder.JSONDecodeError:
+        return None
+    except Exception as e:
+        errorprint('Houve um erro na leitura de %s. É possível que tal arquivo esteja mal formatado: %s' % (path, e))
         return None
 
 
