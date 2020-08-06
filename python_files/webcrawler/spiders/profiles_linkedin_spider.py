@@ -72,7 +72,7 @@ class ProfilesLinkedinSpider(InitSpider):
 
     login_page = 'https://www.linkedin.com/uas/login'
 
-    profiles_urls = []
+    profile_urls = []
 
     stored_employees_search_requests = []
 
@@ -83,14 +83,18 @@ class ProfilesLinkedinSpider(InitSpider):
 
     request_retries = {}
 
-    current_session_connection_pages_parsed_per_profile = {}
-
-    def __init__(self, username, password, max_page_requests, max_connection_pages, logs_path, cookies_path, input_excel_path, output_json_path, ensure_ascii):
+    def __init__(
+            self, username, password, max_page_requests, max_connection_pages, 
+            get_connection_data_from_profiles_with_3rd_or_higher_degree_connection, 
+            logs_path, cookies_path, input_excel_path, output_json_path, ensure_ascii
+        ):
         self.username = username
         self.password = password
         self.current_date = get_date()
         self.max_page_requests = max_page_requests
         self.max_connection_pages = max_connection_pages
+        self.get_connection_data_from_profiles_with_3rd_or_higher_degree_connection = \
+            get_connection_data_from_profiles_with_3rd_or_higher_degree_connection
         self.ensure_ascii = ensure_ascii
         self.parse_cookies(cookies_path)
         self.input_excel_path = input_excel_path
@@ -134,11 +138,11 @@ class ProfilesLinkedinSpider(InitSpider):
     def load_initial_requests(self):
         if self.verify_excel_links() is not None: return not None
         self.load_profiles_requests()
-        self._postinit_reqs = self.profiles_requests.pop(0)
+        self._postinit_reqs = self.get_next_profile_request()
         return None
 
     def verify_excel_links(self):
-        if len(self.profiles_urls) == 0:
+        if len(self.profile_urls) == 0:
             checkprint('Todos os links de perfis no Excel já passaram pelo scraping!\nCaso queira novamente obter dados de seus links, entre em %s e apague o valor "Sim" das linhas de tais links.\n' % self.input_excel_path)
             return not None
         return None
@@ -246,9 +250,9 @@ class ProfilesLinkedinSpider(InitSpider):
         self.workbook.save(self.input_excel_path)
 
     def check_for_duplicate_links(self):
-        for link in self.profiles_urls:
-            while self.profiles_urls.count(link) > 1:
-                self.profiles_urls.remove(link)
+        for link in self.profile_urls:
+            while self.profile_urls.count(link) > 1:
+                self.profile_urls.remove(link)
                 warnprint('Há uma cópia de link: %s\n' % link)
 
     def get_links_from_workbook(self):
@@ -265,7 +269,7 @@ class ProfilesLinkedinSpider(InitSpider):
                     empty_cell = True
 
             if links_sheet['B%i' % line].value != 'Sim' or empty_cell:
-                self.profiles_urls.append(link)
+                self.profile_urls.append(link)
 
             line += 1
             link = links_sheet['C%i' % line].value
@@ -356,15 +360,14 @@ class ProfilesLinkedinSpider(InitSpider):
         return iterate_spider_output(self.init_request())
 
     def load_profiles_requests(self):
-        self.profiles_requests = []
-        for url in self.profiles_urls:
-            self.profiles_requests.append(
+        self.stored_profile_requests = []
+        for url in self.profile_urls:
+            self.stored_profile_requests.append(
                 self.cookie_request(
                     url=url,
                     callback=self.parse_profile
                 )
             )
-        self.profiles_requests = self.profiles_requests[:self.max_profile_pages]
 
     def calculate_max_profile_pages_to_access(self):
         self.max_profile_pages = max(
@@ -378,13 +381,30 @@ class ProfilesLinkedinSpider(InitSpider):
             ),
             0
         )
+        checkprint(
+            'max_profile_pages = %s' \
+            % (
+                (
+                    self.max_page_requests 
+                    - self.current_log['paginas_acessadas']['total']
+                ) / (
+                    1 + self.max_connection_pages
+                )
+            )
+        )
 
     def profile_counter(self):
         self.current_session_profiles_parsed += 1
-        return {
-            'counter': '(%i/%i) ' % (self.current_session_profiles_parsed, len(self.profiles_urls)),
-            'new_request': self.profiles_requests.pop(0) if len(self.profiles_requests) > 0 else None
-        }
+        return '(%i/%i) ' % (self.current_session_profiles_parsed, min(len(self.profile_urls), self.max_profile_pages))
+
+    def get_next_profile_request(self):
+        self.calculate_max_profile_pages_to_access()
+        if self.max_profile_pages == 0: return None
+        self.current_profile_stored_connections_requests = []
+        return self.stored_profile_requests.pop(0) if len(self.stored_profile_requests) > 0 else None
+
+    def get_next_profile_connections_request(self):
+        return self.current_profile_stored_connections_requests.pop(0) if len(self.current_profile_stored_connections_requests) > 0 else None
 
     def find_user_by_id(self, user_id):
         for profile in self.output_json_data['perfis']:
@@ -417,10 +437,10 @@ class ProfilesLinkedinSpider(InitSpider):
         return parse_text_to_json(body[start:end], unicode_dict, 'aa.json')
 
     def get_search_results(self, search_data):
+        if len(search_data['data']['elements']) == 0: return None
         for blendedSearchCluster in search_data['data']['elements']:
             if blendedSearchCluster['type'] == 'SEARCH_HITS':
                 return blendedSearchCluster['elements']
-
         return None
 
     def get_big_json_included_array(self, response):
@@ -550,6 +570,12 @@ class ProfilesLinkedinSpider(InitSpider):
             'conexoes_obtidas': []
         }
 
+    def format_connection_degree(self, degree):
+        return {
+            'numero_exato': int(degree[-1]) if degree.startswith('DISTANCE_') else None,
+            'minimo': 4 if degree == 'OUT_OF_NETWORK' else None
+        }
+
     def get_picture_url(self, image_data):
         if image_data is None: return None
         start = image_data['rootUrl']
@@ -575,10 +601,8 @@ class ProfilesLinkedinSpider(InitSpider):
 
         # Se página não tiver a seguinte string, ela provavelmente foi carregada errada:
         if 'linkedin.com/in/' not in str(response.url):
-            counter = self.profile_counter()
-            if counter['new_request'] is not None:
-                yield counter['new_request']
-            errorprint('%sEste não é um link de um perfil: %s\n' % (counter['counter'], response.url))
+            yield self.get_next_profile_request()
+            errorprint('%sEste não é um link de um perfil: %s\n' % (self.profile_counter(), response.url))
 
         # Se página não tiver a seguinte string, ela provavelmente
         # foi carregada errada, ou não é uma página válida:
@@ -589,13 +613,11 @@ class ProfilesLinkedinSpider(InitSpider):
             self.request_retries[str(response.url)] = retries + 1
 
             if retries < 1:
-                counter = self.profile_counter()
-                if counter['new_request'] is not None:
-                    yield counter['new_request']
+                yield self.get_next_profile_request()
                 warnprint(
-                    '%sErro no parsing de %s\nAdicionando novamente à fila de links...\n' % (counter['counter'], response.url)
+                    '%sErro no parsing de %s\nAdicionando novamente à fila de links...\n' % (self.profile_counter(), response.url)
                 )
-                self.profiles_urls.append(response.url)
+                self.profile_urls.append(response.url)
                 yield self.cookie_request(
                     url=response.url, 
                     callback=self.parse_profile, 
@@ -603,10 +625,8 @@ class ProfilesLinkedinSpider(InitSpider):
                 )
                 return None
             else:
-                counter = self.profile_counter()
-                if counter['new_request'] is not None:
-                    yield counter['new_request']
-                errorprint('%sEste provavelmente não é um link de um perfil: %s' % (counter['counter'], response.url))
+                yield self.get_next_profile_request()
+                errorprint('%sEste provavelmente não é um link de um perfil: %s' % (self.profile_counter(), response.url))
 
         else:
 
@@ -651,10 +671,12 @@ class ProfilesLinkedinSpider(InitSpider):
                 if member_badges_json is None:
                     raise ParsingException('Erro com member_badges_json')
 
+                user_id = member_badges_json['data']['entityUrn'].split(':')[-1]
+
                 user_dict.update({
                     'nome': user_data['firstName'] if 'firstName' in user_data else None,
                     'sobrenome': user_data['lastName'] if 'lastName' in user_data else None,
-                    'user_id': member_badges_json['data']['entityUrn'].split(':')[-1],
+                    'user_id': user_id,
                     'cargo_atual': user_data['headline'] if 'headline' in user_data else None,
                     'localizacao_atual': user_data['locationName'] if 'locationName' in user_data else None,
                     'foto_de_perfil': self.get_picture_url(
@@ -664,6 +686,9 @@ class ProfilesLinkedinSpider(InitSpider):
                     'plano_de_fundo': self.get_picture_url(
                         None if user_data['backgroundPicture'] is None \
                         else user_data['backgroundPicture']['displayImageReference']['vectorImage']
+                    ),
+                    'grau_de_conexao': self.format_connection_degree(
+                        following_json['data']['distance']['value']
                     ),
                     'sobre': user_data['summary'] if 'summary' in user_data else None,
                     'premium': user_data['premium'] if 'premium' in user_data else None,
@@ -744,52 +769,55 @@ class ProfilesLinkedinSpider(InitSpider):
                     'dados_obtidos': True
                 })
 
-                self.current_session_connection_pages_parsed_per_profile[user_dict['user_id']] = 0
+                profile = self.find_user_by_id(user_id)
 
-                for page in range(self.max_connection_pages):
-                    yield self.cookie_request(
-                        url='https://www.linkedin.com/search/results/people/?facetConnectionOf=%%5B%%22%s%%22%%5D&page=%i' \
-                            % (user_dict['user_id'], page + 1),
-                        priority=1,
-                        callback=self.parse_connections_page
-                    )
+                if profile is None:
+                    profile = {}
+                    self.output_json_data['perfis'].append(profile)
 
-                updated = False
+                profile.update(user_dict)
 
-                for profile in self.output_json_data['perfis']:
-                    if profile['url'] == response.url:
-                        updated = True
-                        profile.update(user_dict)
+                if (
+                        (self.max_connection_pages > 0)
+                        and (
+                            (
+                                (profile['grau_de_conexao']['numero_exato'] is not None) 
+                                and (profile['grau_de_conexao']['numero_exato'] < 3)
+                            )
+                            or self.get_connection_data_from_profiles_with_3rd_or_higher_degree_connection
+                        )
+                    ):
+                    for page in range(self.max_connection_pages):
+                        self.current_profile_stored_connections_requests.append(
+                            self.cookie_request(
+                                url='https://www.linkedin.com/search/results/people/?facetConnectionOf=%%5B%%22%s%%22%%5D&page=%i' \
+                                    % (user_id, page + 1),
+                                callback=self.parse_connections_page
+                            )
+                        )
 
-                if not updated:
-                    self.output_json_data['perfis'].append(user_dict)
+                    yield self.get_next_profile_connections_request()
 
-                save_to_file(
-                    self.output_json_path,
-                    json.dumps(
-                        self.output_json_data, 
-                        indent=4, 
-                        ensure_ascii=self.ensure_ascii
-                    ),
-                    dont_print=True
-                )
-
-                if self.max_connection_pages == 0:
-                    counter = self.profile_counter()
-                    if counter['new_request'] is not None:
-                        yield counter['new_request']
-                    checkprint('%sParsing corretamente realizado em %s\n' % (counter['counter'], response.url))
+                else:
+                    yield self.get_next_profile_request()
+                    checkprint('%sParsing corretamente realizado em %s\n' % (self.profile_counter(), response.url))
 
             except ParsingException:
-                counter = self.profile_counter()
-                if counter['new_request'] is not None:
-                    yield counter['new_request']
-                errorprint('%sErro no parsing de %s\n' % (counter['counter'], response.url))
+                yield self.get_next_profile_request()
+                errorprint('%sErro no parsing de %s\n' % (self.profile_counter(), response.url))
             except Exception as e:
-                counter = self.profile_counter()
-                if counter['new_request'] is not None:
-                    yield counter['new_request']
-                errorprint('%sErro grave no parsing de %s: %s\n' % (counter['counter'], response.url, e))
+                yield self.get_next_profile_request()
+                errorprint('%sErro grave no parsing de %s: %s\n' % (self.profile_counter(), response.url, e))
+
+        save_to_file(
+            self.output_json_path,
+            json.dumps(
+                self.output_json_data, 
+                indent=4, 
+                ensure_ascii=self.ensure_ascii
+            ),
+            dont_print=True
+        )
 
         self.refresh_workbook_profiles_data(user_dict)
 
@@ -803,8 +831,6 @@ class ProfilesLinkedinSpider(InitSpider):
 
         user_id = str(response.url).split('facetConnectionOf=')[-1].split('&page')[0][6:-6]
 
-        self.current_session_connection_pages_parsed_per_profile[user_id] += 1
-
         profile = self.find_user_by_id(user_id)
 
         # save_to_file(
@@ -815,70 +841,79 @@ class ProfilesLinkedinSpider(InitSpider):
         search_data = self.get_search_data(response)
 
         search_results = self.get_search_results(search_data)
-        
-        all_member_badges = self.get_object_by_type(
-            search_data['included'], 
-            'com.linkedin.voyager.identity.profile.MemberBadges'
-        )
-        all_mini_profile_data = self.get_object_by_type(
-            search_data['included'], 
-            'com.linkedin.voyager.identity.shared.MiniProfile'
-        )
 
         if search_results is not None:
 
-            for connection in search_results:
+            if search_results == []:
+                yield self.get_next_profile_request()
+                checkprint('%sParsing corretamente realizado em %s\n' % (self.profile_counter(), profile['url']))
 
-                connection_user_id = connection['targetUrn'].split(':')[-1]
+            else:
+                all_member_badges = self.get_object_by_type(
+                    search_data['included'], 
+                    'com.linkedin.voyager.identity.profile.MemberBadges'
+                )
+                all_mini_profile_data = self.get_object_by_type(
+                    search_data['included'], 
+                    'com.linkedin.voyager.identity.shared.MiniProfile'
+                )
 
-                connection_member_badges = self.get_object_by_user_id(all_member_badges, connection_user_id)
-                connection_mini_profile_data = self.get_object_by_user_id(all_mini_profile_data, connection_user_id)
+                for connection in search_results:
 
-                connection_data = {
-                    'url': connection['navigationUrl'],
-                    'nome': connection_mini_profile_data['firstName'],
-                    'sobrenome': connection_mini_profile_data['lastName'],
-                    'user_id': connection_user_id,
-                    'cargo_atual': connection_mini_profile_data['occupation'],
-                    'localizacao_atual': connection['subline']['text'],
-                    'foto_de_perfil': self.get_picture_url(connection_mini_profile_data['picture']),
-                    'plano_de_fundo': self.get_picture_url(connection_mini_profile_data['backgroundImage']),
-                    'premium': connection_member_badges['premium'],
-                    'influenciador': connection_member_badges['influencer'],
-                    'procura_emprego': connection_member_badges['jobSeeker']
-                }
+                    connection_user_id = connection['targetUrn'].split(':')[-1]
 
-                found = False
-                    
-                for existing_connection in profile['conexoes']['conexoes_obtidas']:
-                    if existing_connection['url'] == connection_data['url']:
-                        found = True
-                        existing_connection.update(connection_data)
+                    connection_member_badges = self.get_object_by_user_id(all_member_badges, connection_user_id)
+                    connection_mini_profile_data = self.get_object_by_user_id(all_mini_profile_data, connection_user_id)
 
-                if not found:
-                    profile['conexoes']['conexoes_obtidas'].append(connection_data)
+                    connection_data = {
+                        'url': connection['navigationUrl'],
+                        'nome': connection_mini_profile_data['firstName'],
+                        'sobrenome': connection_mini_profile_data['lastName'],
+                        'user_id': connection_user_id,
+                        'cargo_atual': connection_mini_profile_data['occupation'],
+                        'localizacao_atual': connection['subline']['text'],
+                        'foto_de_perfil': self.get_picture_url(connection_mini_profile_data['picture']),
+                        'plano_de_fundo': self.get_picture_url(connection_mini_profile_data['backgroundImage']),
+                        'premium': connection_member_badges['premium'],
+                        'influenciador': connection_member_badges['influencer'],
+                        'procura_emprego': connection_member_badges['jobSeeker']
+                    }
 
-            save_to_file(
-                self.output_json_path,
-                json.dumps(
-                    self.output_json_data, 
-                    indent=4, 
-                    ensure_ascii=self.ensure_ascii
-                ),
-                dont_print=True
-            )
+                    found = False
+                        
+                    for existing_connection in profile['conexoes']['conexoes_obtidas']:
+                        if existing_connection['url'] == connection_data['url']:
+                            found = True
+                            existing_connection.update(connection_data)
 
-            if self.current_session_connection_pages_parsed_per_profile[user_id] == self.max_connection_pages:
-                counter = self.profile_counter()
-                if counter['new_request'] is not None:
-                    yield counter['new_request']
-                checkprint('%sParsing corretamente realizado em %s\n' % (counter['counter'], profile['url']))
+                    if not found:
+                        profile['conexoes']['conexoes_obtidas'].append(connection_data)
+
+                save_to_file(
+                    self.output_json_path,
+                    json.dumps(
+                        self.output_json_data, 
+                        indent=4, 
+                        ensure_ascii=self.ensure_ascii
+                    ),
+                    dont_print=True
+                )
+
+                paging = search_data['data']['paging']
+
+                if (
+                        len(self.current_profile_stored_connections_requests) == 0
+                        or (paging['count'] + paging['start'] == paging['total'])
+                    ):
+                    yield self.get_next_profile_request()
+                    checkprint('%sParsing corretamente realizado em %s\n' % (self.profile_counter(), profile['url']))
+
+                else:
+                    yield self.get_next_profile_connections_request()
 
         else:
-            counter = self.profile_counter()
-            if counter['new_request'] is not None:
-                yield counter['new_request']
-            errorprint('%sErro no parsing de lista de conexões de %s\n' % (counter['counter'], profile['url']))
+            yield self.get_next_profile_request()
+            errorprint('%sErro no parsing de lista de conexões de %s\n' % (self.profile_counter(), profile['url']))
 
 
 def get_date():

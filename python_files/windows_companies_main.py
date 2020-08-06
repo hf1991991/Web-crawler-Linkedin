@@ -133,7 +133,12 @@ def should_continue_previous_progress(logs_path, output_json_path):
     return False
 
 
-def execute_crawling(username, password, continue_previous_progress, max_page_requests, max_connection_pages, logs_path, input_excel_path,  cookies_path,  output_json_path, ensure_ascii):
+def execute_crawling(
+        username, password, continue_previous_progress, max_page_requests, 
+        max_connection_pages, get_connection_data_from_profiles_with_3rd_or_higher_degree_connection, 
+        logs_path, input_excel_path,  cookies_path,  output_json_path, ensure_ascii
+    ):
+
     process = CrawlerProcess(
         settings={
             'DOWNLOAD_DELAY': 2
@@ -146,6 +151,7 @@ def execute_crawling(username, password, continue_previous_progress, max_page_re
         continue_previous_progress=continue_previous_progress,
         max_page_requests=max_page_requests, 
         max_connection_pages=max_connection_pages, 
+        get_connection_data_from_profiles_with_3rd_or_higher_degree_connection=get_connection_data_from_profiles_with_3rd_or_higher_degree_connection,
         logs_path=logs_path,
         input_excel_path=input_excel_path, 
         cookies_path=cookies_path, 
@@ -166,6 +172,7 @@ if __name__ == '__main__':
     logs_path = None
     max_page_requests = None
     max_connection_pages = None
+    get_connection_data_from_profiles_with_3rd_or_higher_degree_connection = None
     ensure_ascii = None
     username = None
     password = None
@@ -190,6 +197,8 @@ if __name__ == '__main__':
                 logs_path = config_data['paths']['logs']
                 max_page_requests = config_data['config']['max_paginas_por_dia']
                 max_connection_pages = config_data['config']['max_paginas_de_conexoes_por_perfil']
+                get_connection_data_from_profiles_with_3rd_or_higher_degree_connection = \
+                    config_data['config']['obter_conexoes_de_perfis_com_grau_de_conexao_maior_que_2']
                 ensure_ascii = not config_data['config']['permitir_caracteres_nao_ascii_no_output']
                 username = config_data['login']['username']
                 password = config_data['login']['password']
@@ -222,6 +231,7 @@ if __name__ == '__main__':
                 should_continue_previous_progress(logs_path, output_json_path),
                 max_page_requests, 
                 max_connection_pages, 
+                get_connection_data_from_profiles_with_3rd_or_higher_degree_connection,
                 logs_path, 
                 input_excel_path, 
                 cookies_path, 

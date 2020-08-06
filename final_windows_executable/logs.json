@@ -3,17 +3,17 @@
         {
             "data": "2020-08-05",
             "paginas_acessadas": {
-                "empresas": 16,
-                "pesquisa_de_funcionarios": 43,
-                "perfis": 49,
-                "pesquisa_de_conexoes": 18,
-                "total": 126
+                "empresas": 24,
+                "pesquisa_de_funcionarios": 45,
+                "perfis": 65,
+                "pesquisa_de_conexoes": 30,
+                "total": 164
             },
             "dados_obtidos": [
                 {
                     "empresa": "Neon",
                     "company_id": "10430926",
-                    "ultima_pagina_de_busca_de_funcionarios_acessada": 1,
+                    "ultima_pagina_de_busca_de_funcionarios_acessada": 0,
                     "total_de_paginas_de_busca_de_funcionario": 72
                 },
                 {
@@ -25,7 +25,7 @@
                 {
                     "empresa": "Distrito",
                     "company_id": "9195616",
-                    "ultima_pagina_de_busca_de_funcionarios_acessada": 1,
+                    "ultima_pagina_de_busca_de_funcionarios_acessada": 0,
                     "total_de_paginas_de_busca_de_funcionario": 10
                 },
                 {
