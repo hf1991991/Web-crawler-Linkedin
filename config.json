@@ -14,6 +14,6 @@
         "max_paginas_por_dia": 150,
         "max_paginas_de_conexoes_por_perfil": 0,
         "obter_conexoes_de_perfis_com_grau_de_conexao_maior_que_2": false,
-        "permitir_caracteres_nao_ascii_no_output": false
+        "permitir_caracteres_nao_ascii_no_output": true
     }
 }
